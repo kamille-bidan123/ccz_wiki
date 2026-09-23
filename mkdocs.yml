@@ -74,6 +74,7 @@ nav:
       - DSL 规范: EEX脚本/EEX_DSL规范.md
       - AST / DSL 设计: EEX脚本/EEX_AST_DSL设计草案.md
   - 编辑器:
+      - 魏武 MOD 工坊: 编辑器/魏武MOD工坊.md
       - 全能 MOD 编辑器方案: 编辑器/曹操传全能MOD编辑器方案.md
       - 实现状态: 编辑器/全能MOD编辑器实现状态.md
       - 综合修改器界面设计: 编辑器/曹操传综合游戏修改器界面设计.md
@@ -90,4 +91,3 @@ nav:
 
 exclude_docs: |
   README.md
-
