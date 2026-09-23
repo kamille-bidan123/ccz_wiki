@@ -1,0 +1,93 @@
+site_name: 曹操传旧引擎 Wiki
+site_description: 曹操传旧引擎文件格式、EEX 脚本、编辑器设计与逆向分析资料
+site_url: https://kamille-bidan123.github.io/ccz_wiki/
+repo_url: https://github.com/kamille-bidan123/ccz_wiki
+repo_name: kamille-bidan123/ccz_wiki
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: 切换至浅色模式
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+nav:
+  - 首页: index.md
+  - 文件与格式:
+      - 分类索引: 文件与格式/文件分类索引.md
+      - 目录总览: 文件与格式/ccz目录文件用途与格式分析.md
+      - 文件结构: 文件与格式/曹操传文件结构说明.md
+      - 程序与配置: 文件与格式/程序与配置文件说明.md
+      - 脚本文件: 文件与格式/脚本文件说明.md
+      - 数据与文本: 文件与格式/数据与文本文件说明.md
+      - 图像资源: 文件与格式/图像资源文件说明.md
+      - 音视频与辅助文本: 文件与格式/音视频与辅助文本文件说明.md
+      - 存档文件: 文件与格式/存档文件说明.md
+      - Hexzmap 地形编号: 文件与格式/Hexzmap地形编号分析.md
+      - Item 与 Itemicon: 文件与格式/Item与Itemicon格式分析.md
+      - Smlmap 与 Gate: 文件与格式/Smlmap与Gate格式分析.md
+  - EEX 脚本:
+      - 二进制格式: EEX脚本/EEX二进制格式说明.md
+      - 命令规格与验证: EEX脚本/EEX_COMMAND_SPECS草案.md
+      - DSL 规范: EEX脚本/EEX_DSL规范.md
+      - AST / DSL 设计: EEX脚本/EEX_AST_DSL设计草案.md
+  - 编辑器:
+      - 全能 MOD 编辑器方案: 编辑器/曹操传全能MOD编辑器方案.md
+      - 实现状态: 编辑器/全能MOD编辑器实现状态.md
+      - 综合修改器界面设计: 编辑器/曹操传综合游戏修改器界面设计.md
+      - 基于 MOD 教程的 UI 设计: 编辑器/曹操传综合游戏修改器UI设计_基于MOD教程.md
+  - 逆向分析:
+      - 战场 AI 行动与价值: 逆向分析/旧引擎战场AI行动与价值分析.md
+      - 战场 AI 逆向分析: 逆向分析/旧引擎战场AI行动与价值分析——逆向分析.md
+  - 审计记录:
+      - R 场景动作: 审计记录/R动作/index.md
+      - R 剧本音乐: 审计记录/R音乐/index.md
+  - Godot 实现:
+      - 通用 R 剧情播放器: Godot实现/r_story.md
+      - 颍川之战前 R 剧情: Godot实现/r_prologue.md
+
+exclude_docs: |
+  README.md
+

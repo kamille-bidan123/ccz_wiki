@@ -1,0 +1,240 @@
+
+## 0x00426871..0x00426886
+
+  426871: 55                           	push	ebp
+  426872: 8b ec                        	mov	ebp, esp
+  426874: 8b 45 08                     	mov	eax, dword ptr [ebp + 0x8]
+  426877: 25 ff ff 00 00               	and	eax, 0xffff
+  42687c: 6b c0 09                     	imul	eax, eax, 0x9
+  42687f: 05 20 b9 48 00               	add	eax, 0x48b920
+  426884: 5d                           	pop	ebp
+  426885: c3                           	ret
+
+## 0x00426c6a..0x00426db2
+
+  426c6a: 55                           	push	ebp
+  426c6b: 8b ec                        	mov	ebp, esp
+  426c6d: 6a ff                        	push	-0x1
+  426c6f: 68 bc 52 48 00               	push	0x4852bc
+  426c74: 64 a1 00 00 00 00            	mov	eax, dword ptr fs:[0x0]
+  426c7a: 50                           	push	eax
+  426c7b: 64 89 25 00 00 00 00         	mov	dword ptr fs:[0x0], esp
+  426c82: 81 ec 10 01 00 00            	sub	esp, 0x110
+  426c88: 8d 8d f0 fe ff ff            	lea	ecx, [ebp - 0x110]
+  426c8e: e8 1d c6 fd ff               	call	0x4032b0 <.text+0x22b0>
+  426c93: c7 45 fc 00 00 00 00         	mov	dword ptr [ebp - 0x4], 0x0
+  426c9a: 8b 45 08                     	mov	eax, dword ptr [ebp + 0x8]
+  426c9d: 25 ff ff 00 00               	and	eax, 0xffff
+  426ca2: d1 e0                        	shl	eax
+  426ca4: 66 89 85 ec fe ff ff         	mov	word ptr [ebp - 0x114], ax
+  426cab: c7 05 ec ba 48 00 ff ff 00 00	mov	dword ptr [0x48baec], 0xffff
+  426cb5: 6a 04                        	push	0x4
+  426cb7: 6a 00                        	push	0x0
+  426cb9: 8b 4d 0c                     	mov	ecx, dword ptr [ebp + 0xc]
+  426cbc: 81 e1 ff ff 00 00            	and	ecx, 0xffff
+  426cc2: 6b c9 14                     	imul	ecx, ecx, 0x14
+  426cc5: 6b c9 30                     	imul	ecx, ecx, 0x30
+  426cc8: c1 e1 06                     	shl	ecx, 0x6
+  426ccb: d1 e1                        	shl	ecx
+  426ccd: d1 e1                        	shl	ecx
+  426ccf: 51                           	push	ecx
+  426cd0: b9 a8 e4 4a 00               	mov	ecx, 0x4ae4a8
+  426cd5: e8 66 8d 05 00               	call	0x47fa40 <.text+0x7ea40>
+  426cda: 89 85 e8 fe ff ff            	mov	dword ptr [ebp - 0x118], eax
+  426ce0: 8b 95 e8 fe ff ff            	mov	edx, dword ptr [ebp - 0x118]
+  426ce6: 81 c2 00 e0 01 00            	add	edx, 0x1e000
+  426cec: 89 95 e4 fe ff ff            	mov	dword ptr [ebp - 0x11c], edx
+  426cf2: 68 70 bb 48 00               	push	0x48bb70
+  426cf7: 8d 8d f0 fe ff ff            	lea	ecx, [ebp - 0x110]
+  426cfd: e8 33 8e ff ff               	call	0x41fb35 <.text+0x1eb35>
+  426d02: 8b 85 e4 fe ff ff            	mov	eax, dword ptr [ebp - 0x11c]
+  426d08: 50                           	push	eax
+  426d09: 8b 8d ec fe ff ff            	mov	ecx, dword ptr [ebp - 0x114]
+  426d0f: 81 e1 ff ff 00 00            	and	ecx, 0xffff
+  426d15: 51                           	push	ecx
+  426d16: 8d 8d f0 fe ff ff            	lea	ecx, [ebp - 0x110]
+  426d1c: e8 68 8f ff ff               	call	0x41fc89 <.text+0x1ec89>
+  426d21: 8b 95 e8 fe ff ff            	mov	edx, dword ptr [ebp - 0x118]
+  426d27: 52                           	push	edx
+  426d28: 8b 85 ec fe ff ff            	mov	eax, dword ptr [ebp - 0x114]
+  426d2e: 25 ff ff 00 00               	and	eax, 0xffff
+  426d33: 83 c0 01                     	add	eax, 0x1
+  426d36: 50                           	push	eax
+  426d37: 8d 8d f0 fe ff ff            	lea	ecx, [ebp - 0x110]
+  426d3d: e8 47 8f ff ff               	call	0x41fc89 <.text+0x1ec89>
+  426d42: 8d 8d f0 fe ff ff            	lea	ecx, [ebp - 0x110]
+  426d48: e8 78 25 ff ff               	call	0x4192c5 <.text+0x182c5>
+  426d4d: 8b 8d e4 fe ff ff            	mov	ecx, dword ptr [ebp - 0x11c]
+  426d53: 81 c1 00 f0 00 00            	add	ecx, 0xf000
+  426d59: 51                           	push	ecx
+  426d5a: 8b 95 e8 fe ff ff            	mov	edx, dword ptr [ebp - 0x118]
+  426d60: 52                           	push	edx
+  426d61: 68 00 05 00 00               	push	0x500
+  426d66: 6a 30                        	push	0x30
+  426d68: e8 e6 80 ff ff               	call	0x41ee53 <.text+0x1de53>
+  426d6d: 83 c4 10                     	add	esp, 0x10
+  426d70: 8b 85 e8 fe ff ff            	mov	eax, dword ptr [ebp - 0x118]
+  426d76: 05 00 f0 00 00               	add	eax, 0xf000
+  426d7b: 50                           	push	eax
+  426d7c: 8b 8d e4 fe ff ff            	mov	ecx, dword ptr [ebp - 0x11c]
+  426d82: 51                           	push	ecx
+  426d83: 68 00 05 00 00               	push	0x500
+  426d88: 6a 30                        	push	0x30
+  426d8a: e8 c4 80 ff ff               	call	0x41ee53 <.text+0x1de53>
+  426d8f: 83 c4 10                     	add	esp, 0x10
+  426d92: c7 45 fc ff ff ff ff         	mov	dword ptr [ebp - 0x4], 0xffffffff
+  426d99: 8d 8d f0 fe ff ff            	lea	ecx, [ebp - 0x110]
+  426d9f: e8 2c c5 fd ff               	call	0x4032d0 <.text+0x22d0>
+  426da4: 8b 4d f4                     	mov	ecx, dword ptr [ebp - 0xc]
+  426da7: 64 89 0d 00 00 00 00         	mov	dword ptr fs:[0x0], ecx
+  426dae: 8b e5                        	mov	esp, ebp
+  426db0: 5d                           	pop	ebp
+  426db1: c3                           	ret
+
+## 0x00428b87..0x00428c1b
+
+  428b87: 55                           	push	ebp
+  428b88: 8b ec                        	mov	ebp, esp
+  428b8a: 83 ec 08                     	sub	esp, 0x8
+  428b8d: 66 8b 45 08                  	mov	ax, word ptr [ebp + 0x8]
+  428b91: 50                           	push	eax
+  428b92: e8 d3 fd ff ff               	call	0x42896a <.text+0x2796a>
+  428b97: 83 c4 04                     	add	esp, 0x4
+  428b9a: 66 89 45 f8                  	mov	word ptr [ebp - 0x8], ax
+  428b9e: 8b 4d f8                     	mov	ecx, dword ptr [ebp - 0x8]
+  428ba1: 81 e1 ff ff 00 00            	and	ecx, 0xffff
+  428ba7: 81 f9 80 00 00 00            	cmp	ecx, 0x80
+  428bad: 7d 68                        	jge	0x428c17 <.text+0x27c17>
+  428baf: 66 8b 55 f8                  	mov	dx, word ptr [ebp - 0x8]
+  428bb3: 52                           	push	edx
+  428bb4: e8 ef de ff ff               	call	0x426aa8 <.text+0x25aa8>
+  428bb9: 83 c4 04                     	add	esp, 0x4
+  428bbc: 89 45 fc                     	mov	dword ptr [ebp - 0x4], eax
+  428bbf: 6a 00                        	push	0x0
+  428bc1: 8b 4d fc                     	mov	ecx, dword ptr [ebp - 0x4]
+  428bc4: e8 e7 20 00 00               	call	0x42acb0 <.text+0x29cb0>
+  428bc9: 8b 45 0c                     	mov	eax, dword ptr [ebp + 0xc]
+  428bcc: 25 ff ff 00 00               	and	eax, 0xffff
+  428bd1: 3d ff ff 00 00               	cmp	eax, 0xffff
+  428bd6: 74 1a                        	je	0x428bf2 <.text+0x27bf2>
+  428bd8: 66 8b 4d 0c                  	mov	cx, word ptr [ebp + 0xc]
+  428bdc: 51                           	push	ecx
+  428bdd: 8b 4d fc                     	mov	ecx, dword ptr [ebp - 0x4]
+  428be0: e8 4b 23 00 00               	call	0x42af30 <.text+0x29f30>
+  428be5: 66 8b 55 0c                  	mov	dx, word ptr [ebp + 0xc]
+  428be9: 52                           	push	edx
+  428bea: 8b 4d fc                     	mov	ecx, dword ptr [ebp - 0x4]
+  428bed: e8 be 18 00 00               	call	0x42a4b0 <.text+0x294b0>
+  428bf2: 8b 45 10                     	mov	eax, dword ptr [ebp + 0x10]
+  428bf5: 25 ff ff 00 00               	and	eax, 0xffff
+  428bfa: 3d ff ff 00 00               	cmp	eax, 0xffff
+  428bff: 74 0d                        	je	0x428c0e <.text+0x27c0e>
+  428c01: 66 8b 4d 10                  	mov	cx, word ptr [ebp + 0x10]
+  428c05: 51                           	push	ecx
+  428c06: 8b 4d fc                     	mov	ecx, dword ptr [ebp - 0x4]
+  428c09: e8 42 23 00 00               	call	0x42af50 <.text+0x29f50>
+  428c0e: e8 f2 fe ff ff               	call	0x428b05 <.text+0x27b05>
+  428c13: 33 c0                        	xor	eax, eax
+  428c15: eb 03                        	jmp	0x428c1a <.text+0x27c1a>
+  428c17: 83 c8 ff                     	or	eax, -0x1
+  428c1a: 8b e5                        	mov	esp, ebp
+
+## 0x0042a44d..0x0042a483
+
+  42a44d: 66 c7 45 f4 01 00            	mov	word ptr [ebp - 0xc], 0x1
+  42a453: 8a 45 e0                     	mov	al, byte ptr [ebp - 0x20]
+  42a456: 88 45 d8                     	mov	byte ptr [ebp - 0x28], al
+  42a459: 80 7d d8 00                  	cmp	byte ptr [ebp - 0x28], 0x0
+  42a45d: 74 08                        	je	0x42a467 <.text+0x29467>
+  42a45f: 80 7d d8 10                  	cmp	byte ptr [ebp - 0x28], 0x10
+  42a463: 74 12                        	je	0x42a477 <.text+0x29477>
+  42a465: eb 1c                        	jmp	0x42a483 <.text+0x29483>
+  42a467: 66 0f b6 4d e4               	movzx	cx, byte ptr [ebp - 0x1c]
+  42a46c: 51                           	push	ecx
+  42a46d: 8b 4d dc                     	mov	ecx, dword ptr [ebp - 0x24]
+  42a470: e8 80 00 00 00               	call	0x42a4f5 <.text+0x294f5>
+  42a475: eb 0c                        	jmp	0x42a483 <.text+0x29483>
+  42a477: 66 0f b6 55 e4               	movzx	dx, byte ptr [ebp - 0x1c]
+  42a47c: 8b 45 dc                     	mov	eax, dword ptr [ebp - 0x24]
+  42a47f: 66 89 50 2e                  	mov	word ptr [eax + 0x2e], dx
+
+## 0x0042a4b0..0x0042a54c
+
+  42a4b0: 55                           	push	ebp
+  42a4b1: 8b ec                        	mov	ebp, esp
+  42a4b3: 83 ec 08                     	sub	esp, 0x8
+  42a4b6: 89 4d f8                     	mov	dword ptr [ebp - 0x8], ecx
+  42a4b9: 66 8b 45 08                  	mov	ax, word ptr [ebp + 0x8]
+  42a4bd: 50                           	push	eax
+  42a4be: e8 ae c3 ff ff               	call	0x426871 <.text+0x25871>
+  42a4c3: 83 c4 04                     	add	esp, 0x4
+  42a4c6: 89 45 fc                     	mov	dword ptr [ebp - 0x4], eax
+  42a4c9: 8b 4d f8                     	mov	ecx, dword ptr [ebp - 0x8]
+  42a4cc: 8b 55 fc                     	mov	edx, dword ptr [ebp - 0x4]
+  42a4cf: 89 51 34                     	mov	dword ptr [ecx + 0x34], edx
+  42a4d2: 8b 45 fc                     	mov	eax, dword ptr [ebp - 0x4]
+  42a4d5: 66 0f b6 48 01               	movzx	cx, byte ptr [eax + 0x1]
+  42a4da: 8b 55 f8                     	mov	edx, dword ptr [ebp - 0x8]
+  42a4dd: 66 89 4a 2a                  	mov	word ptr [edx + 0x2a], cx
+  42a4e1: 8b e5                        	mov	esp, ebp
+  42a4e3: 5d                           	pop	ebp
+  42a4e4: c2 04 00                     	ret	0x4
+  42a4e7: 55                           	push	ebp
+  42a4e8: 8b ec                        	mov	ebp, esp
+  42a4ea: 51                           	push	ecx
+  42a4eb: 89 4d fc                     	mov	dword ptr [ebp - 0x4], ecx
+  42a4ee: 66 33 c0                     	xor	ax, ax
+  42a4f1: 8b e5                        	mov	esp, ebp
+  42a4f3: 5d                           	pop	ebp
+  42a4f4: c3                           	ret
+  42a4f5: 55                           	push	ebp
+  42a4f6: 8b ec                        	mov	ebp, esp
+  42a4f8: 83 ec 0c                     	sub	esp, 0xc
+  42a4fb: 89 4d f4                     	mov	dword ptr [ebp - 0xc], ecx
+  42a4fe: 8b 45 f4                     	mov	eax, dword ptr [ebp - 0xc]
+  42a501: 66 8b 48 1a                  	mov	cx, word ptr [eax + 0x1a]
+  42a505: 66 83 c1 01                  	add	cx, 0x1
+  42a509: 8b 55 f4                     	mov	edx, dword ptr [ebp - 0xc]
+  42a50c: 66 89 4a 1a                  	mov	word ptr [edx + 0x1a], cx
+  42a510: 8b 45 f4                     	mov	eax, dword ptr [ebp - 0xc]
+  42a513: 8b 48 34                     	mov	ecx, dword ptr [eax + 0x34]
+  42a516: 33 d2                        	xor	edx, edx
+  42a518: 8a 11                        	mov	dl, byte ptr [ecx]
+  42a51a: 8b 45 f4                     	mov	eax, dword ptr [ebp - 0xc]
+  42a51d: 33 c9                        	xor	ecx, ecx
+  42a51f: 66 8b 48 1a                  	mov	cx, word ptr [eax + 0x1a]
+  42a523: 3b d1                        	cmp	edx, ecx
+  42a525: 7f 09                        	jg	0x42a530 <.text+0x29530>
+  42a527: 8b 55 f4                     	mov	edx, dword ptr [ebp - 0xc]
+  42a52a: 66 c7 42 1a 00 00            	mov	word ptr [edx + 0x1a], 0x0
+  42a530: 8b 45 f4                     	mov	eax, dword ptr [ebp - 0xc]
+  42a533: 8b 48 34                     	mov	ecx, dword ptr [eax + 0x34]
+  42a536: 8b 55 f4                     	mov	edx, dword ptr [ebp - 0xc]
+  42a539: 33 c0                        	xor	eax, eax
+  42a53b: 66 8b 42 1a                  	mov	ax, word ptr [edx + 0x1a]
+  42a53f: 66 0f b6 4c 01 01            	movzx	cx, byte ptr [ecx + eax + 0x1]
+  42a545: 8b 55 f4                     	mov	edx, dword ptr [ebp - 0xc]
+  42a548: 66 89 4a 2a                  	mov	word ptr [edx + 0x2a], cx
+
+## 0x0042b010..0x0042b040
+
+  42b010: 55                           	push	ebp
+  42b011: 8b ec                        	mov	ebp, esp
+  42b013: 51                           	push	ecx
+  42b014: 89 4d fc                     	mov	dword ptr [ebp - 0x4], ecx
+  42b017: 8b 45 fc                     	mov	eax, dword ptr [ebp - 0x4]
+  42b01a: 33 c9                        	xor	ecx, ecx
+  42b01c: 66 8b 48 2e                  	mov	cx, word ptr [eax + 0x2e]
+  42b020: 6b c9 14                     	imul	ecx, ecx, 0x14
+  42b023: 8b 55 fc                     	mov	edx, dword ptr [ebp - 0x4]
+  42b026: 33 c0                        	xor	eax, eax
+  42b028: 66 8b 42 2a                  	mov	ax, word ptr [edx + 0x2a]
+  42b02c: 03 c8                        	add	ecx, eax
+  42b02e: 6b c9 30                     	imul	ecx, ecx, 0x30
+  42b031: c1 e1 06                     	shl	ecx, 0x6
+  42b034: 8b 55 fc                     	mov	edx, dword ptr [ebp - 0x4]
+  42b037: 8b 42 10                     	mov	eax, dword ptr [edx + 0x10]
+  42b03a: 03 c1                        	add	eax, ecx
+  42b03c: 8b e5                        	mov	esp, ebp
+  42b03e: 5d                           	pop	ebp
+  42b03f: c3                           	ret

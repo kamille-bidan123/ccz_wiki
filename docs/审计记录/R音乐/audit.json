@@ -1,0 +1,236 @@
+{
+  "exe_sha256": "199b1b67cf966ead46c49b430b9aab84bdc7d4f0e8dfa8e0ebeec5da280b01e0",
+  "handler_va": "0x41581c",
+  "add_two_va": "0x41585e",
+  "add_two_bytes": "83c202",
+  "mapping": [
+    {
+      "eex_track_id": 0,
+      "cd_track": 2,
+      "playlist_entry": "SoundTrk\\02-AudioTrack 02.mp3",
+      "count": 18,
+      "example": {
+        "script": "r_09.json",
+        "offset": 8681
+      }
+    },
+    {
+      "eex_track_id": 11,
+      "cd_track": 13,
+      "playlist_entry": "SoundTrk\\13-AudioTrack 13.mp3",
+      "count": 22,
+      "example": {
+        "script": "r_00.json",
+        "offset": 1401
+      }
+    },
+    {
+      "eex_track_id": 12,
+      "cd_track": 14,
+      "playlist_entry": "SoundTrk\\14-AudioTrack 14.mp3",
+      "count": 5,
+      "example": {
+        "script": "r_07.json",
+        "offset": 1370
+      }
+    },
+    {
+      "eex_track_id": 13,
+      "cd_track": 15,
+      "playlist_entry": "SoundTrk\\15-AudioTrack 15.mp3",
+      "count": 16,
+      "example": {
+        "script": "r_11.json",
+        "offset": 77
+      }
+    },
+    {
+      "eex_track_id": 15,
+      "cd_track": 17,
+      "playlist_entry": "SoundTrk\\17-AudioTrack 17.mp3",
+      "count": 50,
+      "example": {
+        "script": "r_01.json",
+        "offset": 20973
+      }
+    },
+    {
+      "eex_track_id": 16,
+      "cd_track": 18,
+      "playlist_entry": "SoundTrk\\18-AudioTrack 18.mp3",
+      "count": 91,
+      "example": {
+        "script": "r_01.json",
+        "offset": 90
+      }
+    },
+    {
+      "eex_track_id": 17,
+      "cd_track": 19,
+      "playlist_entry": "SoundTrk\\19-AudioTrack 19.mp3",
+      "count": 4,
+      "example": {
+        "script": "r_04.json",
+        "offset": 5759
+      }
+    },
+    {
+      "eex_track_id": 18,
+      "cd_track": 20,
+      "playlist_entry": "SoundTrk\\20-AudioTrack 20.mp3",
+      "count": 20,
+      "example": {
+        "script": "r_01.json",
+        "offset": 12814
+      }
+    },
+    {
+      "eex_track_id": 19,
+      "cd_track": 21,
+      "playlist_entry": "SoundTrk\\21-AudioTrack 21.mp3",
+      "count": 11,
+      "example": {
+        "script": "r_15.json",
+        "offset": 5330
+      }
+    },
+    {
+      "eex_track_id": 255,
+      "cd_track": null,
+      "playlist_entry": null,
+      "count": 215,
+      "example": {
+        "script": "r_00.json",
+        "offset": 1481
+      }
+    }
+  ],
+  "verified_mp3_copies": [
+    {
+      "cd_track": 2,
+      "original": "SoundTrk\\02-AudioTrack 02.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/02-audiotrack_02.mp3",
+      "sha256": "032d411f4533724324b28b14addc87d3066f8e0df18058eb7d6747c47d068813"
+    },
+    {
+      "cd_track": 3,
+      "original": "SoundTrk\\03-AudioTrack 03.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/03-audiotrack_03.mp3",
+      "sha256": "fd93179b78222b0de0cce2bf7fcc48207ea9eea4e6100a4283579047e1036c09"
+    },
+    {
+      "cd_track": 4,
+      "original": "SoundTrk\\04-AudioTrack 04.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/04-audiotrack_04.mp3",
+      "sha256": "59c227560d7d7728a0f3e9724d8a728d899b2bbd5d01c892a947d930976305ed"
+    },
+    {
+      "cd_track": 5,
+      "original": "SoundTrk\\05-AudioTrack 05.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/05-audiotrack_05.mp3",
+      "sha256": "e585855da4b619b7fbc74dbe49e5575221bc6596b3d77ba68186ee0ba63e5008"
+    },
+    {
+      "cd_track": 6,
+      "original": "SoundTrk\\06-AudioTrack 06.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/06-audiotrack_06.mp3",
+      "sha256": "7b3526c5c8691860d28cd4672f8c4c8c90d1a5efc3fb94014ce2ea842e2cbef1"
+    },
+    {
+      "cd_track": 7,
+      "original": "SoundTrk\\07-AudioTrack 07.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/07-audiotrack_07.mp3",
+      "sha256": "1bea30a40a28fec56669447396a27a51e69d45a5d9a4433a9eea426eeee42150"
+    },
+    {
+      "cd_track": 8,
+      "original": "SoundTrk\\08-AudioTrack 08.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/08-audiotrack_08.mp3",
+      "sha256": "10602d774e8a40fa4ade364fe0c5ec0ff0e684ee15ffd3958d93697f7926191e"
+    },
+    {
+      "cd_track": 9,
+      "original": "SoundTrk\\09-AudioTrack 09.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/09-audiotrack_09.mp3",
+      "sha256": "b54161a5e9bde4a9d871c102a75645dc424ba9fe3f27d74a97e39ce51f52f279"
+    },
+    {
+      "cd_track": 10,
+      "original": "SoundTrk\\10-AudioTrack 10.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/10-audiotrack_10.mp3",
+      "sha256": "8e8d416ace75a57eabff1819454a1ed969c8ec0ec81322f4ab2c1f56c575e5af"
+    },
+    {
+      "cd_track": 11,
+      "original": "SoundTrk\\11-AudioTrack 11.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/11-audiotrack_11.mp3",
+      "sha256": "0739a773996decb3902f23125b315648f58da3ce56c4c3f9e45ce7d4029ee341"
+    },
+    {
+      "cd_track": 12,
+      "original": "SoundTrk\\12-AudioTrack 12.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/12-audiotrack_12.mp3",
+      "sha256": "bc11755aec330bdc870f15b76a799941fe143a9480c123f3e73c0188a5d27d4e"
+    },
+    {
+      "cd_track": 13,
+      "original": "SoundTrk\\13-AudioTrack 13.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/13-audiotrack_13.mp3",
+      "sha256": "e6074573d1923ab72bc8fa65bd2220a8379b43bf2d4dd25ff6dfa271fae2f961"
+    },
+    {
+      "cd_track": 14,
+      "original": "SoundTrk\\14-AudioTrack 14.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/14-audiotrack_14.mp3",
+      "sha256": "34cd218fd37659ce9356c6b9237b5c0e0cc65a64ab14c23498ff2a270ded1ef4"
+    },
+    {
+      "cd_track": 15,
+      "original": "SoundTrk\\15-AudioTrack 15.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/15-audiotrack_15.mp3",
+      "sha256": "a6263dc6d4225ad56a0b8e86fbef72015d47c1fc93cd6f471c1c978cfb4a683f"
+    },
+    {
+      "cd_track": 16,
+      "original": "SoundTrk\\16-AudioTrack 16.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/16-audiotrack_16.mp3",
+      "sha256": "164e3fcd082d34600d417b7bd438e35088b45520e89fc5d54ac5dbe1099c1588"
+    },
+    {
+      "cd_track": 17,
+      "original": "SoundTrk\\17-AudioTrack 17.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/17-audiotrack_17.mp3",
+      "sha256": "5c595ba6f78530e8c39bfbb748b7b7ed07b17e09243ebe9692efab8eccf73b28"
+    },
+    {
+      "cd_track": 18,
+      "original": "SoundTrk\\18-AudioTrack 18.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/18-audiotrack_18.mp3",
+      "sha256": "834deb4507e18694136e31456ef77069794cc99cfc81b342765eea193bf0e8d6"
+    },
+    {
+      "cd_track": 19,
+      "original": "SoundTrk\\19-AudioTrack 19.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/19-audiotrack_19.mp3",
+      "sha256": "0acf4140be9f817cabfa6867599e509933be69329b7ffd37ec6bae8a845b3de5"
+    },
+    {
+      "cd_track": 20,
+      "original": "SoundTrk\\20-AudioTrack 20.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/20-audiotrack_20.mp3",
+      "sha256": "9aaca1b8c701dae2e076551270f7519008facd46772556096691408a409a4fa1"
+    },
+    {
+      "cd_track": 21,
+      "original": "SoundTrk\\21-AudioTrack 21.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/21-audiotrack_21.mp3",
+      "sha256": "ace951ef48912c30e800c355649928bc636db1ca30c3401d9e52d00c489af364"
+    },
+    {
+      "cd_track": 22,
+      "original": "SoundTrk\\22-AudioTrack 22.mp3",
+      "exported": "/Users/lometsj/ccz-tsj/assets/audio/music/22-audiotrack_22.mp3",
+      "sha256": "ce8fe9134c4ee5872627097477c7fc48bb99d862317cf1cae050829744fa8a60"
+    }
+  ]
+}

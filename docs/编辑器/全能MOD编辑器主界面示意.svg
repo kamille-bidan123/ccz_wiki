@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="topbar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2027"/>
+      <stop offset="1" stop-color="#171a20"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000" flood-opacity=".24"/>
+    </filter>
+    <clipPath id="mapClip">
+      <rect x="344" y="144" width="870" height="548" rx="4"/>
+    </clipPath>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#f3dfaa" stroke-opacity=".25" stroke-width="1"/>
+    </pattern>
+    <style>
+      .ui { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .label { fill:#99a1ad; font-size:13px; letter-spacing:.2px; }
+      .text { fill:#d8dde5; font-size:14px; }
+      .small { fill:#8f98a6; font-size:12px; }
+      .title { fill:#f2f4f7; font-size:16px; font-weight:650; }
+      .mono { font-family: "SFMono-Regular", Consolas, monospace; }
+      .divider { stroke:#2b3039; stroke-width:1; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#111318"/>
+
+  <!-- top app chrome -->
+  <rect width="1600" height="58" fill="url(#topbar)"/>
+  <circle cx="22" cy="22" r="6" fill="#ff5f57"/>
+  <circle cx="42" cy="22" r="6" fill="#febc2e"/>
+  <circle cx="62" cy="22" r="6" fill="#28c840"/>
+  <text class="ui title" x="92" y="28">魏武 · 曹操传 MOD 工坊</text>
+  <text class="ui small mono" x="92" y="46">ccz-origin / 旧引擎兼容配置</text>
+  <path d="M694 13h260a10 10 0 0 1 10 10v24H684V23a10 10 0 0 1 10-10z" fill="#242932"/>
+  <text class="ui text" x="714" y="37">S_00 · 战场 00</text>
+  <circle cx="942" cy="31" r="4" fill="#d6a84b"/>
+  <rect x="1280" y="13" width="132" height="34" rx="6" fill="#242932"/>
+  <text class="ui text" x="1300" y="35">差异预览  12</text>
+  <rect x="1422" y="13" width="156" height="34" rx="6" fill="#d6a84b"/>
+  <text class="ui" x="1451" y="35" fill="#17130b" font-size="14" font-weight="700">验证并发布</text>
+
+  <!-- icon rail -->
+  <rect y="58" width="54" height="942" fill="#15181e"/>
+  <g class="ui" text-anchor="middle">
+    <rect x="7" y="75" width="40" height="40" rx="8" fill="#2a2e36"/>
+    <text x="27" y="101" fill="#d6a84b" font-size="19">战</text>
+    <text x="27" y="154" fill="#747d8b" font-size="18">图</text>
+    <text x="27" y="207" fill="#747d8b" font-size="18">人</text>
+    <text x="27" y="260" fill="#747d8b" font-size="18">数</text>
+    <text x="27" y="313" fill="#747d8b" font-size="18">资</text>
+    <text x="27" y="366" fill="#747d8b" font-size="18">问</text>
+  </g>
+  <circle cx="27" cy="958" r="15" fill="#292e37"/>
+  <text class="ui" x="27" y="964" text-anchor="middle" fill="#aab2be" font-size="15">⚙</text>
+
+  <!-- project navigator -->
+  <rect x="54" y="58" width="258" height="942" fill="#191c22"/>
+  <text class="ui label" x="76" y="91">关卡与场景</text>
+  <rect x="70" y="108" width="226" height="32" rx="5" fill="#22262e"/>
+  <text class="ui small" x="88" y="129">⌕  搜索人物、关卡、事件…</text>
+  <line class="divider" x1="54" y1="154" x2="312" y2="154"/>
+
+  <text class="ui text" x="76" y="184">▾  第一章 · 霸王诞生</text>
+  <rect x="66" y="198" width="238" height="60" rx="6" fill="#292d35"/>
+  <rect x="66" y="198" width="3" height="60" rx="2" fill="#d6a84b"/>
+  <text class="ui title" x="84" y="222">S_00 · 战场 00</text>
+  <text class="ui small" x="84" y="244">18×18 · 36 单位 · 24 事件</text>
+  <text class="ui text" x="84" y="282">R_00 · 剧情场景</text>
+  <text class="ui small" x="84" y="302">3 场景 · 11 章节</text>
+  <text class="ui text" x="76" y="338">▸  第二章 · 河北之争</text>
+  <text class="ui text" x="76" y="378">▸  第三章 · 三国鼎立</text>
+  <text class="ui text" x="76" y="418">▸  终章与结局</text>
+
+  <line class="divider" x1="54" y1="450" x2="312" y2="450"/>
+  <text class="ui label" x="76" y="482">当前关卡资源</text>
+  <g class="ui small">
+    <text x="82" y="514" fill="#cbd1da">地图画面</text><text x="278" y="514" text-anchor="end" fill="#7f8996">Hm00</text>
+    <text x="82" y="543" fill="#cbd1da">地形网格</text><text x="278" y="543" text-anchor="end" fill="#7f8996">Hexzmap[0]</text>
+    <text x="82" y="572" fill="#cbd1da">地图调色板</text><text x="278" y="572" text-anchor="end" fill="#7f8996">Spalet[0]</text>
+    <text x="82" y="601" fill="#cbd1da">小地图</text><text x="278" y="601" text-anchor="end" fill="#7f8996">Smlmap[0]</text>
+    <text x="82" y="630" fill="#cbd1da">事件脚本</text><text x="278" y="630" text-anchor="end" fill="#7f8996">S_00.eex</text>
+  </g>
+  <line class="divider" x1="54" y1="656" x2="312" y2="656"/>
+  <text class="ui label" x="76" y="688">问题</text>
+  <text class="ui small" x="82" y="718" fill="#e2b763">●  2 个阻断发布的问题</text>
+  <text class="ui small" x="82" y="745">○  5 个未引用资源</text>
+
+  <!-- main workspace header -->
+  <rect x="312" y="58" width="938" height="60" fill="#181b21"/>
+  <text class="ui title" x="336" y="84">战场编辑器</text>
+  <text class="ui small" x="336" y="104">选择、地形、单位、区域、障碍与 AI 预览</text>
+  <g class="ui small">
+    <rect x="708" y="72" width="304" height="34" rx="7" fill="#232730"/>
+    <rect x="710" y="74" width="70" height="30" rx="6" fill="#343943"/>
+    <text x="745" y="95" text-anchor="middle" fill="#e8ebef">选择</text>
+    <text x="815" y="95" text-anchor="middle">地形</text>
+    <text x="885" y="95" text-anchor="middle">单位</text>
+    <text x="967" y="95" text-anchor="middle">事件区域</text>
+    <rect x="1024" y="72" width="94" height="34" rx="7" fill="#232730"/>
+    <text x="1071" y="94" text-anchor="middle">网格 ✓</text>
+    <rect x="1128" y="72" width="98" height="34" rx="7" fill="#232730"/>
+    <text x="1177" y="94" text-anchor="middle">AI 路径</text>
+  </g>
+
+  <!-- map canvas -->
+  <rect x="328" y="130" width="902" height="578" rx="8" fill="#0d0f13" filter="url(#shadow)"/>
+  <g clip-path="url(#mapClip)">
+    <image href="battle_maps/Hm00.png" x="344" y="144" width="870" height="548" preserveAspectRatio="xMidYMid slice"/>
+    <rect x="344" y="144" width="870" height="548" fill="url(#grid)"/>
+    <rect x="726" y="372" width="88" height="88" fill="#d6a84b" fill-opacity=".16" stroke="#f0c866" stroke-width="2"/>
+    <path d="M568 562 C642 516 656 422 746 416" fill="none" stroke="#55b9d3" stroke-width="3" stroke-dasharray="7 7"/>
+    <path d="M948 300 C890 335 865 383 812 416" fill="none" stroke="#dd6f6b" stroke-width="3" stroke-dasharray="7 7"/>
+  </g>
+
+  <!-- unit markers -->
+  <g class="ui">
+    <circle cx="568" cy="562" r="18" fill="#1e7890" stroke="#9ce6f6" stroke-width="2"/>
+    <text x="568" y="567" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">曹</text>
+    <rect x="528" y="585" width="80" height="22" rx="4" fill="#101319" fill-opacity=".88"/>
+    <text x="568" y="600" text-anchor="middle" fill="#dbe2e8" font-size="11">曹操 · 100%</text>
+
+    <circle cx="948" cy="300" r="18" fill="#9a3636" stroke="#ffc0b9" stroke-width="2"/>
+    <text x="948" y="305" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">张</text>
+    <rect x="904" y="323" width="88" height="22" rx="4" fill="#101319" fill-opacity=".88"/>
+    <text x="948" y="338" text-anchor="middle" fill="#dbe2e8" font-size="11">张宝 · 主动</text>
+
+    <circle cx="770" cy="416" r="22" fill="#a2433e" stroke="#ffd4c9" stroke-width="3"/>
+    <text x="770" y="421" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">将</text>
+    <circle cx="790" cy="397" r="6" fill="#d6a84b"/>
+  </g>
+  <rect x="352" y="656" width="182" height="30" rx="5" fill="#15191f" fill-opacity=".92"/>
+  <text class="ui small" x="366" y="676">格 (9, 11) · 平地 · 消耗 1</text>
+
+  <!-- right inspector -->
+  <rect x="1250" y="58" width="350" height="942" fill="#1b1e24"/>
+  <text class="ui label" x="1274" y="91">检查器</text>
+  <text class="ui title" x="1274" y="124">敌军单位 17 · 张宝</text>
+  <text class="ui small mono" x="1274" y="146">S_00.eex / enemy[17]</text>
+  <line class="divider" x1="1250" y1="164" x2="1600" y2="164"/>
+
+  <text class="ui label" x="1274" y="194">身份与显示</text>
+  <text class="ui small" x="1274" y="224">人物</text>
+  <rect x="1370" y="204" width="204" height="32" rx="5" fill="#252a32"/>
+  <text class="ui text" x="1384" y="225">#146  张宝</text>
+  <text class="ui small" x="1274" y="264">兵种 / 形象</text>
+  <rect x="1370" y="244" width="204" height="32" rx="5" fill="#252a32"/>
+  <text class="ui text" x="1384" y="265">道士 · Unit 34</text>
+
+  <text class="ui label" x="1274" y="312">战场属性</text>
+  <text class="ui small" x="1274" y="341">坐标</text>
+  <rect x="1370" y="321" width="92" height="32" rx="5" fill="#252a32"/>
+  <text class="ui text mono" x="1384" y="342">X 12</text>
+  <rect x="1472" y="321" width="102" height="32" rx="5" fill="#252a32"/>
+  <text class="ui text mono" x="1486" y="342">Y 04</text>
+  <text class="ui small" x="1274" y="381">等级</text>
+  <rect x="1370" y="361" width="204" height="32" rx="5" fill="#252a32"/>
+  <text class="ui text" x="1384" y="382">6（跟随关卡等级）</text>
+  <text class="ui small" x="1274" y="421">装备</text>
+  <rect x="1370" y="401" width="204" height="32" rx="5" fill="#252a32"/>
+  <text class="ui text" x="1384" y="422">默认 · 点击覆盖</text>
+
+  <text class="ui label" x="1274" y="472">AI 行动</text>
+  <text class="ui small" x="1274" y="501">策略</text>
+  <rect x="1370" y="481" width="204" height="32" rx="5" fill="#302c23" stroke="#6d5934"/>
+  <text class="ui text" x="1384" y="502">1 · 主动出击</text>
+  <text class="ui small" x="1274" y="541">评分预览</text>
+  <rect x="1370" y="521" width="204" height="32" rx="5" fill="#252a32"/>
+  <text class="ui text" x="1384" y="542">目标：曹操 · 总分 82</text>
+  <rect x="1274" y="568" width="300" height="95" rx="6" fill="#16191e"/>
+  <text class="ui small mono" x="1290" y="592">伤害达到 10%       +16</text>
+  <text class="ui small mono" x="1290" y="614">有名人物             +4</text>
+  <text class="ui small mono" x="1290" y="636">恢复地形            +50</text>
+  <text class="ui small mono" x="1492" y="636">…</text>
+
+  <line class="divider" x1="1250" y1="694" x2="1600" y2="694"/>
+  <text class="ui label" x="1274" y="724">引用此人物</text>
+  <text class="ui small" x="1274" y="754">5 条事件 · 1 条装备覆盖 · 2 段对话</text>
+  <rect x="1274" y="772" width="300" height="34" rx="5" fill="#252a32"/>
+  <text class="ui text" x="1288" y="794">定位到撤退事件  →</text>
+
+  <!-- bottom timeline -->
+  <rect x="312" y="720" width="938" height="280" fill="#171a20"/>
+  <line class="divider" x1="312" y1="720" x2="1250" y2="720"/>
+  <text class="ui title" x="336" y="752">事件表</text>
+  <text class="ui small" x="416" y="752">条件与动作按旧引擎执行顺序排列</text>
+  <rect x="1052" y="734" width="78" height="30" rx="5" fill="#242932"/>
+  <text class="ui small" x="1091" y="754" text-anchor="middle">流程图</text>
+  <rect x="1138" y="734" width="88" height="30" rx="5" fill="#343943"/>
+  <text class="ui small" x="1182" y="754" text-anchor="middle" fill="#eef1f5">事件表</text>
+  <line class="divider" x1="312" y1="776" x2="1250" y2="776"/>
+  <g class="ui small">
+    <text x="338" y="806" fill="#737d8a">序号</text>
+    <text x="396" y="806" fill="#737d8a">触发条件</text>
+    <text x="658" y="806" fill="#737d8a">执行动作</text>
+    <text x="1138" y="806" fill="#737d8a">状态</text>
+
+    <text class="mono" x="340" y="838" fill="#8993a0">014</text>
+    <text x="396" y="838" fill="#ccd2da">回合 = 2  且  张宝存活</text>
+    <text x="658" y="838" fill="#ccd2da">设置 AI → 主动出击；显示对话</text>
+    <text x="1138" y="838" fill="#7cc69a">有效</text>
+
+    <rect x="326" y="852" width="908" height="42" rx="5" fill="#292d35"/>
+    <rect x="326" y="852" width="3" height="42" rx="2" fill="#d6a84b"/>
+    <text class="mono" x="340" y="878" fill="#adb5c0">015</text>
+    <text x="396" y="878" fill="#f0f2f5">曹操进入区域 [8,10 → 11,13]</text>
+    <text x="658" y="878" fill="#f0f2f5">敌军 17 前往坐标 (9,11)</text>
+    <text x="1138" y="878" fill="#e2b763">已修改</text>
+
+    <text class="mono" x="340" y="925" fill="#8993a0">016</text>
+    <text x="396" y="925" fill="#ccd2da">张宝兵力 = 0</text>
+    <text x="658" y="925" fill="#ccd2da">撤退台词；设置变量 42 = 真</text>
+    <text x="1138" y="925" fill="#7cc69a">有效</text>
+  </g>
+  <rect x="326" y="955" width="900" height="32" rx="5" fill="#20242b"/>
+  <text class="ui small" x="344" y="976">＋ 添加事件段</text>
+</svg>
