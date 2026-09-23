@@ -5,7 +5,7 @@ repo_url: https://github.com/kamille-bidan123/ccz_wiki
 repo_name: kamille-bidan123/ccz_wiki
 
 theme:
-  name: material
+  name: materialx
   language: zh
   features:
     - navigation.tabs
@@ -48,10 +48,7 @@ markdown_extensions:
       alternate_style: true
 
 plugins:
-  - search:
-      lang:
-        - zh
-        - en
+  - search
 
 nav:
   - 首页: index.md
