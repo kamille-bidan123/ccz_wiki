@@ -1,0 +1,1022 @@
+[
+  {
+    "evidence_id": "ev_5f1cc24e8660e85b8256bdcb7046a5b60f405e899def2772fb2194df7cb6e08d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x00433404"
+    },
+    "raw_result": {
+      "value": "\r\nbool FUN_00433404(void)\r\n\r\n{\r\n  uint uVar1;\r\n  bool bVar2;\r\n  \r\n  FUN_0045965d((ushort *)&DAT_0048c9c4,0x9d);\r\n  FUN_00457428(0,0x9d,0xff,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048c9dc,0);\r\n  if (DAT_004b2c10 == '\\0') {\r\n    FUN_0045965d((ushort *)&DAT_0048ca10,0x9d);\r\n    FUN_0045965d((ushort *)&DAT_0048ca48,0x9d);\r\n  }\r\n  else {\r\n    FUN_0045965d((ushort *)&DAT_0048ca98,0x9d);\r\n    FUN_0045965d((ushort *)&DAT_0048cac4,0x9d);\r\n    FUN_0045965d((ushort *)&DAT_0048cafc,0x9d);\r\n  }\r\n  uVar1 = FUN_0042de12((ushort *)&DAT_0048cb50,0);\r\n  bVar2 = (uVar1 & 0xff) != 0;\r\n  if (bVar2) {\r\n    FUN_0045965d((ushort *)&DAT_0048cb94,0);\r\n    FUN_0045965d((ushort *)&DAT_0048cbe0,0x9d);\r\n  }\r\n  else {\r\n    FUN_0045965d((ushort *)&DAT_0048cb70,0);\r\n  }\r\n  return !bVar2;\r\n}\r\n\r\n",
+      "limitations": []
+    },
+    "normalized_result": "\r\nbool FUN_00433404(void)\r\n\r\n{\r\n  uint uVar1;\r\n  bool bVar2;\r\n  \r\n  FUN_0045965d((ushort *)&DAT_0048c9c4,0x9d);\r\n  FUN_00457428(0,0x9d,0xff,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048c9dc,0);\r\n  if (DAT_004b2c10 == '\\0') {\r\n    FUN_0045965d((ushort *)&DAT_0048ca10,0x9d);\r\n    FUN_0045965d((ushort *)&DAT_0048ca48,0x9d);\r\n  }\r\n  else {\r\n    FUN_0045965d((ushort *)&DAT_0048ca98,0x9d);\r\n    FUN_0045965d((ushort *)&DAT_0048cac4,0x9d);\r\n    FUN_0045965d((ushort *)&DAT_0048cafc,0x9d);\r\n  }\r\n  uVar1 = FUN_0042de12((ushort *)&DAT_0048cb50,0);\r\n  bVar2 = (uVar1 & 0xff) != 0;\r\n  if (bVar2) {\r\n    FUN_0045965d((ushort *)&DAT_0048cb94,0);\r\n    FUN_0045965d((ushort *)&DAT_0048cbe0,0x9d);\r\n  }\r\n  else {\r\n    FUN_0045965d((ushort *)&DAT_0048cb70,0);\r\n  }\r\n  return !bVar2;\r\n}\r\n\r\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_b9a3213392fca56d999c5ce64196f06d66398707a01e63fafd9464bea7662f88",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x004333d2"
+    },
+    "raw_result": {
+      "value": "\r\nbool FUN_004333d2(void)\r\n\r\n{\r\n  uint uVar1;\r\n  \r\n  FUN_0045965d((ushort *)&DAT_0048c994,0x9d);\r\n  uVar1 = FUN_0042de12((ushort *)&DAT_0048c9ac,0);\r\n  return (bool)('\\x01' - ((uVar1 & 0xff) != 0));\r\n}\r\n\r\n",
+      "limitations": []
+    },
+    "normalized_result": "\r\nbool FUN_004333d2(void)\r\n\r\n{\r\n  uint uVar1;\r\n  \r\n  FUN_0045965d((ushort *)&DAT_0048c994,0x9d);\r\n  uVar1 = FUN_0042de12((ushort *)&DAT_0048c9ac,0);\r\n  return (bool)('\\x01' - ((uVar1 & 0xff) != 0));\r\n}\r\n\r\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_115752e029b4e9f8f06d5ae9450598d14d6b302d07a474801fa76d1db3eccb96",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x0043353c"
+    },
+    "raw_result": {
+      "value": "\r\nvoid FUN_0043353c(void)\r\n\r\n{\r\n  undefined4 uVar1;\r\n  undefined2 extraout_var;\r\n  undefined2 extraout_var_00;\r\n  undefined2 extraout_var_01;\r\n  undefined1 local_c [4];\r\n  uint local_8;\r\n  \r\n  FUN_0045f710(local_c);\r\n  FUN_0045965d((ushort *)&DAT_0048cc98,0x9d);\r\n  FUN_0045965d((ushort *)&DAT_0048ccb4,0x9d);\r\n  DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(char)DAT_004b2c18 + '\\x01');\r\n  FUN_00433726(CONCAT22(extraout_var_00,DAT_004b2c18));\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048ccc8,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cd08,0x9d);\r\n  uVar1 = FUN_0045965d((ushort *)&DAT_0048cd40,0x9d);\r\n  for (local_8 = 0; local_8 < 6; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22((short)((uint)uVar1 >> 0x10),DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_ + '\\x01',(char)DAT_004b2c18);\r\n    FUN_00433726(CONCAT22(extraout_var_01,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    uVar1 = FUN_0042c4e0();\r\n  }\r\n  FUN_0044049e(DAT_004b2c0c);\r\n  FUN_0045965d((ushort *)&DAT_0048cd58,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cd88,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cdb8,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cdec,0x9d);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_0043378d(CONCAT22(extraout_var,DAT_004b2c18));\r\n  FUN_0045965d((ushort *)&DAT_0048ce24,0x9d);\r\n  return;\r\n}\r\n\r\n",
+      "limitations": []
+    },
+    "normalized_result": "\r\nvoid FUN_0043353c(void)\r\n\r\n{\r\n  undefined4 uVar1;\r\n  undefined2 extraout_var;\r\n  undefined2 extraout_var_00;\r\n  undefined2 extraout_var_01;\r\n  undefined1 local_c [4];\r\n  uint local_8;\r\n  \r\n  FUN_0045f710(local_c);\r\n  FUN_0045965d((ushort *)&DAT_0048cc98,0x9d);\r\n  FUN_0045965d((ushort *)&DAT_0048ccb4,0x9d);\r\n  DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(char)DAT_004b2c18 + '\\x01');\r\n  FUN_00433726(CONCAT22(extraout_var_00,DAT_004b2c18));\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048ccc8,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cd08,0x9d);\r\n  uVar1 = FUN_0045965d((ushort *)&DAT_0048cd40,0x9d);\r\n  for (local_8 = 0; local_8 < 6; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22((short)((uint)uVar1 >> 0x10),DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_ + '\\x01',(char)DAT_004b2c18);\r\n    FUN_00433726(CONCAT22(extraout_var_01,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    uVar1 = FUN_0042c4e0();\r\n  }\r\n  FUN_0044049e(DAT_004b2c0c);\r\n  FUN_0045965d((ushort *)&DAT_0048cd58,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cd88,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cdb8,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cdec,0x9d);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_0043378d(CONCAT22(extraout_var,DAT_004b2c18));\r\n  FUN_0045965d((ushort *)&DAT_0048ce24,0x9d);\r\n  return;\r\n}\r\n\r\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_e6fe5031a6ef8dfc9d2887ffb0bb08cff2158f75e4bb2b61eb04d07c4b8a33aa",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x004337f4"
+    },
+    "raw_result": {
+      "value": "\r\nvoid FUN_004337f4(void)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined1 uVar2;\r\n  undefined2 extraout_var_00;\r\n  undefined1 *puVar3;\r\n  undefined2 extraout_var_01;\r\n  undefined3 extraout_var;\r\n  byte *pbVar5;\r\n  undefined2 *puVar6;\r\n  undefined2 extraout_var_02;\r\n  undefined2 extraout_var_03;\r\n  undefined4 extraout_EDX;\r\n  undefined2 extraout_var_04;\r\n  uint uVar7;\r\n  undefined1 uVar8;\r\n  int iVar9;\r\n  undefined2 local_8;\r\n  uint uVar4;\r\n  \r\n  FUN_0045f710(&local_8);\r\n  FUN_0045965d((ushort *)&DAT_0048ce3c,0x9d);\r\n  FUN_00433726(CONCAT22(extraout_var_00,DAT_004b2c18));\r\n  puVar3 = (undefined1 *)FUN_00403360(DAT_004b2c14);\r\n  FUN_004065a0(&local_8,puVar3);\r\n  FUN_00459487(0x9d,(char)local_8 + 1,local_8._1_1_,0xffff);\r\n  FUN_00457428(0x9d,0xffff,3,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048ce58,0x9d);\r\n  FUN_00403340(&DAT_004b1b18,4);\r\n  FUN_0042c4e0();\r\n  FUN_0043378d(CONCAT22(extraout_var_01,DAT_004b2c18));\r\n  DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(char)DAT_004b2c18 + -1);\r\n  FUN_00433726(CONCAT22(extraout_var_03,DAT_004b2c18));\r\n  FUN_0044049e(DAT_004b2c04);\r\n  FUN_0045965d((ushort *)&DAT_0048ce7c,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cea8,0x9d);\r\n  FUN_0045965d((ushort *)&DAT_0048cedc,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cf24,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cf58,0x9d);\r\n  FUN_0045778f(0x9d,'\\x05',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cf78,0x9d);\r\n  FUN_00457428(0x9d,0xffff,3,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cfc0,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  iVar9 = 1;\r\n  uVar8 = 0xff;\r\n  uVar2 = 0xff;\r\n  uVar7 = 0;\r\n  bVar1 = FUN_0043f74f(DAT_004b2c04);\r\n  uVar4 = CONCAT31(extraout_var,bVar1);\r\n  pbVar5 = (byte *)FUN_00403360((int)DAT_004b2c04);\r\n  FUN_00438308(DAT_004b2c04,pbVar5,uVar4,uVar7,uVar2,uVar8,iVar9);\r\n  FUN_004350f0(&DAT_004b4250,1);\r\n  iVar9 = 0;\r\n  uVar2 = FUN_0043f8be(DAT_004b2c04,extraout_EDX);\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c04);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22((short)((uint)puVar6 >> 0x10),*puVar6),uVar2,iVar9);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cff0,0x9d);\r\n  FUN_0045778f(0x9d,'\\x06',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d030,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d050,0x9d);\r\n  FUN_0045965d((ushort *)&DAT_0048d09c,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,2,1);\r\n  FUN_004350f0(&DAT_004b4250,0);\r\n  iVar9 = 0;\r\n  uVar2 = 0xff;\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c04);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22(extraout_var_02,*puVar6),uVar2,iVar9);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d0d0,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d10c,0x9d);\r\n  FUN_0043378d(CONCAT22(extraout_var_04,DAT_004b2c18));\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d158,0x9d);\r\n  return;\r\n}\r\n\r\n",
+      "limitations": []
+    },
+    "normalized_result": "\r\nvoid FUN_004337f4(void)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined1 uVar2;\r\n  undefined2 extraout_var_00;\r\n  undefined1 *puVar3;\r\n  undefined2 extraout_var_01;\r\n  undefined3 extraout_var;\r\n  byte *pbVar5;\r\n  undefined2 *puVar6;\r\n  undefined2 extraout_var_02;\r\n  undefined2 extraout_var_03;\r\n  undefined4 extraout_EDX;\r\n  undefined2 extraout_var_04;\r\n  uint uVar7;\r\n  undefined1 uVar8;\r\n  int iVar9;\r\n  undefined2 local_8;\r\n  uint uVar4;\r\n  \r\n  FUN_0045f710(&local_8);\r\n  FUN_0045965d((ushort *)&DAT_0048ce3c,0x9d);\r\n  FUN_00433726(CONCAT22(extraout_var_00,DAT_004b2c18));\r\n  puVar3 = (undefined1 *)FUN_00403360(DAT_004b2c14);\r\n  FUN_004065a0(&local_8,puVar3);\r\n  FUN_00459487(0x9d,(char)local_8 + 1,local_8._1_1_,0xffff);\r\n  FUN_00457428(0x9d,0xffff,3,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048ce58,0x9d);\r\n  FUN_00403340(&DAT_004b1b18,4);\r\n  FUN_0042c4e0();\r\n  FUN_0043378d(CONCAT22(extraout_var_01,DAT_004b2c18));\r\n  DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(char)DAT_004b2c18 + -1);\r\n  FUN_00433726(CONCAT22(extraout_var_03,DAT_004b2c18));\r\n  FUN_0044049e(DAT_004b2c04);\r\n  FUN_0045965d((ushort *)&DAT_0048ce7c,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cea8,0x9d);\r\n  FUN_0045965d((ushort *)&DAT_0048cedc,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cf24,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cf58,0x9d);\r\n  FUN_0045778f(0x9d,'\\x05',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cf78,0x9d);\r\n  FUN_00457428(0x9d,0xffff,3,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cfc0,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  iVar9 = 1;\r\n  uVar8 = 0xff;\r\n  uVar2 = 0xff;\r\n  uVar7 = 0;\r\n  bVar1 = FUN_0043f74f(DAT_004b2c04);\r\n  uVar4 = CONCAT31(extraout_var,bVar1);\r\n  pbVar5 = (byte *)FUN_00403360((int)DAT_004b2c04);\r\n  FUN_00438308(DAT_004b2c04,pbVar5,uVar4,uVar7,uVar2,uVar8,iVar9);\r\n  FUN_004350f0(&DAT_004b4250,1);\r\n  iVar9 = 0;\r\n  uVar2 = FUN_0043f8be(DAT_004b2c04,extraout_EDX);\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c04);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22((short)((uint)puVar6 >> 0x10),*puVar6),uVar2,iVar9);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cff0,0x9d);\r\n  FUN_0045778f(0x9d,'\\x06',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d030,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d050,0x9d);\r\n  FUN_0045965d((ushort *)&DAT_0048d09c,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,2,1);\r\n  FUN_004350f0(&DAT_004b4250,0);\r\n  iVar9 = 0;\r\n  uVar2 = 0xff;\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c04);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22(extraout_var_02,*puVar6),uVar2,iVar9);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d0d0,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d10c,0x9d);\r\n  FUN_0043378d(CONCAT22(extraout_var_04,DAT_004b2c18));\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d158,0x9d);\r\n  return;\r\n}\r\n\r\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_2d2f9fd16bf56fcc32115d011c765ae9cab3da34dd3a2a99e9f07aadcb325893",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x00433bc8"
+    },
+    "raw_result": {
+      "value": "\r\nvoid FUN_00433bc8(void)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined1 uVar2;\r\n  undefined1 *puVar3;\r\n  undefined2 extraout_var_01;\r\n  undefined3 extraout_var;\r\n  byte *pbVar5;\r\n  undefined2 *puVar6;\r\n  undefined2 extraout_var_02;\r\n  undefined3 extraout_var_00;\r\n  undefined2 extraout_var_03;\r\n  undefined2 extraout_var_04;\r\n  undefined2 extraout_var_05;\r\n  undefined2 extraout_var_06;\r\n  undefined2 extraout_var_07;\r\n  undefined4 extraout_EDX;\r\n  undefined4 extraout_EDX_00;\r\n  undefined4 uVar7;\r\n  undefined4 extraout_EDX_01;\r\n  undefined2 extraout_var_08;\r\n  undefined2 extraout_var_09;\r\n  undefined4 extraout_EDX_02;\r\n  undefined2 extraout_var_10;\r\n  undefined2 extraout_var_11;\r\n  uint uVar8;\r\n  undefined1 uVar9;\r\n  int iVar10;\r\n  undefined1 local_c;\r\n  byte bStack_b;\r\n  uint local_8;\r\n  uint uVar4;\r\n  \r\n  FUN_0045f710(&local_c);\r\n  puVar3 = (undefined1 *)FUN_00403360(DAT_004b2c14);\r\n  FUN_004065a0(&local_c,puVar3);\r\n  FUN_00459487(0x9d,(char)_local_c - 1,bStack_b,0xffff);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d17c,0x9d);\r\n  FUN_00433726(CONCAT22(extraout_var_06,DAT_004b2c18));\r\n  FUN_00403340(&DAT_004b1b18,4);\r\n  FUN_0042c4e0();\r\n  FUN_0043378d(CONCAT22(extraout_var_01,DAT_004b2c18));\r\n  DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(byte)DAT_004b2c18 + '\\x01');\r\n  FUN_00433726(CONCAT22(extraout_var_07,DAT_004b2c18));\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d1cc,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  iVar10 = 1;\r\n  uVar9 = 0xff;\r\n  uVar2 = 0xff;\r\n  uVar8 = 0;\r\n  bVar1 = FUN_0043f74f(DAT_004b2c0c);\r\n  uVar4 = CONCAT31(extraout_var,bVar1);\r\n  pbVar5 = (byte *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_00438308(DAT_004b2c0c,pbVar5,uVar4,uVar8,uVar2,uVar9,iVar10);\r\n  FUN_00451c03(&DAT_004b4250,1);\r\n  iVar10 = 0;\r\n  uVar2 = FUN_0043f8be(DAT_004b2c0c,extraout_EDX);\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22((short)((uint)puVar6 >> 0x10),*puVar6),uVar2,iVar10);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0045965d((ushort *)&DAT_0048d1f8,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d210,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d258,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d298,0x9d);\r\n  uVar7 = extraout_EDX_00;\r\n  for (local_8 = 0; local_8 < 6; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22((short)((uint)uVar7 >> 0x10),DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_ + -1,(byte)DAT_004b2c18);\r\n    FUN_00433726(CONCAT22(extraout_var_04,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    FUN_0042c4e0();\r\n    uVar7 = extraout_EDX_01;\r\n  }\r\n  FUN_0045965d((ushort *)&DAT_0048d2c0,0x9d);\r\n  FUN_00451c03(&DAT_004b4250,0);\r\n  iVar10 = 0;\r\n  uVar2 = 0xff;\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22(extraout_var_08,*puVar6),uVar2,iVar10);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  puVar3 = (undefined1 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004065a0(&local_c,puVar3);\r\n  FUN_00459487(0,(byte)DAT_004b2c18,DAT_004b2c18._1_1_,0xffff);\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d2e4,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,1,1);\r\n  FUN_004350c0(DAT_004b2c0c,&local_c,0,0);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0044a88a(0x4b3d08);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d310,0x9d);\r\n  FUN_0043378d(CONCAT22(extraout_var_02,DAT_004b2c18));\r\n  FUN_004065a0(&DAT_004b2c18,&local_c);\r\n  FUN_0045965d((ushort *)&DAT_0048d34c,0x9d);\r\n  FUN_00433726(CONCAT22(extraout_var_09,DAT_004b2c18));\r\n  FUN_0045965d((ushort *)&DAT_0048d374,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  iVar10 = 1;\r\n  uVar9 = 0xff;\r\n  uVar2 = 0xff;\r\n  uVar8 = 0;\r\n  bVar1 = FUN_0043f74f(DAT_004b2c0c);\r\n  uVar4 = CONCAT31(extraout_var_00,bVar1);\r\n  pbVar5 = (byte *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_00438308(DAT_004b2c0c,pbVar5,uVar4,uVar8,uVar2,uVar9,iVar10);\r\n  FUN_00451c03(&DAT_004b4250,1);\r\n  iVar10 = 0;\r\n  uVar2 = FUN_0043f8be(DAT_004b2c0c,extraout_EDX_02);\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22((short)((uint)puVar6 >> 0x10),*puVar6),uVar2,iVar10);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0045965d((ushort *)&DAT_0048d39c,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d3d0,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  FUN_00451c03(&DAT_004b4250,0);\r\n  iVar10 = 0;\r\n  uVar2 = 0xff;\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22(extraout_var_05,*puVar6),uVar2,iVar10);\r\n  FUN_0043378d(CONCAT22(extraout_var_10,DAT_004b2c18));\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0045bba0(&DAT_004b5e98,(byte)DAT_004b2c18,DAT_004b2c18._1_1_);\r\n  FUN_00435110(&DAT_004b5e98,1);\r\n  FUN_00435130(&DAT_004b5e98,1);\r\n  FUN_0045e69a();\r\n  FUN_00433726(CONCAT22(extraout_var_11,DAT_004b2c18));\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d3f8,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d414,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d448,0x9d);\r\n  FUN_0043378d(CONCAT22(extraout_var_03,DAT_004b2c18));\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d48c,0x9d);\r\n  return;\r\n}\r\n\r\n",
+      "limitations": []
+    },
+    "normalized_result": "\r\nvoid FUN_00433bc8(void)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined1 uVar2;\r\n  undefined1 *puVar3;\r\n  undefined2 extraout_var_01;\r\n  undefined3 extraout_var;\r\n  byte *pbVar5;\r\n  undefined2 *puVar6;\r\n  undefined2 extraout_var_02;\r\n  undefined3 extraout_var_00;\r\n  undefined2 extraout_var_03;\r\n  undefined2 extraout_var_04;\r\n  undefined2 extraout_var_05;\r\n  undefined2 extraout_var_06;\r\n  undefined2 extraout_var_07;\r\n  undefined4 extraout_EDX;\r\n  undefined4 extraout_EDX_00;\r\n  undefined4 uVar7;\r\n  undefined4 extraout_EDX_01;\r\n  undefined2 extraout_var_08;\r\n  undefined2 extraout_var_09;\r\n  undefined4 extraout_EDX_02;\r\n  undefined2 extraout_var_10;\r\n  undefined2 extraout_var_11;\r\n  uint uVar8;\r\n  undefined1 uVar9;\r\n  int iVar10;\r\n  undefined1 local_c;\r\n  byte bStack_b;\r\n  uint local_8;\r\n  uint uVar4;\r\n  \r\n  FUN_0045f710(&local_c);\r\n  puVar3 = (undefined1 *)FUN_00403360(DAT_004b2c14);\r\n  FUN_004065a0(&local_c,puVar3);\r\n  FUN_00459487(0x9d,(char)_local_c - 1,bStack_b,0xffff);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d17c,0x9d);\r\n  FUN_00433726(CONCAT22(extraout_var_06,DAT_004b2c18));\r\n  FUN_00403340(&DAT_004b1b18,4);\r\n  FUN_0042c4e0();\r\n  FUN_0043378d(CONCAT22(extraout_var_01,DAT_004b2c18));\r\n  DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(byte)DAT_004b2c18 + '\\x01');\r\n  FUN_00433726(CONCAT22(extraout_var_07,DAT_004b2c18));\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d1cc,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  iVar10 = 1;\r\n  uVar9 = 0xff;\r\n  uVar2 = 0xff;\r\n  uVar8 = 0;\r\n  bVar1 = FUN_0043f74f(DAT_004b2c0c);\r\n  uVar4 = CONCAT31(extraout_var,bVar1);\r\n  pbVar5 = (byte *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_00438308(DAT_004b2c0c,pbVar5,uVar4,uVar8,uVar2,uVar9,iVar10);\r\n  FUN_00451c03(&DAT_004b4250,1);\r\n  iVar10 = 0;\r\n  uVar2 = FUN_0043f8be(DAT_004b2c0c,extraout_EDX);\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22((short)((uint)puVar6 >> 0x10),*puVar6),uVar2,iVar10);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0045965d((ushort *)&DAT_0048d1f8,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d210,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d258,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d298,0x9d);\r\n  uVar7 = extraout_EDX_00;\r\n  for (local_8 = 0; local_8 < 6; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22((short)((uint)uVar7 >> 0x10),DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_ + -1,(byte)DAT_004b2c18);\r\n    FUN_00433726(CONCAT22(extraout_var_04,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    FUN_0042c4e0();\r\n    uVar7 = extraout_EDX_01;\r\n  }\r\n  FUN_0045965d((ushort *)&DAT_0048d2c0,0x9d);\r\n  FUN_00451c03(&DAT_004b4250,0);\r\n  iVar10 = 0;\r\n  uVar2 = 0xff;\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22(extraout_var_08,*puVar6),uVar2,iVar10);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  puVar3 = (undefined1 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004065a0(&local_c,puVar3);\r\n  FUN_00459487(0,(byte)DAT_004b2c18,DAT_004b2c18._1_1_,0xffff);\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d2e4,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,1,1);\r\n  FUN_004350c0(DAT_004b2c0c,&local_c,0,0);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0044a88a(0x4b3d08);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d310,0x9d);\r\n  FUN_0043378d(CONCAT22(extraout_var_02,DAT_004b2c18));\r\n  FUN_004065a0(&DAT_004b2c18,&local_c);\r\n  FUN_0045965d((ushort *)&DAT_0048d34c,0x9d);\r\n  FUN_00433726(CONCAT22(extraout_var_09,DAT_004b2c18));\r\n  FUN_0045965d((ushort *)&DAT_0048d374,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  iVar10 = 1;\r\n  uVar9 = 0xff;\r\n  uVar2 = 0xff;\r\n  uVar8 = 0;\r\n  bVar1 = FUN_0043f74f(DAT_004b2c0c);\r\n  uVar4 = CONCAT31(extraout_var_00,bVar1);\r\n  pbVar5 = (byte *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_00438308(DAT_004b2c0c,pbVar5,uVar4,uVar8,uVar2,uVar9,iVar10);\r\n  FUN_00451c03(&DAT_004b4250,1);\r\n  iVar10 = 0;\r\n  uVar2 = FUN_0043f8be(DAT_004b2c0c,extraout_EDX_02);\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22((short)((uint)puVar6 >> 0x10),*puVar6),uVar2,iVar10);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0045965d((ushort *)&DAT_0048d39c,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d3d0,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  FUN_00451c03(&DAT_004b4250,0);\r\n  iVar10 = 0;\r\n  uVar2 = 0xff;\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22(extraout_var_05,*puVar6),uVar2,iVar10);\r\n  FUN_0043378d(CONCAT22(extraout_var_10,DAT_004b2c18));\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0045bba0(&DAT_004b5e98,(byte)DAT_004b2c18,DAT_004b2c18._1_1_);\r\n  FUN_00435110(&DAT_004b5e98,1);\r\n  FUN_00435130(&DAT_004b5e98,1);\r\n  FUN_0045e69a();\r\n  FUN_00433726(CONCAT22(extraout_var_11,DAT_004b2c18));\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d3f8,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d414,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d448,0x9d);\r\n  FUN_0043378d(CONCAT22(extraout_var_03,DAT_004b2c18));\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d48c,0x9d);\r\n  return;\r\n}\r\n\r\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_d77bb6734355585bbdafb3f2632584e885c53daed8ec2232ee70e50074d768bf",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x0043419f"
+    },
+    "raw_result": {
+      "value": "\r\nvoid FUN_0043419f(void)\r\n\r\n{\r\n  undefined4 uVar1;\r\n  undefined2 extraout_var;\r\n  undefined1 *puVar2;\r\n  undefined2 extraout_var_00;\r\n  undefined2 extraout_var_01;\r\n  undefined2 extraout_var_02;\r\n  undefined4 extraout_ECX;\r\n  undefined4 extraout_ECX_00;\r\n  undefined2 extraout_var_03;\r\n  undefined4 extraout_EDX;\r\n  undefined2 uVar4;\r\n  undefined4 extraout_EDX_00;\r\n  undefined2 extraout_var_04;\r\n  undefined4 extraout_EDX_01;\r\n  undefined4 extraout_EDX_02;\r\n  undefined4 uVar3;\r\n  undefined4 extraout_EDX_03;\r\n  undefined2 extraout_var_05;\r\n  undefined1 local_c;\r\n  byte bStack_b;\r\n  uint local_8;\r\n  \r\n  uVar1 = FUN_0045f710(&local_c);\r\n  FUN_00433726(CONCAT22((short)((uint)uVar1 >> 0x10),DAT_004b2c18));\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d4a8,0x9d);\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_00457428(0x9d,0xffff,3,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d4c0,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d4dc,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d524,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d554,0x9d);\r\n  FUN_0045965d((ushort *)&DAT_0048d584,0x9d);\r\n  uVar1 = extraout_EDX;\r\n  for (local_8 = 0; uVar4 = (undefined2)((uint)uVar1 >> 0x10), local_8 < 2; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22(uVar4,DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_ + -1,(char)DAT_004b2c18);\r\n    FUN_00433726(CONCAT22(extraout_var_01,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    FUN_0042c4e0();\r\n    uVar1 = extraout_EDX_00;\r\n  }\r\n  FUN_0043378d(CONCAT22(uVar4,DAT_004b2c18));\r\n  DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(char)DAT_004b2c18 + '\\x01');\r\n  FUN_00433726(CONCAT22(extraout_var_02,DAT_004b2c18));\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d5a0,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  FUN_0043378d(CONCAT22(extraout_var_04,DAT_004b2c18));\r\n  FUN_0045576d(&DAT_004b4250,(byte *)&DAT_004b2c18,0);\r\n  FUN_00433726(CONCAT22(extraout_var,DAT_004b2c18));\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d5d0,0x9d);\r\n  FUN_0045778f(0x9d,'\\x05',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d614,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d64c,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d67c,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d6a8,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d6dc,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d720,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,1,1);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  puVar2 = (undefined1 *)FUN_00403360(DAT_004b2c14);\r\n  FUN_004065a0(&local_c,puVar2);\r\n  FUN_00459487(0x9d,(char)_local_c + 1,bStack_b,0xffff);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d748,0x9d);\r\n  FUN_00457428(0x9d,0xffff,3,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d774,0x9d);\r\n  uVar1 = extraout_ECX;\r\n  uVar3 = extraout_EDX_01;\r\n  for (local_8 = 0; local_8 < 2; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22((short)((uint)uVar1 >> 0x10),DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(char)DAT_004b2c18 + -1);\r\n    FUN_00433726(CONCAT22(extraout_var_00,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    FUN_0042c4e0();\r\n    uVar1 = extraout_ECX_00;\r\n    uVar3 = extraout_EDX_02;\r\n  }\r\n  for (local_8 = 0; local_8 < 2; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22((short)((uint)uVar3 >> 0x10),DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_ + '\\x01',(char)DAT_004b2c18);\r\n    FUN_00433726(CONCAT22(extraout_var_03,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    FUN_0042c4e0();\r\n    uVar3 = extraout_EDX_03;\r\n  }\r\n  FUN_0044049e(DAT_004b2c04);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d794,0x9d);\r\n  FUN_0045778f(0x9d,'\\x05',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d7c8,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d7fc,0x9d);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_0043378d(CONCAT22(extraout_var_05,DAT_004b2c18));\r\n  FUN_0045965d((ushort *)&DAT_0048d83c,0x9d);\r\n  FUN_00457428(0x9d,0xffff,0,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d858,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d888,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d8b4,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d8e4,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d91c,0x9d);\r\n  return;\r\n}\r\n\r\n",
+      "limitations": []
+    },
+    "normalized_result": "\r\nvoid FUN_0043419f(void)\r\n\r\n{\r\n  undefined4 uVar1;\r\n  undefined2 extraout_var;\r\n  undefined1 *puVar2;\r\n  undefined2 extraout_var_00;\r\n  undefined2 extraout_var_01;\r\n  undefined2 extraout_var_02;\r\n  undefined4 extraout_ECX;\r\n  undefined4 extraout_ECX_00;\r\n  undefined2 extraout_var_03;\r\n  undefined4 extraout_EDX;\r\n  undefined2 uVar4;\r\n  undefined4 extraout_EDX_00;\r\n  undefined2 extraout_var_04;\r\n  undefined4 extraout_EDX_01;\r\n  undefined4 extraout_EDX_02;\r\n  undefined4 uVar3;\r\n  undefined4 extraout_EDX_03;\r\n  undefined2 extraout_var_05;\r\n  undefined1 local_c;\r\n  byte bStack_b;\r\n  uint local_8;\r\n  \r\n  uVar1 = FUN_0045f710(&local_c);\r\n  FUN_00433726(CONCAT22((short)((uint)uVar1 >> 0x10),DAT_004b2c18));\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d4a8,0x9d);\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_00457428(0x9d,0xffff,3,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d4c0,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d4dc,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d524,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d554,0x9d);\r\n  FUN_0045965d((ushort *)&DAT_0048d584,0x9d);\r\n  uVar1 = extraout_EDX;\r\n  for (local_8 = 0; uVar4 = (undefined2)((uint)uVar1 >> 0x10), local_8 < 2; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22(uVar4,DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_ + -1,(char)DAT_004b2c18);\r\n    FUN_00433726(CONCAT22(extraout_var_01,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    FUN_0042c4e0();\r\n    uVar1 = extraout_EDX_00;\r\n  }\r\n  FUN_0043378d(CONCAT22(uVar4,DAT_004b2c18));\r\n  DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(char)DAT_004b2c18 + '\\x01');\r\n  FUN_00433726(CONCAT22(extraout_var_02,DAT_004b2c18));\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d5a0,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  FUN_0043378d(CONCAT22(extraout_var_04,DAT_004b2c18));\r\n  FUN_0045576d(&DAT_004b4250,(byte *)&DAT_004b2c18,0);\r\n  FUN_00433726(CONCAT22(extraout_var,DAT_004b2c18));\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d5d0,0x9d);\r\n  FUN_0045778f(0x9d,'\\x05',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d614,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d64c,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d67c,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d6a8,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d6dc,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d720,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,1,1);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  puVar2 = (undefined1 *)FUN_00403360(DAT_004b2c14);\r\n  FUN_004065a0(&local_c,puVar2);\r\n  FUN_00459487(0x9d,(char)_local_c + 1,bStack_b,0xffff);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d748,0x9d);\r\n  FUN_00457428(0x9d,0xffff,3,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d774,0x9d);\r\n  uVar1 = extraout_ECX;\r\n  uVar3 = extraout_EDX_01;\r\n  for (local_8 = 0; local_8 < 2; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22((short)((uint)uVar1 >> 0x10),DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(char)DAT_004b2c18 + -1);\r\n    FUN_00433726(CONCAT22(extraout_var_00,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    FUN_0042c4e0();\r\n    uVar1 = extraout_ECX_00;\r\n    uVar3 = extraout_EDX_02;\r\n  }\r\n  for (local_8 = 0; local_8 < 2; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22((short)((uint)uVar3 >> 0x10),DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_ + '\\x01',(char)DAT_004b2c18);\r\n    FUN_00433726(CONCAT22(extraout_var_03,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    FUN_0042c4e0();\r\n    uVar3 = extraout_EDX_03;\r\n  }\r\n  FUN_0044049e(DAT_004b2c04);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d794,0x9d);\r\n  FUN_0045778f(0x9d,'\\x05',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d7c8,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d7fc,0x9d);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_0043378d(CONCAT22(extraout_var_05,DAT_004b2c18));\r\n  FUN_0045965d((ushort *)&DAT_0048d83c,0x9d);\r\n  FUN_00457428(0x9d,0xffff,0,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d858,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d888,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d8b4,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d8e4,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d91c,0x9d);\r\n  return;\r\n}\r\n\r\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_01adc09d4ba34e57a0c84d4ba3b53014949e1fce55eb6ce0cdfccc5e32026055",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x004347ff"
+    },
+    "raw_result": {
+      "value": "\r\nvoid FUN_004347ff(void)\r\n\r\n{\r\n  uint uVar1;\r\n  undefined4 extraout_EDX;\r\n  undefined4 extraout_EDX_00;\r\n  undefined4 extraout_EDX_01;\r\n  undefined4 extraout_EDX_02;\r\n  undefined4 extraout_EDX_03;\r\n  undefined4 extraout_EDX_04;\r\n  undefined8 uVar2;\r\n  \r\n  if (DAT_004b2c10 == 1) {\r\n    FUN_0045965d((ushort *)&DAT_0048d964,0x9d);\r\n    FUN_0045778f(0x9d,'\\x01',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048d990,0x9d);\r\n    FUN_0045778f(0x9d,'\\0',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048d9b8,0x9d);\r\n    uVar1 = FUN_0042de12((ushort *)&DAT_0048d9e0,0);\r\n    if ((uVar1 & 0xff) == 0) {\r\n      FUN_0045965d((ushort *)&DAT_0048da00,0);\r\n      FUN_0045965d((ushort *)&DAT_0048da1c,0x9d);\r\n      FUN_0045778f(0x9d,'\\x05',1,1);\r\n      FUN_0047467a(&DAT_004b69b0,0x27,1);\r\n      FUN_00403340(&DAT_004b1b18,10);\r\n      FUN_0042c4e0();\r\n      FUN_0045778f(0x9d,'\\0',1,1);\r\n      FUN_004073b8(&DAT_004a1b68,1,1);\r\n      uVar2 = FUN_0040721b(&DAT_004a1b68,extraout_EDX);\r\n      FUN_0043f6cd(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      uVar2 = FUN_0040724a(&DAT_004a1b68,extraout_EDX_00);\r\n      FUN_0043f70e(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      FUN_0045778f(0,'\\0',1,1);\r\n    }\r\n    else {\r\n      FUN_0045965d((ushort *)&DAT_0048da34,0);\r\n      FUN_0045965d((ushort *)&DAT_0048da60,0x9d);\r\n      FUN_0047467a(&DAT_004b69b0,10,1);\r\n      FUN_0040dbed(&DAT_004b0770,2000);\r\n      FUN_0042f699(2);\r\n    }\r\n  }\r\n  else if (DAT_004b2c10 == 2) {\r\n    FUN_0045965d((ushort *)&DAT_0048da9c,0x9d);\r\n    FUN_0045778f(0x9d,'\\x01',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048dad4,0x9d);\r\n    FUN_0045778f(0x9d,'\\0',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048dafc,0x9d);\r\n    uVar1 = FUN_0042de12((ushort *)&DAT_0048db24,0);\r\n    if ((uVar1 & 0xff) == 0) {\r\n      FUN_0045965d((ushort *)&DAT_0048db44,0);\r\n      FUN_0045965d((ushort *)&DAT_0048db60,0x9d);\r\n      FUN_0045778f(0x9d,'\\x05',1,1);\r\n      FUN_0047467a(&DAT_004b69b0,0x27,1);\r\n      FUN_00403340(&DAT_004b1b18,10);\r\n      FUN_0042c4e0();\r\n      FUN_0045778f(0x9d,'\\0',1,1);\r\n      FUN_004073b8(&DAT_004a1b68,2,1);\r\n      uVar2 = FUN_0040721b(&DAT_004a1b68,extraout_EDX_01);\r\n      FUN_0043f6cd(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      uVar2 = FUN_0040724a(&DAT_004a1b68,extraout_EDX_02);\r\n      FUN_0043f70e(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      FUN_0045778f(0,'\\0',1,1);\r\n    }\r\n    else {\r\n      FUN_0045965d((ushort *)&DAT_0048db78,0);\r\n      FUN_0045965d((ushort *)&DAT_0048dba4,0x9d);\r\n      FUN_0047467a(&DAT_004b69b0,10,1);\r\n      FUN_0040dbed(&DAT_004b0770,4000);\r\n      FUN_0042f699(2);\r\n    }\r\n  }\r\n  else if (2 < DAT_004b2c10) {\r\n    FUN_0045965d((ushort *)&DAT_0048dbe0,0x9d);\r\n    FUN_0045778f(0x9d,'\\x01',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048dc1c,0x9d);\r\n    FUN_0045778f(0x9d,'\\0',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048dc40,0x9d);\r\n    uVar1 = FUN_0042de12((ushort *)&DAT_0048dc74,0);\r\n    if ((byte)uVar1 < 2) {\r\n      FUN_0045965d((ushort *)&DAT_0048dca4,0);\r\n      FUN_0045965d((ushort *)&DAT_0048dcc0,0x9d);\r\n      FUN_0045778f(0x9d,'\\x05',1,1);\r\n      FUN_0047467a(&DAT_004b69b0,0x27,1);\r\n      FUN_00403340(&DAT_004b1b18,10);\r\n      FUN_0042c4e0();\r\n      FUN_0045778f(0x9d,'\\0',1,1);\r\n      FUN_004073b8(&DAT_004a1b68,(-((uVar1 & 0xff) != 0) & 0xfdU) + 6,1);\r\n      uVar2 = FUN_0040721b(&DAT_004a1b68,extraout_EDX_03);\r\n      FUN_0043f6cd(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      uVar2 = FUN_0040724a(&DAT_004a1b68,extraout_EDX_04);\r\n      FUN_0043f70e(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      FUN_0045778f(0,'\\0',1,1);\r\n    }\r\n    else if ((byte)uVar1 == 2) {\r\n      FUN_0045965d((ushort *)&DAT_0048dcd8,0);\r\n      FUN_0045965d((ushort *)&DAT_0048dd04,0x9d);\r\n      FUN_0047467a(&DAT_004b69b0,10,1);\r\n      FUN_0040dbed(&DAT_004b0770,10000);\r\n      FUN_0042f699(2);\r\n    }\r\n  }\r\n  FUN_0045965d((ushort *)&DAT_0048dd40,0x9d);\r\n  return;\r\n}\r\n\r\n",
+      "limitations": []
+    },
+    "normalized_result": "\r\nvoid FUN_004347ff(void)\r\n\r\n{\r\n  uint uVar1;\r\n  undefined4 extraout_EDX;\r\n  undefined4 extraout_EDX_00;\r\n  undefined4 extraout_EDX_01;\r\n  undefined4 extraout_EDX_02;\r\n  undefined4 extraout_EDX_03;\r\n  undefined4 extraout_EDX_04;\r\n  undefined8 uVar2;\r\n  \r\n  if (DAT_004b2c10 == 1) {\r\n    FUN_0045965d((ushort *)&DAT_0048d964,0x9d);\r\n    FUN_0045778f(0x9d,'\\x01',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048d990,0x9d);\r\n    FUN_0045778f(0x9d,'\\0',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048d9b8,0x9d);\r\n    uVar1 = FUN_0042de12((ushort *)&DAT_0048d9e0,0);\r\n    if ((uVar1 & 0xff) == 0) {\r\n      FUN_0045965d((ushort *)&DAT_0048da00,0);\r\n      FUN_0045965d((ushort *)&DAT_0048da1c,0x9d);\r\n      FUN_0045778f(0x9d,'\\x05',1,1);\r\n      FUN_0047467a(&DAT_004b69b0,0x27,1);\r\n      FUN_00403340(&DAT_004b1b18,10);\r\n      FUN_0042c4e0();\r\n      FUN_0045778f(0x9d,'\\0',1,1);\r\n      FUN_004073b8(&DAT_004a1b68,1,1);\r\n      uVar2 = FUN_0040721b(&DAT_004a1b68,extraout_EDX);\r\n      FUN_0043f6cd(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      uVar2 = FUN_0040724a(&DAT_004a1b68,extraout_EDX_00);\r\n      FUN_0043f70e(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      FUN_0045778f(0,'\\0',1,1);\r\n    }\r\n    else {\r\n      FUN_0045965d((ushort *)&DAT_0048da34,0);\r\n      FUN_0045965d((ushort *)&DAT_0048da60,0x9d);\r\n      FUN_0047467a(&DAT_004b69b0,10,1);\r\n      FUN_0040dbed(&DAT_004b0770,2000);\r\n      FUN_0042f699(2);\r\n    }\r\n  }\r\n  else if (DAT_004b2c10 == 2) {\r\n    FUN_0045965d((ushort *)&DAT_0048da9c,0x9d);\r\n    FUN_0045778f(0x9d,'\\x01',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048dad4,0x9d);\r\n    FUN_0045778f(0x9d,'\\0',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048dafc,0x9d);\r\n    uVar1 = FUN_0042de12((ushort *)&DAT_0048db24,0);\r\n    if ((uVar1 & 0xff) == 0) {\r\n      FUN_0045965d((ushort *)&DAT_0048db44,0);\r\n      FUN_0045965d((ushort *)&DAT_0048db60,0x9d);\r\n      FUN_0045778f(0x9d,'\\x05',1,1);\r\n      FUN_0047467a(&DAT_004b69b0,0x27,1);\r\n      FUN_00403340(&DAT_004b1b18,10);\r\n      FUN_0042c4e0();\r\n      FUN_0045778f(0x9d,'\\0',1,1);\r\n      FUN_004073b8(&DAT_004a1b68,2,1);\r\n      uVar2 = FUN_0040721b(&DAT_004a1b68,extraout_EDX_01);\r\n      FUN_0043f6cd(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      uVar2 = FUN_0040724a(&DAT_004a1b68,extraout_EDX_02);\r\n      FUN_0043f70e(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      FUN_0045778f(0,'\\0',1,1);\r\n    }\r\n    else {\r\n      FUN_0045965d((ushort *)&DAT_0048db78,0);\r\n      FUN_0045965d((ushort *)&DAT_0048dba4,0x9d);\r\n      FUN_0047467a(&DAT_004b69b0,10,1);\r\n      FUN_0040dbed(&DAT_004b0770,4000);\r\n      FUN_0042f699(2);\r\n    }\r\n  }\r\n  else if (2 < DAT_004b2c10) {\r\n    FUN_0045965d((ushort *)&DAT_0048dbe0,0x9d);\r\n    FUN_0045778f(0x9d,'\\x01',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048dc1c,0x9d);\r\n    FUN_0045778f(0x9d,'\\0',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048dc40,0x9d);\r\n    uVar1 = FUN_0042de12((ushort *)&DAT_0048dc74,0);\r\n    if ((byte)uVar1 < 2) {\r\n      FUN_0045965d((ushort *)&DAT_0048dca4,0);\r\n      FUN_0045965d((ushort *)&DAT_0048dcc0,0x9d);\r\n      FUN_0045778f(0x9d,'\\x05',1,1);\r\n      FUN_0047467a(&DAT_004b69b0,0x27,1);\r\n      FUN_00403340(&DAT_004b1b18,10);\r\n      FUN_0042c4e0();\r\n      FUN_0045778f(0x9d,'\\0',1,1);\r\n      FUN_004073b8(&DAT_004a1b68,(-((uVar1 & 0xff) != 0) & 0xfdU) + 6,1);\r\n      uVar2 = FUN_0040721b(&DAT_004a1b68,extraout_EDX_03);\r\n      FUN_0043f6cd(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      uVar2 = FUN_0040724a(&DAT_004a1b68,extraout_EDX_04);\r\n      FUN_0043f70e(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      FUN_0045778f(0,'\\0',1,1);\r\n    }\r\n    else if ((byte)uVar1 == 2) {\r\n      FUN_0045965d((ushort *)&DAT_0048dcd8,0);\r\n      FUN_0045965d((ushort *)&DAT_0048dd04,0x9d);\r\n      FUN_0047467a(&DAT_004b69b0,10,1);\r\n      FUN_0040dbed(&DAT_004b0770,10000);\r\n      FUN_0042f699(2);\r\n    }\r\n  }\r\n  FUN_0045965d((ushort *)&DAT_0048dd40,0x9d);\r\n  return;\r\n}\r\n\r\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_dee160e0b65bdeba1123ec482acc8b885cccb817a6e4a4714699dfe412089ec7",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x00434d33"
+    },
+    "raw_result": {
+      "value": "\r\nvoid FUN_00434d33(void)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined1 uVar2;\r\n  uint uVar3;\r\n  undefined3 extraout_var;\r\n  \r\n  FUN_00457428(0x9d,0xffff,0,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048dd74,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048ddac,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048dddc,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048de14,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048de30,0x9d);\r\n  uVar3 = FUN_0042de12((ushort *)&DAT_0048de60,0);\r\n  if ((uVar3 & 0xff) == 0) {\r\n    FUN_0045965d((ushort *)&DAT_0048de80,0);\r\n    FUN_0045965d((ushort *)&DAT_0048de94,0x9d);\r\n    FUN_0045778f(0x9d,'\\x05',1,1);\r\n    FUN_0047467a(&DAT_004b69b0,0x27,1);\r\n    FUN_00403340(&DAT_004b1b18,0x14);\r\n    FUN_0042c4e0();\r\n    FUN_0045778f(0x9d,'\\0',1,1);\r\n    for (bVar1 = 0; bVar1 < 0x68; bVar1 = bVar1 + 1) {\r\n      uVar2 = FUN_00409600((int)(&DAT_004a1140 + (uint)bVar1 * 0x19));\r\n      if (CONCAT31(extraout_var,uVar2) != 0) {\r\n        uVar2 = 0;\r\n        uVar3 = FUN_0040c6ea((uint)(&DAT_004a1140 + (uint)bVar1 * 0x19));\r\n        FUN_0040d79c(&DAT_004b0770,bVar1,(-((uVar3 & 0xff) != 2) & 4U) - 1,uVar2);\r\n      }\r\n    }\r\n    FUN_0047467a(&DAT_004b69b0,0xe,1);\r\n    FUN_0042f699(2);\r\n  }\r\n  else {\r\n    FUN_0045965d((ushort *)&DAT_0048dee0,0);\r\n    FUN_0045965d((ushort *)&DAT_0048df0c,0x9d);\r\n    FUN_0047467a(&DAT_004b69b0,10,1);\r\n    FUN_0040dbed(&DAT_004b0770,30000);\r\n    FUN_0042f699(2);\r\n  }\r\n  return;\r\n}\r\n\r\n",
+      "limitations": []
+    },
+    "normalized_result": "\r\nvoid FUN_00434d33(void)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined1 uVar2;\r\n  uint uVar3;\r\n  undefined3 extraout_var;\r\n  \r\n  FUN_00457428(0x9d,0xffff,0,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048dd74,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048ddac,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048dddc,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048de14,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048de30,0x9d);\r\n  uVar3 = FUN_0042de12((ushort *)&DAT_0048de60,0);\r\n  if ((uVar3 & 0xff) == 0) {\r\n    FUN_0045965d((ushort *)&DAT_0048de80,0);\r\n    FUN_0045965d((ushort *)&DAT_0048de94,0x9d);\r\n    FUN_0045778f(0x9d,'\\x05',1,1);\r\n    FUN_0047467a(&DAT_004b69b0,0x27,1);\r\n    FUN_00403340(&DAT_004b1b18,0x14);\r\n    FUN_0042c4e0();\r\n    FUN_0045778f(0x9d,'\\0',1,1);\r\n    for (bVar1 = 0; bVar1 < 0x68; bVar1 = bVar1 + 1) {\r\n      uVar2 = FUN_00409600((int)(&DAT_004a1140 + (uint)bVar1 * 0x19));\r\n      if (CONCAT31(extraout_var,uVar2) != 0) {\r\n        uVar2 = 0;\r\n        uVar3 = FUN_0040c6ea((uint)(&DAT_004a1140 + (uint)bVar1 * 0x19));\r\n        FUN_0040d79c(&DAT_004b0770,bVar1,(-((uVar3 & 0xff) != 2) & 4U) - 1,uVar2);\r\n      }\r\n    }\r\n    FUN_0047467a(&DAT_004b69b0,0xe,1);\r\n    FUN_0042f699(2);\r\n  }\r\n  else {\r\n    FUN_0045965d((ushort *)&DAT_0048dee0,0);\r\n    FUN_0045965d((ushort *)&DAT_0048df0c,0x9d);\r\n    FUN_0047467a(&DAT_004b69b0,10,1);\r\n    FUN_0040dbed(&DAT_004b0770,30000);\r\n    FUN_0042f699(2);\r\n  }\r\n  return;\r\n}\r\n\r\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_fabeceef3c988011b0b83674b2b1122355593fac0dc7d47b781b7030be63957a",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x00433512"
+    },
+    "raw_result": {
+      "value": "\r\nvoid FUN_00433512(void)\r\n\r\n{\r\n  FUN_0045965d((ushort *)&DAT_0048cc24,0);\r\n  FUN_0045965d((ushort *)&DAT_0048cc50,0x9d);\r\n  return;\r\n}\r\n\r\n",
+      "limitations": []
+    },
+    "normalized_result": "\r\nvoid FUN_00433512(void)\r\n\r\n{\r\n  FUN_0045965d((ushort *)&DAT_0048cc24,0);\r\n  FUN_0045965d((ushort *)&DAT_0048cc50,0x9d);\r\n  return;\r\n}\r\n\r\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_056782b480b43f4555b9bd163edd627d7bd30e4f4568bc6c573dcb6b86d75441",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x0045778f"
+    },
+    "raw_result": {
+      "value": "\r\nvoid FUN_0045778f(uint param_1,char param_2,int param_3,int param_4)\r\n\r\n{\r\n  ushort uVar1;\r\n  char cVar2;\r\n  undefined1 uVar3;\r\n  byte bVar4;\r\n  uint uVar5;\r\n  undefined1 *puVar6;\r\n  int iVar7;\r\n  HGLOBAL pvVar8;\r\n  undefined4 uVar9;\r\n  char *pcVar10;\r\n  byte *pbVar11;\r\n  undefined4 *puVar12;\r\n  undefined4 extraout_ECX;\r\n  undefined4 extraout_ECX_00;\r\n  undefined4 extraout_ECX_01;\r\n  undefined4 extraout_ECX_02;\r\n  undefined4 extraout_EDX;\r\n  uint uVar13;\r\n  byte local_140;\r\n  byte bStack_13f;\r\n  byte *local_13c;\r\n  uint local_138;\r\n  undefined4 *local_134;\r\n  uint local_130;\r\n  uint local_12c;\r\n  uint local_128;\r\n  undefined4 *local_124;\r\n  uint local_120;\r\n  int local_11c [65];\r\n  uint local_18;\r\n  int *local_14;\r\n  void *local_10;\r\n  undefined1 *puStack_c;\r\n  undefined4 local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_004856ae;\r\n  local_10 = ExceptionList;\r\n  local_14 = (int *)0x0;\r\n  ExceptionList = &local_10;\r\n  FUN_0045f710(&local_140);\r\n  FUN_004032b0(local_11c);\r\n  local_8 = 0;\r\n  if (param_1 < 0x200) {\r\n    local_130 = local_130 & 0xffffff00;\r\n    while ((local_130 & 0xff) < 0x73) {\r\n      uVar5 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (local_130 & 0xff) * 0x24));\r\n      if (uVar5 == param_1) {\r\n        local_12c = CONCAT31(local_12c._1_3_,(char)local_130);\r\n        local_14 = (int *)(&DAT_004b2c50 + (local_130 & 0xff) * 0x24);\r\n        break;\r\n      }\r\n      local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n    }\r\n    if ((local_14 != (int *)0x0) && (cVar2 = FUN_00418c90((int)local_14), cVar2 == '\\x02')) {\r\n      puVar6 = (undefined1 *)FUN_00403360((int)local_14);\r\n      FUN_004065a0(&local_140,puVar6);\r\n      FUN_0045503f(&DAT_004b4250,local_140,bStack_13f);\r\n      uVar1 = CONCAT11(bStack_13f,local_140);\r\n      iVar7 = FUN_00451a93(0x4b4250);\r\n      local_120 = (uVar1 & 0xff) - iVar7 / 0x30;\r\n      iVar7 = FUN_00451aa4(0x4b4250);\r\n      local_128 = (uint)bStack_13f - iVar7 / 0x30;\r\n      local_13c = (byte *)(local_120 * 0x30);\r\n      iVar7 = local_128 * 0x30;\r\n      pvVar8 = (HGLOBAL)(iVar7 + 0x38);\r\n      FUN_0041c2b0((int)local_14);\r\n      uVar9 = FUN_0043fc48(local_14);\r\n      local_18 = CONCAT31(local_18._1_3_,(char)uVar9);\r\n      uVar3 = FUN_0043e320((int)local_14);\r\n      if ((param_3 != 0) && ((param_2 != '\\0' && (param_2 != '\\v')))) {\r\n        FUN_00403340(&DAT_004b1b18,8);\r\n        FUN_0042c4e0();\r\n      }\r\n      switch(param_2) {\r\n      case '\\0':\r\n        uVar13 = 3;\r\n        uVar5 = 3;\r\n        iVar7 = FUN_0047fa9e(local_128,1);\r\n        bVar4 = (byte)iVar7;\r\n        iVar7 = FUN_0047fa9e(local_120,1);\r\n        FUN_0045218f(&DAT_004b4250,(byte)iVar7,bVar4,uVar5,uVar13);\r\n        break;\r\n      case '\\x01':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_SPC_E5_0048bbd0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x8d00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        FUN_0041e5db();\r\n        FUN_004036f9(local_120,local_128);\r\n        FUN_0045137c(local_13c,pvVar8,0x30,0x30,\r\n                     CONCAT31((int3)((uint)extraout_ECX >> 8),(undefined1)local_12c),local_134);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\x02':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_SPC_E5_0048bbd0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        switch(uVar3) {\r\n        case 0:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x7200,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x900);\r\n          break;\r\n        case 1:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x7b00,0,4);\r\n          FUN_0041ee53(0x30,0x30,(int)local_124,(int)local_134);\r\n          break;\r\n        case 2:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x900);\r\n          break;\r\n        case 3:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x7b00,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x900);\r\n        }\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        FUN_0041e5db();\r\n        uVar9 = FUN_004036f9(local_120,local_128);\r\n        FUN_0045137c(local_13c,pvVar8,0x30,0x30,\r\n                     CONCAT31((int3)((uint)uVar9 >> 8),(undefined1)local_12c),local_134);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\x03':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_SPC_E5_0048bbd0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x8400,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        FUN_0041e5db();\r\n        uVar9 = FUN_004036f9(local_120,local_128);\r\n        FUN_0045137c(local_13c,pvVar8,0x30,0x30,\r\n                     CONCAT31((int3)((uint)uVar9 >> 8),(undefined1)local_12c),local_134);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\x04':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_MOV_E5_0048bbe0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xba00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        FUN_0041e5db();\r\n        uVar9 = FUN_004036f9(local_120,local_128);\r\n        FUN_0045137c(local_13c,pvVar8,0x30,0x30,\r\n                     CONCAT31((int3)((uint)uVar9 >> 8),(undefined1)local_12c),local_134);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\x05':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_ATK_E5_0048bbc0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n        switch(uVar3) {\r\n        case 0:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xa900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x1000);\r\n          break;\r\n        case 1:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xe900,0,4);\r\n          FUN_0041ee53(0x40,0x40,(int)local_124,(int)local_134);\r\n          break;\r\n        case 2:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x1000);\r\n          break;\r\n        case 3:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xe900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x1000);\r\n        }\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        FUN_0041e5db();\r\n        FUN_004036f9(local_120,local_128);\r\n        FUN_0045137c(local_13c + -8,(HGLOBAL)(iVar7 + 0x30),0x40,0x40,\r\n                     CONCAT31((int3)((uint)extraout_EDX >> 8),(undefined1)local_12c),local_134);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\x06':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_ATK_E5_0048bbc0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n        switch(uVar3) {\r\n        case 0:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xa900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x4000);\r\n          break;\r\n        case 1:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xe900,0,4);\r\n          FUN_0041ee53(0x40,0x100,(int)local_124,(int)local_134);\r\n          break;\r\n        case 2:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x4000);\r\n          break;\r\n        case 3:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xe900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x4000);\r\n        }\r\n        FUN_0047467a(&DAT_004b69b0,7,1);\r\n        local_130 = local_130 & 0xffffff00;\r\n        while ((local_130 & 0xff) < 4) {\r\n          FUN_0041e5db();\r\n          if ((local_130 & 0xff) == 0) {\r\n            FUN_004036f9(local_120,local_128);\r\n            pcVar10 = (char *)FUN_0047fa40(&DAT_004ae4c8,0x4900,0,4);\r\n            FUN_004519e6((int)(local_13c + -8),iVar7 + 0x30,0x40,0x40,pcVar10);\r\n          }\r\n          uVar9 = 0;\r\n          pbVar11 = (byte *)FUN_0047fa40(&DAT_004ae4c8,0x4900,0,4);\r\n          uVar9 = FUN_00451913(local_13c + -8,(HGLOBAL)(iVar7 + 0x30),0x40,0x40,pbVar11,uVar9);\r\n          FUN_0045137c(local_13c + -8,(HGLOBAL)(iVar7 + 0x30),0x40,0x40,\r\n                       CONCAT31((int3)((uint)uVar9 >> 8),(undefined1)local_12c),\r\n                       local_134 + (local_130 & 0xff) * 0x400);\r\n          FUN_0041e5f6();\r\n          FUN_00403340(&DAT_004b1b18,1);\r\n          FUN_0042c4e0();\r\n          local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n        }\r\n        break;\r\n      case '\\a':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_ATK_E5_0048bbc0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n        switch(uVar3) {\r\n        case 0:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xa900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x4000);\r\n          break;\r\n        case 1:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xe900,0,4);\r\n          FUN_0041ee53(0x40,0x100,(int)local_124,(int)local_134);\r\n          break;\r\n        case 2:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x4000);\r\n          break;\r\n        case 3:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xe900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x4000);\r\n        }\r\n        local_138 = local_138 & 0xffffff00;\r\n        while ((local_138 & 0xff) < 2) {\r\n          FUN_0047467a(&DAT_004b69b0,7,1);\r\n          local_130 = local_130 & 0xffffff00;\r\n          while ((local_130 & 0xff) < 4) {\r\n            FUN_0041e5db();\r\n            if (((local_138 & 0xff) == 0) && ((local_130 & 0xff) == 0)) {\r\n              FUN_004036f9(local_120,local_128);\r\n              pcVar10 = (char *)FUN_0047fa40(&DAT_004ae4c8,0x4900,0,4);\r\n              FUN_004519e6((int)(local_13c + -8),iVar7 + 0x30,0x40,0x40,pcVar10);\r\n            }\r\n            uVar9 = 0;\r\n            pbVar11 = (byte *)FUN_0047fa40(&DAT_004ae4c8,0x4900,0,4);\r\n            FUN_00451913(local_13c + -8,(HGLOBAL)(iVar7 + 0x30),0x40,0x40,pbVar11,uVar9);\r\n            FUN_0045137c(local_13c + -8,(HGLOBAL)(iVar7 + 0x30),0x40,0x40,\r\n                         CONCAT31((int3)((uint)extraout_ECX_00 >> 8),(undefined1)local_12c),\r\n                         local_134 + (local_130 & 0xff) * 0x400);\r\n            FUN_0041e5f6();\r\n            FUN_00403340(&DAT_004b1b18,2);\r\n            FUN_0042c4e0();\r\n            local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n          }\r\n          local_138 = CONCAT31(local_138._1_3_,(char)local_138 + '\\x01');\r\n        }\r\n        FUN_0041e5db();\r\n        uVar9 = 0;\r\n        pbVar11 = (byte *)FUN_0047fa40(&DAT_004ae4c8,0x4900,0,4);\r\n        FUN_00451913(local_13c + -8,(HGLOBAL)(iVar7 + 0x30),0x40,0x40,pbVar11,uVar9);\r\n        FUN_0043fcc9((int)local_14);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\b':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_MOV_E5_0048bbe0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x8d00,0,4);\r\n        FUN_0041ee53(0x30,0x60,(int)local_124,(int)local_134);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x8d00,0,4);\r\n        FUN_0047fcfd(local_124,local_134 + 0x480,0x1200);\r\n        FUN_0047467a(&DAT_004b69b0,6,1);\r\n        local_130 = local_130 & 0xffffff00;\r\n        while ((local_130 & 0xff) < 8) {\r\n          FUN_0041e5db();\r\n          FUN_004036f9(local_120,local_128);\r\n          FUN_0045137c(local_13c,pvVar8,0x30,0x30,local_12c & 0xff,\r\n                       (undefined4 *)\r\n                       ((int)local_134 +\r\n                       (-(uint)((int)(local_130 & 0xff) >> 2 != 0) & 0x1200) +\r\n                       (-(uint)((local_130 & 1) != 0) & 0x900)));\r\n          FUN_0041e5f6();\r\n          FUN_00403340(&DAT_004b1b18,2);\r\n          FUN_0042c4e0();\r\n          local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n        }\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x7b00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x1200);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0047fcfd(local_124,local_134 + 0x480,0x1200);\r\n        FUN_0047467a(&DAT_004b69b0,6,1);\r\n        local_130 = local_130 & 0xffffff00;\r\n        while ((local_130 & 0xff) < 8) {\r\n          FUN_0041e5db();\r\n          FUN_004036f9(local_120,local_128);\r\n          FUN_0045137c(local_13c,pvVar8,0x30,0x30,local_12c & 0xff,\r\n                       (undefined4 *)\r\n                       ((int)local_134 +\r\n                       (-(uint)((int)(local_130 & 0xff) >> 2 != 0) & 0x1200) +\r\n                       (-(uint)((local_130 & 1) != 0) & 0x900)));\r\n          FUN_0041e5f6();\r\n          FUN_00403340(&DAT_004b1b18,2);\r\n          FUN_0042c4e0();\r\n          local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n        }\r\n        break;\r\n      case '\\t':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_MOV_E5_0048bbe0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xba00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x1200);\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        local_130 = local_130 & 0xffffff00;\r\n        while ((local_130 & 0xff) < 6) {\r\n          FUN_0041e5db();\r\n          FUN_004036f9(local_120,local_128);\r\n          FUN_0045137c(local_13c,pvVar8,0x30,0x30,local_12c & 0xff,\r\n                       (undefined4 *)((int)local_134 + (-(uint)((local_130 & 1) != 0) & 0x900)));\r\n          FUN_0041e5f6();\r\n          FUN_00403340(&DAT_004b1b18,8);\r\n          FUN_0042c4e0();\r\n          local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n        }\r\n        break;\r\n      case '\\n':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_SPC_E5_0048bbd0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x8400,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        FUN_0041e5db();\r\n        FUN_004036f9(local_120,local_128);\r\n        FUN_0043eb1f(local_13c,pvVar8,local_12c & 0xff);\r\n        FUN_0041e5f6();\r\n        FUN_00403340(&DAT_004b1b18,2);\r\n        FUN_0042c4e0();\r\n        FUN_0041e5db();\r\n        FUN_004036f9(local_120,local_128);\r\n        FUN_0045137c(local_13c,(HGLOBAL)(iVar7 + 0x34),0x30,0x30,\r\n                     CONCAT31((int3)((uint)extraout_ECX_01 >> 8),(undefined1)local_12c),local_134);\r\n        FUN_0041e5f6();\r\n        FUN_00403340(&DAT_004b1b18,3);\r\n        FUN_0042c4e0();\r\n        FUN_0041e5db();\r\n        uVar13 = 3;\r\n        uVar5 = 3;\r\n        iVar7 = FUN_0047fa9e(local_128,1);\r\n        bVar4 = (byte)iVar7;\r\n        iVar7 = FUN_0047fa9e(local_120,1);\r\n        FUN_0045218f(&DAT_004b4250,(byte)iVar7,bVar4,uVar5,uVar13);\r\n        FUN_0043eb1f(local_13c,pvVar8,local_12c & 0xff);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\v':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_MOV_E5_0048bbe0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x9f00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x1000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xb100,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x2000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xa800,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x3000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xb100,0,4);\r\n        FUN_0041ee53(0x30,0x30,(int)local_124,(int)local_134);\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_SPC_E5_0048bbd0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x8d00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_130 = local_130 & 0xffffff00;\r\n        while ((local_130 & 0xff) < 9) {\r\n          FUN_0041e5db();\r\n          FUN_004036f9(local_120,local_128);\r\n          iVar7 = FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n          FUN_0045137c(local_13c,pvVar8,0x30,0x30,local_12c & 0xff,\r\n                       (undefined4 *)(iVar7 + (local_130 & 3) * 0x1000));\r\n          FUN_0041e5f6();\r\n          FUN_00403340(&DAT_004b1b18,2);\r\n          FUN_0042c4e0();\r\n          local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n        }\r\n        FUN_0041e5db();\r\n        FUN_004036f9(local_120,local_128);\r\n        puVar12 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        FUN_0045137c(local_13c,pvVar8,0x30,0x30,\r\n                     CONCAT31((int3)((uint)extraout_ECX_02 >> 8),(undefined1)local_12c),puVar12);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\f':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_MOV_E5_0048bbe0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x9f00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x1000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xb100,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x2000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xa800,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x3000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xb100,0,4);\r\n        FUN_0041ee53(0x30,0x30,(int)local_124,(int)local_134);\r\n        local_130 = local_130 & 0xffffff00;\r\n        while ((local_130 & 0xff) < 5) {\r\n          FUN_0041e5db();\r\n          FUN_004036f9(local_120,local_128);\r\n          iVar7 = FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n          FUN_0045137c(local_13c,pvVar8,0x30,0x30,local_12c & 0xff,\r\n                       (undefined4 *)(iVar7 + (local_130 & 3) * 0x1000));\r\n          FUN_0041e5f6();\r\n          FUN_00403340(&DAT_004b1b18,2);\r\n          FUN_0042c4e0();\r\n          local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n        }\r\n      }\r\n      if (((param_4 != 0) && (param_2 != '\\0')) && (param_2 != '\\v')) {\r\n        FUN_00403340(&DAT_004b1b18,8);\r\n        FUN_0042c4e0();\r\n      }\r\n    }\r\n    local_8 = 0xffffffff;\r\n    FUN_004032d0(local_11c);\r\n  }\r\n  else {\r\n    local_8 = 0xffffffff;\r\n    FUN_004032d0(local_11c);\r\n  }\r\n  ExceptionList = local_10;\r\n  return;\r\n}\r\n\r\n",
+      "limitations": []
+    },
+    "normalized_result": "\r\nvoid FUN_0045778f(uint param_1,char param_2,int param_3,int param_4)\r\n\r\n{\r\n  ushort uVar1;\r\n  char cVar2;\r\n  undefined1 uVar3;\r\n  byte bVar4;\r\n  uint uVar5;\r\n  undefined1 *puVar6;\r\n  int iVar7;\r\n  HGLOBAL pvVar8;\r\n  undefined4 uVar9;\r\n  char *pcVar10;\r\n  byte *pbVar11;\r\n  undefined4 *puVar12;\r\n  undefined4 extraout_ECX;\r\n  undefined4 extraout_ECX_00;\r\n  undefined4 extraout_ECX_01;\r\n  undefined4 extraout_ECX_02;\r\n  undefined4 extraout_EDX;\r\n  uint uVar13;\r\n  byte local_140;\r\n  byte bStack_13f;\r\n  byte *local_13c;\r\n  uint local_138;\r\n  undefined4 *local_134;\r\n  uint local_130;\r\n  uint local_12c;\r\n  uint local_128;\r\n  undefined4 *local_124;\r\n  uint local_120;\r\n  int local_11c [65];\r\n  uint local_18;\r\n  int *local_14;\r\n  void *local_10;\r\n  undefined1 *puStack_c;\r\n  undefined4 local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_004856ae;\r\n  local_10 = ExceptionList;\r\n  local_14 = (int *)0x0;\r\n  ExceptionList = &local_10;\r\n  FUN_0045f710(&local_140);\r\n  FUN_004032b0(local_11c);\r\n  local_8 = 0;\r\n  if (param_1 < 0x200) {\r\n    local_130 = local_130 & 0xffffff00;\r\n    while ((local_130 & 0xff) < 0x73) {\r\n      uVar5 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (local_130 & 0xff) * 0x24));\r\n      if (uVar5 == param_1) {\r\n        local_12c = CONCAT31(local_12c._1_3_,(char)local_130);\r\n        local_14 = (int *)(&DAT_004b2c50 + (local_130 & 0xff) * 0x24);\r\n        break;\r\n      }\r\n      local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n    }\r\n    if ((local_14 != (int *)0x0) && (cVar2 = FUN_00418c90((int)local_14), cVar2 == '\\x02')) {\r\n      puVar6 = (undefined1 *)FUN_00403360((int)local_14);\r\n      FUN_004065a0(&local_140,puVar6);\r\n      FUN_0045503f(&DAT_004b4250,local_140,bStack_13f);\r\n      uVar1 = CONCAT11(bStack_13f,local_140);\r\n      iVar7 = FUN_00451a93(0x4b4250);\r\n      local_120 = (uVar1 & 0xff) - iVar7 / 0x30;\r\n      iVar7 = FUN_00451aa4(0x4b4250);\r\n      local_128 = (uint)bStack_13f - iVar7 / 0x30;\r\n      local_13c = (byte *)(local_120 * 0x30);\r\n      iVar7 = local_128 * 0x30;\r\n      pvVar8 = (HGLOBAL)(iVar7 + 0x38);\r\n      FUN_0041c2b0((int)local_14);\r\n      uVar9 = FUN_0043fc48(local_14);\r\n      local_18 = CONCAT31(local_18._1_3_,(char)uVar9);\r\n      uVar3 = FUN_0043e320((int)local_14);\r\n      if ((param_3 != 0) && ((param_2 != '\\0' && (param_2 != '\\v')))) {\r\n        FUN_00403340(&DAT_004b1b18,8);\r\n        FUN_0042c4e0();\r\n      }\r\n      switch(param_2) {\r\n      case '\\0':\r\n        uVar13 = 3;\r\n        uVar5 = 3;\r\n        iVar7 = FUN_0047fa9e(local_128,1);\r\n        bVar4 = (byte)iVar7;\r\n        iVar7 = FUN_0047fa9e(local_120,1);\r\n        FUN_0045218f(&DAT_004b4250,(byte)iVar7,bVar4,uVar5,uVar13);\r\n        break;\r\n      case '\\x01':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_SPC_E5_0048bbd0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x8d00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        FUN_0041e5db();\r\n        FUN_004036f9(local_120,local_128);\r\n        FUN_0045137c(local_13c,pvVar8,0x30,0x30,\r\n                     CONCAT31((int3)((uint)extraout_ECX >> 8),(undefined1)local_12c),local_134);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\x02':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_SPC_E5_0048bbd0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        switch(uVar3) {\r\n        case 0:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x7200,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x900);\r\n          break;\r\n        case 1:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x7b00,0,4);\r\n          FUN_0041ee53(0x30,0x30,(int)local_124,(int)local_134);\r\n          break;\r\n        case 2:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x900);\r\n          break;\r\n        case 3:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x7b00,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x900);\r\n        }\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        FUN_0041e5db();\r\n        uVar9 = FUN_004036f9(local_120,local_128);\r\n        FUN_0045137c(local_13c,pvVar8,0x30,0x30,\r\n                     CONCAT31((int3)((uint)uVar9 >> 8),(undefined1)local_12c),local_134);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\x03':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_SPC_E5_0048bbd0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x8400,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        FUN_0041e5db();\r\n        uVar9 = FUN_004036f9(local_120,local_128);\r\n        FUN_0045137c(local_13c,pvVar8,0x30,0x30,\r\n                     CONCAT31((int3)((uint)uVar9 >> 8),(undefined1)local_12c),local_134);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\x04':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_MOV_E5_0048bbe0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xba00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        FUN_0041e5db();\r\n        uVar9 = FUN_004036f9(local_120,local_128);\r\n        FUN_0045137c(local_13c,pvVar8,0x30,0x30,\r\n                     CONCAT31((int3)((uint)uVar9 >> 8),(undefined1)local_12c),local_134);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\x05':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_ATK_E5_0048bbc0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n        switch(uVar3) {\r\n        case 0:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xa900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x1000);\r\n          break;\r\n        case 1:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xe900,0,4);\r\n          FUN_0041ee53(0x40,0x40,(int)local_124,(int)local_134);\r\n          break;\r\n        case 2:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x1000);\r\n          break;\r\n        case 3:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xe900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x1000);\r\n        }\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        FUN_0041e5db();\r\n        FUN_004036f9(local_120,local_128);\r\n        FUN_0045137c(local_13c + -8,(HGLOBAL)(iVar7 + 0x30),0x40,0x40,\r\n                     CONCAT31((int3)((uint)extraout_EDX >> 8),(undefined1)local_12c),local_134);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\x06':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_ATK_E5_0048bbc0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n        switch(uVar3) {\r\n        case 0:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xa900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x4000);\r\n          break;\r\n        case 1:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xe900,0,4);\r\n          FUN_0041ee53(0x40,0x100,(int)local_124,(int)local_134);\r\n          break;\r\n        case 2:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x4000);\r\n          break;\r\n        case 3:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xe900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x4000);\r\n        }\r\n        FUN_0047467a(&DAT_004b69b0,7,1);\r\n        local_130 = local_130 & 0xffffff00;\r\n        while ((local_130 & 0xff) < 4) {\r\n          FUN_0041e5db();\r\n          if ((local_130 & 0xff) == 0) {\r\n            FUN_004036f9(local_120,local_128);\r\n            pcVar10 = (char *)FUN_0047fa40(&DAT_004ae4c8,0x4900,0,4);\r\n            FUN_004519e6((int)(local_13c + -8),iVar7 + 0x30,0x40,0x40,pcVar10);\r\n          }\r\n          uVar9 = 0;\r\n          pbVar11 = (byte *)FUN_0047fa40(&DAT_004ae4c8,0x4900,0,4);\r\n          uVar9 = FUN_00451913(local_13c + -8,(HGLOBAL)(iVar7 + 0x30),0x40,0x40,pbVar11,uVar9);\r\n          FUN_0045137c(local_13c + -8,(HGLOBAL)(iVar7 + 0x30),0x40,0x40,\r\n                       CONCAT31((int3)((uint)uVar9 >> 8),(undefined1)local_12c),\r\n                       local_134 + (local_130 & 0xff) * 0x400);\r\n          FUN_0041e5f6();\r\n          FUN_00403340(&DAT_004b1b18,1);\r\n          FUN_0042c4e0();\r\n          local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n        }\r\n        break;\r\n      case '\\a':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_ATK_E5_0048bbc0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n        switch(uVar3) {\r\n        case 0:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xa900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x4000);\r\n          break;\r\n        case 1:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xe900,0,4);\r\n          FUN_0041ee53(0x40,0x100,(int)local_124,(int)local_134);\r\n          break;\r\n        case 2:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x4000);\r\n          break;\r\n        case 3:\r\n          local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xe900,0,4);\r\n          FUN_0047fcfd(local_124,local_134,0x4000);\r\n        }\r\n        local_138 = local_138 & 0xffffff00;\r\n        while ((local_138 & 0xff) < 2) {\r\n          FUN_0047467a(&DAT_004b69b0,7,1);\r\n          local_130 = local_130 & 0xffffff00;\r\n          while ((local_130 & 0xff) < 4) {\r\n            FUN_0041e5db();\r\n            if (((local_138 & 0xff) == 0) && ((local_130 & 0xff) == 0)) {\r\n              FUN_004036f9(local_120,local_128);\r\n              pcVar10 = (char *)FUN_0047fa40(&DAT_004ae4c8,0x4900,0,4);\r\n              FUN_004519e6((int)(local_13c + -8),iVar7 + 0x30,0x40,0x40,pcVar10);\r\n            }\r\n            uVar9 = 0;\r\n            pbVar11 = (byte *)FUN_0047fa40(&DAT_004ae4c8,0x4900,0,4);\r\n            FUN_00451913(local_13c + -8,(HGLOBAL)(iVar7 + 0x30),0x40,0x40,pbVar11,uVar9);\r\n            FUN_0045137c(local_13c + -8,(HGLOBAL)(iVar7 + 0x30),0x40,0x40,\r\n                         CONCAT31((int3)((uint)extraout_ECX_00 >> 8),(undefined1)local_12c),\r\n                         local_134 + (local_130 & 0xff) * 0x400);\r\n            FUN_0041e5f6();\r\n            FUN_00403340(&DAT_004b1b18,2);\r\n            FUN_0042c4e0();\r\n            local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n          }\r\n          local_138 = CONCAT31(local_138._1_3_,(char)local_138 + '\\x01');\r\n        }\r\n        FUN_0041e5db();\r\n        uVar9 = 0;\r\n        pbVar11 = (byte *)FUN_0047fa40(&DAT_004ae4c8,0x4900,0,4);\r\n        FUN_00451913(local_13c + -8,(HGLOBAL)(iVar7 + 0x30),0x40,0x40,pbVar11,uVar9);\r\n        FUN_0043fcc9((int)local_14);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\b':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_MOV_E5_0048bbe0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x8d00,0,4);\r\n        FUN_0041ee53(0x30,0x60,(int)local_124,(int)local_134);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x8d00,0,4);\r\n        FUN_0047fcfd(local_124,local_134 + 0x480,0x1200);\r\n        FUN_0047467a(&DAT_004b69b0,6,1);\r\n        local_130 = local_130 & 0xffffff00;\r\n        while ((local_130 & 0xff) < 8) {\r\n          FUN_0041e5db();\r\n          FUN_004036f9(local_120,local_128);\r\n          FUN_0045137c(local_13c,pvVar8,0x30,0x30,local_12c & 0xff,\r\n                       (undefined4 *)\r\n                       ((int)local_134 +\r\n                       (-(uint)((int)(local_130 & 0xff) >> 2 != 0) & 0x1200) +\r\n                       (-(uint)((local_130 & 1) != 0) & 0x900)));\r\n          FUN_0041e5f6();\r\n          FUN_00403340(&DAT_004b1b18,2);\r\n          FUN_0042c4e0();\r\n          local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n        }\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x7b00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x1200);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0047fcfd(local_124,local_134 + 0x480,0x1200);\r\n        FUN_0047467a(&DAT_004b69b0,6,1);\r\n        local_130 = local_130 & 0xffffff00;\r\n        while ((local_130 & 0xff) < 8) {\r\n          FUN_0041e5db();\r\n          FUN_004036f9(local_120,local_128);\r\n          FUN_0045137c(local_13c,pvVar8,0x30,0x30,local_12c & 0xff,\r\n                       (undefined4 *)\r\n                       ((int)local_134 +\r\n                       (-(uint)((int)(local_130 & 0xff) >> 2 != 0) & 0x1200) +\r\n                       (-(uint)((local_130 & 1) != 0) & 0x900)));\r\n          FUN_0041e5f6();\r\n          FUN_00403340(&DAT_004b1b18,2);\r\n          FUN_0042c4e0();\r\n          local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n        }\r\n        break;\r\n      case '\\t':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_MOV_E5_0048bbe0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xba00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x1200);\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        local_130 = local_130 & 0xffffff00;\r\n        while ((local_130 & 0xff) < 6) {\r\n          FUN_0041e5db();\r\n          FUN_004036f9(local_120,local_128);\r\n          FUN_0045137c(local_13c,pvVar8,0x30,0x30,local_12c & 0xff,\r\n                       (undefined4 *)((int)local_134 + (-(uint)((local_130 & 1) != 0) & 0x900)));\r\n          FUN_0041e5f6();\r\n          FUN_00403340(&DAT_004b1b18,8);\r\n          FUN_0042c4e0();\r\n          local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n        }\r\n        break;\r\n      case '\\n':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_SPC_E5_0048bbd0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x8400,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        FUN_0047467a(&DAT_004b69b0,8,1);\r\n        FUN_0041e5db();\r\n        FUN_004036f9(local_120,local_128);\r\n        FUN_0043eb1f(local_13c,pvVar8,local_12c & 0xff);\r\n        FUN_0041e5f6();\r\n        FUN_00403340(&DAT_004b1b18,2);\r\n        FUN_0042c4e0();\r\n        FUN_0041e5db();\r\n        FUN_004036f9(local_120,local_128);\r\n        FUN_0045137c(local_13c,(HGLOBAL)(iVar7 + 0x34),0x30,0x30,\r\n                     CONCAT31((int3)((uint)extraout_ECX_01 >> 8),(undefined1)local_12c),local_134);\r\n        FUN_0041e5f6();\r\n        FUN_00403340(&DAT_004b1b18,3);\r\n        FUN_0042c4e0();\r\n        FUN_0041e5db();\r\n        uVar13 = 3;\r\n        uVar5 = 3;\r\n        iVar7 = FUN_0047fa9e(local_128,1);\r\n        bVar4 = (byte)iVar7;\r\n        iVar7 = FUN_0047fa9e(local_120,1);\r\n        FUN_0045218f(&DAT_004b4250,(byte)iVar7,bVar4,uVar5,uVar13);\r\n        FUN_0043eb1f(local_13c,pvVar8,local_12c & 0xff);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\v':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_MOV_E5_0048bbe0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x9f00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x1000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xb100,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x2000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xa800,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x3000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xb100,0,4);\r\n        FUN_0041ee53(0x30,0x30,(int)local_124,(int)local_134);\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_SPC_E5_0048bbd0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x8d00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_130 = local_130 & 0xffffff00;\r\n        while ((local_130 & 0xff) < 9) {\r\n          FUN_0041e5db();\r\n          FUN_004036f9(local_120,local_128);\r\n          iVar7 = FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n          FUN_0045137c(local_13c,pvVar8,0x30,0x30,local_12c & 0xff,\r\n                       (undefined4 *)(iVar7 + (local_130 & 3) * 0x1000));\r\n          FUN_0041e5f6();\r\n          FUN_00403340(&DAT_004b1b18,2);\r\n          FUN_0042c4e0();\r\n          local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n        }\r\n        FUN_0041e5db();\r\n        FUN_004036f9(local_120,local_128);\r\n        puVar12 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x4000,0,4);\r\n        FUN_0045137c(local_13c,pvVar8,0x30,0x30,\r\n                     CONCAT31((int3)((uint)extraout_ECX_02 >> 8),(undefined1)local_12c),puVar12);\r\n        FUN_0041e5f6();\r\n        break;\r\n      case '\\f':\r\n        FUN_0041fb35(local_11c,(uint *)s_UNIT_MOV_E5_0048bbe0);\r\n        puVar6 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n        FUN_0041fc89(local_11c,local_18 & 0xff,puVar6);\r\n        FUN_004192c5(local_11c);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x9f00,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x1000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xb100,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x2000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xa800,0,4);\r\n        FUN_0047fcfd(local_124,local_134,0x900);\r\n        local_134 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0x3000,0,4);\r\n        local_124 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0xb100,0,4);\r\n        FUN_0041ee53(0x30,0x30,(int)local_124,(int)local_134);\r\n        local_130 = local_130 & 0xffffff00;\r\n        while ((local_130 & 0xff) < 5) {\r\n          FUN_0041e5db();\r\n          FUN_004036f9(local_120,local_128);\r\n          iVar7 = FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n          FUN_0045137c(local_13c,pvVar8,0x30,0x30,local_12c & 0xff,\r\n                       (undefined4 *)(iVar7 + (local_130 & 3) * 0x1000));\r\n          FUN_0041e5f6();\r\n          FUN_00403340(&DAT_004b1b18,2);\r\n          FUN_0042c4e0();\r\n          local_130 = CONCAT31(local_130._1_3_,(char)local_130 + '\\x01');\r\n        }\r\n      }\r\n      if (((param_4 != 0) && (param_2 != '\\0')) && (param_2 != '\\v')) {\r\n        FUN_00403340(&DAT_004b1b18,8);\r\n        FUN_0042c4e0();\r\n      }\r\n    }\r\n    local_8 = 0xffffffff;\r\n    FUN_004032d0(local_11c);\r\n  }\r\n  else {\r\n    local_8 = 0xffffffff;\r\n    FUN_004032d0(local_11c);\r\n  }\r\n  ExceptionList = local_10;\r\n  return;\r\n}\r\n\r\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_ad8569fbe77d8b6f9f163db532a1a7be987f135f65238082d71158a950cb1349",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x004150e7"
+    },
+    "raw_result": {
+      "value": "\r\nundefined4 __cdecl FUN_004150e7(void *param_1)\r\n\r\n{\r\n  bool bVar1;\r\n  char cVar2;\r\n  uint uVar3;\r\n  undefined4 uVar4;\r\n  uint uVar5;\r\n  uint uVar6;\r\n  uint uVar7;\r\n  uint uVar8;\r\n  uint uVar9;\r\n  uint uVar10;\r\n  uint uVar11;\r\n  uint uVar12;\r\n  uint uVar13;\r\n  uint uVar14;\r\n  uint uVar15;\r\n  uint uVar16;\r\n  undefined3 extraout_var;\r\n  uint extraout_ECX;\r\n  uint extraout_ECX_00;\r\n  uint extraout_ECX_01;\r\n  uint extraout_ECX_02;\r\n  uint extraout_ECX_03;\r\n  uint extraout_ECX_04;\r\n  ulonglong uVar17;\r\n  undefined1 local_38;\r\n  undefined1 local_34;\r\n  byte local_30;\r\n  byte local_2c;\r\n  byte local_28;\r\n  undefined1 local_24;\r\n  byte local_20;\r\n  undefined1 local_18;\r\n  undefined1 local_14;\r\n  uint local_c;\r\n  byte local_8;\r\n  \r\n  uVar3 = FUN_004183f7(param_1,0x41);\r\n  if ((uVar3 & 0xffff) == 0x8000) {\r\n    uVar4 = 5;\r\n  }\r\n  else {\r\n    uVar5 = FUN_004183f7(param_1,2);\r\n    local_c = uVar5 & 0xffff;\r\n    if ((uVar5 & 0xffff) == 0x8000) {\r\n      uVar4 = 5;\r\n    }\r\n    else {\r\n      uVar6 = FUN_004183f7(param_1,4);\r\n      if (uVar6 == 0x80000000) {\r\n        uVar4 = 5;\r\n      }\r\n      else {\r\n        uVar7 = FUN_004183f7(param_1,4);\r\n        if (uVar7 == 0x80000000) {\r\n          uVar4 = 5;\r\n        }\r\n        else {\r\n          uVar8 = FUN_004183f7(param_1,4);\r\n          if (uVar8 == 0x80000000) {\r\n            uVar4 = 5;\r\n          }\r\n          else {\r\n            uVar9 = FUN_004183f7(param_1,4);\r\n            if (uVar9 == 0x80000000) {\r\n              uVar4 = 5;\r\n            }\r\n            else {\r\n              uVar10 = FUN_004183f7(param_1,4);\r\n              if (uVar10 == 0x80000000) {\r\n                uVar4 = 5;\r\n              }\r\n              else {\r\n                uVar11 = FUN_004183f7(param_1,3);\r\n                local_24 = (undefined1)uVar11;\r\n                if ((uVar11 & 0xffff) == 0x8000) {\r\n                  uVar4 = 5;\r\n                }\r\n                else {\r\n                  uVar12 = FUN_004183f7(param_1,0x2f);\r\n                  if ((uVar12 & 0xffff) == 0x8000) {\r\n                    uVar4 = 5;\r\n                  }\r\n                  else {\r\n                    uVar13 = FUN_004183f7(param_1,0x18);\r\n                    if ((uVar13 & 0xffff) == 0x8000) {\r\n                      uVar4 = 5;\r\n                    }\r\n                    else {\r\n                      uVar14 = FUN_004183f7(param_1,0x30);\r\n                      if ((uVar14 & 0xffff) == 0x8000) {\r\n                        uVar4 = 5;\r\n                      }\r\n                      else {\r\n                        uVar15 = FUN_004183f7(param_1,4);\r\n                        if (uVar15 == 0x80000000) {\r\n                          uVar4 = 5;\r\n                        }\r\n                        else {\r\n                          uVar16 = FUN_004183f7(param_1,4);\r\n                          if (uVar16 == 0x80000000) {\r\n                            uVar4 = 5;\r\n                          }\r\n                          else {\r\n                            bVar1 = FUN_0040b922();\r\n                            if (CONCAT31(extraout_var,bVar1) == 0) {\r\n                              uVar4 = 1;\r\n                            }\r\n                            else {\r\n                              if ((((uVar3 & 0xffff) == 0) && (0x3ff < (uVar5 & 0xffff))) &&\r\n                                 ((uVar5 & 0xffff) < 0x403)) {\r\n                                local_c = FUN_0045602b((int *)&DAT_004b5df0);\r\n                                local_c = local_c & 0xffff;\r\n                              }\r\n                              if ((uVar3 & 0xffff) == 1) {\r\n                                cVar2 = FUN_00418c90((int)(&DAT_004b2c50 + uVar6 * 0x24));\r\n                                if (cVar2 != '\\x02') {\r\n                                  return 1;\r\n                                }\r\n                                local_c = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + uVar6 * 0x24))\r\n                                ;\r\n                                local_c = local_c & 0xffff;\r\n                              }\r\n                              uVar5 = uVar3 & 0xffff;\r\n                              if ((uVar5 == 2) && ((uVar11 & 0xffff) == 0xffff)) {\r\n                                local_24 = 6;\r\n                              }\r\n                              uVar6 = uVar12 & 0xffff;\r\n                              local_18 = (undefined1)uVar10;\r\n                              local_38 = (undefined1)uVar8;\r\n                              local_34 = (undefined1)uVar7;\r\n                              if (uVar6 != 0xffff) {\r\n                                uVar13 = uVar13 & 0xffff;\r\n                                if (uVar13 == 0) {\r\n                                  local_30 = 0;\r\n                                }\r\n                                else if (uVar13 == 1) {\r\n                                  local_30 = 3;\r\n                                }\r\n                                else if (uVar13 == 2) {\r\n                                  local_30 = 6;\r\n                                }\r\n                                else {\r\n                                  local_30 = 3;\r\n                                }\r\n                                local_20 = (byte)uVar12;\r\n                                if ((uVar3 & 0xffff) == 2) {\r\n                                  uVar6 = FUN_0045ade5(local_34,local_38,uVar9 & 0xff,\r\n                                                       CONCAT31((int3)(uVar13 >> 8),local_18),\r\n                                                       CONCAT31((int3)(uVar6 >> 8),local_24),\r\n                                                       local_20,local_30);\r\n                                  uVar5 = extraout_ECX_00;\r\n                                }\r\n                                else {\r\n                                  FUN_0045aa5c(local_c,local_20,local_30,1);\r\n                                  uVar6 = FUN_00479a01(local_c);\r\n                                  uVar5 = extraout_ECX;\r\n                                }\r\n                              }\r\n                              uVar17 = CONCAT44(uVar14,uVar6) & 0xffffffffffff;\r\n                              local_14 = (undefined1)uVar9;\r\n                              if ((uVar14 & 0xffff) != 0xffff) {\r\n                                local_2c = (byte)uVar14;\r\n                                if ((uVar3 & 0xffff) == 2) {\r\n                                  uVar17 = FUN_0045ade5(local_34,local_38,\r\n                                                        CONCAT31((int3)(uVar5 >> 8),local_14),\r\n                                                        uVar10 & 0xff,\r\n                                                        CONCAT31((int3)((uVar14 & 0xffff) >> 8),\r\n                                                                 local_24),6,local_2c);\r\n                                  uVar5 = extraout_ECX_02;\r\n                                }\r\n                                else {\r\n                                  FUN_0045aa5c(local_c,6,local_2c,1);\r\n                                  uVar17 = FUN_00479a01(local_c);\r\n                                  uVar5 = extraout_ECX_01;\r\n                                }\r\n                              }\r\n                              uVar4 = (undefined4)uVar17;\r\n                              if (uVar15 != 0) {\r\n                                local_8 = (byte)uVar15;\r\n                                if ((uVar3 & 0xffff) == 2) {\r\n                                  uVar4 = FUN_0045ade5(local_34,local_38,\r\n                                                       CONCAT31((int3)(uVar17 >> 0x28),local_14),\r\n                                                       uVar10 & 0xff,\r\n                                                       CONCAT31((int3)(uVar17 >> 8),local_24),7,\r\n                                                       local_8);\r\n                                  uVar5 = extraout_ECX_04;\r\n                                }\r\n                                else {\r\n                                  FUN_0045aa5c(local_c,7,local_8,1);\r\n                                  uVar4 = FUN_00479a01(local_c);\r\n                                  uVar5 = extraout_ECX_03;\r\n                                }\r\n                              }\r\n                              if (uVar16 != 0) {\r\n                                local_28 = (byte)uVar16;\r\n                                if ((uVar3 & 0xffff) == 2) {\r\n                                  FUN_0045ade5(local_34,local_38,\r\n                                               CONCAT31((int3)((uint)uVar4 >> 8),local_14),\r\n                                               uVar10 & 0xff,CONCAT31((int3)(uVar5 >> 8),local_24),8\r\n                                               ,local_28);\r\n                                }\r\n                                else {\r\n                                  FUN_0045aa5c(local_c,8,local_28,1);\r\n                                  FUN_00479a01(local_c);\r\n                                }\r\n                              }\r\n                              uVar4 = 1;\r\n                            }\r\n                          }\r\n                        }\r\n                      }\r\n                    }\r\n                  }\r\n                }\r\n              }\r\n            }\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n  return uVar4;\r\n}\r\n\r\n",
+      "limitations": []
+    },
+    "normalized_result": "\r\nundefined4 __cdecl FUN_004150e7(void *param_1)\r\n\r\n{\r\n  bool bVar1;\r\n  char cVar2;\r\n  uint uVar3;\r\n  undefined4 uVar4;\r\n  uint uVar5;\r\n  uint uVar6;\r\n  uint uVar7;\r\n  uint uVar8;\r\n  uint uVar9;\r\n  uint uVar10;\r\n  uint uVar11;\r\n  uint uVar12;\r\n  uint uVar13;\r\n  uint uVar14;\r\n  uint uVar15;\r\n  uint uVar16;\r\n  undefined3 extraout_var;\r\n  uint extraout_ECX;\r\n  uint extraout_ECX_00;\r\n  uint extraout_ECX_01;\r\n  uint extraout_ECX_02;\r\n  uint extraout_ECX_03;\r\n  uint extraout_ECX_04;\r\n  ulonglong uVar17;\r\n  undefined1 local_38;\r\n  undefined1 local_34;\r\n  byte local_30;\r\n  byte local_2c;\r\n  byte local_28;\r\n  undefined1 local_24;\r\n  byte local_20;\r\n  undefined1 local_18;\r\n  undefined1 local_14;\r\n  uint local_c;\r\n  byte local_8;\r\n  \r\n  uVar3 = FUN_004183f7(param_1,0x41);\r\n  if ((uVar3 & 0xffff) == 0x8000) {\r\n    uVar4 = 5;\r\n  }\r\n  else {\r\n    uVar5 = FUN_004183f7(param_1,2);\r\n    local_c = uVar5 & 0xffff;\r\n    if ((uVar5 & 0xffff) == 0x8000) {\r\n      uVar4 = 5;\r\n    }\r\n    else {\r\n      uVar6 = FUN_004183f7(param_1,4);\r\n      if (uVar6 == 0x80000000) {\r\n        uVar4 = 5;\r\n      }\r\n      else {\r\n        uVar7 = FUN_004183f7(param_1,4);\r\n        if (uVar7 == 0x80000000) {\r\n          uVar4 = 5;\r\n        }\r\n        else {\r\n          uVar8 = FUN_004183f7(param_1,4);\r\n          if (uVar8 == 0x80000000) {\r\n            uVar4 = 5;\r\n          }\r\n          else {\r\n            uVar9 = FUN_004183f7(param_1,4);\r\n            if (uVar9 == 0x80000000) {\r\n              uVar4 = 5;\r\n            }\r\n            else {\r\n              uVar10 = FUN_004183f7(param_1,4);\r\n              if (uVar10 == 0x80000000) {\r\n                uVar4 = 5;\r\n              }\r\n              else {\r\n                uVar11 = FUN_004183f7(param_1,3);\r\n                local_24 = (undefined1)uVar11;\r\n                if ((uVar11 & 0xffff) == 0x8000) {\r\n                  uVar4 = 5;\r\n                }\r\n                else {\r\n                  uVar12 = FUN_004183f7(param_1,0x2f);\r\n                  if ((uVar12 & 0xffff) == 0x8000) {\r\n                    uVar4 = 5;\r\n                  }\r\n                  else {\r\n                    uVar13 = FUN_004183f7(param_1,0x18);\r\n                    if ((uVar13 & 0xffff) == 0x8000) {\r\n                      uVar4 = 5;\r\n                    }\r\n                    else {\r\n                      uVar14 = FUN_004183f7(param_1,0x30);\r\n                      if ((uVar14 & 0xffff) == 0x8000) {\r\n                        uVar4 = 5;\r\n                      }\r\n                      else {\r\n                        uVar15 = FUN_004183f7(param_1,4);\r\n                        if (uVar15 == 0x80000000) {\r\n                          uVar4 = 5;\r\n                        }\r\n                        else {\r\n                          uVar16 = FUN_004183f7(param_1,4);\r\n                          if (uVar16 == 0x80000000) {\r\n                            uVar4 = 5;\r\n                          }\r\n                          else {\r\n                            bVar1 = FUN_0040b922();\r\n                            if (CONCAT31(extraout_var,bVar1) == 0) {\r\n                              uVar4 = 1;\r\n                            }\r\n                            else {\r\n                              if ((((uVar3 & 0xffff) == 0) && (0x3ff < (uVar5 & 0xffff))) &&\r\n                                 ((uVar5 & 0xffff) < 0x403)) {\r\n                                local_c = FUN_0045602b((int *)&DAT_004b5df0);\r\n                                local_c = local_c & 0xffff;\r\n                              }\r\n                              if ((uVar3 & 0xffff) == 1) {\r\n                                cVar2 = FUN_00418c90((int)(&DAT_004b2c50 + uVar6 * 0x24));\r\n                                if (cVar2 != '\\x02') {\r\n                                  return 1;\r\n                                }\r\n                                local_c = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + uVar6 * 0x24))\r\n                                ;\r\n                                local_c = local_c & 0xffff;\r\n                              }\r\n                              uVar5 = uVar3 & 0xffff;\r\n                              if ((uVar5 == 2) && ((uVar11 & 0xffff) == 0xffff)) {\r\n                                local_24 = 6;\r\n                              }\r\n                              uVar6 = uVar12 & 0xffff;\r\n                              local_18 = (undefined1)uVar10;\r\n                              local_38 = (undefined1)uVar8;\r\n                              local_34 = (undefined1)uVar7;\r\n                              if (uVar6 != 0xffff) {\r\n                                uVar13 = uVar13 & 0xffff;\r\n                                if (uVar13 == 0) {\r\n                                  local_30 = 0;\r\n                                }\r\n                                else if (uVar13 == 1) {\r\n                                  local_30 = 3;\r\n                                }\r\n                                else if (uVar13 == 2) {\r\n                                  local_30 = 6;\r\n                                }\r\n                                else {\r\n                                  local_30 = 3;\r\n                                }\r\n                                local_20 = (byte)uVar12;\r\n                                if ((uVar3 & 0xffff) == 2) {\r\n                                  uVar6 = FUN_0045ade5(local_34,local_38,uVar9 & 0xff,\r\n                                                       CONCAT31((int3)(uVar13 >> 8),local_18),\r\n                                                       CONCAT31((int3)(uVar6 >> 8),local_24),\r\n                                                       local_20,local_30);\r\n                                  uVar5 = extraout_ECX_00;\r\n                                }\r\n                                else {\r\n                                  FUN_0045aa5c(local_c,local_20,local_30,1);\r\n                                  uVar6 = FUN_00479a01(local_c);\r\n                                  uVar5 = extraout_ECX;\r\n                                }\r\n                              }\r\n                              uVar17 = CONCAT44(uVar14,uVar6) & 0xffffffffffff;\r\n                              local_14 = (undefined1)uVar9;\r\n                              if ((uVar14 & 0xffff) != 0xffff) {\r\n                                local_2c = (byte)uVar14;\r\n                                if ((uVar3 & 0xffff) == 2) {\r\n                                  uVar17 = FUN_0045ade5(local_34,local_38,\r\n                                                        CONCAT31((int3)(uVar5 >> 8),local_14),\r\n                                                        uVar10 & 0xff,\r\n                                                        CONCAT31((int3)((uVar14 & 0xffff) >> 8),\r\n                                                                 local_24),6,local_2c);\r\n                                  uVar5 = extraout_ECX_02;\r\n                                }\r\n                                else {\r\n                                  FUN_0045aa5c(local_c,6,local_2c,1);\r\n                                  uVar17 = FUN_00479a01(local_c);\r\n                                  uVar5 = extraout_ECX_01;\r\n                                }\r\n                              }\r\n                              uVar4 = (undefined4)uVar17;\r\n                              if (uVar15 != 0) {\r\n                                local_8 = (byte)uVar15;\r\n                                if ((uVar3 & 0xffff) == 2) {\r\n                                  uVar4 = FUN_0045ade5(local_34,local_38,\r\n                                                       CONCAT31((int3)(uVar17 >> 0x28),local_14),\r\n                                                       uVar10 & 0xff,\r\n                                                       CONCAT31((int3)(uVar17 >> 8),local_24),7,\r\n                                                       local_8);\r\n                                  uVar5 = extraout_ECX_04;\r\n                                }\r\n                                else {\r\n                                  FUN_0045aa5c(local_c,7,local_8,1);\r\n                                  uVar4 = FUN_00479a01(local_c);\r\n                                  uVar5 = extraout_ECX_03;\r\n                                }\r\n                              }\r\n                              if (uVar16 != 0) {\r\n                                local_28 = (byte)uVar16;\r\n                                if ((uVar3 & 0xffff) == 2) {\r\n                                  FUN_0045ade5(local_34,local_38,\r\n                                               CONCAT31((int3)((uint)uVar4 >> 8),local_14),\r\n                                               uVar10 & 0xff,CONCAT31((int3)(uVar5 >> 8),local_24),8\r\n                                               ,local_28);\r\n                                }\r\n                                else {\r\n                                  FUN_0045aa5c(local_c,8,local_28,1);\r\n                                  FUN_00479a01(local_c);\r\n                                }\r\n                              }\r\n                              uVar4 = 1;\r\n                            }\r\n                          }\r\n                        }\r\n                      }\r\n                    }\r\n                  }\r\n                }\r\n              }\r\n            }\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n  return uVar4;\r\n}\r\n\r\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  },
+  {
+    "evidence_id": "ev_037cf18c702195c2ede5d077344d9d86abfb84887bd2d96644285c5fbbac8572",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "executable_role": "application",
+        "managed": false,
+        "native_aot_metadata": {
+          "contract_revision": "rtr-9.1-x64-pe-read-only-v3",
+          "source_bytes": 134217728,
+          "work_units": 67108864,
+          "working_memory_bytes": 67108864,
+          "report_bytes": 4194304
+        },
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "disabled-windows-p0",
+        "process_launch": "official-headless-script-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x0045aa5c"
+    },
+    "raw_result": {
+      "value": "\r\nvoid FUN_0045aa5c(uint param_1,byte param_2,byte param_3,int param_4)\r\n\r\n{\r\n  char cVar1;\r\n  uint uVar2;\r\n  int iVar3;\r\n  int local_28;\r\n  uint local_24;\r\n  int local_20;\r\n  uint local_1c;\r\n  \r\n  if (((param_1 < 0x201) && (uVar2 = FUN_0043e4d6(param_1), (uVar2 & 0xff) != 0xff)) &&\r\n     (cVar1 = FUN_00418c90((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24)), cVar1 == '\\x02')) {\r\n    if ((param_4 != 0) && (param_2 < 7)) {\r\n      FUN_0043e69f((byte)uVar2,param_2,param_3);\r\n    }\r\n    switch(param_2) {\r\n    case 0:\r\n      FUN_0045b850(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      break;\r\n    case 1:\r\n      FUN_0045b870(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      break;\r\n    case 2:\r\n      FUN_0045b890(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      break;\r\n    case 3:\r\n      FUN_0045b8b0(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      break;\r\n    case 4:\r\n      FUN_0045b8d0(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      break;\r\n    case 5:\r\n      FUN_0045b8f0(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      break;\r\n    case 6:\r\n      if ((param_3 & 0x80) == 0) {\r\n        FUN_004066c0(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      }\r\n      else {\r\n        FUN_00418da0(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      }\r\n      break;\r\n    case 7:\r\n      iVar3 = FUN_00472c90((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n      if (iVar3 < (int)(uint)param_3) {\r\n        local_1c = FUN_00472c90((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n      }\r\n      else {\r\n        local_1c = (uint)param_3;\r\n      }\r\n      iVar3 = FUN_00472c90((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n      if (iVar3 - local_1c < 2) {\r\n        local_20 = 1;\r\n      }\r\n      else {\r\n        local_20 = FUN_00472c90((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n        local_20 = local_20 - local_1c;\r\n      }\r\n      FUN_0043f6cd((int *)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24),local_20,local_20);\r\n      break;\r\n    case 8:\r\n      iVar3 = FUN_00472840((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n      if (iVar3 < (int)(uint)param_3) {\r\n        local_24 = FUN_00472840((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n      }\r\n      else {\r\n        local_24 = (uint)param_3;\r\n      }\r\n      iVar3 = FUN_00472840((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n      if (iVar3 - local_24 < 2) {\r\n        local_28 = 1;\r\n      }\r\n      else {\r\n        local_28 = FUN_00472840((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n        local_28 = local_28 - local_24;\r\n      }\r\n      FUN_0043f70e((int *)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24),local_28,local_28);\r\n    }\r\n    FUN_0043fcc9((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n    uVar2 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n    FUN_00479a01(uVar2);\r\n  }\r\n  return;\r\n}\r\n\r\n",
+      "limitations": []
+    },
+    "normalized_result": "\r\nvoid FUN_0045aa5c(uint param_1,byte param_2,byte param_3,int param_4)\r\n\r\n{\r\n  char cVar1;\r\n  uint uVar2;\r\n  int iVar3;\r\n  int local_28;\r\n  uint local_24;\r\n  int local_20;\r\n  uint local_1c;\r\n  \r\n  if (((param_1 < 0x201) && (uVar2 = FUN_0043e4d6(param_1), (uVar2 & 0xff) != 0xff)) &&\r\n     (cVar1 = FUN_00418c90((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24)), cVar1 == '\\x02')) {\r\n    if ((param_4 != 0) && (param_2 < 7)) {\r\n      FUN_0043e69f((byte)uVar2,param_2,param_3);\r\n    }\r\n    switch(param_2) {\r\n    case 0:\r\n      FUN_0045b850(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      break;\r\n    case 1:\r\n      FUN_0045b870(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      break;\r\n    case 2:\r\n      FUN_0045b890(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      break;\r\n    case 3:\r\n      FUN_0045b8b0(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      break;\r\n    case 4:\r\n      FUN_0045b8d0(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      break;\r\n    case 5:\r\n      FUN_0045b8f0(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      break;\r\n    case 6:\r\n      if ((param_3 & 0x80) == 0) {\r\n        FUN_004066c0(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      }\r\n      else {\r\n        FUN_00418da0(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24,param_3);\r\n      }\r\n      break;\r\n    case 7:\r\n      iVar3 = FUN_00472c90((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n      if (iVar3 < (int)(uint)param_3) {\r\n        local_1c = FUN_00472c90((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n      }\r\n      else {\r\n        local_1c = (uint)param_3;\r\n      }\r\n      iVar3 = FUN_00472c90((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n      if (iVar3 - local_1c < 2) {\r\n        local_20 = 1;\r\n      }\r\n      else {\r\n        local_20 = FUN_00472c90((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n        local_20 = local_20 - local_1c;\r\n      }\r\n      FUN_0043f6cd((int *)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24),local_20,local_20);\r\n      break;\r\n    case 8:\r\n      iVar3 = FUN_00472840((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n      if (iVar3 < (int)(uint)param_3) {\r\n        local_24 = FUN_00472840((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n      }\r\n      else {\r\n        local_24 = (uint)param_3;\r\n      }\r\n      iVar3 = FUN_00472840((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n      if (iVar3 - local_24 < 2) {\r\n        local_28 = 1;\r\n      }\r\n      else {\r\n        local_28 = FUN_00472840((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n        local_28 = local_28 - local_24;\r\n      }\r\n      FUN_0043f70e((int *)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24),local_28,local_28);\r\n    }\r\n    FUN_0043fcc9((int)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n    uVar2 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (uVar2 & 0xff) * 0x24));\r\n    FUN_00479a01(uVar2);\r\n  }\r\n  return;\r\n}\r\n\r\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+]

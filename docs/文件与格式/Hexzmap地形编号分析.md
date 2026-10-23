@@ -86,20 +86,6 @@ terrain_id = terrain_ids[y * columns + x]
 terrain_name = TERRAIN_NAMES[terrain_id]
 ```
 
-项目中的正式映射及校验函数位于：
-
-- `battle_terrain.py`
-
-可视化编辑器：
-
-```bash
-./venv/bin/python run_battle_map_editor.py /path/to/ccz
-```
-
-编辑器把 `HmXX.e5` 作为背景图、把本文件的逐格编号作为48×48网格层。保存时
-只重建 `Hexzmap.e5`，先将新文件重新解包校验，再原子替换；首次保存会生成
-`Hexzmap.e5.bak`。
-
 ## 资料交叉验证
 
 - [MapMaster 工具开发讨论](https://xycq.org.cn/forum/thread-218062-1-9.html)：

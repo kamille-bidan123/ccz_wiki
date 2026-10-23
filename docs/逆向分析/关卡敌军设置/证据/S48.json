@@ -1,0 +1,3098 @@
+{
+  "script": "S_48.eex",
+  "script_sha256": "1dec11a6b6cef7a2c40910a06d948ce1e0f919270e12e0700e1c4f0b84df3249",
+  "title": "江陵之战",
+  "title_source": {
+    "file": "Imsg.e5",
+    "offset": 59600,
+    "encoded_hex": "bdadc1ead6aed5bd"
+  },
+  "global_command": {
+    "opcode": 69,
+    "offset": 45,
+    "size": 44,
+    "scene": 0,
+    "section": 0,
+    "guards": [],
+    "args": {
+      "reserved_bool1": false,
+      "reserved_bool2": false,
+      "gourd_num": 30,
+      "people_lv": 52,
+      "enemy_boss_type": 0,
+      "enemy_boss_id": 65535,
+      "team_boss_type": 1,
+      "team_boss_id": 0,
+      "weather_type": 0,
+      "weather_start": 1
+    },
+    "raw_hex": "4500260000002600000004001e0000003e003400320000000200ffff32000100020000004700000022000100"
+  },
+  "enemy_command": {
+    "offset": 1131,
+    "bytes": 4482,
+    "record_count": 80
+  },
+  "enemy_slots": [
+    {
+      "people_id": 76,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 0,
+      "x": 16,
+      "y": 2,
+      "dire": 2,
+      "people_lv": 6,
+      "max_troop": 65535,
+      "ai_type": 2,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 35,
+      "record_index": 0,
+      "file_offset": 1133,
+      "record_hex": "02004c0026000000260000000400100000000400020000002b0002003e0006004500ffff070002000200ffff040000000000040000000000",
+      "name": "孙权",
+      "named_class": true,
+      "base_force_id": 0,
+      "data_block0_record_offset": 2432,
+      "data_block0_record_hex": "cbefc8a80000000000000000004c004c00ff252829272e64001e000100ffffff",
+      "is_hide": false,
+      "is_yuanjun": false,
+      "formula": "B+6",
+      "at_A20": 24
+    },
+    {
+      "people_id": 79,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 0,
+      "x": 15,
+      "y": 3,
+      "dire": 2,
+      "people_lv": 6,
+      "max_troop": 65535,
+      "ai_type": 2,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 36,
+      "record_index": 1,
+      "file_offset": 1189,
+      "record_hex": "02004f00260000002600000004000f0000000400030000002b0002003e0006004500ffff070002000200ffff040000000000040000000000",
+      "name": "诸葛瑾",
+      "named_class": true,
+      "base_force_id": 27,
+      "data_block0_record_offset": 2528,
+      "data_block0_record_hex": "d6eeb8f0e8aa000000000000004f004f05ff12182e23245000321b0100ffffff",
+      "is_hide": false,
+      "is_yuanjun": false,
+      "formula": "B+6",
+      "at_A20": 24
+    },
+    {
+      "people_id": 86,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 0,
+      "x": 16,
+      "y": 3,
+      "dire": 2,
+      "people_lv": 6,
+      "max_troop": 65535,
+      "ai_type": 2,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 37,
+      "record_index": 2,
+      "file_offset": 1245,
+      "record_hex": "0200560026000000260000000400100000000400030000002b0002003e0006004500ffff070002000200ffff040000000000040000000000",
+      "name": "周泰",
+      "named_class": true,
+      "base_force_id": 41,
+      "data_block0_record_offset": 2752,
+      "data_block0_record_hex": "d6dccca900000000000000000056005604ff2f221a281d5a0014290100ffffff",
+      "is_hide": false,
+      "is_yuanjun": false,
+      "formula": "B+6",
+      "at_A20": 24
+    },
+    {
+      "people_id": 85,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 0,
+      "x": 16,
+      "y": 12,
+      "dire": 2,
+      "people_lv": 6,
+      "max_troop": 65535,
+      "ai_type": 2,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 38,
+      "record_index": 3,
+      "file_offset": 1301,
+      "record_hex": "02005500260000002600000004001000000004000c0000002b0002003e0006004500ffff070002000200ffff040000000000040000000000",
+      "name": "凌统",
+      "named_class": true,
+      "base_force_id": 9,
+      "data_block0_record_offset": 2720,
+      "data_block0_record_hex": "c1e8cdb300000000000000000055005508ff2d261c221e64000a090100ffffff",
+      "is_hide": false,
+      "is_yuanjun": false,
+      "formula": "B+6",
+      "at_A20": 24
+    },
+    {
+      "people_id": 96,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 0,
+      "x": 15,
+      "y": 12,
+      "dire": 2,
+      "people_lv": 4,
+      "max_troop": 65535,
+      "ai_type": 2,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 39,
+      "record_index": 4,
+      "file_offset": 1357,
+      "record_hex": "02006000260000002600000004000f00000004000c0000002b0002003e0004004500ffff070002000200ffff040000000000040000000000",
+      "name": "丁奉",
+      "named_class": true,
+      "base_force_id": 18,
+      "data_block0_record_offset": 3072,
+      "data_block0_record_hex": "b6a1b7ee00000000000000000060006000ff2625172d1a5a0014120100ffffff",
+      "is_hide": false,
+      "is_yuanjun": false,
+      "formula": "B+4",
+      "at_A20": 22
+    },
+    {
+      "people_id": 83,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 0,
+      "x": 16,
+      "y": 11,
+      "dire": 2,
+      "people_lv": 4,
+      "max_troop": 65535,
+      "ai_type": 2,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 40,
+      "record_index": 5,
+      "file_offset": 1413,
+      "record_hex": "02005300260000002600000004001000000004000b0000002b0002003e0004004500ffff070002000200ffff040000000000040000000000",
+      "name": "徐盛",
+      "named_class": true,
+      "base_force_id": 12,
+      "data_block0_record_offset": 2656,
+      "data_block0_record_hex": "d0eccaa200000000000000000053005300ff232425202564000a0c0100ffffff",
+      "is_hide": false,
+      "is_yuanjun": false,
+      "formula": "B+4",
+      "at_A20": 22
+    },
+    {
+      "people_id": 282,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 0,
+      "x": 17,
+      "y": 11,
+      "dire": 2,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 2,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 41,
+      "record_index": 6,
+      "file_offset": 1469,
+      "record_hex": "02001a01260000002600000004001100000004000b0000002b0002003e0000004500ffff070002000200ffff040000000000040000000000",
+      "name": "弓骑兵1",
+      "named_class": false,
+      "base_force_id": 12,
+      "data_block0_record_offset": 9024,
+      "data_block0_record_hex": "b9adc6efb1f8310000000000007400aa05ff281e1e1e2364000a0c0100ffffff",
+      "is_hide": false,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 310,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 0,
+      "x": 15,
+      "y": 11,
+      "dire": 2,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 2,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 42,
+      "record_index": 7,
+      "file_offset": 1525,
+      "record_hex": "02003601260000002600000004000f00000004000b0000002b0002003e0000004500ffff070002000200ffff040000000000040000000000",
+      "name": "武术家1",
+      "named_class": false,
+      "base_force_id": 18,
+      "data_block0_record_offset": 9920,
+      "data_block0_record_hex": "cee4caf5bcd231000000000000b500b404ff232314281e5a0014120100ffffff",
+      "is_hide": false,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 311,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 0,
+      "x": 14,
+      "y": 11,
+      "dire": 2,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 2,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 43,
+      "record_index": 8,
+      "file_offset": 1581,
+      "record_hex": "02003701260000002600000004000e00000004000b0000002b0002003e0000004500ffff070002000200ffff040000000000040000000000",
+      "name": "武术家2",
+      "named_class": false,
+      "base_force_id": 18,
+      "data_block0_record_offset": 9952,
+      "data_block0_record_hex": "cee4caf5bcd232000000000000bf00b404ff232314281e5a0014120100ffffff",
+      "is_hide": false,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 92,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 0,
+      "x": 15,
+      "y": 15,
+      "dire": 3,
+      "people_lv": 4,
+      "max_troop": 65535,
+      "ai_type": 2,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 44,
+      "record_index": 9,
+      "file_offset": 1637,
+      "record_hex": "02005c00260000002600000004000f00000004000f0000002b0003003e0004004500ffff070002000200ffff040000000000040000000000",
+      "name": "全琮",
+      "named_class": true,
+      "base_force_id": 6,
+      "data_block0_record_offset": 2944,
+      "data_block0_record_hex": "c8abe7fd0000000000000000005c005c00ff29201c212d5a000a060100ffffff",
+      "is_hide": false,
+      "is_yuanjun": false,
+      "formula": "B+4",
+      "at_A20": 22
+    },
+    {
+      "people_id": 210,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 0,
+      "x": 15,
+      "y": 14,
+      "dire": 3,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 2,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 45,
+      "record_index": 10,
+      "file_offset": 1693,
+      "record_hex": "0200d200260000002600000004000f00000004000e0000002b0003003e0000004500ffff070002000200ffff040000000000040000000000",
+      "name": "步兵1",
+      "named_class": false,
+      "base_force_id": 3,
+      "data_block0_record_offset": 6720,
+      "data_block0_record_hex": "b2bdb1f8310000000000000000ac00aa00ff1e28231e1e6e000a030100ffffff",
+      "is_hide": false,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 211,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 0,
+      "x": 15,
+      "y": 16,
+      "dire": 3,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 2,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 46,
+      "record_index": 11,
+      "file_offset": 1749,
+      "record_hex": "0200d300260000002600000004000f0000000400100000002b0003003e0000004500ffff070002000200ffff040000000000040000000000",
+      "name": "步兵2",
+      "named_class": false,
+      "base_force_id": 3,
+      "data_block0_record_offset": 6752,
+      "data_block0_record_hex": "b2bdb1f8320000000000000000b200aa00ff1e28231e1e6e000a030100ffffff",
+      "is_hide": false,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 234,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 0,
+      "x": 16,
+      "y": 15,
+      "dire": 3,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 2,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 47,
+      "record_index": 12,
+      "file_offset": 1805,
+      "record_hex": "0200ea00260000002600000004001000000004000f0000002b0003003e0000004500ffff070002000200ffff040000000000040000000000",
+      "name": "弓兵1",
+      "named_class": false,
+      "base_force_id": 6,
+      "data_block0_record_offset": 7488,
+      "data_block0_record_hex": "b9adb1f8310000000000000000aa00aa07ff231e1e1e285a000a060100ffffff",
+      "is_hide": false,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 82,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 5,
+      "y": 15,
+      "dire": 1,
+      "people_lv": 4,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 48,
+      "record_index": 13,
+      "file_offset": 1861,
+      "record_hex": "02005200260000002600010004000500000004000f0000002b0001003e0004004500ffff070001000200ffff040000000000040000000000",
+      "name": "潘璋",
+      "named_class": true,
+      "base_force_id": 3,
+      "data_block0_record_offset": 2624,
+      "data_block0_record_hex": "c5cbe8b000000000000000000052005200ff1e271f1f1a6e000a030100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B+4",
+      "at_A20": 22
+    },
+    {
+      "people_id": 87,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 5,
+      "y": 16,
+      "dire": 1,
+      "people_lv": 4,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 49,
+      "record_index": 14,
+      "file_offset": 1917,
+      "record_hex": "0200570026000000260001000400050000000400100000002b0001003e0004004500ffff070001000200ffff040000000000040000000000",
+      "name": "蒋钦",
+      "named_class": true,
+      "base_force_id": 41,
+      "data_block0_record_offset": 2784,
+      "data_block0_record_hex": "bdafc7d500000000000000000057005700ff271c19251a5a0014290100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B+4",
+      "at_A20": 22
+    },
+    {
+      "people_id": 235,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 4,
+      "y": 15,
+      "dire": 1,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 50,
+      "record_index": 15,
+      "file_offset": 1973,
+      "record_hex": "0200eb00260000002600010004000400000004000f0000002b0001003e0000004500ffff070001000200ffff040000000000040000000000",
+      "name": "弓兵2",
+      "named_class": false,
+      "base_force_id": 6,
+      "data_block0_record_offset": 7520,
+      "data_block0_record_hex": "b9adb1f8320000000000000000ae00aa07ff231e1e1e285a000a060100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 236,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 4,
+      "y": 16,
+      "dire": 1,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 51,
+      "record_index": 16,
+      "file_offset": 2029,
+      "record_hex": "0200ec0026000000260001000400040000000400100000002b0001003e0000004500ffff070001000200ffff040000000000040000000000",
+      "name": "弓兵3",
+      "named_class": false,
+      "base_force_id": 6,
+      "data_block0_record_offset": 7552,
+      "data_block0_record_hex": "b9adb1f8330000000000000000aa00aa07ff231e1e1e285a000a060100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 318,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 3,
+      "y": 15,
+      "dire": 1,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 52,
+      "record_index": 17,
+      "file_offset": 2085,
+      "record_hex": "02003e01260000002600010004000300000004000f0000002b0001003e0000004500ffff070001000200ffff040000000000040000000000",
+      "name": "贼兵1",
+      "named_class": false,
+      "base_force_id": 21,
+      "data_block0_record_offset": 10176,
+      "data_block0_record_hex": "d4f4b1f8310000000000000000b400b401ff281e141e28640014150100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 319,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 3,
+      "y": 16,
+      "dire": 1,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 53,
+      "record_index": 18,
+      "file_offset": 2141,
+      "record_hex": "02003f0126000000260001000400030000000400100000002b0001003e0000004500ffff070001000200ffff040000000000040000000000",
+      "name": "贼兵2",
+      "named_class": false,
+      "base_force_id": 21,
+      "data_block0_record_offset": 10208,
+      "data_block0_record_hex": "d4f4b1f8320000000000000000c500b401ff281e141e28640014150100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 320,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 5,
+      "y": 14,
+      "dire": 1,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 54,
+      "record_index": 19,
+      "file_offset": 2197,
+      "record_hex": "02004001260000002600010004000500000004000e0000002b0001003e0000004500ffff070001000200ffff040000000000040000000000",
+      "name": "贼兵3",
+      "named_class": false,
+      "base_force_id": 21,
+      "data_block0_record_offset": 10240,
+      "data_block0_record_hex": "d4f4b1f8330000000000000000b400b401ff281e141e28640014150100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 321,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 4,
+      "y": 14,
+      "dire": 1,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 55,
+      "record_index": 20,
+      "file_offset": 2253,
+      "record_hex": "02004101260000002600010004000400000004000e0000002b0001003e0000004500ffff070001000200ffff040000000000040000000000",
+      "name": "贼兵4",
+      "named_class": false,
+      "base_force_id": 21,
+      "data_block0_record_offset": 10272,
+      "data_block0_record_hex": "d4f4b1f8340000000000000000c500b401ff281e141e28640014150100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 84,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 19,
+      "y": 20,
+      "dire": 3,
+      "people_lv": 6,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 56,
+      "record_index": 21,
+      "file_offset": 2309,
+      "record_hex": "0200540026000000260001000400130000000400140000002b0003003e0006004500ffff070001000200ffff040000000000040000000000",
+      "name": "甘宁",
+      "named_class": true,
+      "base_force_id": 41,
+      "data_block0_record_offset": 2688,
+      "data_block0_record_hex": "b8cac4fe00000000000000000054005400ff30281a291b5a0014290100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B+6",
+      "at_A20": 24
+    },
+    {
+      "people_id": 78,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 19,
+      "y": 21,
+      "dire": 3,
+      "people_lv": 6,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 57,
+      "record_index": 22,
+      "file_offset": 2365,
+      "record_hex": "02004e0026000000260001000400130000000400150000002b0003003e0006004500ffff070001000200ffff040000000000040000000000",
+      "name": "鲁肃",
+      "named_class": true,
+      "base_force_id": 24,
+      "data_block0_record_offset": 2496,
+      "data_block0_record_hex": "c2b3cbe00000000000000000004e004e00ff1a202f1a225a0028180100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B+6",
+      "at_A20": 24
+    },
+    {
+      "people_id": 358,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 19,
+      "y": 22,
+      "dire": 3,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 58,
+      "record_index": 23,
+      "file_offset": 2421,
+      "record_hex": "0200660126000000260001000400130000000400160000002b0003003e0000004500ffff070001000200ffff040000000000040000000000",
+      "name": "海盗1",
+      "named_class": false,
+      "base_force_id": 41,
+      "data_block0_record_offset": 11456,
+      "data_block0_record_hex": "baa3b5c1310000000000000000bb00b408ff281e1e231e5a0014290100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 359,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 19,
+      "y": 20,
+      "dire": 3,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 59,
+      "record_index": 24,
+      "file_offset": 2477,
+      "record_hex": "0200670126000000260001000400130000000400140000002b0003003e0000004500ffff070001000200ffff040000000000040000000000",
+      "name": "海盗2",
+      "named_class": false,
+      "base_force_id": 41,
+      "data_block0_record_offset": 11488,
+      "data_block0_record_hex": "baa3b5c1320000000000000000c000b408ff281e1e231e5a0014290100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 360,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 19,
+      "y": 21,
+      "dire": 3,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 60,
+      "record_index": 25,
+      "file_offset": 2533,
+      "record_hex": "0200680126000000260001000400130000000400150000002b0003003e0000004500ffff070001000200ffff040000000000040000000000",
+      "name": "海盗3",
+      "named_class": false,
+      "base_force_id": 41,
+      "data_block0_record_offset": 11520,
+      "data_block0_record_hex": "baa3b5c1330000000000000000bb00b408ff281e1e231e5a0014290100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 361,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 19,
+      "y": 22,
+      "dire": 3,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 61,
+      "record_index": 26,
+      "file_offset": 2589,
+      "record_hex": "0200690126000000260001000400130000000400160000002b0003003e0000004500ffff070001000200ffff040000000000040000000000",
+      "name": "海盗4",
+      "named_class": false,
+      "base_force_id": 41,
+      "data_block0_record_offset": 11552,
+      "data_block0_record_hex": "baa3b5c1340000000000000000c000b408ff281e1e231e5a0014290100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 362,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 19,
+      "y": 20,
+      "dire": 3,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 62,
+      "record_index": 27,
+      "file_offset": 2645,
+      "record_hex": "02006a0126000000260001000400130000000400140000002b0003003e0000004500ffff070001000200ffff040000000000040000000000",
+      "name": "海盗5",
+      "named_class": false,
+      "base_force_id": 41,
+      "data_block0_record_offset": 11584,
+      "data_block0_record_hex": "baa3b5c1350000000000000000bb00b408ff281e1e231e5a0014290100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 363,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 19,
+      "y": 21,
+      "dire": 3,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 63,
+      "record_index": 28,
+      "file_offset": 2701,
+      "record_hex": "02006b0126000000260001000400130000000400150000002b0003003e0000004500ffff070001000200ffff040000000000040000000000",
+      "name": "海盗6",
+      "named_class": false,
+      "base_force_id": 41,
+      "data_block0_record_offset": 11616,
+      "data_block0_record_hex": "baa3b5c1360000000000000000c000b408ff281e1e231e5a0014290100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    },
+    {
+      "people_id": 364,
+      "is_yuanjun_word": 0,
+      "is_hide_word": 1,
+      "x": 19,
+      "y": 22,
+      "dire": 3,
+      "people_lv": 0,
+      "max_troop": 65535,
+      "ai_type": 1,
+      "ai_parameter_u16": 65535,
+      "ai_parameter_x": 0,
+      "ai_parameter_y": 0,
+      "slot": 64,
+      "record_index": 29,
+      "file_offset": 2757,
+      "record_hex": "02006c0126000000260001000400130000000400160000002b0003003e0000004500ffff070001000200ffff040000000000040000000000",
+      "name": "海盗7",
+      "named_class": false,
+      "base_force_id": 41,
+      "data_block0_record_offset": 11648,
+      "data_block0_record_hex": "baa3b5c1370000000000000000bb00b408ff281e1e231e5a0014290100ffffff",
+      "is_hide": true,
+      "is_yuanjun": false,
+      "formula": "B",
+      "at_A20": 18
+    }
+  ],
+  "equipment_requests": [
+    {
+      "opcode": 72,
+      "offset": 6076,
+      "size": 26,
+      "scene": 0,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "child",
+          "offset": 6057,
+          "opcode": 2,
+          "args": {},
+          "comment": "个人装备设定"
+        }
+      ],
+      "args": {
+        "people_id": 79,
+        "weapon_id": 39,
+        "weapon_lv": 65535,
+        "armor_id": 65535,
+        "armor_lv": 65535,
+        "support_id": 65535
+      },
+      "raw_hex": "480002004f003b0027004900ffff3c00ffff4900ffff3d00ffff",
+      "decoded": {
+        "people_id": 79,
+        "weapon_id": 39,
+        "weapon_lv": 65535,
+        "armor_id": 65535,
+        "armor_lv": 65535,
+        "support_id": 65535,
+        "weapon_id_request": "圣者宝剑",
+        "weapon_id_data_record_hex": "caa5d5dfb1a6bda30000000000000000000d1eff250e140901",
+        "armor_id_request": "自动",
+        "support_id_request": "自动"
+      }
+    },
+    {
+      "opcode": 72,
+      "offset": 6102,
+      "size": 26,
+      "scene": 0,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "child",
+          "offset": 6057,
+          "opcode": 2,
+          "args": {},
+          "comment": "个人装备设定"
+        }
+      ],
+      "args": {
+        "people_id": 85,
+        "weapon_id": 65535,
+        "weapon_lv": 65535,
+        "armor_id": 65535,
+        "armor_lv": 65535,
+        "support_id": 4
+      },
+      "raw_hex": "4800020055003b00ffff4900ffff3c00ffff4900ffff3d000400",
+      "decoded": {
+        "people_id": 85,
+        "weapon_id": 65535,
+        "weapon_lv": 65535,
+        "armor_id": 65535,
+        "armor_lv": 65535,
+        "support_id": 4,
+        "weapon_id_request": "自动",
+        "armor_id_request": "自动",
+        "support_id_request": "白银盾",
+        "support_id_data_record_hex": "b0d7d2f8b6dc000000000000000000000036ffff370f00ff01"
+      }
+    },
+    {
+      "opcode": 72,
+      "offset": 6128,
+      "size": 26,
+      "scene": 0,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "child",
+          "offset": 6057,
+          "opcode": 2,
+          "args": {},
+          "comment": "个人装备设定"
+        }
+      ],
+      "args": {
+        "people_id": 82,
+        "weapon_id": 65535,
+        "weapon_lv": 65535,
+        "armor_id": 65535,
+        "armor_lv": 65535,
+        "support_id": 15
+      },
+      "raw_hex": "4800020052003b00ffff4900ffff3c00ffff4900ffff3d000f00",
+      "decoded": {
+        "people_id": 82,
+        "weapon_id": 65535,
+        "weapon_lv": 65535,
+        "armor_id": 65535,
+        "armor_lv": 65535,
+        "support_id": 15,
+        "weapon_id_request": "自动",
+        "armor_id_request": "自动",
+        "support_id_request": "铁盔",
+        "support_id_data_record_hex": "ccfabff8000000000000000000000000001dffff422d000101"
+      }
+    },
+    {
+      "opcode": 72,
+      "offset": 6154,
+      "size": 26,
+      "scene": 0,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "child",
+          "offset": 6057,
+          "opcode": 2,
+          "args": {},
+          "comment": "个人装备设定"
+        }
+      ],
+      "args": {
+        "people_id": 83,
+        "weapon_id": 65535,
+        "weapon_lv": 65535,
+        "armor_id": 10,
+        "armor_lv": 65535,
+        "support_id": 65535
+      },
+      "raw_hex": "4800020053003b00ffff4900ffff3c000a004900ffff3d00ffff",
+      "decoded": {
+        "people_id": 83,
+        "weapon_id": 65535,
+        "weapon_lv": 65535,
+        "armor_id": 10,
+        "armor_lv": 65535,
+        "support_id": 65535,
+        "weapon_id_request": "自动",
+        "armor_id_request": "连环铠",
+        "armor_id_data_record_hex": "c1acbbb7eef800000000000000000000000f3aff2e12000901",
+        "support_id_request": "自动"
+      }
+    },
+    {
+      "opcode": 72,
+      "offset": 6180,
+      "size": 26,
+      "scene": 0,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "child",
+          "offset": 6057,
+          "opcode": 2,
+          "args": {},
+          "comment": "个人装备设定"
+        }
+      ],
+      "args": {
+        "people_id": 84,
+        "weapon_id": 65535,
+        "weapon_lv": 65535,
+        "armor_id": 13,
+        "armor_lv": 65535,
+        "support_id": 65535
+      },
+      "raw_hex": "4800020054003b00ffff4900ffff3c000d004900ffff3d00ffff",
+      "decoded": {
+        "people_id": 84,
+        "weapon_id": 65535,
+        "weapon_lv": 65535,
+        "armor_id": 13,
+        "armor_lv": 65535,
+        "support_id": 65535,
+        "weapon_id_request": "自动",
+        "armor_id_request": "飞龙道袍",
+        "armor_id_data_record_hex": "b7c9c1fab5c0c5db000000000000000000111bff310e0a0901",
+        "support_id_request": "自动"
+      }
+    }
+  ],
+  "relevant_later_commands": [
+    {
+      "opcode": 76,
+      "offset": 7395,
+      "size": 16,
+      "scene": 1,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 7342,
+          "opcode": 63,
+          "args": {
+            "round": 1,
+            "operator": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7354,
+          "opcode": 64,
+          "args": {
+            "action_side": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7360,
+          "opcode": 5,
+          "args": {
+            "true_var": [
+              2
+            ],
+            "false_var": [
+              11
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 7380,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 84,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002005400040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 7443,
+      "size": 16,
+      "scene": 1,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 7342,
+          "opcode": 63,
+          "args": {
+            "round": 1,
+            "operator": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7354,
+          "opcode": 64,
+          "args": {
+            "action_side": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7360,
+          "opcode": 5,
+          "args": {
+            "true_var": [
+              2
+            ],
+            "false_var": [
+              11
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 7380,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 78,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002004e00040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 7491,
+      "size": 16,
+      "scene": 1,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 7342,
+          "opcode": 63,
+          "args": {
+            "round": 1,
+            "operator": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7354,
+          "opcode": 64,
+          "args": {
+            "action_side": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7360,
+          "opcode": 5,
+          "args": {
+            "true_var": [
+              2
+            ],
+            "false_var": [
+              11
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 7380,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 358,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002006601040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 7539,
+      "size": 16,
+      "scene": 1,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 7342,
+          "opcode": 63,
+          "args": {
+            "round": 1,
+            "operator": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7354,
+          "opcode": 64,
+          "args": {
+            "action_side": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7360,
+          "opcode": 5,
+          "args": {
+            "true_var": [
+              2
+            ],
+            "false_var": [
+              11
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 7380,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 359,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002006701040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 7587,
+      "size": 16,
+      "scene": 1,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 7342,
+          "opcode": 63,
+          "args": {
+            "round": 1,
+            "operator": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7354,
+          "opcode": 64,
+          "args": {
+            "action_side": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7360,
+          "opcode": 5,
+          "args": {
+            "true_var": [
+              2
+            ],
+            "false_var": [
+              11
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 7380,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 360,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002006801040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 7635,
+      "size": 16,
+      "scene": 1,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 7342,
+          "opcode": 63,
+          "args": {
+            "round": 1,
+            "operator": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7354,
+          "opcode": 64,
+          "args": {
+            "action_side": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7360,
+          "opcode": 5,
+          "args": {
+            "true_var": [
+              2
+            ],
+            "false_var": [
+              11
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 7380,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 361,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002006901040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 7683,
+      "size": 16,
+      "scene": 1,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 7342,
+          "opcode": 63,
+          "args": {
+            "round": 1,
+            "operator": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7354,
+          "opcode": 64,
+          "args": {
+            "action_side": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7360,
+          "opcode": 5,
+          "args": {
+            "true_var": [
+              2
+            ],
+            "false_var": [
+              11
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 7380,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 362,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002006a01040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 7731,
+      "size": 16,
+      "scene": 1,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 7342,
+          "opcode": 63,
+          "args": {
+            "round": 1,
+            "operator": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7354,
+          "opcode": 64,
+          "args": {
+            "action_side": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7360,
+          "opcode": 5,
+          "args": {
+            "true_var": [
+              2
+            ],
+            "false_var": [
+              11
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 7380,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 363,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002006b01040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 7779,
+      "size": 16,
+      "scene": 1,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 7342,
+          "opcode": 63,
+          "args": {
+            "round": 1,
+            "operator": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7354,
+          "opcode": 64,
+          "args": {
+            "action_side": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7360,
+          "opcode": 5,
+          "args": {
+            "true_var": [
+              2
+            ],
+            "false_var": [
+              11
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 7380,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 364,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002006c01040000000000"
+    },
+    {
+      "opcode": 78,
+      "offset": 9862,
+      "size": 58,
+      "scene": 1,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 7342,
+          "opcode": 63,
+          "args": {
+            "round": 1,
+            "operator": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7354,
+          "opcode": 64,
+          "args": {
+            "action_side": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7360,
+          "opcode": 5,
+          "args": {
+            "true_var": [
+              2
+            ],
+            "false_var": [
+              11
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 9527,
+          "opcode": 19,
+          "args": {
+            "value": 2
+          }
+        }
+      ],
+      "args": {
+        "is_area": false,
+        "people_id": 76,
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "battle_side": 65535,
+        "ai_type": 1,
+        "people_id_ai": 65535,
+        "x_ai": 0,
+        "y_ai": 0
+      },
+      "raw_hex": "4e002c00000002004c000400000000000400000000000400000000000400000000000300ffff070001000200ffff040000000000040000000000"
+    },
+    {
+      "opcode": 78,
+      "offset": 9920,
+      "size": 58,
+      "scene": 1,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 7342,
+          "opcode": 63,
+          "args": {
+            "round": 1,
+            "operator": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7354,
+          "opcode": 64,
+          "args": {
+            "action_side": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7360,
+          "opcode": 5,
+          "args": {
+            "true_var": [
+              2
+            ],
+            "false_var": [
+              11
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 9527,
+          "opcode": 19,
+          "args": {
+            "value": 2
+          }
+        }
+      ],
+      "args": {
+        "is_area": false,
+        "people_id": 79,
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "battle_side": 65535,
+        "ai_type": 1,
+        "people_id_ai": 65535,
+        "x_ai": 0,
+        "y_ai": 0
+      },
+      "raw_hex": "4e002c00000002004f000400000000000400000000000400000000000400000000000300ffff070001000200ffff040000000000040000000000"
+    },
+    {
+      "opcode": 78,
+      "offset": 9978,
+      "size": 58,
+      "scene": 1,
+      "section": 0,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 7342,
+          "opcode": 63,
+          "args": {
+            "round": 1,
+            "operator": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7354,
+          "opcode": 64,
+          "args": {
+            "action_side": 0
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 7360,
+          "opcode": 5,
+          "args": {
+            "true_var": [
+              2
+            ],
+            "false_var": [
+              11
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 9527,
+          "opcode": 19,
+          "args": {
+            "value": 2
+          }
+        }
+      ],
+      "args": {
+        "is_area": false,
+        "people_id": 86,
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "battle_side": 65535,
+        "ai_type": 1,
+        "people_id_ai": 65535,
+        "x_ai": 0,
+        "y_ai": 0
+      },
+      "raw_hex": "4e002c000000020056000400000000000400000000000400000000000400000000000300ffff070001000200ffff040000000000040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 10557,
+      "size": 16,
+      "scene": 1,
+      "section": 6,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 10472,
+          "opcode": 65,
+          "args": {
+            "battle_side": 0,
+            "value": 3,
+            "operator": 0,
+            "is_area": true,
+            "x1": 12,
+            "y1": 13,
+            "x2": 19,
+            "y2": 23
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10516,
+          "opcode": 64,
+          "args": {
+            "action_side": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10522,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 10542,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 87,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002005700040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 10573,
+      "size": 16,
+      "scene": 1,
+      "section": 6,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 10472,
+          "opcode": 65,
+          "args": {
+            "battle_side": 0,
+            "value": 3,
+            "operator": 0,
+            "is_area": true,
+            "x1": 12,
+            "y1": 13,
+            "x2": 19,
+            "y2": 23
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10516,
+          "opcode": 64,
+          "args": {
+            "action_side": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10522,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 10542,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 82,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002005200040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 10589,
+      "size": 16,
+      "scene": 1,
+      "section": 6,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 10472,
+          "opcode": 65,
+          "args": {
+            "battle_side": 0,
+            "value": 3,
+            "operator": 0,
+            "is_area": true,
+            "x1": 12,
+            "y1": 13,
+            "x2": 19,
+            "y2": 23
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10516,
+          "opcode": 64,
+          "args": {
+            "action_side": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10522,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 10542,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 235,
+        "battle_id": 0
+      },
+      "raw_hex": "4c00400000000200eb00040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 10605,
+      "size": 16,
+      "scene": 1,
+      "section": 6,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 10472,
+          "opcode": 65,
+          "args": {
+            "battle_side": 0,
+            "value": 3,
+            "operator": 0,
+            "is_area": true,
+            "x1": 12,
+            "y1": 13,
+            "x2": 19,
+            "y2": 23
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10516,
+          "opcode": 64,
+          "args": {
+            "action_side": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10522,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 10542,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 236,
+        "battle_id": 0
+      },
+      "raw_hex": "4c00400000000200ec00040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 10621,
+      "size": 16,
+      "scene": 1,
+      "section": 6,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 10472,
+          "opcode": 65,
+          "args": {
+            "battle_side": 0,
+            "value": 3,
+            "operator": 0,
+            "is_area": true,
+            "x1": 12,
+            "y1": 13,
+            "x2": 19,
+            "y2": 23
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10516,
+          "opcode": 64,
+          "args": {
+            "action_side": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10522,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 10542,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 318,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002003e01040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 10637,
+      "size": 16,
+      "scene": 1,
+      "section": 6,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 10472,
+          "opcode": 65,
+          "args": {
+            "battle_side": 0,
+            "value": 3,
+            "operator": 0,
+            "is_area": true,
+            "x1": 12,
+            "y1": 13,
+            "x2": 19,
+            "y2": 23
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10516,
+          "opcode": 64,
+          "args": {
+            "action_side": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10522,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 10542,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 319,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002003f01040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 10653,
+      "size": 16,
+      "scene": 1,
+      "section": 6,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 10472,
+          "opcode": 65,
+          "args": {
+            "battle_side": 0,
+            "value": 3,
+            "operator": 0,
+            "is_area": true,
+            "x1": 12,
+            "y1": 13,
+            "x2": 19,
+            "y2": 23
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10516,
+          "opcode": 64,
+          "args": {
+            "action_side": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10522,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 10542,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 320,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002004001040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 10669,
+      "size": 16,
+      "scene": 1,
+      "section": 6,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 10472,
+          "opcode": 65,
+          "args": {
+            "battle_side": 0,
+            "value": 3,
+            "operator": 0,
+            "is_area": true,
+            "x1": 12,
+            "y1": 13,
+            "x2": 19,
+            "y2": 23
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10516,
+          "opcode": 64,
+          "args": {
+            "action_side": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10522,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 10542,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 321,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002004101040000000000"
+    },
+    {
+      "opcode": 78,
+      "offset": 11022,
+      "size": 58,
+      "scene": 1,
+      "section": 6,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 10472,
+          "opcode": 65,
+          "args": {
+            "battle_side": 0,
+            "value": 3,
+            "operator": 0,
+            "is_area": true,
+            "x1": 12,
+            "y1": 13,
+            "x2": 19,
+            "y2": 23
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10516,
+          "opcode": 64,
+          "args": {
+            "action_side": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 10522,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              6
+            ]
+          }
+        }
+      ],
+      "args": {
+        "is_area": true,
+        "people_id": 65535,
+        "x1": 10,
+        "y1": 11,
+        "x2": 19,
+        "y2": 17,
+        "battle_side": 2,
+        "ai_type": 1,
+        "people_id_ai": 65535,
+        "x_ai": 0,
+        "y_ai": 0
+      },
+      "raw_hex": "4e002c0001000200ffff04000a00000004000b00000004001300000004001100000003000200070001000200ffff040000000000040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 11186,
+      "size": 16,
+      "scene": 1,
+      "section": 7,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 11121,
+          "opcode": 38,
+          "args": {
+            "people_id": 1025,
+            "x1": 2,
+            "y1": 13,
+            "x2": 6,
+            "y2": 17
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 11151,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              30
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 11171,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 87,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002005700040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 11202,
+      "size": 16,
+      "scene": 1,
+      "section": 7,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 11121,
+          "opcode": 38,
+          "args": {
+            "people_id": 1025,
+            "x1": 2,
+            "y1": 13,
+            "x2": 6,
+            "y2": 17
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 11151,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              30
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 11171,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 82,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002005200040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 11218,
+      "size": 16,
+      "scene": 1,
+      "section": 7,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 11121,
+          "opcode": 38,
+          "args": {
+            "people_id": 1025,
+            "x1": 2,
+            "y1": 13,
+            "x2": 6,
+            "y2": 17
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 11151,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              30
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 11171,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 235,
+        "battle_id": 0
+      },
+      "raw_hex": "4c00400000000200eb00040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 11234,
+      "size": 16,
+      "scene": 1,
+      "section": 7,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 11121,
+          "opcode": 38,
+          "args": {
+            "people_id": 1025,
+            "x1": 2,
+            "y1": 13,
+            "x2": 6,
+            "y2": 17
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 11151,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              30
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 11171,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 236,
+        "battle_id": 0
+      },
+      "raw_hex": "4c00400000000200ec00040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 11250,
+      "size": 16,
+      "scene": 1,
+      "section": 7,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 11121,
+          "opcode": 38,
+          "args": {
+            "people_id": 1025,
+            "x1": 2,
+            "y1": 13,
+            "x2": 6,
+            "y2": 17
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 11151,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              30
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 11171,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 318,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002003e01040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 11266,
+      "size": 16,
+      "scene": 1,
+      "section": 7,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 11121,
+          "opcode": 38,
+          "args": {
+            "people_id": 1025,
+            "x1": 2,
+            "y1": 13,
+            "x2": 6,
+            "y2": 17
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 11151,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              30
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 11171,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 319,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002003f01040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 11282,
+      "size": 16,
+      "scene": 1,
+      "section": 7,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 11121,
+          "opcode": 38,
+          "args": {
+            "people_id": 1025,
+            "x1": 2,
+            "y1": 13,
+            "x2": 6,
+            "y2": 17
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 11151,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              30
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 11171,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 320,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002004001040000000000"
+    },
+    {
+      "opcode": 76,
+      "offset": 11298,
+      "size": 16,
+      "scene": 1,
+      "section": 7,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 11121,
+          "opcode": 38,
+          "args": {
+            "people_id": 1025,
+            "x1": 2,
+            "y1": 13,
+            "x2": 6,
+            "y2": 17
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 11151,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              30
+            ]
+          }
+        },
+        {
+          "scope": "child",
+          "offset": 11171,
+          "opcode": 2,
+          "args": {},
+          "comment": "援军登场"
+        }
+      ],
+      "args": {
+        "is_battle": false,
+        "people_id": 321,
+        "battle_id": 0
+      },
+      "raw_hex": "4c004000000002004101040000000000"
+    },
+    {
+      "opcode": 78,
+      "offset": 11662,
+      "size": 58,
+      "scene": 1,
+      "section": 7,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 11121,
+          "opcode": 38,
+          "args": {
+            "people_id": 1025,
+            "x1": 2,
+            "y1": 13,
+            "x2": 6,
+            "y2": 17
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 11151,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              2,
+              30
+            ]
+          }
+        }
+      ],
+      "args": {
+        "is_area": true,
+        "people_id": 65535,
+        "x1": 10,
+        "y1": 11,
+        "x2": 19,
+        "y2": 17,
+        "battle_side": 2,
+        "ai_type": 1,
+        "people_id_ai": 65535,
+        "x_ai": 0,
+        "y_ai": 0
+      },
+      "raw_hex": "4e002c0001000200ffff04000a00000004000b00000004001300000004001100000003000200070001000200ffff040000000000040000000000"
+    },
+    {
+      "opcode": 81,
+      "offset": 13969,
+      "size": 2,
+      "scene": 1,
+      "section": 17,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 13933,
+          "opcode": 54,
+          "args": {
+            "people_id": 76,
+            "attr_id": 7,
+            "value": 0,
+            "operator": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 13953,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              50
+            ]
+          }
+        }
+      ],
+      "args": {},
+      "raw_hex": "5100"
+    },
+    {
+      "opcode": 83,
+      "offset": 14985,
+      "size": 42,
+      "scene": 1,
+      "section": 18,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 14919,
+          "opcode": 54,
+          "args": {
+            "people_id": 78,
+            "attr_id": 7,
+            "value": 0,
+            "operator": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 14939,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              51
+            ]
+          }
+        }
+      ],
+      "args": {
+        "is_area": false,
+        "people_id": 78,
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "battle_side": 65535,
+        "is_die": false
+      },
+      "raw_hex": "53002c00000002004e000400000000000400000000000400000000000400000000000300ffff26000000"
+    },
+    {
+      "opcode": 83,
+      "offset": 15122,
+      "size": 42,
+      "scene": 1,
+      "section": 19,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 15056,
+          "opcode": 54,
+          "args": {
+            "people_id": 79,
+            "attr_id": 7,
+            "value": 0,
+            "operator": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 15076,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              52
+            ]
+          }
+        }
+      ],
+      "args": {
+        "is_area": false,
+        "people_id": 79,
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "battle_side": 65535,
+        "is_die": false
+      },
+      "raw_hex": "53002c00000002004f000400000000000400000000000400000000000400000000000300ffff26000000"
+    },
+    {
+      "opcode": 83,
+      "offset": 15271,
+      "size": 42,
+      "scene": 1,
+      "section": 20,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 15193,
+          "opcode": 54,
+          "args": {
+            "people_id": 86,
+            "attr_id": 7,
+            "value": 0,
+            "operator": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 15213,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              53
+            ]
+          }
+        }
+      ],
+      "args": {
+        "is_area": false,
+        "people_id": 86,
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "battle_side": 65535,
+        "is_die": false
+      },
+      "raw_hex": "53002c000000020056000400000000000400000000000400000000000400000000000300ffff26000000"
+    },
+    {
+      "opcode": 83,
+      "offset": 15406,
+      "size": 42,
+      "scene": 1,
+      "section": 21,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 15342,
+          "opcode": 54,
+          "args": {
+            "people_id": 82,
+            "attr_id": 7,
+            "value": 0,
+            "operator": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 15362,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              54
+            ]
+          }
+        }
+      ],
+      "args": {
+        "is_area": false,
+        "people_id": 82,
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "battle_side": 65535,
+        "is_die": false
+      },
+      "raw_hex": "53002c000000020052000400000000000400000000000400000000000400000000000300ffff26000000"
+    },
+    {
+      "opcode": 83,
+      "offset": 15545,
+      "size": 42,
+      "scene": 1,
+      "section": 22,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 15477,
+          "opcode": 54,
+          "args": {
+            "people_id": 87,
+            "attr_id": 7,
+            "value": 0,
+            "operator": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 15497,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              55
+            ]
+          }
+        }
+      ],
+      "args": {
+        "is_area": false,
+        "people_id": 87,
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "battle_side": 65535,
+        "is_die": false
+      },
+      "raw_hex": "53002c000000020057000400000000000400000000000400000000000400000000000300ffff26000000"
+    },
+    {
+      "opcode": 83,
+      "offset": 15700,
+      "size": 42,
+      "scene": 1,
+      "section": 23,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 15616,
+          "opcode": 54,
+          "args": {
+            "people_id": 83,
+            "attr_id": 7,
+            "value": 0,
+            "operator": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 15636,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              56
+            ]
+          }
+        }
+      ],
+      "args": {
+        "is_area": false,
+        "people_id": 83,
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "battle_side": 65535,
+        "is_die": false
+      },
+      "raw_hex": "53002c000000020053000400000000000400000000000400000000000400000000000300ffff26000000"
+    },
+    {
+      "opcode": 83,
+      "offset": 15861,
+      "size": 42,
+      "scene": 1,
+      "section": 24,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 15771,
+          "opcode": 54,
+          "args": {
+            "people_id": 96,
+            "attr_id": 7,
+            "value": 0,
+            "operator": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 15791,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              57
+            ]
+          }
+        }
+      ],
+      "args": {
+        "is_area": false,
+        "people_id": 96,
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "battle_side": 65535,
+        "is_die": false
+      },
+      "raw_hex": "53002c000000020060000400000000000400000000000400000000000400000000000300ffff26000000"
+    },
+    {
+      "opcode": 83,
+      "offset": 16016,
+      "size": 42,
+      "scene": 1,
+      "section": 25,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 15932,
+          "opcode": 54,
+          "args": {
+            "people_id": 85,
+            "attr_id": 7,
+            "value": 0,
+            "operator": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 15952,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              58
+            ]
+          }
+        }
+      ],
+      "args": {
+        "is_area": false,
+        "people_id": 85,
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "battle_side": 65535,
+        "is_die": false
+      },
+      "raw_hex": "53002c000000020055000400000000000400000000000400000000000400000000000300ffff26000000"
+    },
+    {
+      "opcode": 83,
+      "offset": 16170,
+      "size": 42,
+      "scene": 1,
+      "section": 26,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 16087,
+          "opcode": 54,
+          "args": {
+            "people_id": 92,
+            "attr_id": 7,
+            "value": 0,
+            "operator": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 16107,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              59
+            ]
+          }
+        }
+      ],
+      "args": {
+        "is_area": false,
+        "people_id": 92,
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "battle_side": 65535,
+        "is_die": false
+      },
+      "raw_hex": "53002c00000002005c000400000000000400000000000400000000000400000000000300ffff26000000"
+    },
+    {
+      "opcode": 83,
+      "offset": 16340,
+      "size": 42,
+      "scene": 1,
+      "section": 27,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 16241,
+          "opcode": 54,
+          "args": {
+            "people_id": 84,
+            "attr_id": 7,
+            "value": 0,
+            "operator": 2
+          }
+        },
+        {
+          "scope": "section",
+          "offset": 16261,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              60
+            ]
+          }
+        }
+      ],
+      "args": {
+        "is_area": false,
+        "people_id": 84,
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 0,
+        "battle_side": 65535,
+        "is_die": false
+      },
+      "raw_hex": "53002c000000020054000400000000000400000000000400000000000400000000000300ffff26000000"
+    },
+    {
+      "opcode": 81,
+      "offset": 16494,
+      "size": 2,
+      "scene": 1,
+      "section": 29,
+      "guards": [
+        {
+          "scope": "section",
+          "offset": 16476,
+          "opcode": 66,
+          "args": {}
+        },
+        {
+          "scope": "section",
+          "offset": 16478,
+          "opcode": 5,
+          "args": {
+            "true_var": [],
+            "false_var": [
+              0
+            ]
+          }
+        }
+      ],
+      "args": {},
+      "raw_hex": "5100"
+    }
+  ]
+}

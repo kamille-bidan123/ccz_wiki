@@ -1,0 +1,734 @@
+{
+  "source": "ccz_origin/Ekd5.exe",
+  "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775",
+  "encoding": "gbk",
+  "note": "String order follows first occurrence in native decompilation; control_flow preserves conditions and selection branch targets. No rewritten text.",
+  "stages": [
+    {
+      "function": "0x00433404",
+      "evidence_id": "ev_5f1cc24e8660e85b8256bdcb7046a5b60f405e899def2772fb2194df7cb6e08d",
+      "strings": [
+        {
+          "address": "0x0048c9c4",
+          "text": "终于要开战了，\n曹大人。",
+          "gbk_hex": "d6d5d3dad2aabfaad5bdc1cba3ac0ab2dcb4f3c8cba1a3"
+        },
+        {
+          "address": "0x0048c9dc",
+          "text": "哦？你是刚才那位看相的老人家！\n为何会到战场来的？",
+          "gbk_hex": "c5b6a3bfc4e3cac7b8d5b2c5c4c7cebbbfb4cfe0b5c4c0cfc8cbbcd2a3a10aceaabacebbe1b5bdd5bdb3a1c0b4b5c4a3bf"
+        },
+        {
+          "address": "0x0048ca10",
+          "text": "因为我听人家说，\n这是曹大人第一次上阵。\n所以就赶来了。",
+          "gbk_hex": "d2f2ceaaced2ccfdc8cbbcd2cbb5a3ac0ad5e2cac7b2dcb4f3c8cbb5dad2bbb4cec9cfd5f3a1a30acbf9d2d4becdb8cfc0b4c1cba1a3"
+        },
+        {
+          "address": "0x0048ca48",
+          "text": "我来主要是想告诉你一些……\n战场上应该注意的基本要点。\n曹大人，不知您意下如何？",
+          "gbk_hex": "ced2c0b4d6f7d2aacac7cfebb8e6cbdfc4e3d2bbd0a9a1ada1ad0ad5bdb3a1c9cfd3a6b8c3d7a2d2e2b5c4bbf9b1bed2aab5e3a1a30ab2dcb4f3c8cba3acb2bbd6aac4fad2e2cfc2c8e7bacea3bf"
+        },
+        {
+          "address": "0x0048ca98",
+          "text": "说您是第一次上阵，\n这个说法实在有所冒犯……",
+          "gbk_hex": "cbb5c4facac7b5dad2bbb4cec9cfd5f3a3ac0ad5e2b8f6cbb5b7a8cab5d4dad3d0cbf9c3b0b7b8a1ada1ad"
+        },
+        {
+          "address": "0x0048cac4",
+          "text": "您就当是小老儿失礼了。\n看您似乎不像是初次上阵的样子。",
+          "gbk_hex": "c4fabecdb5b1cac7d0a1c0cfb6f9caa7c0f1c1cba1a30abfb4c4facbc6baf5b2bbcff1cac7b3f5b4cec9cfd5f3b5c4d1f9d7d3a1a3"
+        },
+        {
+          "address": "0x0048cafc",
+          "text": "不过小老儿还是得征求您的同意。\n请让我告诉您一些………\n战场上应该注意的基本要点吧？",
+          "gbk_hex": "b2bbb9fdd0a1c0cfb6f9bbb9cac7b5c3d5f7c7f3c4fab5c4cdacd2e2a1a30ac7ebc8c3ced2b8e6cbdfc4fad2bbd0a9a1ada1ada1ad0ad5bdb3a1c9cfd3a6b8c3d7a2d2e2b5c4bbf9b1bed2aab5e3b0c9a3bf"
+        },
+        {
+          "address": "0x0048cb50",
+          "text": "1.真是求之不得\n2.没有这个必要",
+          "gbk_hex": "312ed5e6cac7c7f3d6aeb2bbb5c30a322ec3bbd3d0d5e2b8f6b1d8d2aa"
+        },
+        {
+          "address": "0x0048cb94",
+          "text": "老人家的好意我心领了。\n曹某毕竟也是通晓兵法之人，\n我看就不用劳烦赐教了。",
+          "gbk_hex": "c0cfc8cbbcd2b5c4bac3d2e2ced2d0c4c1ecc1cba1a30ab2dcc4b3b1cfbeb9d2b2cac7cda8cffeb1f8b7a8d6aec8cba3ac0aced2bfb4becdb2bbd3c3c0cdb7b3b4cdbdccc1cba1a3"
+        },
+        {
+          "address": "0x0048cbe0",
+          "text": "原来如此，真不愧是曹大人。\n您就当这是老头子的多虑，\n请别放在心上。",
+          "gbk_hex": "d4adc0b4c8e7b4cba3acd5e6b2bbc0a2cac7b2dcb4f3c8cba1a30ac4fabecdb5b1d5e2cac7c0cfcdb7d7d3b5c4b6e0c2c7a3ac0ac7ebb1f0b7c5d4dad0c4c9cfa1a3"
+        },
+        {
+          "address": "0x0048cb70",
+          "text": "那真是求之不得，\n请老人家不吝赐教。",
+          "gbk_hex": "c4c7d5e6cac7c7f3d6aeb2bbb5c3a3ac0ac7ebc0cfc8cbbcd2b2bbc1dfb4cdbdcca1a3"
+        }
+      ],
+      "choices": [
+        {
+          "address": "0x0048cb50",
+          "text": "1.真是求之不得\n2.没有这个必要",
+          "options": [
+            "1.真是求之不得",
+            "2.没有这个必要"
+          ],
+          "branch_evidence": "control_flow"
+        }
+      ],
+      "control_flow": "\r\nbool FUN_00433404(void)\r\n\r\n{\r\n  uint uVar1;\r\n  bool bVar2;\r\n  \r\n  FUN_0045965d((ushort *)&DAT_0048c9c4,0x9d);\r\n  FUN_00457428(0,0x9d,0xff,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048c9dc,0);\r\n  if (DAT_004b2c10 == '\\0') {\r\n    FUN_0045965d((ushort *)&DAT_0048ca10,0x9d);\r\n    FUN_0045965d((ushort *)&DAT_0048ca48,0x9d);\r\n  }\r\n  else {\r\n    FUN_0045965d((ushort *)&DAT_0048ca98,0x9d);\r\n    FUN_0045965d((ushort *)&DAT_0048cac4,0x9d);\r\n    FUN_0045965d((ushort *)&DAT_0048cafc,0x9d);\r\n  }\r\n  uVar1 = FUN_0042de12((ushort *)&DAT_0048cb50,0);\r\n  bVar2 = (uVar1 & 0xff) != 0;\r\n  if (bVar2) {\r\n    FUN_0045965d((ushort *)&DAT_0048cb94,0);\r\n    FUN_0045965d((ushort *)&DAT_0048cbe0,0x9d);\r\n  }\r\n  else {\r\n    FUN_0045965d((ushort *)&DAT_0048cb70,0);\r\n  }\r\n  return !bVar2;\r\n}\r\n\r\n"
+    },
+    {
+      "function": "0x004333d2",
+      "evidence_id": "ev_b9a3213392fca56d999c5ce64196f06d66398707a01e63fafd9464bea7662f88",
+      "strings": [
+        {
+          "address": "0x0048c994",
+          "text": "你想听听以下的说明吗？",
+          "gbk_hex": "c4e3cfebccfdccfdd2d4cfc2b5c4cbb5c3f7c2f0a3bf"
+        },
+        {
+          "address": "0x0048c9ac",
+          "text": "1.非常想听\n2.不太想听",
+          "gbk_hex": "312eb7c7b3a3cfebccfd0a322eb2bbccabcfebccfd"
+        }
+      ],
+      "choices": [
+        {
+          "address": "0x0048c9ac",
+          "text": "1.非常想听\n2.不太想听",
+          "options": [
+            "1.非常想听",
+            "2.不太想听"
+          ],
+          "branch_evidence": "control_flow"
+        }
+      ],
+      "control_flow": "\r\nbool FUN_004333d2(void)\r\n\r\n{\r\n  uint uVar1;\r\n  \r\n  FUN_0045965d((ushort *)&DAT_0048c994,0x9d);\r\n  uVar1 = FUN_0042de12((ushort *)&DAT_0048c9ac,0);\r\n  return (bool)('\\x01' - ((uVar1 & 0xff) != 0));\r\n}\r\n\r\n"
+    },
+    {
+      "function": "0x0043353c",
+      "evidence_id": "ev_115752e029b4e9f8f06d5ae9450598d14d6b302d07a474801fa76d1db3eccb96",
+      "strings": [
+        {
+          "address": "0x0048cc98",
+          "text": "那么我就开始为您说明吧。",
+          "gbk_hex": "c4c7c3b4ced2becdbfaacabcceaac4facbb5c3f7b0c9a1a3"
+        },
+        {
+          "address": "0x0048ccb4",
+          "text": "首先是基本解说。",
+          "gbk_hex": "cad7cfc8cac7bbf9b1bebde2cbb5a1a3"
+        },
+        {
+          "address": "0x0048ccc8",
+          "text": "你了解这个白框吗？\n在战斗中利用这个白框，\n可以进行各种操作。",
+          "gbk_hex": "c4e3c1cbbde2d5e2b8f6b0d7bff2c2f0a3bf0ad4dad5bdb6b7d6d0c0fbd3c3d5e2b8f6b0d7bff2a3ac0abfc9d2d4bdf8d0d0b8f7d6d6b2d9d7f7a1a3"
+        },
+        {
+          "address": "0x0048cd08",
+          "text": "操作方式很简单。\n当您移动鼠标时，\n它也会跟着一起移动。",
+          "gbk_hex": "b2d9d7f7b7bdcabdbadcbcf2b5a5a1a30ab5b1c4fad2c6b6afcaf3b1eacab1a3ac0acbfcd2b2bbe1b8fad7c5d2bbc6f0d2c6b6afa1a3"
+        },
+        {
+          "address": "0x0048cd40",
+          "text": "就像这样移动这个框……",
+          "gbk_hex": "becdcff1d5e2d1f9d2c6b6afd5e2b8f6bff2a1ada1ad"
+        },
+        {
+          "address": "0x0048cd58",
+          "text": "当它指向曹大人的部队时，\n就会显示曹大人的概况。",
+          "gbk_hex": "b5b1cbfcd6b8cff2b2dcb4f3c8cbb5c4b2bfb6d3cab1a3ac0abecdbbe1cfd4cabeb2dcb4f3c8cbb5c4b8c5bff6a1a3"
+        },
+        {
+          "address": "0x0048cd88",
+          "text": "这个情报视窗在战斗时，\n扮演着非常重要的角色。",
+          "gbk_hex": "d5e2b8f6c7e9b1a8cad3b4b0d4dad5bdb6b7cab1a3ac0ab0e7d1ddd7c5b7c7b3a3d6d8d2aab5c4bdc7c9aba1a3"
+        },
+        {
+          "address": "0x0048cdb8",
+          "text": "进行攻击或施展策略时，\n它会显示预估的损伤和命中率。",
+          "gbk_hex": "bdf8d0d0b9a5bbf7bbf2caa9d5b9b2dfc2d4cab1a3ac0acbfcbbe1cfd4cabed4a4b9c0b5c4cbf0c9cbbacdc3fcd6d0c2caa1a3"
+        },
+        {
+          "address": "0x0048cdec",
+          "text": "附带说明的，此时按下鼠标右键，\n便会显示更详细的情报。",
+          "gbk_hex": "b8bdb4f8cbb5c3f7b5c4a3acb4cbcab1b0b4cfc2caf3b1ead3d2bcfca3ac0ab1e3bbe1cfd4cabeb8fccfeacfb8b5c4c7e9b1a8a1a3"
+        },
+        {
+          "address": "0x0048ce24",
+          "text": "以上就是基本的解说。",
+          "gbk_hex": "d2d4c9cfbecdcac7bbf9b1beb5c4bde2cbb5a1a3"
+        }
+      ],
+      "choices": [],
+      "control_flow": "\r\nvoid FUN_0043353c(void)\r\n\r\n{\r\n  undefined4 uVar1;\r\n  undefined2 extraout_var;\r\n  undefined2 extraout_var_00;\r\n  undefined2 extraout_var_01;\r\n  undefined1 local_c [4];\r\n  uint local_8;\r\n  \r\n  FUN_0045f710(local_c);\r\n  FUN_0045965d((ushort *)&DAT_0048cc98,0x9d);\r\n  FUN_0045965d((ushort *)&DAT_0048ccb4,0x9d);\r\n  DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(char)DAT_004b2c18 + '\\x01');\r\n  FUN_00433726(CONCAT22(extraout_var_00,DAT_004b2c18));\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048ccc8,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cd08,0x9d);\r\n  uVar1 = FUN_0045965d((ushort *)&DAT_0048cd40,0x9d);\r\n  for (local_8 = 0; local_8 < 6; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22((short)((uint)uVar1 >> 0x10),DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_ + '\\x01',(char)DAT_004b2c18);\r\n    FUN_00433726(CONCAT22(extraout_var_01,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    uVar1 = FUN_0042c4e0();\r\n  }\r\n  FUN_0044049e(DAT_004b2c0c);\r\n  FUN_0045965d((ushort *)&DAT_0048cd58,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cd88,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cdb8,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cdec,0x9d);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_0043378d(CONCAT22(extraout_var,DAT_004b2c18));\r\n  FUN_0045965d((ushort *)&DAT_0048ce24,0x9d);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "function": "0x004337f4",
+      "evidence_id": "ev_e6fe5031a6ef8dfc9d2887ffb0bb08cff2158f75e4bb2b61eb04d07c4b8a33aa",
+      "strings": [
+        {
+          "address": "0x0048ce3c",
+          "text": "接下来是友军和敌军的说明。",
+          "gbk_hex": "bdd3cfc2c0b4cac7d3d1befcbacdb5d0befcb5c4cbb5c3f7a1a3"
+        },
+        {
+          "address": "0x0048ce58",
+          "text": "这回把框移动到一旁的部队看看吧。",
+          "gbk_hex": "d5e2bbd8b0d1bff2d2c6b6afb5bdd2bbc5d4b5c4b2bfb6d3bfb4bfb4b0c9a1a3"
+        },
+        {
+          "address": "0x0048ce7c",
+          "text": "现在显示相邻部队的情报了。\n这位是刘备先生。",
+          "gbk_hex": "cfd6d4dacfd4cabecfe0c1dab2bfb6d3b5c4c7e9b1a8c1cba1a30ad5e2cebbcac7c1f5b1b8cfc8c9faa1a3"
+        },
+        {
+          "address": "0x0048cea8",
+          "text": "这里有一个重要的地方，\n就是左下角显示的友军讯息。",
+          "gbk_hex": "d5e2c0efd3d0d2bbb8f6d6d8d2aab5c4b5d8b7bda3ac0abecdcac7d7f3cfc2bdc7cfd4cabeb5c4d3d1befcd1b6cfa2a1a3"
+        },
+        {
+          "address": "0x0048cedc",
+          "text": "有些部队虽然跟曹大人同属一方，\n但是却无法操作，\n这就表示他们是友军。",
+          "gbk_hex": "d3d0d0a9b2bfb6d3cbe4c8bbb8fab2dcb4f3c8cbcdaccaf4d2bbb7bda3ac0ab5abcac7c8b4cedeb7a8b2d9d7f7a3ac0ad5e2becdb1edcabecbfbc3c7cac7d3d1befca1a3"
+        },
+        {
+          "address": "0x0048cf24",
+          "text": "我想今后一定会有很多人，\n扮演友军的角色加入战斗的。",
+          "gbk_hex": "ced2cfebbdf1baf3d2bbb6a8bbe1d3d0badcb6e0c8cba3ac0ab0e7d1ddd3d1befcb5c4bdc7c9abbcd3c8ebd5bdb6b7b5c4a1a3"
+        },
+        {
+          "address": "0x0048cf58",
+          "text": "因此您必须要跟他们协同作战。",
+          "gbk_hex": "d2f2b4cbc4fab1d8d0ebd2aab8facbfbc3c7d0adcdacd7f7d5bda1a3"
+        },
+        {
+          "address": "0x0048cf78",
+          "text": "附带一提的是，与您为敌的部队，\n在此会以敌军的讯息显示，\n这点还请留意。",
+          "gbk_hex": "b8bdb4f8d2bbcce1b5c4cac7a3acd3ebc4faceaab5d0b5c4b2bfb6d3a3ac0ad4dab4cbbbe1d2d4b5d0befcb5c4d1b6cfa2cfd4cabea3ac0ad5e2b5e3bbb9c7ebc1f4d2e2a1a3"
+        },
+        {
+          "address": "0x0048cfc0",
+          "text": "现在把框移动到刘备的部队，\n接下来按鼠标左键……",
+          "gbk_hex": "cfd6d4dab0d1bff2d2c6b6afb5bdc1f5b1b8b5c4b2bfb6d3a3ac0abdd3cfc2c0b4b0b4caf3b1ead7f3bcfca1ada1ad"
+        },
+        {
+          "address": "0x0048cff0",
+          "text": "就会显示这些讯息。\n呈现绿色的部分，\n代表刘备先生的移动范围……",
+          "gbk_hex": "becdbbe1cfd4cabed5e2d0a9d1b6cfa2a1a30ab3cacfd6c2ccc9abb5c4b2bfb7d6a3ac0ab4fab1edc1f5b1b8cfc8c9fab5c4d2c6b6afb7b6cea7a1ada1ad"
+        },
+        {
+          "address": "0x0048d030",
+          "text": "红色的框显示的则是攻击范围。",
+          "gbk_hex": "baecc9abb5c4bff2cfd4cabeb5c4d4f2cac7b9a5bbf7b7b6cea7a1a3"
+        },
+        {
+          "address": "0x0048d050",
+          "text": "当然敌军也会同样如此显示，\n当您想了解其移动与攻击范围时，\n就可以如此活用。",
+          "gbk_hex": "b5b1c8bbb5d0befcd2b2bbe1cdacd1f9c8e7b4cbcfd4cabea3ac0ab5b1c4facfebc1cbbde2c6e4d2c6b6afd3ebb9a5bbf7b7b6cea7cab1a3ac0abecdbfc9d2d4c8e7b4cbbbeed3c3a1a3"
+        },
+        {
+          "address": "0x0048d09c",
+          "text": "至于这个状态，\n可以按鼠标左键或右键，\n予以解除。",
+          "gbk_hex": "d6c1d3dad5e2b8f6d7b4ccaca3ac0abfc9d2d4b0b4caf3b1ead7f3bcfcbbf2d3d2bcfca3ac0ad3e8d2d4bde2b3fda1a3"
+        },
+        {
+          "address": "0x0048d0d0",
+          "text": "另外部队的隶属单位，\n可以凭借该部队的基本色，\n予以分辨。",
+          "gbk_hex": "c1edcde2b2bfb6d3b5c4c1a5caf4b5a5cebba3ac0abfc9d2d4c6bebde8b8c3b2bfb6d3b5c4bbf9b1bec9aba3ac0ad3e8d2d4b7d6b1e6a1a3"
+        },
+        {
+          "address": "0x0048d10c",
+          "text": "我军一般是红色，友军是橙色，\n敌军则是蓝色。\n不过也有例外，这点还请留意。",
+          "gbk_hex": "ced2befcd2bbb0e3cac7baecc9aba3acd3d1befccac7b3c8c9aba3ac0ab5d0befcd4f2cac7c0b6c9aba1a30ab2bbb9fdd2b2d3d0c0fdcde2a3acd5e2b5e3bbb9c7ebc1f4d2e2a1a3"
+        },
+        {
+          "address": "0x0048d158",
+          "text": "关于敌军和友军的解说就到此为止。",
+          "gbk_hex": "b9d8d3dab5d0befcbacdd3d1befcb5c4bde2cbb5becdb5bdb4cbceaad6b9a1a3"
+        }
+      ],
+      "choices": [],
+      "control_flow": "\r\nvoid FUN_004337f4(void)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined1 uVar2;\r\n  undefined2 extraout_var_00;\r\n  undefined1 *puVar3;\r\n  undefined2 extraout_var_01;\r\n  undefined3 extraout_var;\r\n  byte *pbVar5;\r\n  undefined2 *puVar6;\r\n  undefined2 extraout_var_02;\r\n  undefined2 extraout_var_03;\r\n  undefined4 extraout_EDX;\r\n  undefined2 extraout_var_04;\r\n  uint uVar7;\r\n  undefined1 uVar8;\r\n  int iVar9;\r\n  undefined2 local_8;\r\n  uint uVar4;\r\n  \r\n  FUN_0045f710(&local_8);\r\n  FUN_0045965d((ushort *)&DAT_0048ce3c,0x9d);\r\n  FUN_00433726(CONCAT22(extraout_var_00,DAT_004b2c18));\r\n  puVar3 = (undefined1 *)FUN_00403360(DAT_004b2c14);\r\n  FUN_004065a0(&local_8,puVar3);\r\n  FUN_00459487(0x9d,(char)local_8 + 1,local_8._1_1_,0xffff);\r\n  FUN_00457428(0x9d,0xffff,3,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048ce58,0x9d);\r\n  FUN_00403340(&DAT_004b1b18,4);\r\n  FUN_0042c4e0();\r\n  FUN_0043378d(CONCAT22(extraout_var_01,DAT_004b2c18));\r\n  DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(char)DAT_004b2c18 + -1);\r\n  FUN_00433726(CONCAT22(extraout_var_03,DAT_004b2c18));\r\n  FUN_0044049e(DAT_004b2c04);\r\n  FUN_0045965d((ushort *)&DAT_0048ce7c,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cea8,0x9d);\r\n  FUN_0045965d((ushort *)&DAT_0048cedc,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cf24,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cf58,0x9d);\r\n  FUN_0045778f(0x9d,'\\x05',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cf78,0x9d);\r\n  FUN_00457428(0x9d,0xffff,3,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cfc0,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  iVar9 = 1;\r\n  uVar8 = 0xff;\r\n  uVar2 = 0xff;\r\n  uVar7 = 0;\r\n  bVar1 = FUN_0043f74f(DAT_004b2c04);\r\n  uVar4 = CONCAT31(extraout_var,bVar1);\r\n  pbVar5 = (byte *)FUN_00403360((int)DAT_004b2c04);\r\n  FUN_00438308(DAT_004b2c04,pbVar5,uVar4,uVar7,uVar2,uVar8,iVar9);\r\n  FUN_004350f0(&DAT_004b4250,1);\r\n  iVar9 = 0;\r\n  uVar2 = FUN_0043f8be(DAT_004b2c04,extraout_EDX);\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c04);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22((short)((uint)puVar6 >> 0x10),*puVar6),uVar2,iVar9);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048cff0,0x9d);\r\n  FUN_0045778f(0x9d,'\\x06',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d030,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d050,0x9d);\r\n  FUN_0045965d((ushort *)&DAT_0048d09c,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,2,1);\r\n  FUN_004350f0(&DAT_004b4250,0);\r\n  iVar9 = 0;\r\n  uVar2 = 0xff;\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c04);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22(extraout_var_02,*puVar6),uVar2,iVar9);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d0d0,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d10c,0x9d);\r\n  FUN_0043378d(CONCAT22(extraout_var_04,DAT_004b2c18));\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d158,0x9d);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "function": "0x00433bc8",
+      "evidence_id": "ev_2d2f9fd16bf56fcc32115d011c765ae9cab3da34dd3a2a99e9f07aadcb325893",
+      "strings": [
+        {
+          "address": "0x0048d17c",
+          "text": "接着将说明有关部队的操作。\n能够指挥的部队只有我军，\n也就是曹大人自己的部队。",
+          "gbk_hex": "bdd3d7c5bdabcbb5c3f7d3d0b9d8b2bfb6d3b5c4b2d9d7f7a1a30ac4dcb9bbd6b8bbd3b5c4b2bfb6d3d6bbd3d0ced2befca3ac0ad2b2becdcac7b2dcb4f3c8cbd7d4bcbab5c4b2bfb6d3a1a3"
+        },
+        {
+          "address": "0x0048d1cc",
+          "text": "此时同样移动白框到部队上，\n按下鼠标左键……",
+          "gbk_hex": "b4cbcab1cdacd1f9d2c6b6afb0d7bff2b5bdb2bfb6d3c9cfa3ac0ab0b4cfc2caf3b1ead7f3bcfca1ada1ad"
+        },
+        {
+          "address": "0x0048d1f8",
+          "text": "就会出现这样的讯息。",
+          "gbk_hex": "becdbbe1b3f6cfd6d5e2d1f9b5c4d1b6cfa2a1a3"
+        },
+        {
+          "address": "0x0048d210",
+          "text": "和刚才不一样的是，\n这次移动范围是以蓝色显示的。\n不知道您注意到了吗？",
+          "gbk_hex": "bacdb8d5b2c5b2bbd2bbd1f9b5c4cac7a3ac0ad5e2b4ced2c6b6afb7b6cea7cac7d2d4c0b6c9abcfd4cabeb5c4a1a30ab2bbd6aab5c0c4fad7a2d2e2b5bdc1cbc2f0a3bf"
+        },
+        {
+          "address": "0x0048d258",
+          "text": "只有您自己能够操作的部队，\n移动范围以蓝色显示。\n这点请您记住。",
+          "gbk_hex": "d6bbd3d0c4fad7d4bcbac4dcb9bbb2d9d7f7b5c4b2bfb6d3a3ac0ad2c6b6afb7b6cea7d2d4c0b6c9abcfd4cabea1a30ad5e2b5e3c7ebc4fabcc7d7a1a1a3"
+        },
+        {
+          "address": "0x0048d298",
+          "text": "至于移动方法，\n在此状态下移动白框……",
+          "gbk_hex": "d6c1d3dad2c6b6afb7bdb7a8a3ac0ad4dab4cbd7b4ccaccfc2d2c6b6afb0d7bff2a1ada1ad"
+        },
+        {
+          "address": "0x0048d2c0",
+          "text": "并且在移动的目的地按鼠标左键……",
+          "gbk_hex": "b2a2c7d2d4dad2c6b6afb5c4c4bfb5c4b5d8b0b4caf3b1ead7f3bcfca1ada1ad"
+        },
+        {
+          "address": "0x0048d2e4",
+          "text": "就会像这样移动过去。\n此时按下鼠标右键……",
+          "gbk_hex": "becdbbe1cff1d5e2d1f9d2c6b6afb9fdc8a5a1a30ab4cbcab1b0b4cfc2caf3b1ead3d2bcfca1ada1ad"
+        },
+        {
+          "address": "0x0048d310",
+          "text": "就可以解除移动。\n当您弄错移动地点时，\n这个指令非常方便。",
+          "gbk_hex": "becdbfc9d2d4bde2b3fdd2c6b6afa1a30ab5b1c4fac5aab4edd2c6b6afb5d8b5e3cab1a3ac0ad5e2b8f6d6b8c1eeb7c7b3a3b7bdb1e3a1a3"
+        },
+        {
+          "address": "0x0048d34c",
+          "text": "接下来我要说明的是，\n移动以外的行动……",
+          "gbk_hex": "bdd3cfc2c0b4ced2d2aacbb5c3f7b5c4cac7a3ac0ad2c6b6afd2d4cde2b5c4d0d0b6afa1ada1ad"
+        },
+        {
+          "address": "0x0048d374",
+          "text": "首先再按一下鼠标左键，\n回到刚才的状态。",
+          "gbk_hex": "cad7cfc8d4d9b0b4d2bbcfc2caf3b1ead7f3bcfca3ac0abbd8b5bdb8d5b2c5b5c4d7b4ccaca1a3"
+        },
+        {
+          "address": "0x0048d39c",
+          "text": "在此状态下按鼠标左键，\n就会出现选择下个行动的视窗。",
+          "gbk_hex": "d4dab4cbd7b4ccaccfc2b0b4caf3b1ead7f3bcfca3ac0abecdbbe1b3f6cfd6d1a1d4f1cfc2b8f6d0d0b6afb5c4cad3b4b0a1a3"
+        },
+        {
+          "address": "0x0048d3d0",
+          "text": "由于这是指令视窗，\n所以请随便按任意键。",
+          "gbk_hex": "d3c9d3dad5e2cac7d6b8c1eecad3b4b0a3ac0acbf9d2d4c7ebcbe6b1e3b0b4c8ced2e2bcfca1a3"
+        },
+        {
+          "address": "0x0048d3f8",
+          "text": "如此便可选择部队的行动。",
+          "gbk_hex": "c8e7b4cbb1e3bfc9d1a1d4f1b2bfb6d3b5c4d0d0b6afa1a3"
+        },
+        {
+          "address": "0x0048d414",
+          "text": "方才忘了说明，\n这个选择视窗移动后，\n也会自动显现。",
+          "gbk_hex": "b7bdb2c5cdfcc1cbcbb5c3f7a3ac0ad5e2b8f6d1a1d4f1cad3b4b0d2c6b6afbaf3a3ac0ad2b2bbe1d7d4b6afcfd4cfd6a1a3"
+        },
+        {
+          "address": "0x0048d448",
+          "text": "解除这个状态时请按右键，\n无法选择时，则会显示浅色。\n这点请您记住。",
+          "gbk_hex": "bde2b3fdd5e2b8f6d7b4ccaccab1c7ebb0b4d3d2bcfca3ac0acedeb7a8d1a1d4f1cab1a3acd4f2bbe1cfd4cabec7b3c9aba1a30ad5e2b5e3c7ebc4fabcc7d7a1a1a3"
+        },
+        {
+          "address": "0x0048d48c",
+          "text": "以上是关于部队操作的说明。",
+          "gbk_hex": "d2d4c9cfcac7b9d8d3dab2bfb6d3b2d9d7f7b5c4cbb5c3f7a1a3"
+        }
+      ],
+      "choices": [],
+      "control_flow": "\r\nvoid FUN_00433bc8(void)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined1 uVar2;\r\n  undefined1 *puVar3;\r\n  undefined2 extraout_var_01;\r\n  undefined3 extraout_var;\r\n  byte *pbVar5;\r\n  undefined2 *puVar6;\r\n  undefined2 extraout_var_02;\r\n  undefined3 extraout_var_00;\r\n  undefined2 extraout_var_03;\r\n  undefined2 extraout_var_04;\r\n  undefined2 extraout_var_05;\r\n  undefined2 extraout_var_06;\r\n  undefined2 extraout_var_07;\r\n  undefined4 extraout_EDX;\r\n  undefined4 extraout_EDX_00;\r\n  undefined4 uVar7;\r\n  undefined4 extraout_EDX_01;\r\n  undefined2 extraout_var_08;\r\n  undefined2 extraout_var_09;\r\n  undefined4 extraout_EDX_02;\r\n  undefined2 extraout_var_10;\r\n  undefined2 extraout_var_11;\r\n  uint uVar8;\r\n  undefined1 uVar9;\r\n  int iVar10;\r\n  undefined1 local_c;\r\n  byte bStack_b;\r\n  uint local_8;\r\n  uint uVar4;\r\n  \r\n  FUN_0045f710(&local_c);\r\n  puVar3 = (undefined1 *)FUN_00403360(DAT_004b2c14);\r\n  FUN_004065a0(&local_c,puVar3);\r\n  FUN_00459487(0x9d,(char)_local_c - 1,bStack_b,0xffff);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d17c,0x9d);\r\n  FUN_00433726(CONCAT22(extraout_var_06,DAT_004b2c18));\r\n  FUN_00403340(&DAT_004b1b18,4);\r\n  FUN_0042c4e0();\r\n  FUN_0043378d(CONCAT22(extraout_var_01,DAT_004b2c18));\r\n  DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(byte)DAT_004b2c18 + '\\x01');\r\n  FUN_00433726(CONCAT22(extraout_var_07,DAT_004b2c18));\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d1cc,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  iVar10 = 1;\r\n  uVar9 = 0xff;\r\n  uVar2 = 0xff;\r\n  uVar8 = 0;\r\n  bVar1 = FUN_0043f74f(DAT_004b2c0c);\r\n  uVar4 = CONCAT31(extraout_var,bVar1);\r\n  pbVar5 = (byte *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_00438308(DAT_004b2c0c,pbVar5,uVar4,uVar8,uVar2,uVar9,iVar10);\r\n  FUN_00451c03(&DAT_004b4250,1);\r\n  iVar10 = 0;\r\n  uVar2 = FUN_0043f8be(DAT_004b2c0c,extraout_EDX);\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22((short)((uint)puVar6 >> 0x10),*puVar6),uVar2,iVar10);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0045965d((ushort *)&DAT_0048d1f8,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d210,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d258,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d298,0x9d);\r\n  uVar7 = extraout_EDX_00;\r\n  for (local_8 = 0; local_8 < 6; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22((short)((uint)uVar7 >> 0x10),DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_ + -1,(byte)DAT_004b2c18);\r\n    FUN_00433726(CONCAT22(extraout_var_04,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    FUN_0042c4e0();\r\n    uVar7 = extraout_EDX_01;\r\n  }\r\n  FUN_0045965d((ushort *)&DAT_0048d2c0,0x9d);\r\n  FUN_00451c03(&DAT_004b4250,0);\r\n  iVar10 = 0;\r\n  uVar2 = 0xff;\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22(extraout_var_08,*puVar6),uVar2,iVar10);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  puVar3 = (undefined1 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004065a0(&local_c,puVar3);\r\n  FUN_00459487(0,(byte)DAT_004b2c18,DAT_004b2c18._1_1_,0xffff);\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d2e4,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,1,1);\r\n  FUN_004350c0(DAT_004b2c0c,&local_c,0,0);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0044a88a(0x4b3d08);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d310,0x9d);\r\n  FUN_0043378d(CONCAT22(extraout_var_02,DAT_004b2c18));\r\n  FUN_004065a0(&DAT_004b2c18,&local_c);\r\n  FUN_0045965d((ushort *)&DAT_0048d34c,0x9d);\r\n  FUN_00433726(CONCAT22(extraout_var_09,DAT_004b2c18));\r\n  FUN_0045965d((ushort *)&DAT_0048d374,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  iVar10 = 1;\r\n  uVar9 = 0xff;\r\n  uVar2 = 0xff;\r\n  uVar8 = 0;\r\n  bVar1 = FUN_0043f74f(DAT_004b2c0c);\r\n  uVar4 = CONCAT31(extraout_var_00,bVar1);\r\n  pbVar5 = (byte *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_00438308(DAT_004b2c0c,pbVar5,uVar4,uVar8,uVar2,uVar9,iVar10);\r\n  FUN_00451c03(&DAT_004b4250,1);\r\n  iVar10 = 0;\r\n  uVar2 = FUN_0043f8be(DAT_004b2c0c,extraout_EDX_02);\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22((short)((uint)puVar6 >> 0x10),*puVar6),uVar2,iVar10);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0045965d((ushort *)&DAT_0048d39c,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d3d0,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  FUN_00451c03(&DAT_004b4250,0);\r\n  iVar10 = 0;\r\n  uVar2 = 0xff;\r\n  puVar6 = (undefined2 *)FUN_00403360((int)DAT_004b2c0c);\r\n  FUN_004539dc(&DAT_004b4250,CONCAT22(extraout_var_05,*puVar6),uVar2,iVar10);\r\n  FUN_0043378d(CONCAT22(extraout_var_10,DAT_004b2c18));\r\n  FUN_00453b13(&DAT_004b4250);\r\n  FUN_0045bba0(&DAT_004b5e98,(byte)DAT_004b2c18,DAT_004b2c18._1_1_);\r\n  FUN_00435110(&DAT_004b5e98,1);\r\n  FUN_00435130(&DAT_004b5e98,1);\r\n  FUN_0045e69a();\r\n  FUN_00433726(CONCAT22(extraout_var_11,DAT_004b2c18));\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d3f8,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d414,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d448,0x9d);\r\n  FUN_0043378d(CONCAT22(extraout_var_03,DAT_004b2c18));\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d48c,0x9d);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "function": "0x0043419f",
+      "evidence_id": "ev_d77bb6734355585bbdafb3f2632584e885c53daed8ec2232ee70e50074d768bf",
+      "strings": [
+        {
+          "address": "0x0048d4a8",
+          "text": "最后为您说明一下地形。",
+          "gbk_hex": "d7eebaf3ceaac4facbb5c3f7d2bbcfc2b5d8d0cea1a3"
+        },
+        {
+          "address": "0x0048d4c0",
+          "text": "战场上有各式各样的地形。",
+          "gbk_hex": "d5bdb3a1c9cfd3d0b8f7cabdb8f7d1f9b5c4b5d8d0cea1a3"
+        },
+        {
+          "address": "0x0048d4dc",
+          "text": "有不能移动的地形、\n还有鹿砦、村庄等等……\n可以让部队恢复体力的地形。",
+          "gbk_hex": "d3d0b2bbc4dcd2c6b6afb5c4b5d8d0cea1a20abbb9d3d0c2b9edcea1a2b4e5d7afb5c8b5c8a1ada1ad0abfc9d2d4c8c3b2bfb6d3bbd6b8b4cce5c1a6b5c4b5d8d0cea1a3"
+        },
+        {
+          "address": "0x0048d524",
+          "text": "其中也有兵营和宝物库等，\n能够得到道具的地形。",
+          "gbk_hex": "c6e4d6d0d2b2d3d0b1f8d3aabacdb1a6ceefbfe2b5c8a3ac0ac4dcb9bbb5c3b5bdb5c0bedfb5c4b5d8d0cea1a3"
+        },
+        {
+          "address": "0x0048d554",
+          "text": "而且策略之中，\n也有在特定地形才能施展的计谋。",
+          "gbk_hex": "b6f8c7d2b2dfc2d4d6aed6d0a3ac0ad2b2d3d0d4daccd8b6a8b5d8d0ceb2c5c4dccaa9d5b9b5c4bcc6c4b1a1a3"
+        },
+        {
+          "address": "0x0048d584",
+          "text": "就让我们看看实际的情况吧。",
+          "gbk_hex": "becdc8c3ced2c3c7bfb4bfb4cab5bccab5c4c7e9bff6b0c9a1a3"
+        },
+        {
+          "address": "0x0048d5a0",
+          "text": "把栏框移动到想观看的地形上，\n再按下鼠标左键……",
+          "gbk_hex": "b0d1c0b8bff2d2c6b6afb5bdcfebb9dbbfb4b5c4b5d8d0cec9cfa3ac0ad4d9b0b4cfc2caf3b1ead7f3bcfca1ada1ad"
+        },
+        {
+          "address": "0x0048d5d0",
+          "text": "就会显示该地形的情报，\n无法移动与可以恢复的地形，\n也会这样展现。",
+          "gbk_hex": "becdbbe1cfd4cabeb8c3b5d8d0ceb5c4c7e9b1a8a3ac0acedeb7a8d2c6b6afd3ebbfc9d2d4bbd6b8b4b5c4b5d8d0cea3ac0ad2b2bbe1d5e2d1f9d5b9cfd6a1a3"
+        },
+        {
+          "address": "0x0048d614",
+          "text": "此时请注意四个图示。\n这代表该地形能够施展策略的类别。",
+          "gbk_hex": "b4cbcab1c7ebd7a2d2e2cbc4b8f6cdbccabea1a30ad5e2b4fab1edb8c3b5d8d0cec4dcb9bbcaa9d5b9b2dfc2d4b5c4c0e0b1f0a1a3"
+        },
+        {
+          "address": "0x0048d64c",
+          "text": "从左到右依序是火类、水类、\n地类、风类的策略。",
+          "gbk_hex": "b4d3d7f3b5bdd3d2d2c0d0f2cac7bbf0c0e0a1a2cbaec0e0a1a20ab5d8c0e0a1a2b7e7c0e0b5c4b2dfc2d4a1a3"
+        },
+        {
+          "address": "0x0048d67c",
+          "text": "浅色显示的图示，\n表示该地形无法施展的策略。",
+          "gbk_hex": "c7b3c9abcfd4cabeb5c4cdbccabea3ac0ab1edcabeb8c3b5d8d0cecedeb7a8caa9d5b9b5c4b2dfc2d4a1a3"
+        },
+        {
+          "address": "0x0048d6a8",
+          "text": "也就是说在这种地形上，\n可以施展火类和风类的策略。",
+          "gbk_hex": "d2b2becdcac7cbb5d4dad5e2d6d6b5d8d0cec9cfa3ac0abfc9d2d4caa9d5b9bbf0c0e0bacdb7e7c0e0b5c4b2dfc2d4a1a3"
+        },
+        {
+          "address": "0x0048d6dc",
+          "text": "附带一提的是，\n恢复类和妨碍类的策略不受地形限制。\n这点请您记住。",
+          "gbk_hex": "b8bdb4f8d2bbcce1b5c4cac7a3ac0abbd6b8b4c0e0bacdb7c1b0adc0e0b5c4b2dfc2d4b2bbcadcb5d8d0cecfded6c6a1a30ad5e2b5e3c7ebc4fabcc7d7a1a1a3"
+        },
+        {
+          "address": "0x0048d720",
+          "text": "当按下右键或左键，\n就可以关闭该项情报。",
+          "gbk_hex": "b5b1b0b4cfc2d3d2bcfcbbf2d7f3bcfca3ac0abecdbfc9d2d4b9d8b1d5b8c3cfeec7e9b1a8a1a3"
+        },
+        {
+          "address": "0x0048d748",
+          "text": "此外关于部队的属性，\n各有其擅长与否的地形。",
+          "gbk_hex": "b4cbcde2b9d8d3dab2bfb6d3b5c4caf4d0d4a3ac0ab8f7d3d0c6e4c9c3b3a4d3ebb7f1b5c4b5d8d0cea1a3"
+        },
+        {
+          "address": "0x0048d774",
+          "text": "我们再看一下刘备先生的情报吧。",
+          "gbk_hex": "ced2c3c7d4d9bfb4d2bbcfc2c1f5b1b8cfc8c9fab5c4c7e9b1a8b0c9a1a3"
+        },
+        {
+          "address": "0x0048d794",
+          "text": "右下角显示着平原100%讯息，\n您了解这是什么意思吗？",
+          "gbk_hex": "d3d2cfc2bdc7cfd4cabed7c5c6bdd4ad31303025d1b6cfa2a3ac0ac4fac1cbbde2d5e2cac7cab2c3b4d2e2cbbcc2f0a3bf"
+        },
+        {
+          "address": "0x0048d7c8",
+          "text": "这表示刘备的部队目前处在平原，\n可以发挥100%的能力。",
+          "gbk_hex": "d5e2b1edcabec1f5b1b8b5c4b2bfb6d3c4bfc7b0b4a6d4dac6bdd4ada3ac0abfc9d2d4b7a2bbd331303025b5c4c4dcc1a6a1a3"
+        },
+        {
+          "address": "0x0048d7fc",
+          "text": "我想若能参看地形一览表，\n应该更易于把握地形与部队属性的关系。",
+          "gbk_hex": "ced2cfebc8f4c4dcb2cebfb4b5d8d0ced2bbc0c0b1eda3ac0ad3a6b8c3b8fcd2d7d3dab0d1ced5b5d8d0ced3ebb2bfb6d3caf4d0d4b5c4b9d8cfb5a1a3"
+        },
+        {
+          "address": "0x0048d83c",
+          "text": "以上说明，到此全部结束。",
+          "gbk_hex": "d2d4c9cfcbb5c3f7a3acb5bdb4cbc8abb2bfbde1caf8a1a3"
+        },
+        {
+          "address": "0x0048d858",
+          "text": "为了感谢您全程聆听解说，\n在此要告诉您一个妙诀。",
+          "gbk_hex": "ceaac1cbb8d0d0bbc4fac8abb3ccf1f6ccfdbde2cbb5a3ac0ad4dab4cbd2aab8e6cbdfc4fad2bbb8f6c3eebef7a1a3"
+        },
+        {
+          "address": "0x0048d888",
+          "text": "今后在战场上，\n想必您将会被迫面临各种抉择。",
+          "gbk_hex": "bdf1baf3d4dad5bdb3a1c9cfa3ac0acfebb1d8c4fabdabbbe1b1bbc6c8c3e6c1d9b8f7d6d6bef1d4f1a1a3"
+        },
+        {
+          "address": "0x0048d8b4",
+          "text": "如果您觉得当时的处境，\n相当难以抉择的时候……",
+          "gbk_hex": "c8e7b9fbc4fabef5b5c3b5b1cab1b5c4b4a6beb3a3ac0acfe0b5b1c4d1d2d4bef1d4f1b5c4cab1baf2a1ada1ad"
+        },
+        {
+          "address": "0x0048d8e4",
+          "text": "此时可以选择上面的选项，\n大多能够容易解决严重的事态。",
+          "gbk_hex": "b4cbcab1bfc9d2d4d1a1d4f1c9cfc3e6b5c4d1a1cfeea3ac0ab4f3b6e0c4dcb9bbc8ddd2d7bde2bef6d1cfd6d8b5c4cac2ccaca1a3"
+        },
+        {
+          "address": "0x0048d91c",
+          "text": "当然这点也有例外，\n如果关系到曹大人的未来，\n还是得由曹大人亲下决断。",
+          "gbk_hex": "b5b1c8bbd5e2b5e3d2b2d3d0c0fdcde2a3ac0ac8e7b9fbb9d8cfb5b5bdb2dcb4f3c8cbb5c4ceb4c0b4a3ac0abbb9cac7b5c3d3c9b2dcb4f3c8cbc7d7cfc2bef6b6cfa1a3"
+        }
+      ],
+      "choices": [],
+      "control_flow": "\r\nvoid FUN_0043419f(void)\r\n\r\n{\r\n  undefined4 uVar1;\r\n  undefined2 extraout_var;\r\n  undefined1 *puVar2;\r\n  undefined2 extraout_var_00;\r\n  undefined2 extraout_var_01;\r\n  undefined2 extraout_var_02;\r\n  undefined4 extraout_ECX;\r\n  undefined4 extraout_ECX_00;\r\n  undefined2 extraout_var_03;\r\n  undefined4 extraout_EDX;\r\n  undefined2 uVar4;\r\n  undefined4 extraout_EDX_00;\r\n  undefined2 extraout_var_04;\r\n  undefined4 extraout_EDX_01;\r\n  undefined4 extraout_EDX_02;\r\n  undefined4 uVar3;\r\n  undefined4 extraout_EDX_03;\r\n  undefined2 extraout_var_05;\r\n  undefined1 local_c;\r\n  byte bStack_b;\r\n  uint local_8;\r\n  \r\n  uVar1 = FUN_0045f710(&local_c);\r\n  FUN_00433726(CONCAT22((short)((uint)uVar1 >> 0x10),DAT_004b2c18));\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d4a8,0x9d);\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_00457428(0x9d,0xffff,3,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d4c0,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d4dc,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d524,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d554,0x9d);\r\n  FUN_0045965d((ushort *)&DAT_0048d584,0x9d);\r\n  uVar1 = extraout_EDX;\r\n  for (local_8 = 0; uVar4 = (undefined2)((uint)uVar1 >> 0x10), local_8 < 2; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22(uVar4,DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_ + -1,(char)DAT_004b2c18);\r\n    FUN_00433726(CONCAT22(extraout_var_01,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    FUN_0042c4e0();\r\n    uVar1 = extraout_EDX_00;\r\n  }\r\n  FUN_0043378d(CONCAT22(uVar4,DAT_004b2c18));\r\n  DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(char)DAT_004b2c18 + '\\x01');\r\n  FUN_00433726(CONCAT22(extraout_var_02,DAT_004b2c18));\r\n  FUN_00457428(0x9d,0xffff,1,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d5a0,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,0,1);\r\n  FUN_0043378d(CONCAT22(extraout_var_04,DAT_004b2c18));\r\n  FUN_0045576d(&DAT_004b4250,(byte *)&DAT_004b2c18,0);\r\n  FUN_00433726(CONCAT22(extraout_var,DAT_004b2c18));\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d5d0,0x9d);\r\n  FUN_0045778f(0x9d,'\\x05',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d614,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d64c,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d67c,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d6a8,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d6dc,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d720,0x9d);\r\n  FUN_0047467a(&DAT_004b69b0,1,1);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_00453b13(&DAT_004b4250);\r\n  puVar2 = (undefined1 *)FUN_00403360(DAT_004b2c14);\r\n  FUN_004065a0(&local_c,puVar2);\r\n  FUN_00459487(0x9d,(char)_local_c + 1,bStack_b,0xffff);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d748,0x9d);\r\n  FUN_00457428(0x9d,0xffff,3,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d774,0x9d);\r\n  uVar1 = extraout_ECX;\r\n  uVar3 = extraout_EDX_01;\r\n  for (local_8 = 0; local_8 < 2; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22((short)((uint)uVar1 >> 0x10),DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_,(char)DAT_004b2c18 + -1);\r\n    FUN_00433726(CONCAT22(extraout_var_00,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    FUN_0042c4e0();\r\n    uVar1 = extraout_ECX_00;\r\n    uVar3 = extraout_EDX_02;\r\n  }\r\n  for (local_8 = 0; local_8 < 2; local_8 = local_8 + 1) {\r\n    FUN_0043378d(CONCAT22((short)((uint)uVar3 >> 0x10),DAT_004b2c18));\r\n    DAT_004b2c18 = CONCAT11(DAT_004b2c18._1_1_ + '\\x01',(char)DAT_004b2c18);\r\n    FUN_00433726(CONCAT22(extraout_var_03,DAT_004b2c18));\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    FUN_0042c4e0();\r\n    uVar3 = extraout_EDX_03;\r\n  }\r\n  FUN_0044049e(DAT_004b2c04);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d794,0x9d);\r\n  FUN_0045778f(0x9d,'\\x05',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d7c8,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d7fc,0x9d);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  FUN_0043378d(CONCAT22(extraout_var_05,DAT_004b2c18));\r\n  FUN_0045965d((ushort *)&DAT_0048d83c,0x9d);\r\n  FUN_00457428(0x9d,0xffff,0,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d858,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d888,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d8b4,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d8e4,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048d91c,0x9d);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "function": "0x004347ff",
+      "evidence_id": "ev_01adc09d4ba34e57a0c84d4ba3b53014949e1fce55eb6ce0cdfccc5e32026055",
+      "strings": [
+        {
+          "address": "0x0048d964",
+          "text": "对了，曹大人。\n我最近学会了神奇的法术了。",
+          "gbk_hex": "b6d4c1cba3acb2dcb4f3c8cba1a30aced2d7eebdfcd1a7bbe1c1cbc9f1c6e6b5c4b7a8caf5c1cba1a3"
+        },
+        {
+          "address": "0x0048d990",
+          "text": "这个法术好像可以让您的Lv上升１级呢。",
+          "gbk_hex": "d5e2b8f6b7a8caf5bac3cff1bfc9d2d4c8c3c4fab5c44c76c9cfc9fda3b1bcb6c4d8a1a3"
+        },
+        {
+          "address": "0x0048d9b8",
+          "text": "让我帮您提高Lv吧！\n曹大人，您意下如何？",
+          "gbk_hex": "c8c3ced2b0efc4facce1b8df4c76b0c9a3a10ab2dcb4f3c8cba3acc4fad2e2cfc2c8e7bacea3bf"
+        },
+        {
+          "address": "0x0048d9e0",
+          "text": "1.真是求之不得\n2.没有这个必要",
+          "gbk_hex": "312ed5e6cac7c7f3d6aeb2bbb5c30a322ec3bbd3d0d5e2b8f6b1d8d2aa"
+        },
+        {
+          "address": "0x0048da00",
+          "text": "那真是求之不得！\n有劳您了。",
+          "gbk_hex": "c4c7d5e6cac7c7f3d6aeb2bbb5c3a3a10ad3d0c0cdc4fac1cba1a3"
+        },
+        {
+          "address": "0x0048da1c",
+          "text": "好吧，我要施法啰！\n嘿！",
+          "gbk_hex": "bac3b0c9a3acced2d2aacaa9b7a886aaa3a10abad9a3a1"
+        },
+        {
+          "address": "0x0048da34",
+          "text": "您的好意我心领了。\n我觉得现在这样就行了。",
+          "gbk_hex": "c4fab5c4bac3d2e2ced2d0c4c1ecc1cba1a30aced2bef5b5c3cfd6d4dad5e2d1f9becdd0d0c1cba1a3"
+        },
+        {
+          "address": "0x0048da60",
+          "text": "是吗……？\n那么请你务必收下这件东西。",
+          "gbk_hex": "cac7c2f0a1ada1ada3bf0ac4c7c3b4c7ebc4e3cef1b1d8cad5cfc2d5e2bcfeb6abcef7a1a3"
+        },
+        {
+          "address": "0x0048da9c",
+          "text": "对了，曹大人。\n我先前学到的神奇的法术，\n又变强了一点。",
+          "gbk_hex": "b6d4c1cba3acb2dcb4f3c8cba1a30aced2cfc8c7b0d1a7b5bdb5c4c9f1c6e6b5c4b7a8caf5a3ac0ad3d6b1e4c7bfc1cbd2bbb5e3a1a3"
+        },
+        {
+          "address": "0x0048dad4",
+          "text": "这个法术好像可以让您的Lv上升２级呢。",
+          "gbk_hex": "d5e2b8f6b7a8caf5bac3cff1bfc9d2d4c8c3c4fab5c44c76c9cfc9fda3b2bcb6c4d8a1a3"
+        },
+        {
+          "address": "0x0048dafc",
+          "text": "让我帮您提高Lv吧！\n曹大人，您意下如何？",
+          "gbk_hex": "c8c3ced2b0efc4facce1b8df4c76b0c9a3a10ab2dcb4f3c8cba3acc4fad2e2cfc2c8e7bacea3bf"
+        },
+        {
+          "address": "0x0048db24",
+          "text": "1.真是求之不得\n2.没有这个必要",
+          "gbk_hex": "312ed5e6cac7c7f3d6aeb2bbb5c30a322ec3bbd3d0d5e2b8f6b1d8d2aa"
+        },
+        {
+          "address": "0x0048db44",
+          "text": "那真是求之不得！\n有劳您了。",
+          "gbk_hex": "c4c7d5e6cac7c7f3d6aeb2bbb5c3a3a10ad3d0c0cdc4fac1cba1a3"
+        },
+        {
+          "address": "0x0048db60",
+          "text": "好吧，我要施法啰！\n嘿！",
+          "gbk_hex": "bac3b0c9a3acced2d2aacaa9b7a886aaa3a10abad9a3a1"
+        },
+        {
+          "address": "0x0048db78",
+          "text": "您的好意我心领了。\n我觉得现在这样就行了。",
+          "gbk_hex": "c4fab5c4bac3d2e2ced2d0c4c1ecc1cba1a30aced2bef5b5c3cfd6d4dad5e2d1f9becdd0d0c1cba1a3"
+        },
+        {
+          "address": "0x0048dba4",
+          "text": "是吗……？\n那么请你务必收下这件东西。",
+          "gbk_hex": "cac7c2f0a1ada1ada3bf0ac4c7c3b4c7ebc4e3cef1b1d8cad5cfc2d5e2bcfeb6abcef7a1a3"
+        },
+        {
+          "address": "0x0048dbe0",
+          "text": "对了，曹大人。\n我先前学到的神奇的法术，\n现在变得更强了。",
+          "gbk_hex": "b6d4c1cba3acb2dcb4f3c8cba1a30aced2cfc8c7b0d1a7b5bdb5c4c9f1c6e6b5c4b7a8caf5a3ac0acfd6d4dab1e4b5c3b8fcc7bfc1cba1a3"
+        },
+        {
+          "address": "0x0048dc1c",
+          "text": "现在我可以调整您想提升的Lv级数了。",
+          "gbk_hex": "cfd6d4daced2bfc9d2d4b5f7d5fbc4facfebcce1c9fdb5c44c76bcb6cafdc1cba1a3"
+        },
+        {
+          "address": "0x0048dc40",
+          "text": "不知您意下如何？曹大人。\n您希望我给您提升几个等级？",
+          "gbk_hex": "b2bbd6aac4fad2e2cfc2c8e7bacea3bfb2dcb4f3c8cba1a30ac4facfa3cdfbced2b8f8c4facce1c9fdbcb8b8f6b5c8bcb6a3bf"
+        },
+        {
+          "address": "0x0048dc74",
+          "text": "1.希望提升６级\n2.希望提升３级\n3.没有这个必要",
+          "gbk_hex": "312ecfa3cdfbcce1c9fda3b6bcb60a322ecfa3cdfbcce1c9fda3b3bcb60a332ec3bbd3d0d5e2b8f6b1d8d2aa"
+        },
+        {
+          "address": "0x0048dca4",
+          "text": "那真是求之不得！\n有劳您了。",
+          "gbk_hex": "c4c7d5e6cac7c7f3d6aeb2bbb5c3a3a10ad3d0c0cdc4fac1cba1a3"
+        },
+        {
+          "address": "0x0048dcc0",
+          "text": "好吧，我要施法啰！\n嘿！",
+          "gbk_hex": "bac3b0c9a3acced2d2aacaa9b7a886aaa3a10abad9a3a1"
+        },
+        {
+          "address": "0x0048dcd8",
+          "text": "您的好意我心领了。\n我觉得现在这样就行了。",
+          "gbk_hex": "c4fab5c4bac3d2e2ced2d0c4c1ecc1cba1a30aced2bef5b5c3cfd6d4dad5e2d1f9becdd0d0c1cba1a3"
+        },
+        {
+          "address": "0x0048dd04",
+          "text": "是吗……？\n那么请你务必收下这件东西。",
+          "gbk_hex": "cac7c2f0a1ada1ada3bf0ac4c7c3b4c7ebc4e3cef1b1d8cad5cfc2d5e2bcfeb6abcef7a1a3"
+        },
+        {
+          "address": "0x0048dd40",
+          "text": "我非常期待曹大人今后……\n将如何走出自己的人生大道。",
+          "gbk_hex": "ced2b7c7b3a3c6dab4fdb2dcb4f3c8cbbdf1baf3a1ada1ad0abdabc8e7baced7dfb3f6d7d4bcbab5c4c8cbc9fab4f3b5c0a1a3"
+        }
+      ],
+      "choices": [
+        {
+          "address": "0x0048d9e0",
+          "text": "1.真是求之不得\n2.没有这个必要",
+          "options": [
+            "1.真是求之不得",
+            "2.没有这个必要"
+          ],
+          "branch_evidence": "control_flow"
+        },
+        {
+          "address": "0x0048db24",
+          "text": "1.真是求之不得\n2.没有这个必要",
+          "options": [
+            "1.真是求之不得",
+            "2.没有这个必要"
+          ],
+          "branch_evidence": "control_flow"
+        },
+        {
+          "address": "0x0048dc74",
+          "text": "1.希望提升６级\n2.希望提升３级\n3.没有这个必要",
+          "options": [
+            "1.希望提升６级",
+            "2.希望提升３级",
+            "3.没有这个必要"
+          ],
+          "branch_evidence": "control_flow"
+        }
+      ],
+      "control_flow": "\r\nvoid FUN_004347ff(void)\r\n\r\n{\r\n  uint uVar1;\r\n  undefined4 extraout_EDX;\r\n  undefined4 extraout_EDX_00;\r\n  undefined4 extraout_EDX_01;\r\n  undefined4 extraout_EDX_02;\r\n  undefined4 extraout_EDX_03;\r\n  undefined4 extraout_EDX_04;\r\n  undefined8 uVar2;\r\n  \r\n  if (DAT_004b2c10 == 1) {\r\n    FUN_0045965d((ushort *)&DAT_0048d964,0x9d);\r\n    FUN_0045778f(0x9d,'\\x01',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048d990,0x9d);\r\n    FUN_0045778f(0x9d,'\\0',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048d9b8,0x9d);\r\n    uVar1 = FUN_0042de12((ushort *)&DAT_0048d9e0,0);\r\n    if ((uVar1 & 0xff) == 0) {\r\n      FUN_0045965d((ushort *)&DAT_0048da00,0);\r\n      FUN_0045965d((ushort *)&DAT_0048da1c,0x9d);\r\n      FUN_0045778f(0x9d,'\\x05',1,1);\r\n      FUN_0047467a(&DAT_004b69b0,0x27,1);\r\n      FUN_00403340(&DAT_004b1b18,10);\r\n      FUN_0042c4e0();\r\n      FUN_0045778f(0x9d,'\\0',1,1);\r\n      FUN_004073b8(&DAT_004a1b68,1,1);\r\n      uVar2 = FUN_0040721b(&DAT_004a1b68,extraout_EDX);\r\n      FUN_0043f6cd(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      uVar2 = FUN_0040724a(&DAT_004a1b68,extraout_EDX_00);\r\n      FUN_0043f70e(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      FUN_0045778f(0,'\\0',1,1);\r\n    }\r\n    else {\r\n      FUN_0045965d((ushort *)&DAT_0048da34,0);\r\n      FUN_0045965d((ushort *)&DAT_0048da60,0x9d);\r\n      FUN_0047467a(&DAT_004b69b0,10,1);\r\n      FUN_0040dbed(&DAT_004b0770,2000);\r\n      FUN_0042f699(2);\r\n    }\r\n  }\r\n  else if (DAT_004b2c10 == 2) {\r\n    FUN_0045965d((ushort *)&DAT_0048da9c,0x9d);\r\n    FUN_0045778f(0x9d,'\\x01',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048dad4,0x9d);\r\n    FUN_0045778f(0x9d,'\\0',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048dafc,0x9d);\r\n    uVar1 = FUN_0042de12((ushort *)&DAT_0048db24,0);\r\n    if ((uVar1 & 0xff) == 0) {\r\n      FUN_0045965d((ushort *)&DAT_0048db44,0);\r\n      FUN_0045965d((ushort *)&DAT_0048db60,0x9d);\r\n      FUN_0045778f(0x9d,'\\x05',1,1);\r\n      FUN_0047467a(&DAT_004b69b0,0x27,1);\r\n      FUN_00403340(&DAT_004b1b18,10);\r\n      FUN_0042c4e0();\r\n      FUN_0045778f(0x9d,'\\0',1,1);\r\n      FUN_004073b8(&DAT_004a1b68,2,1);\r\n      uVar2 = FUN_0040721b(&DAT_004a1b68,extraout_EDX_01);\r\n      FUN_0043f6cd(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      uVar2 = FUN_0040724a(&DAT_004a1b68,extraout_EDX_02);\r\n      FUN_0043f70e(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      FUN_0045778f(0,'\\0',1,1);\r\n    }\r\n    else {\r\n      FUN_0045965d((ushort *)&DAT_0048db78,0);\r\n      FUN_0045965d((ushort *)&DAT_0048dba4,0x9d);\r\n      FUN_0047467a(&DAT_004b69b0,10,1);\r\n      FUN_0040dbed(&DAT_004b0770,4000);\r\n      FUN_0042f699(2);\r\n    }\r\n  }\r\n  else if (2 < DAT_004b2c10) {\r\n    FUN_0045965d((ushort *)&DAT_0048dbe0,0x9d);\r\n    FUN_0045778f(0x9d,'\\x01',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048dc1c,0x9d);\r\n    FUN_0045778f(0x9d,'\\0',1,1);\r\n    FUN_0045965d((ushort *)&DAT_0048dc40,0x9d);\r\n    uVar1 = FUN_0042de12((ushort *)&DAT_0048dc74,0);\r\n    if ((byte)uVar1 < 2) {\r\n      FUN_0045965d((ushort *)&DAT_0048dca4,0);\r\n      FUN_0045965d((ushort *)&DAT_0048dcc0,0x9d);\r\n      FUN_0045778f(0x9d,'\\x05',1,1);\r\n      FUN_0047467a(&DAT_004b69b0,0x27,1);\r\n      FUN_00403340(&DAT_004b1b18,10);\r\n      FUN_0042c4e0();\r\n      FUN_0045778f(0x9d,'\\0',1,1);\r\n      FUN_004073b8(&DAT_004a1b68,(-((uVar1 & 0xff) != 0) & 0xfdU) + 6,1);\r\n      uVar2 = FUN_0040721b(&DAT_004a1b68,extraout_EDX_03);\r\n      FUN_0043f6cd(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      uVar2 = FUN_0040724a(&DAT_004a1b68,extraout_EDX_04);\r\n      FUN_0043f70e(DAT_004b2c0c,(int)((ulonglong)uVar2 >> 0x20),(uint)uVar2);\r\n      FUN_0045778f(0,'\\0',1,1);\r\n    }\r\n    else if ((byte)uVar1 == 2) {\r\n      FUN_0045965d((ushort *)&DAT_0048dcd8,0);\r\n      FUN_0045965d((ushort *)&DAT_0048dd04,0x9d);\r\n      FUN_0047467a(&DAT_004b69b0,10,1);\r\n      FUN_0040dbed(&DAT_004b0770,10000);\r\n      FUN_0042f699(2);\r\n    }\r\n  }\r\n  FUN_0045965d((ushort *)&DAT_0048dd40,0x9d);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "function": "0x00434d33",
+      "evidence_id": "ev_dee160e0b65bdeba1123ec482acc8b885cccb817a6e4a4714699dfe412089ec7",
+      "strings": [
+        {
+          "address": "0x0048dd74",
+          "text": "话说回来，\n没想到您居然集满了宝物图鉴。\n真是令人惊讶。",
+          "gbk_hex": "bbb0cbb5bbd8c0b4a3ac0ac3bbcfebb5bdc4fabed3c8bbbcafc2fac1cbb1a6ceefcdbcbcf8a1a30ad5e6cac7c1eec8cbbeaad1c8a1a3"
+        },
+        {
+          "address": "0x0048ddac",
+          "text": "如今展示宝物图鉴真正力量的时刻，\n终于到来了。",
+          "gbk_hex": "c8e7bdf1d5b9cabeb1a6ceefcdbcbcf8d5e6d5fdc1a6c1bfb5c4cab1bfcca3ac0ad6d5d3dab5bdc0b4c1cba1a3"
+        },
+        {
+          "address": "0x0048dddc",
+          "text": "也只有当宝物图鉴集满后，\n宝物图鉴真正的力量才会发挥。",
+          "gbk_hex": "d2b2d6bbd3d0b5b1b1a6ceefcdbcbcf8bcafc2fabaf3a3ac0ab1a6ceefcdbcbcf8d5e6d5fdb5c4c1a6c1bfb2c5bbe1b7a2bbd3a1a3"
+        },
+        {
+          "address": "0x0048de14",
+          "text": "它的主人可以得到全部宝物。",
+          "gbk_hex": "cbfcb5c4d6f7c8cbbfc9d2d4b5c3b5bdc8abb2bfb1a6ceefa1a3"
+        },
+        {
+          "address": "0x0048de30",
+          "text": "不知您意下如何？曹大人。\n您希望接受这些宝物吗？",
+          "gbk_hex": "b2bbd6aac4fad2e2cfc2c8e7bacea3bfb2dcb4f3c8cba1a30ac4facfa3cdfbbdd3cadcd5e2d0a9b1a6ceefc2f0a3bf"
+        },
+        {
+          "address": "0x0048de60",
+          "text": "1.非常乐于接受\n2.不要那些宝物",
+          "gbk_hex": "312eb7c7b3a3c0d6d3dabdd3cadc0a322eb2bbd2aac4c7d0a9b1a6ceef"
+        },
+        {
+          "address": "0x0048de80",
+          "text": "喔、曹某乐于接受。",
+          "gbk_hex": "e0b8a1a2b2dcc4b3c0d6d3dabdd3cadca1a3"
+        },
+        {
+          "address": "0x0048de94",
+          "text": "太好了。\n那么如今正是解放的时刻！\n苏醒来吧，宝物图鉴！",
+          "gbk_hex": "ccabbac3c1cba1a30ac4c7c3b4c8e7bdf1d5fdcac7bde2b7c5b5c4cab1bfcca3a10acbd5d0d1c0b4b0c9a3acb1a6ceefcdbcbcf8a3a1"
+        },
+        {
+          "address": "0x0048dee0",
+          "text": "您的好意我心领了。\n我觉得现在这样就行了。",
+          "gbk_hex": "c4fab5c4bac3d2e2ced2d0c4c1ecc1cba1a30aced2bef5b5c3cfd6d4dad5e2d1f9becdd0d0c1cba1a3"
+        },
+        {
+          "address": "0x0048df0c",
+          "text": "是吗……？\n那么请你务必收下这件东西。",
+          "gbk_hex": "cac7c2f0a1ada1ada3bf0ac4c7c3b4c7ebc4e3cef1b1d8cad5cfc2d5e2bcfeb6abcef7a1a3"
+        }
+      ],
+      "choices": [
+        {
+          "address": "0x0048de60",
+          "text": "1.非常乐于接受\n2.不要那些宝物",
+          "options": [
+            "1.非常乐于接受",
+            "2.不要那些宝物"
+          ],
+          "branch_evidence": "control_flow"
+        }
+      ],
+      "control_flow": "\r\nvoid FUN_00434d33(void)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined1 uVar2;\r\n  uint uVar3;\r\n  undefined3 extraout_var;\r\n  \r\n  FUN_00457428(0x9d,0xffff,0,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048dd74,0x9d);\r\n  FUN_00457428(0x9d,0xffff,2,0,1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048ddac,0x9d);\r\n  FUN_0045778f(0x9d,'\\x02',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048dddc,0x9d);\r\n  FUN_0045778f(0x9d,'\\x01',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048de14,0x9d);\r\n  FUN_0045778f(0x9d,'\\0',1,1);\r\n  FUN_0045965d((ushort *)&DAT_0048de30,0x9d);\r\n  uVar3 = FUN_0042de12((ushort *)&DAT_0048de60,0);\r\n  if ((uVar3 & 0xff) == 0) {\r\n    FUN_0045965d((ushort *)&DAT_0048de80,0);\r\n    FUN_0045965d((ushort *)&DAT_0048de94,0x9d);\r\n    FUN_0045778f(0x9d,'\\x05',1,1);\r\n    FUN_0047467a(&DAT_004b69b0,0x27,1);\r\n    FUN_00403340(&DAT_004b1b18,0x14);\r\n    FUN_0042c4e0();\r\n    FUN_0045778f(0x9d,'\\0',1,1);\r\n    for (bVar1 = 0; bVar1 < 0x68; bVar1 = bVar1 + 1) {\r\n      uVar2 = FUN_00409600((int)(&DAT_004a1140 + (uint)bVar1 * 0x19));\r\n      if (CONCAT31(extraout_var,uVar2) != 0) {\r\n        uVar2 = 0;\r\n        uVar3 = FUN_0040c6ea((uint)(&DAT_004a1140 + (uint)bVar1 * 0x19));\r\n        FUN_0040d79c(&DAT_004b0770,bVar1,(-((uVar3 & 0xff) != 2) & 4U) - 1,uVar2);\r\n      }\r\n    }\r\n    FUN_0047467a(&DAT_004b69b0,0xe,1);\r\n    FUN_0042f699(2);\r\n  }\r\n  else {\r\n    FUN_0045965d((ushort *)&DAT_0048dee0,0);\r\n    FUN_0045965d((ushort *)&DAT_0048df0c,0x9d);\r\n    FUN_0047467a(&DAT_004b69b0,10,1);\r\n    FUN_0040dbed(&DAT_004b0770,30000);\r\n    FUN_0042f699(2);\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "function": "0x00433512",
+      "evidence_id": "ev_fabeceef3c988011b0b83674b2b1122355593fac0dc7d47b781b7030be63957a",
+      "strings": [
+        {
+          "address": "0x0048cc24",
+          "text": "嗯，这也是老人家一片好意。\n曹某在此谢过。",
+          "gbk_hex": "e0c5a3acd5e2d2b2cac7c0cfc8cbbcd2d2bbc6acbac3d2e2a1a30ab2dcc4b3d4dab4cbd0bbb9fda1a3"
+        },
+        {
+          "address": "0x0048cc50",
+          "text": "快别这么说，我能教的就这点雕虫小技。\n往后还请曹大人在战斗中自己体会。",
+          "gbk_hex": "bfecb1f0d5e2c3b4cbb5a3acced2c4dcbdccb5c4becdd5e2b5e3b5f1b3e6d0a1bcbca1a30acdf9baf3bbb9c7ebb2dcb4f3c8cbd4dad5bdb6b7d6d0d7d4bcbacce5bbe1a1a3"
+        }
+      ],
+      "choices": [],
+      "control_flow": "\r\nvoid FUN_00433512(void)\r\n\r\n{\r\n  FUN_0045965d((ushort *)&DAT_0048cc24,0);\r\n  FUN_0045965d((ushort *)&DAT_0048cc50,0x9d);\r\n  return;\r\n}\r\n\r\n"
+    }
+  ],
+  "final_dialogue": {
+    "address": "0x0048c970",
+    "text": "那么小老儿告辞了。\n呵、呵、呵、呵。",
+    "gbk_hex": "c4c7c3b4d0a1c0cfb6f9b8e6b4c7c1cba1a30abac7a1a2bac7a1a2bac7a1a2bac7a1a3"
+  }
+}

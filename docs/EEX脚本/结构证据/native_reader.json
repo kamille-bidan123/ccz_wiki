@@ -1,0 +1,182 @@
+[
+  {
+    "evidence_id": "ev_7e7c8d86353ff61348baee7a1116639bd8175ae55f1ffb6d5a3369c6d154e368",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "operation": "procedure_pseudo_code",
+    "normalized_result": "\r\nint __thiscall FUN_0041084e(void *this,int param_1,int param_2)\r\n\r\n{\r\n  ushort uVar1;\r\n  int iVar2;\r\n  \r\n  iVar2 = FUN_00410950((int)this);\r\n  if (iVar2 == 0) {\r\n    iVar2 = 4;\r\n  }\r\n  else {\r\n    if (*(int *)((int)this + 0x14) < 0) {\r\n      if (param_2 == 0) {\r\n        *(undefined4 *)((int)this + 0x2c) = 1;\r\n      }\r\n      uVar1 = FUN_0040fce2((int)this);\r\n      if (param_1 == 0) {\r\n        FUN_0040fc3b(this,(uint)uVar1);\r\n        if (param_2 == 0) {\r\n          *(undefined4 *)((int)this + 0x2c) = 0;\r\n        }\r\n        return 0;\r\n      }\r\n    }\r\n    iVar2 = FUN_004105a8(this,param_2);\r\n    if ((iVar2 != 2) && (param_2 == 0)) {\r\n      *(undefined4 *)((int)this + 0x2c) = 0;\r\n    }\r\n  }\r\n  return iVar2;\r\n}\r\n\r\n",
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ]
+  },
+  {
+    "evidence_id": "ev_ea041de84c418b6ae59345d42dbebdac037301e54e4375886a93fe3f33ce075e",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "operation": "procedure_pseudo_code",
+    "normalized_result": "\r\nvoid __thiscall FUN_0040fba9(void *this,int param_1)\r\n\r\n{\r\n  ushort uVar1;\r\n  undefined4 local_8;\r\n  \r\n  FUN_0040fb78((int)this);\r\n  FUN_0040fce2((int)this);\r\n  for (local_8 = 0; local_8 < param_1; local_8 = local_8 + 1) {\r\n    if (*(int *)((int)this + 0x34) != 0) {\r\n      FUN_0040fce2((int)this);\r\n    }\r\n    uVar1 = FUN_0040fce2((int)this);\r\n    FUN_0040fc3b(this,(uint)uVar1);\r\n  }\r\n  return;\r\n}\r\n\r\n",
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ]
+  },
+  {
+    "evidence_id": "ev_085b5594cf72537ca8d09b37a087b87963887ada75f9c9174f5d1f161f8106ea",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "operation": "procedure_pseudo_code",
+    "normalized_result": "\r\nvoid __thiscall FUN_0040fc3b(void *this,int param_1)\r\n\r\n{\r\n  *(int *)((int)this + 8) = *(int *)((int)this + 8) + param_1;\r\n  *(int *)((int)this + 0xc) = *(int *)((int)this + 0xc) + param_1;\r\n  return;\r\n}\r\n\r\n",
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ]
+  },
+  {
+    "evidence_id": "ev_79c6d0d50ebdb96ac5993694abd191d5faf6497ddf2ff83a7e6c951dae54d13a",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "operation": "procedure_pseudo_code",
+    "normalized_result": "\r\nundefined4 __thiscall FUN_00410273(void *this,void *param_1)\r\n\r\n{\r\n  short sVar1;\r\n  bool bVar2;\r\n  int iVar3;\r\n  undefined4 uVar4;\r\n  short *pData;\r\n  HCONV hConv;\r\n  HSZ hszItem;\r\n  UINT wFmt;\r\n  UINT wType;\r\n  DWORD dwTimeout;\r\n  LPDWORD pdwResult;\r\n  short *local_c;\r\n  \r\n  if (*(int *)((int)this + 0x20) != 0) {\r\n    FUN_00481020(*(undefined **)((int)this + 0x20));\r\n  }\r\n  *(undefined4 *)((int)this + 0x34) = 0;\r\n  iVar3 = _memcmp(param_1,&DAT_0048b348,4);\r\n  if (iVar3 == 0) {\r\n    if (*(byte *)((int)param_1 + 4) < 2) {\r\n      if ((*(char *)((int)param_1 + 4) == '\\x01') && (2 < *(byte *)((int)param_1 + 5))) {\r\n        uVar4 = 0;\r\n      }\r\n      else {\r\n        *(undefined4 *)((int)this + 0x30) = 6;\r\n        if ((*(byte *)((int)param_1 + 4) < 2) && (*(char *)((int)param_1 + 5) == '\\0')) {\r\n          *(undefined4 *)((int)this + 0x30) = 0x10;\r\n        }\r\n        else {\r\n          local_c = (short *)((int)param_1 + 6);\r\n          bVar2 = false;\r\n          while (!bVar2) {\r\n            sVar1 = *local_c;\r\n            pData = local_c + 2;\r\n            local_c = (short *)((int)pData + (uint)(ushort)local_c[1]);\r\n            if (sVar1 == 0) {\r\n              bVar2 = true;\r\n            }\r\n            else if (sVar1 == 1) {\r\n              if (DAT_00492f88 != (HCONV)0x0) {\r\n                pdwResult = (LPDWORD)0x0;\r\n                dwTimeout = 0xffffffff;\r\n                wType = 0x4050;\r\n                wFmt = 0;\r\n                hszItem = (HSZ)0x0;\r\n                hConv = DAT_00492f88;\r\n                iVar3 = lstrlenA((LPCSTR)pData);\r\n                DdeClientTransaction\r\n                          ((LPBYTE)pData,iVar3 + 1,hConv,hszItem,wFmt,wType,dwTimeout,pdwResult);\r\n              }\r\n              *(undefined4 *)((int)this + 0x34) = 1;\r\n            }\r\n          }\r\n          *(int *)((int)this + 0x30) = (int)local_c - (int)param_1;\r\n        }\r\n        *(void **)((int)this + 0x20) = param_1;\r\n        iVar3 = FUN_0040fb50((int)this);\r\n        *(int *)((int)this + 0xc) = *(int *)((int)this + 0x20) + iVar3 + *(int *)((int)this + 8);\r\n        *(undefined4 *)((int)this + 0x28) = 1;\r\n        uVar4 = 1;\r\n      }\r\n    }\r\n    else {\r\n      uVar4 = 0;\r\n    }\r\n  }\r\n  else {\r\n    uVar4 = 0;\r\n  }\r\n  return uVar4;\r\n}\r\n\r\n",
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ]
+  },
+  {
+    "evidence_id": "ev_d6841233edb498fa32561ffbe148924574666bf9e284967d34c9e9b06490f936",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "operation": "procedure_pseudo_code",
+    "normalized_result": "\r\nundefined2 __fastcall FUN_0040fce2(int param_1)\r\n\r\n{\r\n  undefined1 uVar1;\r\n  undefined1 uVar2;\r\n  \r\n  uVar1 = FUN_0040fcb1(param_1);\r\n  uVar2 = FUN_0040fcb1(param_1);\r\n  return CONCAT11(uVar2,uVar1);\r\n}\r\n\r\n",
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ]
+  },
+  {
+    "evidence_id": "ev_81492fa70ec519a868e90d4eb35df642a8a5ab60441852b78cb10b0a24250029",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "operation": "procedure_pseudo_code",
+    "normalized_result": "\r\nundefined1 __fastcall FUN_0040fcb1(int param_1)\r\n\r\n{\r\n  undefined1 uVar1;\r\n  \r\n  *(int *)(param_1 + 8) = *(int *)(param_1 + 8) + 1;\r\n  uVar1 = **(undefined1 **)(param_1 + 0xc);\r\n  *(int *)(param_1 + 0xc) = *(int *)(param_1 + 0xc) + 1;\r\n  return uVar1;\r\n}\r\n\r\n",
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ]
+  }
+]

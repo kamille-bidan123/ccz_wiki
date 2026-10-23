@@ -1,0 +1,36 @@
+{
+  "kind": "original-S-script-static-catalogue",
+  "source_hashes": {
+    "Data.e5": "462fa6d697849a685c9dcf2a074c5ebdae20044a8b03f98c9a1bc3f54177ffe8",
+    "Data.block0": "5ffc43c072b200bace961c44475882549aaf19070099fd1aa89fd20f5b26e4e6",
+    "Data.block1": "16c77e8e693a2f5cff9f237bd9b13af686d5c1abab1b6af292dfa0596be472a6",
+    "Data.block3": "3973a66ec64315f7c3fe3a50ce3e2b466e2cc802e503b77fc8aec5556efe955f",
+    "Imsg.e5": "d499fa07d21f0d17750f4222e4a7da24e944346209ecadd50303b9e66543bdca",
+    "Ekd5.exe": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+  },
+  "battles": 58,
+  "records_per_enemy_command": 80,
+  "totals": {
+    "valid_enemy_slots": 2212,
+    "named_slots": 491,
+    "initial_hidden_flags": 686,
+    "raw_enemy_equipment_commands": 216,
+    "enemy_id_equipment_requests": 195
+  },
+  "personal_selector_distribution": {
+    "0": 1661,
+    "2": 1,
+    "4": 212,
+    "6": 277,
+    "8": 1,
+    "52": 6,
+    "55": 19,
+    "65": 8,
+    "65535": 27
+  },
+  "limitations": [
+    "No campaign runtime or route execution.",
+    "AST supplies command locations; deployment and equipment fields independently read from original bytes.",
+    "A=20 is a comparison assumption, not an actual campaign level."
+  ]
+}

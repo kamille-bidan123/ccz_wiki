@@ -1,0 +1,1124 @@
+[
+  {
+    "evidence_id": "ev_4147040fd8135607b0e9c2205ecfd3b10c68b850c92fc5591842a876b8804a25",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x4215d5"
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_004214bf(byte *param_1)\r\n\r\n{\r\n  char cVar1;\r\n  undefined1 *puVar2;\r\n  int iVar3;\r\n  undefined2 *puVar4;\r\n  byte bVar5;\r\n  undefined4 extraout_EDX;\r\n  undefined8 uVar6;\r\n  undefined4 uVar7;\r\n  int local_2c;\r\n  int local_20;\r\n  int local_1c;\r\n  int local_10;\r\n  int local_c;\r\n  int local_8;\r\n  \r\n  bVar5 = (&DAT_004866c0)[*param_1];\r\n  if (*param_1 != 0x40) {\r\n    FUN_004218d6(param_1);\r\n  }\r\n  puVar2 = (undefined1 *)FUN_00403360((int)(&DAT_004b2c50 + (uint)param_1[0xd] * 0x24));\r\n  FUN_004065a0(param_1 + 0x2cb,puVar2);\r\n  if (*(int *)(param_1 + 0x4b0) != 0) {\r\n    if ((*param_1 == 0x42) || (*param_1 == 0x43)) {\r\n      local_10 = FUN_00455e44(0x4b4250);\r\n      local_10 = local_10 / 2;\r\n      iVar3 = FUN_00455e6b(0x4b4250);\r\n      local_c = iVar3 / 2 + 0x38;\r\n    }\r\n    else {\r\n      FUN_0045503f(&DAT_004b4250,param_1[0x2cb],param_1[0x2cc]);\r\n      puVar4 = (undefined2 *)FUN_00403360((int)(&DAT_004b2c50 + (uint)param_1[0xd] * 0x24));\r\n      uVar6 = FUN_0044fa7e(CONCAT22((short)((uint)puVar4 >> 0x10),*puVar4));\r\n      local_20 = (int)uVar6;\r\n      local_1c = (int)((ulonglong)uVar6 >> 0x20);\r\n      local_10 = local_20 + 0x18;\r\n      local_c = local_1c + 0x18;\r\n    }\r\n    FUN_00421879(local_10,local_c);\r\n    param_1[0x4b0] = 0;\r\n    param_1[0x4b1] = 0;\r\n    param_1[0x4b2] = 0;\r\n    param_1[0x4b3] = 0;\r\n  }\r\n  if ((99 < bVar5) && (bVar5 != 0xff)) {\r\n    switch(*param_1) {\r\n    case 3:\r\n      bVar5 = 1;\r\n      break;\r\n    case 8:\r\n      bVar5 = 3;\r\n      break;\r\n    case 0xd:\r\n      bVar5 = 5;\r\n      break;\r\n    case 0x12:\r\n      bVar5 = 7;\r\n      break;\r\n    case 0x26:\r\n      FUN_00421ce5(param_1);\r\n      bVar5 = 0xff;\r\n      break;\r\n    case 0x40:\r\n      bVar5 = 0x16;\r\n      break;\r\n    case 0x41:\r\n      bVar5 = 0x39;\r\n      break;\r\n    case 0x42:\r\n      bVar5 = 0xff;\r\n      break;\r\n    case 0x43:\r\n      bVar5 = 10;\r\n    }\r\n  }\r\n  if (bVar5 != 0xff) {\r\n    FUN_0045503f(&DAT_004b4250,param_1[0x2cb],param_1[0x2cc]);\r\n    uVar7 = 0x44c00;\r\n    iVar3 = FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n    FUN_004014f8(&DAT_004917b0,(uint *)s_MEFF_E5_0048bbf8,\r\n                 CONCAT31((int3)((uint)extraout_EDX >> 8),bVar5),iVar3,uVar7);\r\n    cVar1 = FUN_00401c88(&DAT_004917b0,0x74,(int)(param_1 + 0xd));\r\n    if (cVar1 != '\\0') {\r\n      FUN_00401e5c(&DAT_004917b0,param_1);\r\n    }\r\n    FUN_004016ab(&DAT_004917b0);\r\n  }\r\n  FUN_0041e5db();\r\n  local_8 = 5;\r\n  bVar5 = 0;\r\n  while ((bVar5 < 0x74 && (param_1[bVar5 + 0xd] != 0xff))) {\r\n    FUN_0043fcc9((int)(&DAT_004b2c50 + (uint)param_1[bVar5 + 0xd] * 0x24));\r\n    local_8 = local_8 + 5;\r\n    bVar5 = bVar5 + 1;\r\n  }\r\n  if (local_8 < 0x14) {\r\n    local_2c = local_8;\r\n  }\r\n  else {\r\n    local_2c = 0x14;\r\n  }\r\n  FUN_00403340(&DAT_004b1b18,local_2c);\r\n  FUN_0042c4e0();\r\n  FUN_0041e5f6();\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_a66ca22fe790c8b966a08df4c2bbae759ce9b8604e3fb06ac19245f9403e41dd",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x4218cb"
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_004218a9(void *this,int param_1,int param_2,undefined1 param_3)\r\n\r\n{\r\n  undefined4 in_EAX;\r\n  int iVar1;\r\n  \r\n  iVar1 = FUN_004217ff(this,CONCAT31((int3)((uint)in_EAX >> 8),param_3));\r\n  if (iVar1 != 0) {\r\n    FUN_00421879(param_1,param_2);\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_522914b46db5b9a462be6ab64c03d8c9a200f27c516bb9827bd0a143e0fa1c78",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x425008"
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_00424e9e(byte *param_1)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined2 *puVar2;\r\n  uint uVar3;\r\n  int iVar4;\r\n  byte bVar5;\r\n  undefined8 uVar6;\r\n  byte bVar7;\r\n  int iVar8;\r\n  uint local_48;\r\n  uint local_44;\r\n  int local_3c;\r\n  int local_38;\r\n  byte local_20 [28];\r\n  \r\n  bVar1 = FUN_0045533d(&DAT_004b4250,param_1[1],param_1[0x2c9],'\\x02',*param_1);\r\n  local_20[0] = bVar1;\r\n  if (bVar1 != 0xff) {\r\n    param_1[0xc] = param_1[1];\r\n    FUN_00425349(param_1,0);\r\n    param_1[0xd] = local_20[0];\r\n    bVar1 = 0;\r\n    while (param_1[bVar1 + 0xe] != 0xff) {\r\n      bVar1 = bVar1 + 1;\r\n    }\r\n    param_1[0xd] = param_1[1];\r\n    FUN_004218d6(param_1);\r\n    for (bVar5 = 0; bVar5 < bVar1; bVar5 = bVar5 + 1) {\r\n      local_20[bVar5] = param_1[bVar5 + 0xe];\r\n    }\r\n    local_20[bVar1] = 0xff;\r\n    for (bVar5 = 0; bVar5 < 5; bVar5 = bVar5 + 1) {\r\n      param_1[bVar5 + 0xd] = 0xff;\r\n    }\r\n    puVar2 = (undefined2 *)FUN_00403360((int)(&DAT_004b2c50 + (uint)param_1[1] * 0x24));\r\n    uVar6 = FUN_0044fa7e(CONCAT22((short)((uint)puVar2 >> 0x10),*puVar2));\r\n    local_3c = (int)uVar6;\r\n    local_38 = (int)((ulonglong)uVar6 >> 0x20);\r\n    FUN_00421879(local_3c + 0x18,local_38 + 0x18);\r\n    param_1[0x4b0] = 0;\r\n    param_1[0x4b1] = 0;\r\n    param_1[0x4b2] = 0;\r\n    param_1[0x4b3] = 0;\r\n    bVar5 = 0;\r\n    do {\r\n      while( true ) {\r\n        if (4 < bVar5) goto LAB_004251d0;\r\n        uVar3 = FUN_0047fb13((uint)bVar1);\r\n        param_1[0xd] = local_20[uVar3];\r\n        param_1[0xc] = param_1[0xd];\r\n        iVar4 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)param_1[0xc] * 0x24));\r\n        if (iVar4 == 0) break;\r\n        bVar5 = bVar5 + 1;\r\n        iVar8 = 0;\r\n        bVar7 = *param_1;\r\n        iVar4 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (uint)param_1[0xc] * 0x24));\r\n        uVar3 = FUN_0043bfaa(*(void **)(param_1 + 8),\r\n                             (int *)(&DAT_004b2c50 + (uint)param_1[0xc] * 0x24),\r\n                             &DAT_004a1b68 + iVar4 * 0x48,bVar7,iVar8);\r\n        *(uint *)(param_1 + 0x84) = uVar3;\r\n        if (*(int *)(param_1 + 0x84) == 0) {\r\n          param_1[0x255] = 0;\r\n        }\r\n        else {\r\n          param_1[0x255] = 0x40;\r\n        }\r\n        uVar3 = FUN_00420efb(param_1,0);\r\n        if (*(uint *)(param_1 + 0x2d0) < uVar3) {\r\n          local_44 = FUN_00420efb(param_1,0);\r\n        }\r\n        else {\r\n          local_44 = *(uint *)(param_1 + 0x2d0);\r\n        }\r\n        *(uint *)(param_1 + 0x2d0) = local_44;\r\n        uVar3 = FUN_0042128b(param_1);\r\n        if (*(uint *)(param_1 + 0x2d4) < uVar3) {\r\n          local_48 = FUN_0042128b(param_1);\r\n        }\r\n        else {\r\n          local_48 = *(uint *)(param_1 + 0x2d4);\r\n        }\r\n        *(uint *)(param_1 + 0x2d4) = local_48;\r\n        uVar3 = FUN_004213a3(param_1,0);\r\n        *(uint *)(param_1 + 0x2d8) = uVar3;\r\n        FUN_004214bf(param_1);\r\n        FUN_004224a8(param_1);\r\n      }\r\n      bVar1 = bVar1 - 1;\r\n      local_20[uVar3] = local_20[bVar1];\r\n      local_20[bVar1] = 0xff;\r\n    } while (bVar1 != 0);\r\nLAB_004251d0:\r\n    param_1[0x4ac] = 1;\r\n    param_1[0x4ad] = 0;\r\n    param_1[0x4ae] = 0;\r\n    param_1[0x4af] = 0;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_20423557b08b58f133932e80d0410f37dc7ec86564a98c71341394ccef6b82b2",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x4014f8"
+    },
+    "pseudocode": "\r\nundefined4 __thiscall\r\nFUN_004014f8(void *this,uint *param_1,uint param_2,undefined4 param_3,undefined4 param_4)\r\n\r\n{\r\n  bool bVar1;\r\n  undefined3 extraout_var;\r\n  DWORD DVar2;\r\n  undefined4 uVar3;\r\n  int local_114 [65];\r\n  void *local_10;\r\n  undefined1 *puStack_c;\r\n  undefined4 local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_00484eff;\r\n  local_10 = ExceptionList;\r\n  ExceptionList = &local_10;\r\n  FUN_004016ab(this);\r\n  *(undefined4 *)((int)this + 0x298) = param_3;\r\n  *(undefined4 *)((int)this + 0x29c) = param_4;\r\n  FUN_004032b0(local_114);\r\n  local_8 = 0;\r\n  bVar1 = FUN_0041fb35(local_114,param_1);\r\n  if (CONCAT31(extraout_var,bVar1) == 0) {\r\n    local_8 = 0xffffffff;\r\n    FUN_004032d0(local_114);\r\n    uVar3 = 0;\r\n  }\r\n  else {\r\n    DVar2 = FUN_0041fc89(local_114,param_2 & 0xff,*(undefined1 **)((int)this + 0x298));\r\n    *(DWORD *)((int)this + 0x2a0) = *(int *)((int)this + 0x2a0) + DVar2;\r\n    FUN_004192c5(local_114);\r\n    FUN_00401000(this,*(undefined4 **)((int)this + 0x298));\r\n    *(uint *)((int)this + 4) = *(uint *)((int)this + 4) / 0x32;\r\n    *(int *)((int)this + 0xfd0) = *(int *)((int)this + 0x298) + *(int *)((int)this + 0x2a0);\r\n    *(int *)((int)this + 0x2a0) =\r\n         *(int *)((int)this + 0x2a0) + *(int *)((int)this + 8) * *(int *)((int)this + 0xc);\r\n    uVar3 = *(undefined4 *)((int)this + 0x2a0);\r\n    local_8 = 0xffffffff;\r\n    FUN_004032d0(local_114);\r\n  }\r\n  ExceptionList = local_10;\r\n  return uVar3;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_248bd1c1344baac8b190d6d0895cf0dbfce056bd620efcedcb10c59507b92b37",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x401c88"
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_00401c88(void *this,byte param_1,int param_2)\r\n\r\n{\r\n  byte bVar1;\r\n  byte bVar2;\r\n  undefined2 *puVar3;\r\n  int iVar4;\r\n  uint uVar5;\r\n  undefined8 uVar6;\r\n  int local_3b4;\r\n  int local_3b0;\r\n  int local_3a8 [232];\r\n  uint local_8;\r\n  \r\n  local_8 = local_8 & 0xffffff00;\r\n  for (bVar1 = 0; (bVar1 < param_1 && (*(char *)(param_2 + (uint)bVar1) != -1)); bVar1 = bVar1 + 1)\r\n  {\r\n    puVar3 = (undefined2 *)\r\n             FUN_00403360((int)(&DAT_004b2c50 + (uint)*(byte *)(param_2 + (uint)bVar1) * 0x24));\r\n    uVar6 = FUN_0044fa7e(CONCAT22((short)((uint)puVar3 >> 0x10),*puVar3));\r\n    uVar5 = local_8 & 0xff;\r\n    local_3b4 = (int)uVar6;\r\n    local_3a8[uVar5 * 2] = local_3b4;\r\n    local_3b0 = (int)((ulonglong)uVar6 >> 0x20);\r\n    local_3a8[uVar5 * 2 + 1] = local_3b0;\r\n    local_3a8[(local_8 & 0xff) * 2] = local_3a8[(local_8 & 0xff) * 2] + 0x18;\r\n    local_3a8[(local_8 & 0xff) * 2 + 1] = local_3a8[(local_8 & 0xff) * 2 + 1] + 0x18;\r\n    if ((-1 < local_3a8[(local_8 & 0xff) * 2]) &&\r\n       (((uVar5 = local_8 & 0xff, iVar4 = FUN_00455e44(0x4b4250), local_3a8[uVar5 * 2] < iVar4 &&\r\n         (0x37 < local_3a8[(local_8 & 0xff) * 2 + 1])) &&\r\n        (uVar5 = local_8 & 0xff, iVar4 = FUN_00455e6b(0x4b4250),\r\n        local_3a8[uVar5 * 2 + 1] < iVar4 + 0x38)))) {\r\n      bVar2 = (byte)local_8 + 1;\r\n      local_8 = CONCAT31(local_8._1_3_,bVar2);\r\n      if ((uint)bVar2 + (uint)*(byte *)((int)this + 0x2a4) == 0x74) break;\r\n    }\r\n  }\r\n  FUN_004019a4(this,(byte)local_8,(int)local_3a8);\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_f61a57aa02766e1aaeedefecc3b2cc349ab363d041acc94cf224c62466b06942",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x401e5c"
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_00401e5c(void *this,void *param_1)\r\n\r\n{\r\n  bool bVar1;\r\n  byte bVar2;\r\n  int iVar3;\r\n  uint uVar4;\r\n  uint extraout_ECX;\r\n  byte bVar5;\r\n  void *extraout_EDX;\r\n  void *pvVar6;\r\n  void *pvStack_10;\r\n  undefined1 *puStack_c;\r\n  undefined4 local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_00484f09;\r\n  pvStack_10 = ExceptionList;\r\n  if (*(int *)((int)this + 0xfd0) == 0) {\r\n    return;\r\n  }\r\n  ExceptionList = &pvStack_10;\r\n  FUN_004017af((int)this);\r\n  FUN_004018bd((int)this);\r\n  bVar1 = true;\r\n  SendMessageA(DAT_004b6a68,0x202,0,0);\r\n  local_8 = 0;\r\n  bVar5 = 0;\r\n  do {\r\n    if (*(byte *)this <= bVar5) {\r\n      FUN_0040202d();\r\n      return;\r\n    }\r\n    FUN_0041e5db();\r\n    iVar3 = FUN_0040208b(this,bVar5,(uint)(bVar5 == 0));\r\n    if ((param_1 != (void *)0x0) &&\r\n       (*(char *)(*(int *)((int)this + (uint)bVar5 * 4 + 0x14) + 0x10) != '\\0')) {\r\n      FUN_00421f04(param_1,*(char *)(*(int *)((int)this + (uint)bVar5 * 4 + 0x14) + 0x10),\r\n                   *(undefined1 **)((int)this + 0xfd0));\r\n    }\r\n    for (bVar2 = 0; bVar2 < *(byte *)((int)this + 0x2a4); bVar2 = bVar2 + 1) {\r\n      if (iVar3 == 0) {\r\n        uVar4 = (uint)bVar2;\r\n        pvVar6 = this;\r\n        if (*(int *)((int)this + uVar4 * 4 + 0xa5c) != 0) goto LAB_00401fa8;\r\n      }\r\n      else {\r\nLAB_00401fa8:\r\n        FUN_00402221(this,(uint)bVar2);\r\n        uVar4 = extraout_ECX;\r\n        pvVar6 = extraout_EDX;\r\n      }\r\n      FUN_0040227f(this,CONCAT31((int3)((uint)pvVar6 >> 8),bVar5),CONCAT31((int3)(uVar4 >> 8),bVar2)\r\n                  );\r\n    }\r\n    iVar3 = FUN_0042c56b();\r\n    if (iVar3 != 0) {\r\n      bVar1 = false;\r\n    }\r\n    if (bVar1) {\r\n      FUN_0042c4e0();\r\n    }\r\n    iVar3 = FUN_004031e8(this,bVar5);\r\n    if (iVar3 != 0) {\r\n      FUN_0040205e((int)this);\r\n    }\r\n    FUN_0041e5f6();\r\n    FUN_00403340(&DAT_004b1b18,*(int *)((int)this + 4));\r\n    bVar5 = bVar5 + 1;\r\n  } while( true );\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_6e90f8b9ed8ab047d928b0f4b607d98a3772ab176cc967b343c3870b22f99c12",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x4016ab"
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_004016ab(void *param_1)\r\n\r\n{\r\n  byte bVar1;\r\n  \r\n  FUN_004011f2((int)param_1);\r\n  *(undefined4 *)((int)param_1 + 0x298) = 0;\r\n  *(undefined4 *)((int)param_1 + 0x29c) = 0;\r\n  *(undefined4 *)((int)param_1 + 0x2a0) = 0;\r\n  *(undefined1 *)((int)param_1 + 0x2a4) = 0;\r\n  _memset((void *)((int)param_1 + 0x31c),0,0x3a0);\r\n  _memset((void *)((int)param_1 + 0x6bc),0,0x3a0);\r\n  _memset((void *)((int)param_1 + 0xa5c),0,0x1d0);\r\n  _memset((void *)((int)param_1 + 0xc2c),0,0x1d0);\r\n  *(undefined4 *)((int)param_1 + 0xfd0) = 0;\r\n  for (bVar1 = 0; bVar1 < *(byte *)((int)param_1 + 0x319); bVar1 = bVar1 + 1) {\r\n    FUN_00401425(param_1,*(undefined **)((int)param_1 + (uint)bVar1 * 4 + 0xdfc));\r\n  }\r\n  *(undefined1 *)((int)param_1 + 0x319) = 0;\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_65abd6467e49360da219d27e226c1dc23f6cba635199fda7788c659a78664431",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x4218d6"
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_004218d6(byte *param_1)\r\n\r\n{\r\n  undefined2 uVar1;\r\n  byte bVar2;\r\n  undefined1 *puVar3;\r\n  uint uVar4;\r\n  int iVar5;\r\n  int iVar6;\r\n  undefined2 *puVar7;\r\n  char *pcVar8;\r\n  undefined4 *puVar9;\r\n  byte *pbVar10;\r\n  undefined4 extraout_ECX;\r\n  undefined2 extraout_var;\r\n  undefined8 uVar11;\r\n  undefined4 uVar12;\r\n  int local_13c;\r\n  int local_138;\r\n  int local_130 [65];\r\n  uint local_2c;\r\n  uint local_28;\r\n  uint local_24;\r\n  byte *local_20;\r\n  HGLOBAL local_1c;\r\n  uint local_18;\r\n  int local_14;\r\n  void *local_10;\r\n  undefined1 *puStack_c;\r\n  undefined4 local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_0048528c;\r\n  local_10 = ExceptionList;\r\n  local_2c = 0x1000;\r\n  ExceptionList = &local_10;\r\n  FUN_004032b0(local_130);\r\n  local_8 = 0;\r\n  FUN_0041fb35(local_130,(uint *)s_UNIT_ATK_E5_0048bbc0);\r\n  puVar3 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,local_2c,0,4);\r\n  uVar4 = FUN_0043fc48((int *)(&DAT_004b2c50 + (uint)param_1[1] * 0x24));\r\n  FUN_0041fc89(local_130,uVar4 & 0xff,puVar3);\r\n  FUN_004192c5(local_130);\r\n  FUN_00403340(&DAT_004b1b18,8);\r\n  FUN_0047467a(&DAT_004b69b0,8,1);\r\n  if ((param_1[0x254] & 0xc0) != 0xc0) {\r\n    puVar3 = (undefined1 *)FUN_00403360((int)(&DAT_004b2c50 + (uint)param_1[0xd] * 0x24));\r\n    FUN_004065a0(param_1 + 0x2cb,puVar3);\r\n    FUN_0045503f(&DAT_004b4250,param_1[0x2cb],param_1[0x2cc]);\r\n  }\r\n  FUN_0041e5db();\r\n  FUN_0045461c(&DAT_004b4250);\r\n  if ((*param_1 == 0x43) || (*param_1 == 0x42)) {\r\n    FUN_00406670(&DAT_004b2c50 + (uint)param_1[1] * 0x24,2);\r\n  }\r\n  else {\r\n    FUN_00435829(param_1[1],param_1[0xd]);\r\n  }\r\n  FUN_0043fcc9((int)(&DAT_004b2c50 + (uint)param_1[1] * 0x24));\r\n  bVar2 = FUN_0043e320((int)(&DAT_004b2c50 + (uint)param_1[1] * 0x24));\r\n  local_28 = (uint)bVar2;\r\n  switch(local_28) {\r\n  case 0:\r\n    local_2c = local_2c + 0x4000;\r\n    break;\r\n  case 1:\r\n    uVar4 = local_2c + 0x9000;\r\n    local_2c = local_2c + 0x8000;\r\n    iVar5 = FUN_0047fa40(&DAT_004ae4c8,uVar4,0,4);\r\n    iVar6 = FUN_0047fa40(&DAT_004ae4c8,local_2c,0,4);\r\n    FUN_0041ee53(0x40,0x40,iVar6,iVar5);\r\n    local_2c = local_2c + 0x1000;\r\n    break;\r\n  case 2:\r\n    break;\r\n  case 3:\r\n    local_2c = local_2c + 0x8000;\r\n  }\r\n  puVar7 = (undefined2 *)FUN_00403360((int)(&DAT_004b2c50 + (uint)param_1[1] * 0x24));\r\n  uVar1 = *puVar7;\r\n  FUN_0044fa1f((undefined2 *)&local_24,CONCAT22((short)((uint)puVar7 >> 0x10),uVar1));\r\n  uVar11 = FUN_0044fa7e(CONCAT22(extraout_var,uVar1));\r\n  local_13c = (int)uVar11;\r\n  local_138 = (int)((ulonglong)uVar11 >> 0x20);\r\n  local_20 = (byte *)(local_13c + -8);\r\n  local_1c = (HGLOBAL)(local_138 + -8);\r\n  pcVar8 = (char *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n  FUN_004519e6((int)local_20,(int)local_1c,0x40,0x40,pcVar8);\r\n  FUN_004036f9(local_24 & 0xff,local_24 >> 8 & 0xff);\r\n  puVar9 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,local_2c,0,4);\r\n  FUN_0045137c(local_20,local_1c,0x40,0x40,CONCAT31((int3)((uint)extraout_ECX >> 8),param_1[1]),\r\n               puVar9);\r\n  FUN_0041e5f6();\r\n  FUN_0042c4e0();\r\n  local_18 = FUN_0047eb97();\r\n  FUN_0047467a(&DAT_004b69b0,0x27,1);\r\n  FUN_0045f710(&DAT_004af4c0 + (uint)*param_1 * 0x46);\r\n  FUN_0042f699(2);\r\n  uVar4 = FUN_0047eb97();\r\n  local_14 = 0x14 - (uVar4 - local_18);\r\n  if (0 < local_14) {\r\n    FUN_00403340(&DAT_004b1b18,local_14);\r\n  }\r\n  FUN_0042c4e0();\r\n  uVar12 = 0;\r\n  pbVar10 = (byte *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n  FUN_00451913(local_20,local_1c,0x40,0x40,pbVar10,uVar12);\r\n  local_8 = 0xffffffff;\r\n  FUN_004032d0(local_130);\r\n  ExceptionList = local_10;\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_1081073a71da795ec57dc7087e764d47ac26154ce7beae54e1db21bc01177a61",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x40208b"
+    },
+    "pseudocode": "\r\nint __thiscall FUN_0040208b(void *this,byte param_1,int param_2)\r\n\r\n{\r\n  uint local_c;\r\n  int local_8;\r\n  \r\n  local_8 = 0;\r\n  FUN_0047d1f1(0,0,0);\r\n  if ((((param_1 == 0) || (*(char *)(*(int *)((int)this + (uint)param_1 * 4 + 0x14) + 0x10) != '\\0')\r\n       ) || (*(int *)(*(int *)((int)this + (uint)param_1 * 4 + 0x14) + 8) !=\r\n             *(int *)(*(int *)((int)this + (uint)param_1 * 4 + 0x10) + 8))) ||\r\n     (*(int *)(*(int *)((int)this + (uint)param_1 * 4 + 0x14) + 0xc) !=\r\n      *(int *)(*(int *)((int)this + (uint)param_1 * 4 + 0x10) + 0xc))) {\r\n    local_8 = 1;\r\n  }\r\n  FUN_0041e5db();\r\n  local_c = (uint)*(byte *)((int)this + 0x2a4);\r\n  while (local_c = local_c - 1, -1 < (int)local_c) {\r\n    if ((local_8 != 0) || (*(int *)((int)this + local_c * 4 + 0xa5c) != 0)) {\r\n      if (param_2 == 0) {\r\n        FUN_0047e09b(*(byte **)((int)this + local_c * 8 + 0x6bc),\r\n                     *(HGLOBAL *)((int)this + local_c * 8 + 0x6c0),*(uint *)((int)this + 8),\r\n                     *(int *)((int)this + 0xc),*(byte **)((int)this + local_c * 4 + 0xc2c));\r\n      }\r\n      if (local_8 != 0) {\r\n        *(int *)((int)this + local_c * 8 + 0x6bc) =\r\n             *(int *)((int)this + local_c * 8 + 0x31c) +\r\n             *(int *)(*(int *)((int)this + (uint)param_1 * 4 + 0x14) + 8);\r\n        *(int *)((int)this + local_c * 8 + 0x6c0) =\r\n             *(int *)((int)this + local_c * 8 + 800) +\r\n             *(int *)(*(int *)((int)this + (uint)param_1 * 4 + 0x14) + 0xc);\r\n      }\r\n    }\r\n  }\r\n  FUN_0041e5f6();\r\n  return local_8;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_fde7a15ed9cd74beae426d313aa74157b9cee03eadd4ca17108bf6fbd5153f2a",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x40227f"
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_0040227f(void *this,uint param_1,uint param_2)\r\n\r\n{\r\n  undefined1 *local_8;\r\n  \r\n  local_8 = (undefined1 *)0x0;\r\n  if (*(byte *)(*(int *)((int)this + (param_1 & 0xff) * 4 + 0x14) + 1) < 0x28) {\r\n    local_8 = *(undefined1 **)\r\n               ((int)this +\r\n               (uint)*(byte *)(*(int *)((int)this + (param_1 & 0xff) * 4 + 0x14) + 1) * 4 + 500);\r\n  }\r\n  if (*(int *)(*(int *)((int)this + (param_1 & 0xff) * 4 + 0x14) + 4) == 0) {\r\n    if ((*(char *)(*(int *)((int)this + (param_1 & 0xff) * 4 + 0x14) + 2) == '\\0') &&\r\n       (local_8 == (undefined1 *)0x0)) {\r\n      FUN_0041e5db();\r\n      FUN_0047d1f1(0,0,0);\r\n      FUN_0047e09b(*(byte **)((int)this + (param_2 & 0xff) * 8 + 0x6bc),\r\n                   *(HGLOBAL *)((int)this + (param_2 & 0xff) * 8 + 0x6c0),*(uint *)((int)this + 8),\r\n                   *(int *)((int)this + 0xc),*(byte **)((int)this + (param_2 & 0xff) * 4 + 0xc2c));\r\n      FUN_0047d1f1(4,0,0);\r\n      FUN_0047e09b(*(byte **)((int)this + (param_2 & 0xff) * 8 + 0x6bc),\r\n                   *(HGLOBAL *)((int)this + (param_2 & 0xff) * 8 + 0x6c0),*(uint *)((int)this + 8),\r\n                   *(int *)((int)this + 0xc),\r\n                   *(byte **)((int)this +\r\n                             (uint)**(byte **)((int)this + (param_1 & 0xff) * 4 + 0x14) * 4 + 0xb4))\r\n      ;\r\n      FUN_0041e5f6();\r\n    }\r\n    else {\r\n      FUN_0043030e(*(byte **)((int)this + (param_2 & 0xff) * 8 + 0x6bc),\r\n                   *(HGLOBAL *)((int)this + (param_2 & 0xff) * 8 + 0x6c0),*(uint *)((int)this + 8),\r\n                   *(int *)((int)this + 0xc),\r\n                   *(byte **)((int)this +\r\n                             (uint)**(byte **)((int)this + (param_1 & 0xff) * 4 + 0x14) * 4 + 0xb4),\r\n                   *(byte **)((int)this + (param_2 & 0xff) * 4 + 0xc2c),\r\n                   *(byte **)((int)this + 0xfd0),4,\r\n                   *(byte *)(*(int *)((int)this + (param_1 & 0xff) * 4 + 0x14) + 2),0,local_8,\r\n                   *(byte *)(*(int *)((int)this + (param_1 & 0xff) * 4 + 0x14) + 3));\r\n    }\r\n  }\r\n  else {\r\n    FUN_00430369(*(byte **)((int)this + (param_2 & 0xff) * 8 + 0x6bc),\r\n                 *(HGLOBAL *)((int)this + (param_2 & 0xff) * 8 + 0x6c0),*(uint *)((int)this + 8),\r\n                 *(int *)((int)this + 0xc),\r\n                 *(byte **)((int)this +\r\n                           (uint)**(byte **)((int)this + (param_1 & 0xff) * 4 + 0x14) * 4 + 0xb4),\r\n                 *(byte **)((int)this +\r\n                           (uint)*(byte *)(*(int *)((int)this + (param_1 & 0xff) * 4 + 0x14) + 2) *\r\n                           4 + 0x154),*(byte **)((int)this + (param_2 & 0xff) * 4 + 0xc2c),\r\n                 *(byte **)((int)this + 0xfd0),4,local_8,\r\n                 *(byte *)(*(int *)((int)this + (param_1 & 0xff) * 4 + 0x14) + 3));\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_16e68493b2c001d709c73bc1a0956e8c12eefa9a7a4f35f2564b1e155435fe65",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x4031e8"
+    },
+    "pseudocode": "\r\nundefined4 __thiscall FUN_004031e8(void *this,byte param_1)\r\n\r\n{\r\n  undefined4 local_c;\r\n  \r\n  if (param_1 < *(byte *)this) {\r\n    if (((param_1 == 0) && (*(char *)(*(int *)((int)this + 0x14) + 0x10) != '\\x02')) ||\r\n       (*(char *)(*(int *)((int)this + (uint)param_1 * 4 + 0x14) + 0x10) == '\\x03')) {\r\n      local_c = 1;\r\n    }\r\n    else {\r\n      local_c = 0;\r\n    }\r\n  }\r\n  else {\r\n    local_c = 0;\r\n  }\r\n  return local_c;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_293b2eee46e26357479264735cf9c4e671e52b3e2064f4e5f23d2896e301f91a",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x421f04"
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_00421f04(void *this,char param_1,undefined1 *param_2)\r\n\r\n{\r\n  undefined1 uVar1;\r\n  bool bVar2;\r\n  uint uVar3;\r\n  undefined3 extraout_var;\r\n  undefined3 extraout_var_00;\r\n  undefined1 *puVar4;\r\n  undefined2 *puVar5;\r\n  undefined8 uVar6;\r\n  undefined2 local_134 [2];\r\n  undefined8 local_130;\r\n  undefined1 local_128;\r\n  byte bStack_127;\r\n  uint uStack_124;\r\n  int local_120 [65];\r\n  byte *local_1c;\r\n  HGLOBAL local_18;\r\n  DWORD local_14;\r\n  void *local_10;\r\n  undefined1 *puStack_c;\r\n  undefined4 local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_004852a2;\r\n  local_10 = ExceptionList;\r\n  if (param_1 == '\\x01') {\r\n    ExceptionList = &local_10;\r\n    FUN_004032b0(local_120);\r\n    local_8 = 0;\r\n    FUN_0041fb35(local_120,(uint *)s_UNIT_SPC_E5_0048bbd0);\r\n    local_14 = 0;\r\n    FUN_0045f710(&local_128);\r\n    uStack_124 = uStack_124 & 0xffffff00;\r\n    while (((uStack_124 & 0xff) < 0x74 && (*(char *)((int)this + (uStack_124 & 0xff) + 0xd) != -1)))\r\n    {\r\n      puVar4 = param_2;\r\n      uVar3 = FUN_0043fc48((int *)(&DAT_004b2c50 +\r\n                                  (uint)*(byte *)((int)this + (uStack_124 & 0xff) + 0xd) * 0x24));\r\n      local_14 = FUN_0041fc89(local_120,uVar3 & 0xff,puVar4);\r\n      if (((*(byte *)((int)this + (uStack_124 & 0xff) + 0x255) & 0xc0) == 0x40) &&\r\n         (*(char *)((int)this + (uStack_124 & 0xff) + 0x255) == *(char *)((int)this + 0x254))) {\r\n        local_14 = 0x1b00;\r\nswitchD_0042213d_default:\r\n        bVar2 = FUN_00425af0(&DAT_004b2c50 +\r\n                             (uint)*(byte *)((int)this + (uStack_124 & 0xff) + 0xd) * 0x24,2);\r\n        if ((CONCAT31(extraout_var,bVar2) != 0) &&\r\n           (bVar2 = FUN_00425af0(&DAT_004b2c50 +\r\n                                 (uint)*(byte *)((int)this + (uStack_124 & 0xff) + 0xd) * 0x24,4),\r\n           CONCAT31(extraout_var_00,bVar2) != 0)) {\r\n          FUN_00430480(param_2 + local_14,0x30,0x30,4);\r\n        }\r\n        puVar4 = (undefined1 *)\r\n                 FUN_00403360((int)(&DAT_004b2c50 +\r\n                                   (uint)*(byte *)((int)this + (uStack_124 & 0xff) + 0xd) * 0x24));\r\n        puVar4 = FUN_004065a0(&local_128,puVar4);\r\n        uVar6 = FUN_0044fa7e(CONCAT22((short)((uint)puVar4 >> 0x10),CONCAT11(bStack_127,local_128)))\r\n        ;\r\n        local_130._0_4_ = (byte *)uVar6;\r\n        local_1c = (byte *)local_130;\r\n        local_130._4_4_ = (HGLOBAL)((ulonglong)uVar6 >> 0x20);\r\n        local_18 = local_130._4_4_;\r\n        local_130 = uVar6;\r\n        puVar5 = FUN_0044fa1f(local_134,\r\n                              CONCAT22((short)((ulonglong)uVar6 >> 0x10),\r\n                                       CONCAT11(bStack_127,local_128)));\r\n        FUN_004065a0(&local_128,(undefined1 *)puVar5);\r\n        FUN_0041e5db();\r\n        FUN_004036f9(CONCAT11(bStack_127,local_128) & 0xff,(uint)bStack_127);\r\n        FUN_0045137c(local_1c,local_18,0x30,0x30,\r\n                     CONCAT31((int3)((uint)(param_2 + local_14) >> 8),\r\n                              *(undefined1 *)((int)this + (uStack_124 & 0xff) + 0xd)),\r\n                     (undefined4 *)(param_2 + local_14));\r\n        if (*(int *)((int)this + (uStack_124 & 0xff) * 4 + 0x84) < 1) {\r\n          if (*(int *)((int)this + (uStack_124 & 0xff) * 4 + 0x84) < 0) {\r\n            if (*(char *)((int)this + (uStack_124 & 0xff) + 0x255) == -0x70) {\r\n              uVar3 = -*(int *)((int)this + (uStack_124 & 0xff) * 4 + 0x84);\r\n              FUN_0044faf1(CONCAT31((int3)(uVar3 >> 8),\r\n                                    *(undefined1 *)((int)this + (uStack_124 & 0xff) + 0xd)),uVar3,\r\n                           0x45,0x18);\r\n            }\r\n            else {\r\n              uVar3 = -*(int *)((int)this + (uStack_124 & 0xff) * 4 + 0x84);\r\n              FUN_0044faf1(CONCAT31((int3)(uVar3 >> 8),\r\n                                    *(undefined1 *)((int)this + (uStack_124 & 0xff) + 0xd)),uVar3,\r\n                           0x12,0x18);\r\n            }\r\n          }\r\n        }\r\n        else if (*(char *)((int)this + (uStack_124 & 0xff) + 0x255) == 'P') {\r\n          uVar3 = *(uint *)((int)this + (uStack_124 & 0xff) * 4 + 0x84);\r\n          FUN_0044faf1(CONCAT31((int3)(uVar3 >> 8),\r\n                                *(undefined1 *)((int)this + (uStack_124 & 0xff) + 0xd)),uVar3,0x45,\r\n                       0x18);\r\n        }\r\n        else {\r\n          uVar3 = *(uint *)((int)this + (uStack_124 & 0xff) * 4 + 0x84);\r\n          FUN_0044faf1(CONCAT31((int3)(uVar3 >> 8),\r\n                                *(undefined1 *)((int)this + (uStack_124 & 0xff) + 0xd)),uVar3,0x12,\r\n                       0x18);\r\n        }\r\n        FUN_0041e5f6();\r\n      }\r\n      else {\r\n        if (((*(byte *)((int)this + (uStack_124 & 0xff) + 0x255) & 0xc0) == 0x80) &&\r\n           (*(char *)((int)this + (uStack_124 & 0xff) + 0x255) == *(char *)((int)this + 0x254))) {\r\n          local_14 = 0x2400;\r\n          goto switchD_0042213d_default;\r\n        }\r\n        if (*(char *)((int)this + (uStack_124 & 0xff) + 0x255) == '\\0') {\r\n          uVar1 = FUN_0043e320((int)(&DAT_004b2c50 +\r\n                                    (uint)*(byte *)((int)this + (uStack_124 & 0xff) + 0xd) * 0x24));\r\n          switch(uVar1) {\r\n          case 0:\r\n            local_14 = 0x900;\r\n            break;\r\n          case 1:\r\n            local_14 = 0x1200;\r\n            FUN_0041ee53(0x30,0x30,(int)(param_2 + 0x1200),(int)(param_2 + 0x1b00));\r\n            local_14 = local_14 + 0x900;\r\n            break;\r\n          case 2:\r\n            local_14 = 0;\r\n            break;\r\n          case 3:\r\n            local_14 = 0x1200;\r\n          }\r\n          goto switchD_0042213d_default;\r\n        }\r\n      }\r\n      uStack_124 = CONCAT31(uStack_124._1_3_,(char)uStack_124 + '\\x01');\r\n    }\r\n    FUN_004192c5(local_120);\r\n    local_8 = 0xffffffff;\r\n    FUN_004032d0(local_120);\r\n  }\r\n  ExceptionList = local_10;\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_02588af6f34b74db855add0c76d6a42605e5c2920f21510f039cad3ead9c5e8c",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x40205e"
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_0040205e(int param_1)\r\n\r\n{\r\n  FUN_00474652((undefined4 *)&DAT_004b69b0);\r\n  FUN_0047467a(&DAT_004b69b0,*(byte *)(param_1 + 0x10) + 100,1);\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_656fe047d4635838a49637a0110d0b8d70ef3fcfcfaf7d94437153362ea59b1c",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x4019a4"
+    },
+    "pseudocode": "\r\nbyte __thiscall FUN_004019a4(void *this,byte param_1,int param_2)\r\n\r\n{\r\n  int iVar1;\r\n  int iVar2;\r\n  undefined4 uVar3;\r\n  byte bVar4;\r\n  uint uVar5;\r\n  \r\n  if (0x74 < (uint)*(byte *)((int)this + 0x2a4) + (uint)param_1) {\r\n    param_1 = 0x74 - *(char *)((int)this + 0x2a4);\r\n  }\r\n  uVar5 = *(int *)((int)this + 8) * *(int *)((int)this + 0xc);\r\n  iVar1 = *(int *)((int)this + 8) / 2;\r\n  iVar2 = *(int *)((int)this + 0xc) / 2;\r\n  bVar4 = 0;\r\n  while ((bVar4 < param_1 &&\r\n         ((int)(*(int *)((int)this + 0x2a0) + uVar5) < *(int *)((int)this + 0x29c)))) {\r\n    *(int *)((int)this + ((uint)*(byte *)((int)this + 0x2a4) + (uint)bVar4) * 8 + 0x31c) =\r\n         *(int *)(param_2 + (uint)bVar4 * 8) - iVar1;\r\n    *(int *)((int)this + ((uint)*(byte *)((int)this + 0x2a4) + (uint)bVar4) * 8 + 800) =\r\n         *(int *)(param_2 + 4 + (uint)bVar4 * 8) - iVar2;\r\n    *(undefined4 *)((int)this + ((uint)*(byte *)((int)this + 0x2a4) + (uint)bVar4) * 8 + 0x6c0) =\r\n         0xfffffc18;\r\n    *(undefined4 *)((int)this + ((uint)*(byte *)((int)this + 0x2a4) + (uint)bVar4) * 8 + 0x6bc) =\r\n         0xfffffc18;\r\n    *(int *)((int)this + ((uint)*(byte *)((int)this + 0x2a4) + (uint)bVar4) * 4 + 0xc2c) =\r\n         *(int *)((int)this + 0x298) + *(int *)((int)this + 0x2a0);\r\n    bVar4 = bVar4 + 1;\r\n    *(uint *)((int)this + 0x2a0) = *(int *)((int)this + 0x2a0) + uVar5;\r\n  }\r\n  for (; bVar4 < param_1; bVar4 = bVar4 + 1) {\r\n    uVar3 = FUN_00401386(this,uVar5);\r\n    *(undefined4 *)((int)this + ((uint)*(byte *)((int)this + 0x2a4) + (uint)bVar4) * 4 + 0xc2c) =\r\n         uVar3;\r\n    if (*(int *)((int)this + ((uint)*(byte *)((int)this + 0x2a4) + (uint)bVar4) * 4 + 0xc2c) == 0)\r\n    break;\r\n    *(int *)((int)this + ((uint)*(byte *)((int)this + 0x2a4) + (uint)bVar4) * 8 + 0x31c) =\r\n         *(int *)(param_2 + (uint)bVar4 * 8) - iVar1;\r\n    *(int *)((int)this + ((uint)*(byte *)((int)this + 0x2a4) + (uint)bVar4) * 8 + 800) =\r\n         *(int *)(param_2 + 4 + (uint)bVar4 * 8) - iVar2;\r\n    *(undefined4 *)((int)this + ((uint)*(byte *)((int)this + 0x2a4) + (uint)bVar4) * 8 + 0x6c0) =\r\n         0xfffffc18;\r\n    *(undefined4 *)((int)this + ((uint)*(byte *)((int)this + 0x2a4) + (uint)bVar4) * 8 + 0x6bc) =\r\n         0xfffffc18;\r\n  }\r\n  *(byte *)((int)this + 0x2a4) = *(char *)((int)this + 0x2a4) + bVar4;\r\n  return bVar4;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_6d8639cdc401194550a819120f31ebf59698b41cc76b962933763e987cf4a675",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x43030e"
+    },
+    "pseudocode": "\r\nvoid __cdecl\r\nFUN_0043030e(byte *param_1,HGLOBAL param_2,uint param_3,int param_4,byte *param_5,byte *param_6,\r\n            byte *param_7,undefined4 param_8,byte param_9,int param_10,undefined1 *param_11,\r\n            byte param_12)\r\n\r\n{\r\n  FUN_0042fd5a(param_3,param_4,param_5,param_6,param_7,param_9,param_10,param_11,param_12);\r\n  FUN_0047d1f1(0,0,0);\r\n  FUN_0047e09b(param_1,param_2,param_3,param_4,param_7);\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_686a6315c12126a69a120ffd5653df2079101e818dc48f511851d2c4fd0ed783",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x423549"
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_00423549(void *this,int param_1)\r\n\r\n{\r\n  byte bVar1;\r\n  bool bVar2;\r\n  int iVar3;\r\n  undefined3 extraout_var;\r\n  uint uVar4;\r\n  undefined4 extraout_EDX;\r\n  byte bVar5;\r\n  int iVar6;\r\n  uint local_10;\r\n  \r\n  bVar1 = FUN_0045533d(&DAT_004b4250,*(byte *)((int)this + 1),*(char *)((int)this + 0x2c9),\r\n                       (param_1 != 0) + '\\x02',*(byte *)this);\r\n  *(byte *)((int)this + 0xc) = bVar1;\r\n  if ((*(char *)((int)this + 0xc) != -1) &&\r\n     (iVar3 = FUN_00420422(*(undefined1 *)this,*(byte *)((int)this + 1),*(byte *)((int)this + 0xc),\r\n                           *(int *)((int)this + 0x4a8)), iVar3 != 0)) {\r\n    FUN_00425349(this,param_1 != 0);\r\n    bVar1 = 0;\r\n    while (*(char *)((int)this + bVar1 + 0xd) != -1) {\r\n      *(undefined1 *)((int)this + 0xc) = *(undefined1 *)((int)this + bVar1 + 0xd);\r\n      bVar2 = FUN_0043b4b0(*(void **)((int)this + 8),\r\n                           (int)(&DAT_004b2c50 + (uint)*(byte *)((int)this + 0xc) * 0x24),'\\x02',\r\n                           *(byte *)this);\r\n      if (CONCAT31(extraout_var,bVar2) == 0) {\r\n        *(undefined1 *)((int)this + bVar1 + 0x255) = 0;\r\n      }\r\n      else {\r\n        *(undefined1 *)((int)this + bVar1 + 0x255) = *(undefined1 *)((int)this + 0x254);\r\n      }\r\n      iVar6 = 0;\r\n      bVar5 = *(byte *)this;\r\n      iVar3 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (uint)*(byte *)((int)this + 0xc) * 0x24));\r\n      uVar4 = FUN_0043bfaa(*(void **)((int)this + 8),\r\n                           (int *)(&DAT_004b2c50 + (uint)*(byte *)((int)this + 0xc) * 0x24),\r\n                           &DAT_004a1b68 + iVar3 * 0x48,bVar5,iVar6);\r\n      *(uint *)((int)this + (uint)bVar1 * 4 + 0x84) = uVar4;\r\n      uVar4 = FUN_00420efb(this,(uint)bVar1);\r\n      if (*(uint *)((int)this + 0x2d0) < uVar4) {\r\n        local_10 = FUN_00420efb(this,CONCAT31((int3)((uint)extraout_EDX >> 8),bVar1));\r\n      }\r\n      else {\r\n        local_10 = *(uint *)((int)this + 0x2d0);\r\n      }\r\n      *(uint *)((int)this + 0x2d0) = local_10;\r\n      uVar4 = FUN_0042128b(this);\r\n      if (*(uint *)((int)this + 0x2d4) < uVar4) {\r\n        uVar4 = FUN_0042128b(this);\r\n      }\r\n      else {\r\n        uVar4 = *(uint *)((int)this + 0x2d4);\r\n      }\r\n      *(uint *)((int)this + 0x2d4) = uVar4;\r\n      uVar4 = FUN_004213a3(this,CONCAT31((int3)(uVar4 >> 8),bVar1));\r\n      *(uint *)((int)this + (uint)bVar1 * 4 + 0x2d8) = uVar4;\r\n      bVar1 = bVar1 + 1;\r\n    }\r\n    FUN_004214bf(this);\r\n    FUN_004224a8(this);\r\n    *(undefined4 *)((int)this + 0x4ac) = 1;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_46251764f842a69af934b4f6df9a108c7956fc64a051d1c321ab54ab06fa07c5",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x425349"
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_00425349(void *this,undefined1 param_1)\r\n\r\n{\r\n  bool bVar1;\r\n  undefined3 extraout_var;\r\n  byte bVar2;\r\n  byte bVar3;\r\n  uint local_c;\r\n  \r\n  *(undefined1 *)((int)this + 0xd) = *(undefined1 *)((int)this + 0xc);\r\n  FUN_0043652e(*(void **)((int)this + 8),\r\n               CONCAT31((int3)((uint)this >> 8),*(undefined1 *)((int)this + 0xc)),\r\n               *(undefined1 *)((int)this + 0x2ca),(byte *)((int)this + 0xe),param_1,0xff,0xff);\r\n  bVar3 = 0;\r\n  bVar2 = 0;\r\n  while (*(char *)((int)this + bVar2 + 0xd) != -1) {\r\n    bVar1 = FUN_0042097a(*(undefined1 *)this,(uint)*(byte *)((int)this + bVar2 + 0xd));\r\n    if (CONCAT31(extraout_var,bVar1) != 0) {\r\n      *(undefined1 *)((int)this + bVar3 + 0xd) = *(undefined1 *)((int)this + bVar2 + 0xd);\r\n      bVar3 = bVar3 + 1;\r\n    }\r\n    bVar2 = bVar2 + 1;\r\n  }\r\n  while (local_c = (uint)bVar3, *(char *)((int)this + local_c + 0xd) != -1) {\r\n    *(undefined1 *)((int)this + local_c + 0xd) = 0xff;\r\n    bVar3 = bVar3 + 1;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_e5da70087b28cb06e22722608ba6edcb0c85881ffd83d3bac053c25ae169955f",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x425627"
+    },
+    "pseudocode": "\r\nundefined4 __thiscall FUN_00425627(void *this,byte param_1,byte param_2)\r\n\r\n{\r\n  char cVar1;\r\n  int iVar2;\r\n  undefined4 uVar3;\r\n  \r\n  FUN_004251e1(this,param_1,param_2);\r\n  cVar1 = FUN_00425ad0(*(int *)((int)this + 8));\r\n  iVar2 = FUN_0041fec9(*(byte *)this,(uint)*(byte *)((int)this + 1),(uint)(cVar1 == '\\a'));\r\n  if (iVar2 == 0) {\r\n    uVar3 = *(undefined4 *)((int)this + 0x4ac);\r\n  }\r\n  else {\r\n    if (((byte)(&DAT_004866c0)[*(byte *)this] < 100) || ((&DAT_004866c0)[*(byte *)this] == -1)) {\r\n      *(undefined4 *)((int)this + 0x4b0) = 0;\r\n    }\r\n    else {\r\n      uVar3 = FUN_004217ff(this,(uint)(byte)(&DAT_004866c0)[*(byte *)this]);\r\n      *(undefined4 *)((int)this + 0x4b0) = uVar3;\r\n    }\r\n    switch(*(undefined1 *)this) {\r\n    case 0:\r\n    case 1:\r\n    case 2:\r\n    case 3:\r\n    case 4:\r\n    case 5:\r\n    case 6:\r\n    case 7:\r\n    case 8:\r\n    case 9:\r\n    case 10:\r\n    case 0xb:\r\n    case 0xc:\r\n    case 0xd:\r\n    case 0xf:\r\n    case 0x10:\r\n    case 0x11:\r\n    case 0x12:\r\n    case 0x13:\r\n    case 0x14:\r\n    case 0x15:\r\n    case 0x41:\r\n      *(undefined1 *)((int)this + 0x254) = 0x40;\r\n      FUN_0042313e(this);\r\n      break;\r\n    case 0xe:\r\n      *(undefined1 *)((int)this + 0x254) = 0x40;\r\n      FUN_0042423a(this);\r\n      break;\r\n    case 0x16:\r\n      *(undefined1 *)((int)this + 0x254) = 0x50;\r\n      FUN_0042313e(this);\r\n      break;\r\n    case 0x17:\r\n    case 0x18:\r\n      *(undefined1 *)((int)this + 0x254) = 0x62;\r\n      FUN_0042335b(this,0);\r\n      break;\r\n    case 0x19:\r\n    case 0x1a:\r\n      *(undefined1 *)((int)this + 0x254) = 100;\r\n      FUN_0042335b(this,0);\r\n      break;\r\n    case 0x1b:\r\n    case 0x1c:\r\n      *(undefined1 *)((int)this + 0x254) = 0x60;\r\n      FUN_0042335b(this,0);\r\n      break;\r\n    case 0x1d:\r\n    case 0x1e:\r\n      *(undefined1 *)((int)this + 0x254) = 0x61;\r\n      FUN_0042335b(this,0);\r\n      break;\r\n    case 0x1f:\r\n    case 0x20:\r\n      *(undefined1 *)((int)this + 0x254) = 0x71;\r\n      FUN_00423549(this,0);\r\n      break;\r\n    case 0x21:\r\n    case 0x22:\r\n      *(undefined1 *)((int)this + 0x254) = 0x70;\r\n      FUN_00423549(this,0);\r\n      break;\r\n    case 0x23:\r\n    case 0x24:\r\n      *(undefined1 *)((int)this + 0x254) = 0x72;\r\n      FUN_00423549(this,0);\r\n      break;\r\n    case 0x25:\r\n      *(undefined1 *)((int)this + 0x254) = 0x74;\r\n      FUN_00423549(this,0);\r\n      break;\r\n    case 0x26:\r\n      *(undefined1 *)((int)this + 0x254) = 0xff;\r\n      FUN_00423edc(this);\r\n      break;\r\n    case 0x27:\r\n    case 0x28:\r\n    case 0x29:\r\n    case 0x2a:\r\n    case 0x2b:\r\n      *(undefined1 *)((int)this + 0x254) = 0x80;\r\n      FUN_0042378d(this);\r\n      break;\r\n    case 0x2c:\r\n    case 0x2d:\r\n      *(undefined1 *)((int)this + 0x254) = 0x90;\r\n      FUN_0042378d(this);\r\n      break;\r\n    case 0x2e:\r\n    case 0x2f:\r\n      *(undefined1 *)((int)this + 0x254) = 0xbf;\r\n      FUN_00423549(this,1);\r\n      break;\r\n    case 0x30:\r\n      *(undefined1 *)((int)this + 0x254) = 0xa8;\r\n      FUN_0042335b(this,1);\r\n      break;\r\n    case 0x31:\r\n    case 0x32:\r\n      *(undefined1 *)((int)this + 0x254) = 0xa2;\r\n      FUN_0042335b(this,1);\r\n      break;\r\n    case 0x33:\r\n    case 0x34:\r\n      *(undefined1 *)((int)this + 0x254) = 0xa4;\r\n      FUN_0042335b(this,1);\r\n      break;\r\n    case 0x35:\r\n    case 0x36:\r\n      *(undefined1 *)((int)this + 0x254) = 0xa0;\r\n      FUN_0042335b(this,1);\r\n      break;\r\n    case 0x37:\r\n    case 0x38:\r\n      *(undefined1 *)((int)this + 0x254) = 0xa1;\r\n      FUN_0042335b(this,1);\r\n      break;\r\n    case 0x39:\r\n      *(undefined1 *)((int)this + 0x254) = 0xb8;\r\n      FUN_00423960(this);\r\n      break;\r\n    case 0x3a:\r\n    case 0x3b:\r\n    case 0x3c:\r\n      *(undefined1 *)((int)this + 0x254) = 0xc0;\r\n      FUN_00423b2f(this);\r\n      break;\r\n    case 0x3d:\r\n      *(undefined1 *)((int)this + 0x254) = 0xa0;\r\n      FUN_00423cc0(this);\r\n      break;\r\n    case 0x3e:\r\n      *(undefined1 *)((int)this + 0x254) = 0x90;\r\n      FUN_00423d6c(this);\r\n      break;\r\n    case 0x3f:\r\n      *(undefined1 *)((int)this + 0x254) = 0xaf;\r\n      FUN_00423cc0(this);\r\n      break;\r\n    case 0x40:\r\n      *(undefined1 *)((int)this + 0x254) = 0x40;\r\n      FUN_00424e9e(this);\r\n      break;\r\n    case 0x42:\r\n      *(undefined1 *)((int)this + 0x254) = 0xff;\r\n      FUN_00424810(this);\r\n      break;\r\n    case 0x43:\r\n      *(undefined1 *)((int)this + 0x254) = 0xbf;\r\n      FUN_00424513(this);\r\n      break;\r\n    default:\r\n      *(undefined1 *)((int)this + 0x254) = 0;\r\n    }\r\n    if (*(int *)((int)this + 0x4b0) != 0) {\r\n      FUN_0040269b(&DAT_00492788);\r\n    }\r\n    FUN_00422f0d(this);\r\n    uVar3 = *(undefined4 *)((int)this + 0x4ac);\r\n  }\r\n  return uVar3;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_61ecf2049d8782a051c2f8972a663ae238bae98f87af1beaad5fae4dfc6becea",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x40202d"
+    },
+    "pseudocode": "\r\nvoid FUN_0040202d(void)\r\n\r\n{\r\n  int unaff_EBP;\r\n  \r\n  *(undefined4 *)(unaff_EBP + -4) = 0xffffffff;\r\n  if (*(int *)(unaff_EBP + 0xc) != 0) {\r\n    FUN_0042c4e0();\r\n    FUN_0040208b(*(void **)(unaff_EBP + -0x24),0,0);\r\n  }\r\n  ExceptionList = *(void **)(unaff_EBP + -0xc);\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_50561472bc324231beee2d194b8e86ed6ffc561f7e7a1f92b2a1e221a12fd8c2",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x4017af"
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_004017af(int param_1)\r\n\r\n{\r\n  undefined4 uVar1;\r\n  undefined4 uVar2;\r\n  int local_14;\r\n  int local_10;\r\n  \r\n  for (local_10 = 1; local_10 < (int)(uint)*(byte *)(param_1 + 0x2a4); local_10 = local_10 + 1) {\r\n    for (local_14 = local_10;\r\n        (0 < local_14 &&\r\n        ((*(int *)(param_1 + 800 + local_14 * 8) < *(int *)(param_1 + 0x318 + local_14 * 8) ||\r\n         ((*(int *)(param_1 + 800 + local_14 * 8) == *(int *)(param_1 + 0x318 + local_14 * 8) &&\r\n          (*(int *)(param_1 + 0x31c + local_14 * 8) < *(int *)(param_1 + 0x314 + local_14 * 8)))))))\r\n        ; local_14 = local_14 + -1) {\r\n      uVar1 = *(undefined4 *)(param_1 + 0x314 + local_14 * 8);\r\n      uVar2 = *(undefined4 *)(param_1 + 0x318 + local_14 * 8);\r\n      *(undefined4 *)(param_1 + 0x314 + local_14 * 8) =\r\n           *(undefined4 *)(param_1 + 0x31c + local_14 * 8);\r\n      *(undefined4 *)(param_1 + 0x318 + local_14 * 8) =\r\n           *(undefined4 *)(param_1 + 800 + local_14 * 8);\r\n      *(undefined4 *)(param_1 + 0x31c + local_14 * 8) = uVar1;\r\n      *(undefined4 *)(param_1 + 800 + local_14 * 8) = uVar2;\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_a40167b4183e9612e05caba93f267262218b42abc583fcabdc68f44d16ecca81",
+    "source_file": "poison_render_native.json",
+    "source_sha256": "34ae70fb37ba697511e2268867f84055507de35e4abb902f06525f8f8e42f75d",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x4018bd"
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_004018bd(int param_1)\r\n\r\n{\r\n  int iVar1;\r\n  int iVar2;\r\n  undefined4 local_14;\r\n  undefined4 local_10;\r\n  \r\n  iVar1 = *(int *)(param_1 + 8);\r\n  iVar2 = *(int *)(param_1 + 0xc);\r\n  local_10 = 0;\r\n  do {\r\n    if ((int)(uint)*(byte *)(param_1 + 0x2a4) <= local_10) {\r\n      return;\r\n    }\r\n    *(undefined4 *)(param_1 + 0xa5c + local_10 * 4) = 0;\r\n    for (local_14 = local_10; -1 < local_14; local_14 = local_14 + -1) {\r\n      if (((*(int *)(param_1 + 800 + local_10 * 8) < *(int *)(param_1 + 800 + local_14 * 8) + iVar2)\r\n          && (*(int *)(param_1 + 0x31c + local_10 * 8) <\r\n              *(int *)(param_1 + 0x31c + local_14 * 8) + iVar1)) &&\r\n         (*(int *)(param_1 + 0x31c + local_14 * 8) <\r\n          *(int *)(param_1 + 0x31c + local_10 * 8) + iVar1)) {\r\n        *(undefined4 *)(param_1 + 0xa5c + local_10 * 4) = 1;\r\n        break;\r\n      }\r\n    }\r\n    local_10 = local_10 + 1;\r\n  } while( true );\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_1605627cf290812efd76f8a9155f3c03726145fe5d77020842e521dd1be4f075",
+    "source_file": "battle_effects_native.json",
+    "source_sha256": "86f05d0310e663f9c2b2105c408500981936319cc202fc146a288dfaab74ff85",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "addresses": [
+        "0x4217ff",
+        "0x421879",
+        "0x456140"
+      ]
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_004217ff(void *this,uint param_1)\r\n\r\n{\r\n  int iVar1;\r\n  undefined4 uVar2;\r\n  uint local_10;\r\n  undefined4 local_c;\r\n  undefined2 local_8;\r\n  undefined1 local_6;\r\n  \r\n  local_10 = DAT_0048b88c;\r\n  local_c = DAT_0048b890;\r\n  local_8 = DAT_0048b894;\r\n  local_6 = DAT_0048b896;\r\n  wsprintfA((LPSTR)&local_10,s_MCALL_02u_E5_0048b898,(param_1 & 0xff) % 100,this);\r\n  uVar2 = 0x44c00;\r\n  iVar1 = FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n  FUN_00402f7f(&DAT_00492788,&local_10,iVar1,uVar2);\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_1605627cf290812efd76f8a9155f3c03726145fe5d77020842e521dd1be4f075",
+    "source_file": "battle_effects_native.json",
+    "source_sha256": "86f05d0310e663f9c2b2105c408500981936319cc202fc146a288dfaab74ff85",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "addresses": [
+        "0x4217ff",
+        "0x421879",
+        "0x456140"
+      ]
+    },
+    "pseudocode": "\r\nvoid FUN_00421879(int param_1,int param_2)\r\n\r\n{\r\n  FUN_00403014(&DAT_00492788,param_1,param_2);\r\n  FUN_00403340(&DAT_004b1b18,4);\r\n  FUN_0042c4e0();\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_1605627cf290812efd76f8a9155f3c03726145fe5d77020842e521dd1be4f075",
+    "source_file": "battle_effects_native.json",
+    "source_sha256": "86f05d0310e663f9c2b2105c408500981936319cc202fc146a288dfaab74ff85",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "addresses": [
+        "0x4217ff",
+        "0x421879",
+        "0x456140"
+      ]
+    },
+    "pseudocode": "\r\nvoid FUN_00456140(byte param_1,byte param_2,char param_3,byte param_4,int param_5,int param_6)\r\n\r\n{\r\n  byte bVar1;\r\n  byte bVar2;\r\n  ushort uVar3;\r\n  int iVar4;\r\n  undefined1 *puVar5;\r\n  undefined4 *puVar6;\r\n  undefined1 uVar7;\r\n  undefined1 uVar8;\r\n  char local_13c;\r\n  char local_134;\r\n  undefined4 *local_130;\r\n  int local_12c [65];\r\n  char local_28;\r\n  uint local_24;\r\n  int local_20;\r\n  byte local_1c;\r\n  byte local_18;\r\n  byte local_14;\r\n  byte bStack_13;\r\n  void *local_10;\r\n  undefined1 *puStack_c;\r\n  undefined4 local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_0048566c;\r\n  local_10 = ExceptionList;\r\n  ExceptionList = &local_10;\r\n  FUN_00418cd0(&local_14,param_1,param_2);\r\n  local_20 = 0;\r\n  local_24 = 0;\r\n  while (((local_24 < 0xfa && ((&DAT_004b3d25)[local_24 * 5] != -1)) &&\r\n         (iVar4 = FUN_0043b420(&DAT_004b3d21 + local_24 * 5,(char *)&local_14), iVar4 == 0))) {\r\n    local_24 = local_24 + 1;\r\n  }\r\n  if (local_24 < 0xfa) {\r\n    if (param_4 == 0) {\r\n      param_3 = '\\x1a';\r\n    }\r\n    else if ((param_4 != 0) && (param_4 < 3)) {\r\n      param_3 = '\\x1b';\r\n    }\r\n    FUN_004065a0(&DAT_004b3d21 + local_24 * 5,&local_14);\r\n    (&DAT_004b3d23)[local_24 * 5] = param_3;\r\n    iVar4 = FUN_0047fa40(&DAT_004aeb38,0,0,4);\r\n    (&DAT_004b3d24)[local_24 * 5] =\r\n         *(undefined1 *)(iVar4 + 0x640 + (uint)param_1 + (uint)param_2 * (uint)DAT_004b422c);\r\n    (&DAT_004b3d25)[local_24 * 5] = param_4;\r\n    iVar4 = FUN_0047fa40(&DAT_004aeb38,0,0,4);\r\n    *(char *)(iVar4 + 0x640 + (uint)param_1 + (uint)param_2 * (uint)DAT_004b422c) = param_3;\r\n    if (param_3 == '\\x11') {\r\n      for (local_28 = -1; local_28 < '\\x02'; local_28 = local_28 + '\\x02') {\r\n        if (((-1 < (int)((CONCAT11(bStack_13,local_14) & 0xff) + (int)local_28)) &&\r\n            ((int)((CONCAT11(bStack_13,local_14) & 0xff) + (int)local_28) < (int)(uint)DAT_004b422c)\r\n            ) && (iVar4 = FUN_0047fa40(&DAT_004aeb38,0,0,4),\r\n                 *(char *)(iVar4 + 0x640 + (CONCAT11(bStack_13,local_14) & 0xff) + (int)local_28 +\r\n                          (uint)bStack_13 * (uint)DAT_004b422c) == '\\x11')) {\r\n          local_20 = 1;\r\n          break;\r\n        }\r\n      }\r\n      for (local_28 = -1; local_28 < '\\x02'; local_28 = local_28 + '\\x02') {\r\n        if (((-1 < (int)((uint)bStack_13 + (int)local_28)) &&\r\n            ((int)((uint)bStack_13 + (int)local_28) < (int)(uint)DAT_004b422d)) &&\r\n           (iVar4 = FUN_0047fa40(&DAT_004aeb38,0,0,4),\r\n           *(char *)(iVar4 + 0x640 + (CONCAT11(bStack_13,local_14) & 0xff) +\r\n                    ((uint)bStack_13 + (int)local_28) * (uint)DAT_004b422c) == '\\x11')) {\r\n          local_20 = 1;\r\n          break;\r\n        }\r\n      }\r\n    }\r\n    if ((param_5 != 0) && (param_6 == 0)) {\r\n      FUN_0045503f(&DAT_004b4250,local_14,bStack_13);\r\n    }\r\n    iVar4 = FUN_00455da8(0x4b4250);\r\n    local_1c = param_1 - (char)(iVar4 / 0x30);\r\n    iVar4 = FUN_00455dcf(0x4b4250);\r\n    local_18 = param_2 - (char)(iVar4 / 0x30);\r\n    if (param_4 < 4) {\r\n      if (((param_4 == 0) || (param_4 == 2)) && (param_6 == 0)) {\r\n        FUN_0047467a(&DAT_004b69b0,0x13,0);\r\n      }\r\n      iVar4 = FUN_0047fa40(&DAT_004aeb38,0,0,4);\r\n      *(byte *)(iVar4 + 8000 + (uint)param_1 + (uint)param_2 * (uint)DAT_004b422c) = param_4;\r\n      FUN_00453b48(&DAT_004b4250,local_1c,local_18,1,1);\r\n      if (param_6 == 0) {\r\n        FUN_00403340(&DAT_004b1b18,1);\r\n        FUN_0042c4e0();\r\n      }\r\n    }\r\n    else {\r\n      FUN_004032b0(local_12c);\r\n      local_8 = 0;\r\n      FUN_0041fb35(local_12c,(uint *)s_GATE_E5_0048bbb8);\r\n      puVar5 = (undefined1 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n      FUN_0041fc89(local_12c,(uint)param_4 * 2 + -8,puVar5);\r\n      FUN_004192c5(local_12c);\r\n      local_130 = (undefined4 *)FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n      for (local_134 = -1; local_134 < '\\x02'; local_134 = local_134 + '\\x01') {\r\n        for (local_13c = -1; local_13c < '\\x02'; local_13c = local_13c + '\\x01') {\r\n          if (((-1 < (int)((CONCAT11(bStack_13,local_14) & 0xff) + (int)local_13c)) &&\r\n              ((int)((CONCAT11(bStack_13,local_14) & 0xff) + (int)local_13c) <\r\n               (int)(uint)DAT_004b422c)) &&\r\n             ((-1 < (int)((uint)bStack_13 + (int)local_134) &&\r\n              ((int)((uint)bStack_13 + (int)local_134) < (int)(uint)DAT_004b422d)))) {\r\n            puVar6 = (undefined4 *)\r\n                     FUN_0047fa40(&DAT_004ae4a8,\r\n                                  (((uint)bStack_13 + (int)local_134) * (uint)DAT_004b422c +\r\n                                  (CONCAT11(bStack_13,local_14) & 0xff) + (int)local_13c) * 0x900,0,\r\n                                  4);\r\n            FUN_0047fcfd(local_130,puVar6,0x900);\r\n          }\r\n          local_130 = local_130 + 0x240;\r\n        }\r\n      }\r\n      if (param_6 == 0) {\r\n        if (param_3 == '\\f') {\r\n          FUN_0047467a(&DAT_004b69b0,0x10,0);\r\n        }\r\n        else if (param_3 == '\\x0f') {\r\n          FUN_0047467a(&DAT_004b69b0,0xf,0);\r\n        }\r\n        else if ((param_3 == '\\x11') && (local_20 == 0)) {\r\n          FUN_0047467a(&DAT_004b69b0,0x12,0);\r\n          uVar3 = FUN_0042a910((undefined2 *)&DAT_004b0770);\r\n          if ((uVar3 & 0x1000) != 0) {\r\n            FUN_00403340(&DAT_004b1b18,0x1e);\r\n            FUN_0042c4e0();\r\n          }\r\n        }\r\n      }\r\n      uVar8 = 3;\r\n      uVar7 = 3;\r\n      bVar1 = FUN_0047fad0(local_18,1);\r\n      bVar2 = FUN_0047fad0(local_1c,1);\r\n      FUN_00453b48(&DAT_004b4250,bVar2,bVar1,uVar7,uVar8);\r\n      if ((((param_6 == 0) && (param_3 == '\\x11')) && (local_20 != 0)) &&\r\n         (uVar3 = FUN_0042a910((undefined2 *)&DAT_004b0770), (uVar3 & 0x1000) != 0)) {\r\n        FUN_00403340(&DAT_004b1b18,0x32);\r\n        FUN_0042c4e0();\r\n      }\r\n      local_8 = 0xffffffff;\r\n      FUN_004032d0(local_12c);\r\n    }\r\n  }\r\n  ExceptionList = local_10;\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_227ac0fec11c4bc126007c01a9d8ea9141947c75260b1a27cf646caae36adf9a",
+    "source_file": "battle_effects_render_native.json",
+    "source_sha256": "01785fe49f71d4d7f960eb93510c236ab49bb6aa0e7cf38f05cc026cf74f3e5a",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "addresses": [
+        "0x403014",
+        "0x402f7f",
+        "0x453b48",
+        "0x42c4e0",
+        "0x44cc03"
+      ]
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_00403014(void *this,int param_1,int param_2)\r\n\r\n{\r\n  int iVar1;\r\n  byte bVar2;\r\n  undefined4 extraout_EDX;\r\n  void *pvStack_10;\r\n  undefined1 *puStack_c;\r\n  undefined4 local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_00484f28;\r\n  pvStack_10 = ExceptionList;\r\n  ExceptionList = &pvStack_10;\r\n  FUN_0040284f((int)this);\r\n  if (*(int *)this == 2) {\r\n    local_8 = 0;\r\n    for (bVar2 = 0; bVar2 < *(byte *)((int)this + 0x1c); bVar2 = bVar2 + 1) {\r\n      FUN_0041e5db();\r\n      FUN_00402a2e(this,CONCAT31((int3)((uint)extraout_EDX >> 8),bVar2));\r\n      FUN_00402cb5(this,param_1,param_2,(uint)(bVar2 == 0));\r\n      FUN_0042c4e0();\r\n      iVar1 = FUN_00403262((int)this);\r\n      if (iVar1 != 0) {\r\n        FUN_00403147((int)this);\r\n      }\r\n      FUN_0041e5f6();\r\n      FUN_00403340(&DAT_004b1b18,*(int *)((int)this + 0x20));\r\n    }\r\n    FUN_0042c4e0();\r\n    FUN_0047e09b(*(byte **)((int)this + 0x5c),*(HGLOBAL *)((int)this + 0x60),\r\n                 *(uint *)((int)this + 0x24),*(int *)((int)this + 0x28),*(byte **)((int)this + 0x50)\r\n                );\r\n    FUN_00403123();\r\n    return;\r\n  }\r\n  FUN_004025ae(this,1);\r\n  ExceptionList = pvStack_10;\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_227ac0fec11c4bc126007c01a9d8ea9141947c75260b1a27cf646caae36adf9a",
+    "source_file": "battle_effects_render_native.json",
+    "source_sha256": "01785fe49f71d4d7f960eb93510c236ab49bb6aa0e7cf38f05cc026cf74f3e5a",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "addresses": [
+        "0x403014",
+        "0x402f7f",
+        "0x453b48",
+        "0x42c4e0",
+        "0x44cc03"
+      ]
+    },
+    "pseudocode": "\r\nundefined4 __thiscall FUN_00402f7f(void *this,uint *param_1,undefined4 param_2,undefined4 param_3)\r\n\r\n{\r\n  int iVar1;\r\n  HANDLE pvVar2;\r\n  undefined4 uVar3;\r\n  DWORD local_8;\r\n  \r\n  FUN_004025ae(this,1);\r\n  *(undefined4 *)((int)this + 0x10) = param_2;\r\n  *(undefined4 *)((int)this + 0x14) = param_3;\r\n  FUN_004192c5((int *)((int)this + 8));\r\n  iVar1 = FUN_00418f5c((void *)((int)this + 8),param_1,0);\r\n  if (iVar1 == 0) {\r\n    uVar3 = 0;\r\n  }\r\n  else {\r\n    FUN_004036a0(this,1);\r\n    pvVar2 = CreateThread((LPSECURITY_ATTRIBUTES)0x0,0,FUN_00402574,this,0,&local_8);\r\n    *(HANDLE *)((int)this + 4) = pvVar2;\r\n    if (*(int *)((int)this + 4) != 0) {\r\n      SetThreadPriority(*(HANDLE *)((int)this + 4),2);\r\n    }\r\n    uVar3 = 1;\r\n  }\r\n  return uVar3;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_227ac0fec11c4bc126007c01a9d8ea9141947c75260b1a27cf646caae36adf9a",
+    "source_file": "battle_effects_render_native.json",
+    "source_sha256": "01785fe49f71d4d7f960eb93510c236ab49bb6aa0e7cf38f05cc026cf74f3e5a",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "addresses": [
+        "0x403014",
+        "0x402f7f",
+        "0x453b48",
+        "0x42c4e0",
+        "0x44cc03"
+      ]
+    },
+    "pseudocode": "\r\nvoid __thiscall\r\nFUN_00453b48(void *this,byte param_1,byte param_2,undefined1 param_3,undefined1 param_4)\r\n\r\n{\r\n  undefined4 in_EAX;\r\n  \r\n  FUN_0045218f(this,param_1,param_2,CONCAT31((int3)((uint)this >> 8),param_3),\r\n               CONCAT31((int3)((uint)in_EAX >> 8),param_4));\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_227ac0fec11c4bc126007c01a9d8ea9141947c75260b1a27cf646caae36adf9a",
+    "source_file": "battle_effects_render_native.json",
+    "source_sha256": "01785fe49f71d4d7f960eb93510c236ab49bb6aa0e7cf38f05cc026cf74f3e5a",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "addresses": [
+        "0x403014",
+        "0x402f7f",
+        "0x453b48",
+        "0x42c4e0",
+        "0x44cc03"
+      ]
+    },
+    "pseudocode": "\r\nvoid FUN_0042c4e0(void)\r\n\r\n{\r\n  bool bVar1;\r\n  undefined3 extraout_var;\r\n  \r\n  while( true ) {\r\n    bVar1 = FUN_0042f7f0((uint *)&DAT_004b1b18);\r\n    if (CONCAT31(extraout_var,bVar1) != 0) break;\r\n    FUN_0047eac4();\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_227ac0fec11c4bc126007c01a9d8ea9141947c75260b1a27cf646caae36adf9a",
+    "source_file": "battle_effects_render_native.json",
+    "source_sha256": "01785fe49f71d4d7f960eb93510c236ab49bb6aa0e7cf38f05cc026cf74f3e5a",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "addresses": [
+        "0x403014",
+        "0x402f7f",
+        "0x453b48",
+        "0x42c4e0",
+        "0x44cc03"
+      ]
+    },
+    "pseudocode": "\r\nvoid FUN_0044cc03(void)\r\n\r\n{\r\n  byte bVar1;\r\n  char cVar2;\r\n  int iVar3;\r\n  \r\n  for (bVar1 = 0; bVar1 < 0x73; bVar1 = bVar1 + 1) {\r\n    cVar2 = FUN_00418c90((int)(&DAT_004b2c50 + (uint)bVar1 * 0x24));\r\n    if (cVar2 == '\\x02') {\r\n      iVar3 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)bVar1 * 0x24));\r\n      if (iVar3 == 0) {\r\n        FUN_00441744(&DAT_004b2c50 + (uint)bVar1 * 0x24,0,0);\r\n      }\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_b07447a3466eb33303da19f60052394fa09d93b001d4c2825a5fdf2d9a07f845",
+    "source_file": "battle_effects_composite_native.json",
+    "source_sha256": "b24a486caee210b87ab76f96238946fd75b094359be6138d02a3eda8624e7e04",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x0045218f"
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_0045218f(void *this,byte param_1,byte param_2,uint param_3,uint param_4)\r\n\r\n{\r\n  byte bVar1;\r\n  byte bVar2;\r\n  int iVar3;\r\n  int iVar4;\r\n  byte *pbVar5;\r\n  undefined4 uVar6;\r\n  uint local_38;\r\n  byte *local_34;\r\n  byte *local_30;\r\n  char *local_24;\r\n  char *local_20;\r\n  char *local_1c;\r\n  uint local_8;\r\n  \r\n  bVar1 = (char)(*(int *)((int)this + 4) / 0x30) + param_1;\r\n  bVar2 = (char)(*(int *)((int)this + 8) / 0x30) + param_2;\r\n  iVar3 = FUN_0047fa40(&DAT_004ae4a8,0,0,4);\r\n  local_34 = (byte *)(iVar3 + ((uint)bVar1 + (uint)bVar2 * (uint)DAT_004b422c) * 0x900);\r\n  iVar3 = FUN_0047fa40(&DAT_004aeb38,0,0,4);\r\n  local_30 = (byte *)(iVar3 + 0xc80 + (uint)bVar1 + (uint)bVar2 * (uint)DAT_004b422c);\r\n  iVar3 = FUN_0047fa40(&DAT_004aeb38,0,0,4);\r\n  local_20 = (char *)(iVar3 + 0x12c0 + (uint)bVar1 + (uint)bVar2 * (uint)DAT_004b422c);\r\n  iVar3 = FUN_0047fa40(&DAT_004aeb38,0,0,4);\r\n  local_1c = (char *)(iVar3 + 8000 + (uint)bVar1 + (uint)bVar2 * (uint)DAT_004b422c);\r\n  iVar3 = FUN_0047fa40(&DAT_004af4a8,0,0,4);\r\n  local_24 = (char *)(iVar3 + (uint)bVar1 + (uint)bVar2 * (uint)DAT_004b422c);\r\n  local_8 = (uint)param_2 * 0x30;\r\n  iVar3 = local_8 + (param_4 & 0xff) * 0x30;\r\n  FUN_0041e5db();\r\n  for (; (int)local_8 < iVar3; local_8 = local_8 + 0x30) {\r\n    FUN_0047eac4();\r\n    for (local_38 = (uint)param_1 * 0x30;\r\n        (int)local_38 < (int)((uint)param_1 * 0x30 + (param_3 & 0xff) * 0x30);\r\n        local_38 = local_38 + 0x30) {\r\n      FUN_0047eac4();\r\n      iVar4 = FUN_00453b6d(this,local_38,local_8);\r\n      if (iVar4 == 0) {\r\n        if ((*(int *)((int)this + 100) == 0) && (*(int *)((int)this + 0x68) == 0)) {\r\n          FUN_00451913((byte *)(local_38 + *(int *)((int)this + 0x3c)),\r\n                       (HGLOBAL)(local_8 + *(int *)((int)this + 0x40)),0x30,0x30,local_34,0);\r\n          if ((*(char *)((int)this + 0x1b85) != -1) && (*local_24 != '\\0')) {\r\n            FUN_00451dbd(this,(byte *)(local_38 + *(int *)((int)this + 0x3c)),\r\n                         (HGLOBAL)(local_8 + *(int *)((int)this + 0x40)),'(');\r\n          }\r\n        }\r\n        else {\r\n          FUN_00451913((byte *)(local_38 + *(int *)((int)this + 0x3c)),\r\n                       (HGLOBAL)(local_8 + *(int *)((int)this + 0x40)),0x30,0x30,local_34,0);\r\n          if (*local_20 != -1) {\r\n            FUN_00451dbd(this,(byte *)(local_38 + *(int *)((int)this + 0x3c)),\r\n                         (HGLOBAL)(local_8 + *(int *)((int)this + 0x40)),\r\n                         (-(*(int *)((int)this + 100) != 0) & 0xe2U) + 0x5a);\r\n          }\r\n          if ((*(char *)((int)this + 0x1b85) != -1) && (*local_24 != '\\0')) {\r\n            uVar6 = 4;\r\n            pbVar5 = (byte *)FUN_0047fa40(&DAT_004aeb50,0xcc0,0,4);\r\n            FUN_00451913((byte *)(local_38 + *(int *)((int)this + 0x3c)),\r\n                         (HGLOBAL)(local_8 + *(int *)((int)this + 0x40)),0x30,0x30,pbVar5,uVar6);\r\n          }\r\n        }\r\n        if (*local_1c != -1) {\r\n          FUN_00452744((byte *)(local_38 + *(int *)((int)this + 0x3c)),\r\n                       (HGLOBAL)(local_8 + *(int *)((int)this + 0x40)),*local_1c);\r\n        }\r\n        if (*(char *)((int)this + 0x6c) != -1) {\r\n          FUN_00451913((byte *)(local_38 + *(int *)((int)this + 0x3c)),\r\n                       (HGLOBAL)(local_8 + *(int *)((int)this + 0x40)),0x30,0x30,\r\n                       (byte *)((int)this + 0x6f),4);\r\n        }\r\n        iVar4 = FUN_00451ecd(this,local_38,local_8);\r\n        if (iVar4 != 0) {\r\n          if (((uint)*(byte *)((int)this + 0x54) == (int)local_38 / 0x30) &&\r\n             ((uint)*(byte *)((int)this + 0x55) == (int)local_8 / 0x30)) {\r\n            uVar6 = 4;\r\n            pbVar5 = (byte *)FUN_0047fa40(&DAT_004aeb50,0x1ec0,0,4);\r\n            FUN_00451913((byte *)(local_38 + *(int *)((int)this + 0x3c)),\r\n                         (HGLOBAL)(local_8 + *(int *)((int)this + 0x40)),0x30,0x30,pbVar5,uVar6);\r\n          }\r\n          else {\r\n            uVar6 = 4;\r\n            pbVar5 = (byte *)FUN_0047fa40(&DAT_004aeb50,0x15c0,0,4);\r\n            FUN_00451913((byte *)(local_38 + *(int *)((int)this + 0x3c)),\r\n                         (HGLOBAL)(local_8 + *(int *)((int)this + 0x40)),0x30,0x30,pbVar5,uVar6);\r\n          }\r\n        }\r\n        if (((*local_30 != 0xff) && (*local_30 < 0x73)) && (*(char *)((int)this + 0x6d) != '\\0')) {\r\n          FUN_0043eb1f((byte *)(local_38 + *(int *)((int)this + 0x3c)),\r\n                       (HGLOBAL)(local_8 + *(int *)((int)this + 0x40)),(uint)*local_30);\r\n        }\r\n        if (*(char *)((int)this + 0x6d) != -1) {\r\n          FUN_00451913((byte *)(local_38 + *(int *)((int)this + 0x3c)),\r\n                       (HGLOBAL)(local_8 + *(int *)((int)this + 0x40)),0x30,0x30,\r\n                       (byte *)((int)this + 0x96f),4);\r\n        }\r\n      }\r\n      local_34 = local_34 + 0x900;\r\n      local_30 = local_30 + 1;\r\n      local_20 = local_20 + 1;\r\n      local_24 = local_24 + 1;\r\n      local_1c = local_1c + 1;\r\n    }\r\n    local_34 = local_34 + ((uint)DAT_004b422c - (param_3 & 0xff)) * 0x900;\r\n    local_30 = local_30 + ((uint)DAT_004b422c - (param_3 & 0xff));\r\n    local_20 = local_20 + ((uint)DAT_004b422c - (param_3 & 0xff));\r\n    local_24 = local_24 + ((uint)DAT_004b422c - (param_3 & 0xff));\r\n    local_1c = local_1c + ((uint)DAT_004b422c - (param_3 & 0xff));\r\n  }\r\n  FUN_0041e5f6();\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_22f0469589b6d99aca52374b5f74760899f3a234c50bd81b4456fdf8d1812c32",
+    "source_file": "battle_effects_composite_native.json",
+    "source_sha256": "b24a486caee210b87ab76f96238946fd75b094359be6138d02a3eda8624e7e04",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x00402a2e"
+    },
+    "pseudocode": "\r\nundefined4 __thiscall FUN_00402a2e(void *this,uint param_1)\r\n\r\n{\r\n  byte bVar1;\r\n  int iVar2;\r\n  int iVar3;\r\n  DWORD DVar4;\r\n  undefined4 uVar5;\r\n  byte bVar6;\r\n  int iVar7;\r\n  \r\n  bVar6 = (byte)((ulonglong)(param_1 & 0xff) %\r\n                (ulonglong)(longlong)(int)(uint)*(byte *)((int)this + 0x1c));\r\n  FUN_0041921f((void *)((int)this + 8),(uint)bVar6 * 0x14 + 0x14,0);\r\n  iVar2 = FUN_00419167((void *)((int)this + 8),(LPVOID)((int)this + 0x30),0x14);\r\n  if (iVar2 == 0x14) {\r\n    iVar2 = (uint)*(byte *)((int)this + 0x1c) * 0x14 + 0x14;\r\n    if (*(int *)((int)this + 0xc) == 0) {\r\n      if (*(int *)((int)this + 0x44) == 0) {\r\n        iVar3 = FUN_004036c0((int)this);\r\n        iVar3 = FUN_00402544(this,iVar3);\r\n        *(int *)((int)this + 0x44) = iVar3;\r\n      }\r\n      iVar7 = 0;\r\n      bVar1 = *(byte *)((int)this + 0x30);\r\n      iVar3 = FUN_004036c0((int)this);\r\n      FUN_0041921f((void *)((int)this + 8),iVar2 + (uint)bVar1 * iVar3,iVar7);\r\n      DVar4 = FUN_004036c0((int)this);\r\n      iVar3 = FUN_00419167((void *)((int)this + 8),*(LPVOID *)((int)this + 0x44),DVar4);\r\n      iVar7 = FUN_004036c0((int)this);\r\n      if (iVar3 != iVar7) {\r\n        return 0;\r\n      }\r\n    }\r\n    else {\r\n      *(undefined4 *)((int)this + 0x44) =\r\n           *(undefined4 *)(*(int *)((int)this + 0xc) + (uint)*(byte *)((int)this + 0x30) * 4);\r\n    }\r\n    bVar1 = *(byte *)((int)this + 0x1d);\r\n    iVar3 = FUN_004036c0((int)this);\r\n    iVar2 = iVar2 + (uint)bVar1 * iVar3;\r\n    if (*(int *)((int)this + 0x34) != 0) {\r\n      if (*(int *)((int)this + 0xc) == 0) {\r\n        if (*(int *)((int)this + 0x48) == 0) {\r\n          iVar3 = FUN_004036c0((int)this);\r\n          iVar3 = FUN_00402544(this,iVar3);\r\n          *(int *)((int)this + 0x48) = iVar3;\r\n        }\r\n        iVar7 = 0;\r\n        bVar1 = *(byte *)((int)this + 0x32);\r\n        iVar3 = FUN_004036c0((int)this);\r\n        FUN_0041921f((void *)((int)this + 8),iVar2 + (uint)bVar1 * iVar3,iVar7);\r\n        DVar4 = FUN_004036c0((int)this);\r\n        iVar3 = FUN_00419167((void *)((int)this + 8),*(LPVOID *)((int)this + 0x48),DVar4);\r\n        iVar7 = FUN_004036c0((int)this);\r\n        if (iVar3 != iVar7) {\r\n          return 0;\r\n        }\r\n      }\r\n      else {\r\n        *(undefined4 *)((int)this + 0x48) =\r\n             *(undefined4 *)\r\n              (*(int *)((int)this + 0xc) + 0xa0 + (uint)*(byte *)((int)this + 0x32) * 4);\r\n      }\r\n    }\r\n    bVar1 = *(byte *)((int)this + 0x1e);\r\n    iVar3 = FUN_004036c0((int)this);\r\n    if (*(char *)((int)this + 0x31) != -1) {\r\n      if (*(int *)((int)this + 0x4c) == 0) {\r\n        iVar7 = FUN_00402544(this,0x300);\r\n        *(int *)((int)this + 0x4c) = iVar7;\r\n      }\r\n      FUN_0041921f((void *)((int)this + 8),\r\n                   iVar2 + (uint)bVar1 * iVar3 + (uint)*(byte *)((int)this + 0x31) * 0x300,0);\r\n      iVar2 = FUN_00419167((void *)((int)this + 8),*(LPVOID *)((int)this + 0x4c),0x300);\r\n      if (iVar2 != 0x300) {\r\n        return 0;\r\n      }\r\n    }\r\n    *(byte *)((int)this + 0x58) = bVar6;\r\n    uVar5 = 1;\r\n  }\r\n  else {\r\n    uVar5 = 0;\r\n  }\r\n  return uVar5;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_d870498479127879f6d04e8a8208eb4d39970605809f6a092a5f707b6e7a87aa",
+    "source_file": "battle_effects_composite_native.json",
+    "source_sha256": "b24a486caee210b87ab76f96238946fd75b094359be6138d02a3eda8624e7e04",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x00402cb5"
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_00402cb5(void *this,int param_1,int param_2,int param_3)\r\n\r\n{\r\n  int iVar1;\r\n  int iVar2;\r\n  undefined4 local_8;\r\n  \r\n  iVar2 = param_1 - *(int *)((int)this + 0x24) / 2;\r\n  iVar1 = *(int *)((int)this + 0x28);\r\n  FUN_0047d1f1(0,0,0);\r\n  FUN_0047eba5(0);\r\n  if (((param_3 != 0) || (*(int *)((int)this + 0x5c) != iVar2 + *(int *)((int)this + 0x38))) ||\r\n     (*(int *)((int)this + 0x60) != *(int *)((int)this + 0x3c))) {\r\n    if (param_3 == 0) {\r\n      FUN_0047e09b(*(byte **)((int)this + 0x5c),*(HGLOBAL *)((int)this + 0x60),\r\n                   *(uint *)((int)this + 0x24),*(int *)((int)this + 0x28),\r\n                   *(byte **)((int)this + 0x50));\r\n    }\r\n    *(int *)((int)this + 0x5c) = iVar2 + *(int *)((int)this + 0x38);\r\n    *(int *)((int)this + 0x60) = (param_2 - iVar1 / 2) + *(int *)((int)this + 0x3c);\r\n    FUN_0047e251(*(int *)((int)this + 0x5c),*(int *)((int)this + 0x60),*(uint *)((int)this + 0x24),\r\n                 *(int *)((int)this + 0x28),*(char **)((int)this + 0x50));\r\n  }\r\n  if (*(int *)((int)this + 0xc) == 0) {\r\n    *(undefined4 *)((int)this + 0x54) = *(undefined4 *)((int)this + 0x44);\r\n  }\r\n  else if (*(int *)((int)this + 0x54) == 0) {\r\n    iVar1 = FUN_004036c0((int)this);\r\n    iVar1 = FUN_00402544(this,iVar1);\r\n    *(int *)((int)this + 0x54) = iVar1;\r\n  }\r\n  local_8 = (undefined1 *)0x0;\r\n  if (*(byte *)((int)this + 0x31) < 0x28) {\r\n    local_8 = *(undefined1 **)((int)this + 0x4c);\r\n  }\r\n  if (*(int *)((int)this + 0x34) == 0) {\r\n    if ((*(char *)((int)this + 0x32) == '\\0') && (local_8 == (undefined1 *)0x0)) {\r\n      FUN_0047e09b(*(byte **)((int)this + 0x5c),*(HGLOBAL *)((int)this + 0x60),\r\n                   *(uint *)((int)this + 0x24),*(int *)((int)this + 0x28),\r\n                   *(byte **)((int)this + 0x50));\r\n      FUN_0047d1f1(4,0,0);\r\n      FUN_0047e09b(*(byte **)((int)this + 0x5c),*(HGLOBAL *)((int)this + 0x60),\r\n                   *(uint *)((int)this + 0x24),*(int *)((int)this + 0x28),\r\n                   *(byte **)((int)this + 0x44));\r\n    }\r\n    else {\r\n      FUN_0043030e(*(byte **)((int)this + 0x5c),*(HGLOBAL *)((int)this + 0x60),\r\n                   *(uint *)((int)this + 0x24),*(int *)((int)this + 0x28),\r\n                   *(byte **)((int)this + 0x44),*(byte **)((int)this + 0x50),\r\n                   *(byte **)((int)this + 0x54),4,*(byte *)((int)this + 0x32),0,local_8,\r\n                   *(byte *)((int)this + 0x33));\r\n    }\r\n  }\r\n  else {\r\n    FUN_00430369(*(byte **)((int)this + 0x5c),*(HGLOBAL *)((int)this + 0x60),\r\n                 *(uint *)((int)this + 0x24),*(int *)((int)this + 0x28),*(byte **)((int)this + 0x44)\r\n                 ,*(byte **)((int)this + 0x48),*(byte **)((int)this + 0x50),\r\n                 *(byte **)((int)this + 0x54),4,local_8,*(byte *)((int)this + 0x33));\r\n  }\r\n  FUN_0047eba5(1);\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_434a604564dc48f9b480c523c110516717fa07f3472b6169fe37da7c3e12127e",
+    "source_file": "battle_effects_composite_native.json",
+    "source_sha256": "b24a486caee210b87ab76f96238946fd75b094359be6138d02a3eda8624e7e04",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x004300c8"
+    },
+    "pseudocode": "\r\nvoid __cdecl\r\nFUN_004300c8(int param_1,int param_2,byte *param_3,byte *param_4,byte *param_5,byte *param_6,\r\n            undefined1 *param_7,byte param_8)\r\n\r\n{\r\n  uint uVar1;\r\n  uint local_20;\r\n  uint local_1c;\r\n  byte *local_14;\r\n  byte local_8 [2];\r\n  ushort uStack_6;\r\n  \r\n  if (param_7 == (undefined1 *)0x0) {\r\n    param_7 = &DAT_00497770;\r\n  }\r\n  local_14 = param_6;\r\n  for (local_1c = 0; local_1c < (uint)(param_1 * param_2); local_1c = local_1c + 1) {\r\n    if (*param_3 == 0) {\r\n      *local_14 = *param_5;\r\n    }\r\n    else if ((*param_4 == 0) && (param_8 == 0)) {\r\n      *local_14 = *param_5;\r\n    }\r\n    else {\r\n      uVar1 = (0x100 - (uint)*param_4) *\r\n              (0x100 - (((uint)(byte)param_7[(uint)*param_3 * 3] +\r\n                         (uint)(byte)param_7[(uint)*param_3 * 3 + 1] +\r\n                        (uint)(byte)param_7[(uint)*param_3 * 3 + 2]) / 3) * (uint)param_8) >> 8;\r\n      if (*param_4 == 0xff) {\r\n        *local_14 = (&DAT_004b1b28)\r\n                    [(uint)(byte)param_7[(uint)*param_3 * 3 + 2] +\r\n                     (uint)(byte)param_7[(uint)*param_3 * 3 + 1] * 0x10 +\r\n                     (uint)(byte)param_7[(uint)*param_3 * 3] * 0x100];\r\n      }\r\n      else {\r\n        for (local_20 = 0; local_20 < 3; local_20 = local_20 + 1) {\r\n          local_8[local_20] =\r\n               (byte)((byte)(&DAT_00497770)[local_20 + (uint)*param_5 * 3] * uVar1 +\r\n                      (uint)(byte)param_7[(uint)*param_3 * 3 + local_20] *\r\n                      (0x100 - (uVar1 * (0x10 - (uint)param_8) >> 4)) >> 8);\r\n          if (0xf < local_8[local_20]) {\r\n            local_8[local_20] = 0xf;\r\n          }\r\n        }\r\n        *local_14 = (&DAT_004b1b28)\r\n                    [(uStack_6 & 0xff) +\r\n                     (CONCAT21(uStack_6,local_8[1]) & 0xff) * 0x10 +\r\n                     (CONCAT11(local_8[1],local_8[0]) & 0xff) * 0x100];\r\n      }\r\n    }\r\n    local_14 = local_14 + 1;\r\n    param_3 = param_3 + 1;\r\n    param_4 = param_4 + 1;\r\n    param_5 = param_5 + 1;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_a468b607d6594df54f8efaf93f99ab641dedad8296794fb6157ee519a25a3cb6",
+    "source_file": "battle_effects_composite_native.json",
+    "source_sha256": "b24a486caee210b87ab76f96238946fd75b094359be6138d02a3eda8624e7e04",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x00452744"
+    },
+    "pseudocode": "\r\nvoid __cdecl FUN_00452744(byte *param_1,HGLOBAL param_2,undefined1 param_3)\r\n\r\n{\r\n  byte bVar1;\r\n  byte *pbVar2;\r\n  int iVar3;\r\n  int iVar4;\r\n  undefined4 uVar5;\r\n  \r\n  switch(param_3) {\r\n  case 0:\r\n    uVar5 = 4;\r\n    iVar4 = 4;\r\n    iVar3 = 0;\r\n    bVar1 = FUN_0041c2d0(0x4b3d08);\r\n    pbVar2 = (byte *)FUN_0047fa40(&DAT_004aeb50,(bVar1 & 3) * 0x900 + 0x8bc0,iVar3,iVar4);\r\n    FUN_00451913(param_1,param_2,0x30,0x30,pbVar2,uVar5);\r\n    break;\r\n  case 1:\r\n    uVar5 = 4;\r\n    iVar4 = 4;\r\n    iVar3 = 0;\r\n    bVar1 = FUN_0041c2d0(0x4b3d08);\r\n    pbVar2 = (byte *)FUN_0047fa40(&DAT_004aeb50,(-(uint)((bVar1 & 1) != 0) & 0x900) + 0xafc0,iVar3,\r\n                                  iVar4);\r\n    FUN_00451913(param_1,param_2,0x30,0x30,pbVar2,uVar5);\r\n    break;\r\n  case 2:\r\n    uVar5 = 4;\r\n    iVar4 = 4;\r\n    iVar3 = 0;\r\n    bVar1 = FUN_0041c2d0(0x4b3d08);\r\n    pbVar2 = (byte *)FUN_0047fa40(&DAT_004aeb50,(-(uint)((bVar1 & 1) != 0) & 0x900) + 0x1b5e0,iVar3,\r\n                                  iVar4);\r\n    FUN_00451913(param_1,param_2,0x30,0x30,pbVar2,uVar5);\r\n    break;\r\n  case 3:\r\n    uVar5 = 4;\r\n    pbVar2 = (byte *)FUN_0047fa40(&DAT_004aeb50,0x1ec0,0,4);\r\n    FUN_00451913(param_1,param_2,0x30,0x30,pbVar2,uVar5);\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_9608d4b4fa056494e0589cbe1ef86458cce8f6dedf6be417baf7747fe0e20f9e",
+    "source_file": "battle_effects_composite_native.json",
+    "source_sha256": "b24a486caee210b87ab76f96238946fd75b094359be6138d02a3eda8624e7e04",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x00403262"
+    },
+    "pseudocode": "\r\nundefined4 __fastcall FUN_00403262(int param_1)\r\n\r\n{\r\n  undefined4 local_c;\r\n  \r\n  if (((*(char *)(param_1 + 0x58) == '\\0') && (*(char *)(param_1 + 0x40) != '\\x02')) ||\r\n     (*(char *)(param_1 + 0x40) == '\\x03')) {\r\n    local_c = 1;\r\n  }\r\n  else {\r\n    local_c = 0;\r\n  }\r\n  return local_c;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_fede8298ff9a830b7971ccedc9134b96f6bd0c5e3e8a753587da1b58bfa39480",
+    "source_file": "battle_effects_composite_native.json",
+    "source_sha256": "b24a486caee210b87ab76f96238946fd75b094359be6138d02a3eda8624e7e04",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x00403147"
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_00403147(int param_1)\r\n\r\n{\r\n  FUN_0047467a(&DAT_004b69b0,*(byte *)(param_1 + 0x2c) + 100,1);\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_d140e7849ccc90a22f242b58d04d46ae629c16c29c82e30e8bd5db367b83b7fa",
+    "source_file": "battle_effects_composite_native.json",
+    "source_sha256": "b24a486caee210b87ab76f96238946fd75b094359be6138d02a3eda8624e7e04",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x00430031"
+    },
+    "pseudocode": "\r\nvoid __cdecl\r\nFUN_0042fd5a(int param_1,int param_2,byte *param_3,byte *param_4,byte *param_5,byte param_6,\r\n            int param_7,undefined1 *param_8,byte param_9)\r\n\r\n{\r\n  uint uVar1;\r\n  uint uVar2;\r\n  uint local_20;\r\n  uint local_1c;\r\n  uint local_18;\r\n  byte *local_14;\r\n  byte local_8 [2];\r\n  ushort uStack_6;\r\n  \r\n  local_14 = param_5;\r\n  if (param_8 == (undefined1 *)0x0) {\r\n    param_8 = &DAT_00497770;\r\n  }\r\n  uVar1 = param_1 * param_2;\r\n  if (param_6 == 0) {\r\n    for (local_1c = 0; local_1c < uVar1; local_1c = local_1c + 1) {\r\n      if (*param_3 == 0) {\r\n        *local_14 = *param_4;\r\n      }\r\n      else {\r\n        *local_14 = (&DAT_004b1b28)\r\n                    [(uint)(byte)param_8[(uint)*param_3 * 3 + 2] +\r\n                     (uint)(byte)param_8[(uint)*param_3 * 3 + 1] * 0x10 +\r\n                     (uint)(byte)param_8[(uint)*param_3 * 3] * 0x100];\r\n      }\r\n      local_14 = local_14 + 1;\r\n      param_3 = param_3 + 1;\r\n      param_4 = param_4 + 1;\r\n    }\r\n  }\r\n  else if ((param_9 == 0) && (param_6 == 0x10)) {\r\n    for (local_1c = 0; local_1c < uVar1; local_1c = local_1c + 1) {\r\n      *local_14 = *param_4;\r\n      local_14 = local_14 + 1;\r\n      param_4 = param_4 + 1;\r\n    }\r\n  }\r\n  else {\r\n    for (local_1c = 0; local_1c < uVar1; local_1c = local_1c + 1) {\r\n      if (*param_3 == 0) {\r\n        *local_14 = *param_4;\r\n      }\r\n      else {\r\n        if (param_7 == 0) {\r\n          local_18 = ((uint)(byte)param_8[(uint)*param_3 * 3] +\r\n                      (uint)(byte)param_8[(uint)*param_3 * 3 + 1] +\r\n                     (uint)(byte)param_8[(uint)*param_3 * 3 + 2]) / 3;\r\n        }\r\n        else {\r\n          local_18 = (int)(0x2d - ((uint)(byte)param_8[(uint)*param_3 * 3] +\r\n                                   (uint)(byte)param_8[(uint)*param_3 * 3 + 1] +\r\n                                  (uint)(byte)param_8[(uint)*param_3 * 3 + 2])) / 3 + 1;\r\n        }\r\n        uVar2 = (uint)param_6 * (0x100 - local_18 * param_9) >> 4;\r\n        if (uVar2 == 0) {\r\n          *local_14 = (&DAT_004b1b28)\r\n                      [(uint)(byte)param_8[(uint)*param_3 * 3 + 2] +\r\n                       (uint)(byte)param_8[(uint)*param_3 * 3 + 1] * 0x10 +\r\n                       (uint)(byte)param_8[(uint)*param_3 * 3] * 0x100];\r\n        }\r\n        else {\r\n          for (local_20 = 0; local_20 < 3; local_20 = local_20 + 1) {\r\n            local_8[local_20] =\r\n                 (byte)((byte)(&DAT_00497770)[local_20 + (uint)*param_4 * 3] * uVar2 +\r\n                        (uint)(byte)param_8[(uint)*param_3 * 3 + local_20] *\r\n                        (0x100 - (uVar2 * (0x10 - (uint)param_9) >> 4)) >> 8);\r\n            if (0xf < local_8[local_20]) {\r\n              local_8[local_20] = 0xf;\r\n            }\r\n          }\r\n          *local_14 = (&DAT_004b1b28)\r\n                      [(uStack_6 & 0xff) +\r\n                       (CONCAT21(uStack_6,local_8[1]) & 0xff) * 0x10 +\r\n                       (CONCAT11(local_8[1],local_8[0]) & 0xff) * 0x100];\r\n        }\r\n      }\r\n      local_14 = local_14 + 1;\r\n      param_3 = param_3 + 1;\r\n      param_4 = param_4 + 1;\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_aac3dde73de136a78c1e2cfa3c43fbd792463548863595fc3930f2aea932efc7",
+    "source_file": "battle_effects_composite_native.json",
+    "source_sha256": "b24a486caee210b87ab76f96238946fd75b094359be6138d02a3eda8624e7e04",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x00430369"
+    },
+    "pseudocode": "\r\nvoid __cdecl\r\nFUN_00430369(byte *param_1,HGLOBAL param_2,uint param_3,int param_4,byte *param_5,byte *param_6,\r\n            byte *param_7,byte *param_8,undefined4 param_9,undefined1 *param_10,byte param_11)\r\n\r\n{\r\n  FUN_004300c8(param_3,param_4,param_5,param_6,param_7,param_8,param_10,param_11);\r\n  FUN_0047d1f1(0,0,0);\r\n  FUN_0047e09b(param_1,param_2,param_3,param_4,param_8);\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_809a74d8ea8b43dfa3f06fffdadbe6fcecc2d63933c6a875cd428b7c3d46b3ba",
+    "source_file": "battle_effects_composite_native.json",
+    "source_sha256": "b24a486caee210b87ab76f96238946fd75b094359be6138d02a3eda8624e7e04",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x0042fd48"
+    },
+    "pseudocode": "\r\nvoid __cdecl FUN_0042fcc6(int param_1)\r\n\r\n{\r\n  undefined1 uVar1;\r\n  int local_14;\r\n  int local_10;\r\n  int local_c;\r\n  undefined1 local_8;\r\n  undefined1 local_7;\r\n  undefined1 local_6;\r\n  \r\n  for (local_14 = 0; local_14 < 0x10; local_14 = local_14 + 1) {\r\n    local_8 = (undefined1)local_14;\r\n    for (local_c = 0; local_c < 0x10; local_c = local_c + 1) {\r\n      local_7 = (undefined1)local_c;\r\n      for (local_10 = 0; local_10 < 0x10; local_10 = local_10 + 1) {\r\n        local_6 = (undefined1)local_10;\r\n        uVar1 = FUN_0042fb10((int)&local_8,param_1);\r\n        (&DAT_004b1b28)[local_10 + local_14 * 0x100 + local_c * 0x10] = uVar1;\r\n      }\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_21ae4fab8b7258eeba8dbe704a486615289ce0e859aa175073329175db7c7531",
+    "source_file": "battle_effects_composite_native.json",
+    "source_sha256": "b24a486caee210b87ab76f96238946fd75b094359be6138d02a3eda8624e7e04",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x0042fb10"
+    },
+    "pseudocode": "\r\nundefined1 __cdecl FUN_0042fb10(int param_1,int param_2)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined4 local_38;\r\n  undefined4 local_34;\r\n  undefined4 local_30;\r\n  undefined4 local_2c;\r\n  undefined4 local_28;\r\n  undefined1 local_24;\r\n  undefined4 local_20;\r\n  undefined4 local_1c;\r\n  undefined4 local_18;\r\n  undefined4 local_14;\r\n  undefined4 local_8;\r\n  \r\n  local_24 = 0;\r\n  bVar1 = 0;\r\n  local_20 = 0;\r\n  for (local_28 = 0; local_28 < 3; local_28 = local_28 + 1) {\r\n    if (bVar1 < *(byte *)(param_1 + local_28)) {\r\n      local_20 = local_28;\r\n      bVar1 = *(byte *)(param_1 + local_28);\r\n    }\r\n  }\r\n  local_1c = 0xffff;\r\n  local_14 = 0xffff;\r\n  for (local_28 = 10; local_28 < 0xf6; local_28 = local_28 + 1) {\r\n    local_8 = 0;\r\n    local_18 = 0;\r\n    local_2c = 0;\r\n    bVar1 = 0;\r\n    for (local_30 = 0; local_30 < 3; local_30 = local_30 + 1) {\r\n      if ((int)((uint)*(byte *)(param_1 + local_30) -\r\n               (uint)*(byte *)(param_2 + local_28 * 3 + local_30)) < 0) {\r\n        local_34 = -((uint)*(byte *)(param_1 + local_30) -\r\n                    (uint)*(byte *)(param_2 + local_28 * 3 + local_30));\r\n      }\r\n      else {\r\n        local_34 = (uint)*(byte *)(param_1 + local_30) -\r\n                   (uint)*(byte *)(param_2 + local_28 * 3 + local_30);\r\n      }\r\n      if (local_8 < local_34) {\r\n        local_38 = local_34;\r\n      }\r\n      else {\r\n        local_38 = local_8;\r\n      }\r\n      local_8 = local_38;\r\n      local_18 = local_18 + local_34;\r\n      if (bVar1 < *(byte *)(param_2 + local_28 * 3 + local_30)) {\r\n        local_2c = local_30;\r\n        bVar1 = *(byte *)(param_2 + local_28 * 3 + local_30);\r\n      }\r\n    }\r\n    if (((local_8 <= local_1c) && (local_18 <= local_14)) && (local_20 == local_2c)) {\r\n      local_24 = (undefined1)local_28;\r\n      local_1c = local_8;\r\n      local_14 = local_18;\r\n    }\r\n  }\r\n  return local_24;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_49af15f9f9975130d5d72acd0ffaa57cbb3c5220f3d61e73ea0374541c2107ed",
+    "source_file": "battle_effects_composite_native.json",
+    "source_sha256": "b24a486caee210b87ab76f96238946fd75b094359be6138d02a3eda8624e7e04",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x0041e151"
+    },
+    "pseudocode": "\r\nvoid __cdecl FUN_0041e050(uint param_1,char param_2)\r\n\r\n{\r\n  bool bVar1;\r\n  undefined3 extraout_var;\r\n  undefined3 extraout_var_00;\r\n  undefined3 extraout_var_01;\r\n  int local_11c;\r\n  int local_118 [65];\r\n  byte *local_14;\r\n  void *local_10;\r\n  undefined1 *puStack_c;\r\n  undefined4 local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_0048526c;\r\n  local_10 = ExceptionList;\r\n  ExceptionList = &local_10;\r\n  FUN_004032b0(local_118);\r\n  local_8 = 0;\r\n  FUN_0047d1ca(7);\r\n  if (param_2 == '\\0') {\r\n    bVar1 = FUN_0041fb35(local_118,(uint *)s_PMPALET_E5_0048bb20);\r\n    if (CONCAT31(extraout_var,bVar1) == 0) {\r\n      local_8 = 0xffffffff;\r\n      FUN_004032d0(local_118);\r\n      ExceptionList = local_10;\r\n      return;\r\n    }\r\n  }\r\n  else if (param_2 == '\\x01') {\r\n    bVar1 = FUN_0041fb35(local_118,(uint *)s_SPALET_E5_0048bb10);\r\n    if (CONCAT31(extraout_var_00,bVar1) == 0) {\r\n      local_8 = 0xffffffff;\r\n      FUN_004032d0(local_118);\r\n      ExceptionList = local_10;\r\n      return;\r\n    }\r\n  }\r\n  else {\r\n    if (param_2 != '\\x02') {\r\n      local_8 = 0xffffffff;\r\n      FUN_004032d0(local_118);\r\n      ExceptionList = local_10;\r\n      return;\r\n    }\r\n    bVar1 = FUN_0041fb35(local_118,(uint *)s_LOGO_P_E5_0048baf8);\r\n    if (CONCAT31(extraout_var_01,bVar1) == 0) {\r\n      local_8 = 0xffffffff;\r\n      FUN_004032d0(local_118);\r\n      ExceptionList = local_10;\r\n      return;\r\n    }\r\n  }\r\n  FUN_0041fc89(local_118,param_1 & 0xffff,&DAT_00497770);\r\n  FUN_004192c5(local_118);\r\n  local_14 = &DAT_00497770;\r\n  for (local_11c = 0; local_11c < 0x300; local_11c = local_11c + 1) {\r\n    *local_14 = *local_14 >> 4;\r\n    local_14 = local_14 + 1;\r\n  }\r\n  FUN_0042fcc6(0x497770);\r\n  local_8 = 0xffffffff;\r\n  FUN_004032d0(local_118);\r\n  ExceptionList = local_10;\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_4bfbf0c4042f7f9d1db5978d03aa2703fbb275f96d33d6a5879b7f611e806d3c",
+    "source_file": "battle_effects_composite_native.json",
+    "source_sha256": "b24a486caee210b87ab76f96238946fd75b094359be6138d02a3eda8624e7e04",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x00402805"
+    },
+    "pseudocode": "\r\nbool __fastcall FUN_00402805(int param_1)\r\n\r\n{\r\n  int iVar1;\r\n  \r\n  iVar1 = FUN_00419184((void *)(param_1 + 8),0,(LPVOID)(param_1 + 0x1c),0x14);\r\n  if (iVar1 == 0x14) {\r\n    *(uint *)(param_1 + 0x20) = *(uint *)(param_1 + 0x20) / 0x32;\r\n  }\r\n  return iVar1 == 0x14;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_ccda76ad6b0488241e42dbe6c15aefb7295bb28240f5d1700bce8d6be989de52",
+    "source_file": "r_script_delay_native.json",
+    "source_sha256": "72aa05abd3b24405a0ea8d6f4874d870724a979cb0a994f20c5ee0caab6b97f2",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x415b0f"
+    },
+    "pseudocode": "\r\nundefined4 __cdecl FUN_00415b0f(void *param_1)\r\n\r\n{\r\n  uint uVar1;\r\n  undefined4 uVar2;\r\n  \r\n  uVar1 = FUN_004183f7(param_1,4);\r\n  if (uVar1 == 0x80000000) {\r\n    uVar2 = 5;\r\n  }\r\n  else {\r\n    FUN_0042c522(uVar1);\r\n    uVar2 = 1;\r\n  }\r\n  return uVar2;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_7bfcde46713a7f7a4beb568e84bfa091c93ceb92d250da4d264a131f1429a8e2",
+    "source_file": "r_script_delay_native.json",
+    "source_sha256": "72aa05abd3b24405a0ea8d6f4874d870724a979cb0a994f20c5ee0caab6b97f2",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x42c522"
+    },
+    "pseudocode": "\r\nvoid __cdecl FUN_0042c522(int param_1)\r\n\r\n{\r\n  if (param_1 != 0) {\r\n    FUN_0042c4cb(param_1);\r\n    FUN_0042c4e0();\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_92cf3ecc160b689099245131682df45bd55c6453e1cbb8b8e4ba2ca0eec94893",
+    "source_file": "r_script_delay_native.json",
+    "source_sha256": "72aa05abd3b24405a0ea8d6f4874d870724a979cb0a994f20c5ee0caab6b97f2",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x403340"
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_00403340(void *this,int param_1)\r\n\r\n{\r\n  FUN_0042c45f(this,param_1);\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_1cff6ceb91b1939e0d291553cc3463fa2c2be8447dadf755ad859a7e9e979bbd",
+    "source_file": "r_script_delay_native.json",
+    "source_sha256": "72aa05abd3b24405a0ea8d6f4874d870724a979cb0a994f20c5ee0caab6b97f2",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x42c4e0"
+    },
+    "pseudocode": "\r\nvoid FUN_0042c4e0(void)\r\n\r\n{\r\n  bool bVar1;\r\n  undefined3 extraout_var;\r\n  \r\n  while( true ) {\r\n    bVar1 = FUN_0042f7f0((uint *)&DAT_004b1b18);\r\n    if (CONCAT31(extraout_var,bVar1) != 0) break;\r\n    FUN_0047eac4();\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_9608be2b23ca0ff062f4356bd60ba2b4d4b99770fafdc2d7d9bd70e1636a18d9",
+    "source_file": "r_script_delay_native.json",
+    "source_sha256": "72aa05abd3b24405a0ea8d6f4874d870724a979cb0a994f20c5ee0caab6b97f2",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x42c4cb"
+    },
+    "pseudocode": "\r\nvoid __cdecl FUN_0042c4cb(int param_1)\r\n\r\n{\r\n  FUN_00403340(&DAT_004b1b18,param_1 << 1);\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_0f24d5fcfaa96c51a82137179f69382aa8af43317fa0d14a5560adb57818f663",
+    "source_file": "r_script_delay_native.json",
+    "source_sha256": "72aa05abd3b24405a0ea8d6f4874d870724a979cb0a994f20c5ee0caab6b97f2",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x42c45f"
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_0042c45f(void *this,int param_1)\r\n\r\n{\r\n  uint uVar1;\r\n  \r\n  uVar1 = FUN_0047eb97();\r\n  *(uint *)this = uVar1 + param_1;\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_c82176eb224e1d64b5dabd17d181d1912d8442a09fd978c9818788d28b72bf23",
+    "source_file": "r_script_delay_native.json",
+    "source_sha256": "72aa05abd3b24405a0ea8d6f4874d870724a979cb0a994f20c5ee0caab6b97f2",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x42f7f0"
+    },
+    "pseudocode": "\r\nbool __fastcall FUN_0042f7f0(uint *param_1)\r\n\r\n{\r\n  int iVar1;\r\n  \r\n  iVar1 = FUN_0042c479(param_1);\r\n  return (bool)('\\x01' - (iVar1 != 0));\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_5c2e4f7e87169234c2ea41e04b8ebad62536688ab878073b9766dc1eadacfc6d",
+    "source_file": "r_script_delay_native.json",
+    "source_sha256": "72aa05abd3b24405a0ea8d6f4874d870724a979cb0a994f20c5ee0caab6b97f2",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x47eb97"
+    },
+    "pseudocode": "\r\nuint FUN_0047eb97(void)\r\n\r\n{\r\n  DWORD DVar1;\r\n  \r\n  DVar1 = GetTickCount();\r\n  return DVar1 / 0x32;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_ed899486cb1833f8b0c74461906d92fc12dd9faa4916033a805009603da372ec",
+    "source_file": "r_script_delay_native.json",
+    "source_sha256": "72aa05abd3b24405a0ea8d6f4874d870724a979cb0a994f20c5ee0caab6b97f2",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x42c479"
+    },
+    "pseudocode": "\r\nint __fastcall FUN_0042c479(uint *param_1)\r\n\r\n{\r\n  uint uVar1;\r\n  undefined4 local_c;\r\n  \r\n  uVar1 = FUN_0047eb97();\r\n  if ((int)uVar1 < (int)*param_1) {\r\n    local_c = FUN_0047eb97();\r\n  }\r\n  else {\r\n    local_c = *param_1;\r\n  }\r\n  return *param_1 - local_c;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_c94a7744d49b5072fbadffd9cf40d0023ca8428d22128dc15343f4fe77912465",
+    "source_file": "script_coverage/native_misc_magic_20261013.json",
+    "source_sha256": "88d12ee2df33bc3dc86afe95257ecdf7ca535d9bd347a25ab357b4063edab9f7",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x423B2F"
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_00423b2f(byte *param_1)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined1 uVar2;\r\n  int iVar3;\r\n  undefined3 extraout_var;\r\n  uint uVar4;\r\n  undefined4 uVar5;\r\n  \r\n  param_1[0x255] = 0;\r\n  bVar1 = *param_1;\r\n  if (bVar1 == 0x3a) {\r\n    uVar4 = FUN_0044a1f9(&DAT_004b3d08,2);\r\n    *(uint *)(param_1 + 0x84) = uVar4 & 0xff;\r\n    param_1[0x255] = 0xc0;\r\n  }\r\n  else if (bVar1 == 0x3b) {\r\n    uVar4 = FUN_0044a1f9(&DAT_004b3d08,0);\r\n    *(uint *)(param_1 + 0x84) = uVar4 & 0xff;\r\n    param_1[0x255] = 0xc1;\r\n  }\r\n  else if (bVar1 == 0x3c) {\r\n    uVar4 = FUN_0044a1f9(&DAT_004b3d08,1);\r\n    *(uint *)(param_1 + 0x84) = uVar4 & 0xff;\r\n    param_1[0x255] = 0xc2;\r\n  }\r\n  FUN_004214bf(param_1);\r\n  if ((param_1[0x255] == 0) ||\r\n     (bVar1 = FUN_0041c2b0(0x4b3d08), *(uint *)(param_1 + 0x84) == (uint)bVar1)) {\r\n    uVar5 = 0x44c00;\r\n    iVar3 = FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n    FUN_004014f8(&DAT_004917b0,(uint *)s_MEFF_E5_0048bbf8,0x2d,iVar3,uVar5);\r\n    uVar2 = FUN_00401e3c(&DAT_004917b0);\r\n    if (CONCAT31(extraout_var,uVar2) != 0) {\r\n      FUN_00401e5c(&DAT_004917b0,(void *)0x0);\r\n    }\r\n    FUN_004016ab(&DAT_004917b0);\r\n  }\r\n  else {\r\n    FUN_0047467a(&DAT_004b69b0,0x86,1);\r\n    FUN_00403340(&DAT_004b1b18,0x1e);\r\n    FUN_0042c4e0();\r\n    FUN_00449f91(&DAT_004b3d08,param_1[0x84]);\r\n  }\r\n  uVar4 = FUN_00420efb(param_1,0);\r\n  *(uint *)(param_1 + 0x2d0) = uVar4;\r\n  uVar4 = FUN_0042128b(param_1);\r\n  *(uint *)(param_1 + 0x2d4) = uVar4;\r\n  param_1[0x4ac] = 1;\r\n  param_1[0x4ad] = 0;\r\n  param_1[0x4ae] = 0;\r\n  param_1[0x4af] = 0;\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_edf83f049d3caa8635448ab64b020e81ee8330ee9b66be17b21095805ac6e391",
+    "source_file": "script_coverage/native_misc_magic_20261013.json",
+    "source_sha256": "88d12ee2df33bc3dc86afe95257ecdf7ca535d9bd347a25ab357b4063edab9f7",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x423CC0"
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_00423cc0(byte *param_1)\r\n\r\n{\r\n  int iVar1;\r\n  uint uVar2;\r\n  \r\n  param_1[0xd] = param_1[1];\r\n  param_1[0xc] = param_1[0xd];\r\n  FUN_0045461c(&DAT_004b4250);\r\n  iVar1 = FUN_00420422(*param_1,param_1[1],param_1[0xc],*(int *)(param_1 + 0x4a8));\r\n  if (iVar1 != 0) {\r\n    param_1[0x255] = param_1[0x254];\r\n    FUN_004214bf(param_1);\r\n    FUN_004224a8(param_1);\r\n    uVar2 = FUN_00420efb(param_1,0);\r\n    *(uint *)(param_1 + 0x2d0) = uVar2;\r\n    uVar2 = FUN_0042128b(param_1);\r\n    *(uint *)(param_1 + 0x2d4) = uVar2;\r\n    param_1[0x4ac] = 1;\r\n    param_1[0x4ad] = 0;\r\n    param_1[0x4ae] = 0;\r\n    param_1[0x4af] = 0;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_f2548892535ef0ef798de316b0fc7255bb4201a282f13b1a88e5cce73d848b90",
+    "source_file": "script_coverage/native_misc_magic_20261013.json",
+    "source_sha256": "88d12ee2df33bc3dc86afe95257ecdf7ca535d9bd347a25ab357b4063edab9f7",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x423D6C"
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_00423d6c(byte *param_1)\r\n\r\n{\r\n  int iVar1;\r\n  uint uVar2;\r\n  int iVar3;\r\n  undefined4 extraout_EDX;\r\n  undefined4 extraout_EDX_00;\r\n  \r\n  param_1[0xd] = param_1[1];\r\n  param_1[0xc] = param_1[0xd];\r\n  iVar1 = FUN_00420422(*param_1,param_1[1],param_1[0xc],*(int *)(param_1 + 0x4a8));\r\n  if (iVar1 != 0) {\r\n    param_1[0x255] = param_1[0x254];\r\n    uVar2 = FUN_00472c90(*(int *)(param_1 + 8));\r\n    if (uVar2 < 0x33) {\r\n      iVar1 = FUN_00472c90(*(int *)(param_1 + 8));\r\n      *(int *)(param_1 + 0x88) = iVar1 + -1;\r\n      *(int *)(param_1 + 0x84) = -(*(int *)(param_1 + 0x88) / 2);\r\n    }\r\n    else {\r\n      param_1[0x88] = 0x32;\r\n      param_1[0x89] = 0;\r\n      param_1[0x8a] = 0;\r\n      param_1[0x8b] = 0;\r\n      param_1[0x84] = 0xe7;\r\n      param_1[0x85] = 0xff;\r\n      param_1[0x86] = 0xff;\r\n      param_1[0x87] = 0xff;\r\n    }\r\n    iVar1 = FUN_0045f670(*(undefined4 **)(param_1 + 8));\r\n    iVar1 = FUN_0040724a(&DAT_004a1b68 + iVar1 * 0x48,extraout_EDX);\r\n    iVar3 = FUN_00472840(*(int *)(param_1 + 8));\r\n    if (*(int *)(param_1 + 0x84) < -(iVar1 - iVar3)) {\r\n      iVar1 = FUN_0045f670(*(undefined4 **)(param_1 + 8));\r\n      iVar1 = FUN_0040724a(&DAT_004a1b68 + iVar1 * 0x48,extraout_EDX_00);\r\n      iVar3 = FUN_00472840(*(int *)(param_1 + 8));\r\n      *(int *)(param_1 + 0x84) = -(iVar1 - iVar3);\r\n    }\r\n    FUN_004214bf(param_1);\r\n    uVar2 = FUN_00420efb(param_1,0);\r\n    *(uint *)(param_1 + 0x2d0) = uVar2;\r\n    uVar2 = FUN_0042128b(param_1);\r\n    *(uint *)(param_1 + 0x2d4) = uVar2;\r\n    FUN_004224a8(param_1);\r\n    param_1[0x4ac] = 1;\r\n    param_1[0x4ad] = 0;\r\n    param_1[0x4ae] = 0;\r\n    param_1[0x4af] = 0;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_f2dfdcb3db01472d4a6e70ee1c8b3262e26e65319827b99387ce0a0b8473fbce",
+    "source_file": "script_coverage/native_misc_magic_20261013.json",
+    "source_sha256": "88d12ee2df33bc3dc86afe95257ecdf7ca535d9bd347a25ab357b4063edab9f7",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x424E9E"
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_00424e9e(byte *param_1)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined2 *puVar2;\r\n  uint uVar3;\r\n  int iVar4;\r\n  byte bVar5;\r\n  undefined8 uVar6;\r\n  byte bVar7;\r\n  int iVar8;\r\n  uint local_48;\r\n  uint local_44;\r\n  int local_3c;\r\n  int local_38;\r\n  byte local_20 [28];\r\n  \r\n  bVar1 = FUN_0045533d(&DAT_004b4250,param_1[1],param_1[0x2c9],'\\x02',*param_1);\r\n  local_20[0] = bVar1;\r\n  if (bVar1 != 0xff) {\r\n    param_1[0xc] = param_1[1];\r\n    FUN_00425349(param_1,0);\r\n    param_1[0xd] = local_20[0];\r\n    bVar1 = 0;\r\n    while (param_1[bVar1 + 0xe] != 0xff) {\r\n      bVar1 = bVar1 + 1;\r\n    }\r\n    param_1[0xd] = param_1[1];\r\n    FUN_004218d6(param_1);\r\n    for (bVar5 = 0; bVar5 < bVar1; bVar5 = bVar5 + 1) {\r\n      local_20[bVar5] = param_1[bVar5 + 0xe];\r\n    }\r\n    local_20[bVar1] = 0xff;\r\n    for (bVar5 = 0; bVar5 < 5; bVar5 = bVar5 + 1) {\r\n      param_1[bVar5 + 0xd] = 0xff;\r\n    }\r\n    puVar2 = (undefined2 *)FUN_00403360((int)(&DAT_004b2c50 + (uint)param_1[1] * 0x24));\r\n    uVar6 = FUN_0044fa7e(CONCAT22((short)((uint)puVar2 >> 0x10),*puVar2));\r\n    local_3c = (int)uVar6;\r\n    local_38 = (int)((ulonglong)uVar6 >> 0x20);\r\n    FUN_00421879(local_3c + 0x18,local_38 + 0x18);\r\n    param_1[0x4b0] = 0;\r\n    param_1[0x4b1] = 0;\r\n    param_1[0x4b2] = 0;\r\n    param_1[0x4b3] = 0;\r\n    bVar5 = 0;\r\n    do {\r\n      while( true ) {\r\n        if (4 < bVar5) goto LAB_004251d0;\r\n        uVar3 = FUN_0047fb13((uint)bVar1);\r\n        param_1[0xd] = local_20[uVar3];\r\n        param_1[0xc] = param_1[0xd];\r\n        iVar4 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)param_1[0xc] * 0x24));\r\n        if (iVar4 == 0) break;\r\n        bVar5 = bVar5 + 1;\r\n        iVar8 = 0;\r\n        bVar7 = *param_1;\r\n        iVar4 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (uint)param_1[0xc] * 0x24));\r\n        uVar3 = FUN_0043bfaa(*(void **)(param_1 + 8),\r\n                             (int *)(&DAT_004b2c50 + (uint)param_1[0xc] * 0x24),\r\n                             &DAT_004a1b68 + iVar4 * 0x48,bVar7,iVar8);\r\n        *(uint *)(param_1 + 0x84) = uVar3;\r\n        if (*(int *)(param_1 + 0x84) == 0) {\r\n          param_1[0x255] = 0;\r\n        }\r\n        else {\r\n          param_1[0x255] = 0x40;\r\n        }\r\n        uVar3 = FUN_00420efb(param_1,0);\r\n        if (*(uint *)(param_1 + 0x2d0) < uVar3) {\r\n          local_44 = FUN_00420efb(param_1,0);\r\n        }\r\n        else {\r\n          local_44 = *(uint *)(param_1 + 0x2d0);\r\n        }\r\n        *(uint *)(param_1 + 0x2d0) = local_44;\r\n        uVar3 = FUN_0042128b(param_1);\r\n        if (*(uint *)(param_1 + 0x2d4) < uVar3) {\r\n          local_48 = FUN_0042128b(param_1);\r\n        }\r\n        else {\r\n          local_48 = *(uint *)(param_1 + 0x2d4);\r\n        }\r\n        *(uint *)(param_1 + 0x2d4) = local_48;\r\n        uVar3 = FUN_004213a3(param_1,0);\r\n        *(uint *)(param_1 + 0x2d8) = uVar3;\r\n        FUN_004214bf(param_1);\r\n        FUN_004224a8(param_1);\r\n      }\r\n      bVar1 = bVar1 - 1;\r\n      local_20[uVar3] = local_20[bVar1];\r\n      local_20[bVar1] = 0xff;\r\n    } while (bVar1 != 0);\r\nLAB_004251d0:\r\n    param_1[0x4ac] = 1;\r\n    param_1[0x4ad] = 0;\r\n    param_1[0x4ae] = 0;\r\n    param_1[0x4af] = 0;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_2935e68ebc243eb02ffc177e9bbb8e3169b9c77b243d69032d0b01bfef8b6c16",
+    "source_file": "script_coverage/native_misc_magic_20261013.json",
+    "source_sha256": "88d12ee2df33bc3dc86afe95257ecdf7ca535d9bd347a25ab357b4063edab9f7",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x44A1F9"
+    },
+    "pseudocode": "\r\nundefined4 __thiscall FUN_0044a1f9(void *this,byte param_1)\r\n\r\n{\r\n  uint uVar1;\r\n  byte bVar2;\r\n  \r\n  if (param_1 < 2) {\r\n    bVar2 = 0;\r\n    while ((bVar2 < 6 &&\r\n           ((&DAT_0048e100)[(uint)bVar2 + (uint)*(byte *)((int)this + 0x11) * 6] != param_1))) {\r\n      bVar2 = bVar2 + 1;\r\n    }\r\n    uVar1 = 0;\r\n  }\r\n  else {\r\n    for (bVar2 = 6; uVar1 = 0, bVar2 != 0; bVar2 = bVar2 - 1) {\r\n      uVar1 = (uint)bVar2;\r\n      if ((((&DAT_0048e0ff)[uVar1 + (uint)*(byte *)((int)this + 0x11) * 6] == '\\x02') ||\r\n          (uVar1 = (uint)*(byte *)((int)this + 0x11) * 6, (&DAT_0048e0ff)[bVar2 + uVar1] == '\\x03'))\r\n         || (uVar1 = (uint)(byte)(&DAT_0048e0ff)\r\n                                 [(uint)bVar2 + (uint)*(byte *)((int)this + 0x11) * 6], uVar1 == 4))\r\n      {\r\n        bVar2 = bVar2 - 1;\r\n        break;\r\n      }\r\n    }\r\n  }\r\n  return CONCAT31((int3)(uVar1 >> 8),bVar2);\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_c0ee78dbe8b2ca37a88f8c05617ab55b2edd177322eedf509da6d1f09614004c",
+    "source_file": "script_coverage/native_misc_magic_20261013.json",
+    "source_sha256": "88d12ee2df33bc3dc86afe95257ecdf7ca535d9bd347a25ab357b4063edab9f7",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x425627"
+    },
+    "pseudocode": "\r\nundefined4 __thiscall FUN_00425627(void *this,byte param_1,byte param_2)\r\n\r\n{\r\n  char cVar1;\r\n  int iVar2;\r\n  undefined4 uVar3;\r\n  \r\n  FUN_004251e1(this,param_1,param_2);\r\n  cVar1 = FUN_00425ad0(*(int *)((int)this + 8));\r\n  iVar2 = FUN_0041fec9(*(byte *)this,(uint)*(byte *)((int)this + 1),(uint)(cVar1 == '\\a'));\r\n  if (iVar2 == 0) {\r\n    uVar3 = *(undefined4 *)((int)this + 0x4ac);\r\n  }\r\n  else {\r\n    if (((byte)(&DAT_004866c0)[*(byte *)this] < 100) || ((&DAT_004866c0)[*(byte *)this] == -1)) {\r\n      *(undefined4 *)((int)this + 0x4b0) = 0;\r\n    }\r\n    else {\r\n      uVar3 = FUN_004217ff(this,(uint)(byte)(&DAT_004866c0)[*(byte *)this]);\r\n      *(undefined4 *)((int)this + 0x4b0) = uVar3;\r\n    }\r\n    switch(*(undefined1 *)this) {\r\n    case 0:\r\n    case 1:\r\n    case 2:\r\n    case 3:\r\n    case 4:\r\n    case 5:\r\n    case 6:\r\n    case 7:\r\n    case 8:\r\n    case 9:\r\n    case 10:\r\n    case 0xb:\r\n    case 0xc:\r\n    case 0xd:\r\n    case 0xf:\r\n    case 0x10:\r\n    case 0x11:\r\n    case 0x12:\r\n    case 0x13:\r\n    case 0x14:\r\n    case 0x15:\r\n    case 0x41:\r\n      *(undefined1 *)((int)this + 0x254) = 0x40;\r\n      FUN_0042313e(this);\r\n      break;\r\n    case 0xe:\r\n      *(undefined1 *)((int)this + 0x254) = 0x40;\r\n      FUN_0042423a(this);\r\n      break;\r\n    case 0x16:\r\n      *(undefined1 *)((int)this + 0x254) = 0x50;\r\n      FUN_0042313e(this);\r\n      break;\r\n    case 0x17:\r\n    case 0x18:\r\n      *(undefined1 *)((int)this + 0x254) = 0x62;\r\n      FUN_0042335b(this,0);\r\n      break;\r\n    case 0x19:\r\n    case 0x1a:\r\n      *(undefined1 *)((int)this + 0x254) = 100;\r\n      FUN_0042335b(this,0);\r\n      break;\r\n    case 0x1b:\r\n    case 0x1c:\r\n      *(undefined1 *)((int)this + 0x254) = 0x60;\r\n      FUN_0042335b(this,0);\r\n      break;\r\n    case 0x1d:\r\n    case 0x1e:\r\n      *(undefined1 *)((int)this + 0x254) = 0x61;\r\n      FUN_0042335b(this,0);\r\n      break;\r\n    case 0x1f:\r\n    case 0x20:\r\n      *(undefined1 *)((int)this + 0x254) = 0x71;\r\n      FUN_00423549(this,0);\r\n      break;\r\n    case 0x21:\r\n    case 0x22:\r\n      *(undefined1 *)((int)this + 0x254) = 0x70;\r\n      FUN_00423549(this,0);\r\n      break;\r\n    case 0x23:\r\n    case 0x24:\r\n      *(undefined1 *)((int)this + 0x254) = 0x72;\r\n      FUN_00423549(this,0);\r\n      break;\r\n    case 0x25:\r\n      *(undefined1 *)((int)this + 0x254) = 0x74;\r\n      FUN_00423549(this,0);\r\n      break;\r\n    case 0x26:\r\n      *(undefined1 *)((int)this + 0x254) = 0xff;\r\n      FUN_00423edc(this);\r\n      break;\r\n    case 0x27:\r\n    case 0x28:\r\n    case 0x29:\r\n    case 0x2a:\r\n    case 0x2b:\r\n      *(undefined1 *)((int)this + 0x254) = 0x80;\r\n      FUN_0042378d(this);\r\n      break;\r\n    case 0x2c:\r\n    case 0x2d:\r\n      *(undefined1 *)((int)this + 0x254) = 0x90;\r\n      FUN_0042378d(this);\r\n      break;\r\n    case 0x2e:\r\n    case 0x2f:\r\n      *(undefined1 *)((int)this + 0x254) = 0xbf;\r\n      FUN_00423549(this,1);\r\n      break;\r\n    case 0x30:\r\n      *(undefined1 *)((int)this + 0x254) = 0xa8;\r\n      FUN_0042335b(this,1);\r\n      break;\r\n    case 0x31:\r\n    case 0x32:\r\n      *(undefined1 *)((int)this + 0x254) = 0xa2;\r\n      FUN_0042335b(this,1);\r\n      break;\r\n    case 0x33:\r\n    case 0x34:\r\n      *(undefined1 *)((int)this + 0x254) = 0xa4;\r\n      FUN_0042335b(this,1);\r\n      break;\r\n    case 0x35:\r\n    case 0x36:\r\n      *(undefined1 *)((int)this + 0x254) = 0xa0;\r\n      FUN_0042335b(this,1);\r\n      break;\r\n    case 0x37:\r\n    case 0x38:\r\n      *(undefined1 *)((int)this + 0x254) = 0xa1;\r\n      FUN_0042335b(this,1);\r\n      break;\r\n    case 0x39:\r\n      *(undefined1 *)((int)this + 0x254) = 0xb8;\r\n      FUN_00423960(this);\r\n      break;\r\n    case 0x3a:\r\n    case 0x3b:\r\n    case 0x3c:\r\n      *(undefined1 *)((int)this + 0x254) = 0xc0;\r\n      FUN_00423b2f(this);\r\n      break;\r\n    case 0x3d:\r\n      *(undefined1 *)((int)this + 0x254) = 0xa0;\r\n      FUN_00423cc0(this);\r\n      break;\r\n    case 0x3e:\r\n      *(undefined1 *)((int)this + 0x254) = 0x90;\r\n      FUN_00423d6c(this);\r\n      break;\r\n    case 0x3f:\r\n      *(undefined1 *)((int)this + 0x254) = 0xaf;\r\n      FUN_00423cc0(this);\r\n      break;\r\n    case 0x40:\r\n      *(undefined1 *)((int)this + 0x254) = 0x40;\r\n      FUN_00424e9e(this);\r\n      break;\r\n    case 0x42:\r\n      *(undefined1 *)((int)this + 0x254) = 0xff;\r\n      FUN_00424810(this);\r\n      break;\r\n    case 0x43:\r\n      *(undefined1 *)((int)this + 0x254) = 0xbf;\r\n      FUN_00424513(this);\r\n      break;\r\n    default:\r\n      *(undefined1 *)((int)this + 0x254) = 0;\r\n    }\r\n    if (*(int *)((int)this + 0x4b0) != 0) {\r\n      FUN_0040269b(&DAT_00492788);\r\n    }\r\n    FUN_00422f0d(this);\r\n    uVar3 = *(undefined4 *)((int)this + 0x4ac);\r\n  }\r\n  return uVar3;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_a0bf44c16f0b09383813f865dc1899335fe4a5a7ac875e3cc18b98193a980cec",
+    "source_file": "script_coverage/native_misc_magic_20261013.json",
+    "source_sha256": "88d12ee2df33bc3dc86afe95257ecdf7ca535d9bd347a25ab357b4063edab9f7",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x47FB13"
+    },
+    "pseudocode": "\r\nuint __cdecl FUN_0047fb13(uint param_1)\r\n\r\n{\r\n  uint uVar1;\r\n  \r\n  uVar1 = 0;\r\n  if (1 < param_1) {\r\n    uVar1 = FUN_0047fae7();\r\n    uVar1 = uVar1 % param_1;\r\n  }\r\n  return uVar1;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_0746e42c2841f5d0d454f1d2f207ee615d7cf140dc9bdf5fa955b8431e069bc0",
+    "source_file": "script_coverage/native_misc_magic_20261013.json",
+    "source_sha256": "88d12ee2df33bc3dc86afe95257ecdf7ca535d9bd347a25ab357b4063edab9f7",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x420422"
+    },
+    "pseudocode": "\r\nundefined4 __cdecl FUN_00420422(undefined1 param_1,byte param_2,byte param_3,int param_4)\r\n\r\n{\r\n  char cVar1;\r\n  undefined1 uVar2;\r\n  byte bVar3;\r\n  bool bVar4;\r\n  int iVar5;\r\n  byte *pbVar6;\r\n  undefined3 extraout_var;\r\n  undefined3 extraout_var_00;\r\n  undefined3 extraout_var_01;\r\n  undefined3 extraout_var_02;\r\n  int iVar7;\r\n  undefined3 extraout_var_03;\r\n  undefined3 extraout_var_04;\r\n  undefined3 extraout_var_05;\r\n  uint uVar8;\r\n  undefined4 *puVar9;\r\n  undefined4 extraout_EDX;\r\n  undefined4 extraout_EDX_00;\r\n  undefined4 extraout_EDX_01;\r\n  undefined4 extraout_EDX_02;\r\n  bool bVar10;\r\n  undefined4 local_10;\r\n  \r\n  local_10 = 1;\r\n  cVar1 = FUN_00425ad0((int)(&DAT_004b2c50 + (uint)param_2 * 0x24));\r\n  bVar10 = cVar1 != '\\a';\r\n  puVar9 = (undefined4 *)(&DAT_004b2c50 + (uint)param_2 * 0x24);\r\n  iVar5 = FUN_0045f670(puVar9);\r\n  switch(param_1) {\r\n  case 0:\r\n  case 1:\r\n  case 2:\r\n  case 3:\r\n  case 4:\r\n    pbVar6 = (byte *)FUN_00403360((int)(&DAT_004b2c50 + (uint)param_3 * 0x24));\r\n    uVar2 = FUN_00435991(pbVar6);\r\n    iVar5 = FUN_00420ab6(uVar2);\r\n    if (iVar5 == 0) {\r\n      if (param_4 != 0) {\r\n        FUN_0042f699(2);\r\n      }\r\n      local_10 = 0;\r\n    }\r\n    break;\r\n  case 5:\r\n  case 6:\r\n  case 7:\r\n  case 8:\r\n  case 9:\r\n    pbVar6 = (byte *)FUN_00403360((int)(&DAT_004b2c50 + (uint)param_3 * 0x24));\r\n    bVar3 = FUN_00435991(pbVar6);\r\n    iVar5 = FUN_00420b17(bVar3);\r\n    if (iVar5 == 0) {\r\n      if (param_4 != 0) {\r\n        FUN_0042f699(2);\r\n      }\r\n      local_10 = 0;\r\n    }\r\n    break;\r\n  case 10:\r\n  case 0xb:\r\n  case 0xc:\r\n  case 0xd:\r\n  case 0xe:\r\n    pbVar6 = (byte *)FUN_00403360((int)(&DAT_004b2c50 + (uint)param_3 * 0x24));\r\n    uVar2 = FUN_00435991(pbVar6);\r\n    iVar5 = FUN_00420b42(uVar2);\r\n    if (iVar5 == 0) {\r\n      if (param_4 != 0) {\r\n        FUN_0042f699(2);\r\n      }\r\n      local_10 = 0;\r\n    }\r\n    break;\r\n  case 0xf:\r\n  case 0x10:\r\n  case 0x11:\r\n  case 0x12:\r\n  case 0x13:\r\n    pbVar6 = (byte *)FUN_00403360((int)(&DAT_004b2c50 + (uint)param_3 * 0x24));\r\n    bVar3 = FUN_00435991(pbVar6);\r\n    iVar5 = FUN_00420b98(bVar3);\r\n    if (iVar5 == 0) {\r\n      if (param_4 != 0) {\r\n        FUN_0042f699(2);\r\n      }\r\n      local_10 = 0;\r\n    }\r\n    break;\r\n  case 0x14:\r\n    if (bVar10) {\r\n      iVar7 = FUN_00472c90((int)puVar9);\r\n      iVar5 = FUN_0040721b(&DAT_004a1b68 + iVar5 * 0x48,extraout_EDX);\r\n      if (iVar7 == iVar5) {\r\n        local_10 = 0;\r\n      }\r\n    }\r\n    break;\r\n  case 0x16:\r\n    if (bVar10) {\r\n      iVar7 = FUN_00472840((int)puVar9);\r\n      iVar5 = FUN_0040724a(&DAT_004a1b68 + iVar5 * 0x48,extraout_EDX_00);\r\n      if (iVar7 == iVar5) {\r\n        local_10 = 0;\r\n      }\r\n    }\r\n    break;\r\n  case 0x17:\r\n  case 0x18:\r\n  case 0x19:\r\n  case 0x1a:\r\n  case 0x1b:\r\n  case 0x1c:\r\n  case 0x1d:\r\n  case 0x1e:\r\n    if ((bVar10) && (uVar8 = FUN_00420bbd(param_1,(uint)param_3), (uVar8 & 0xff) == 2)) {\r\n      local_10 = 0;\r\n    }\r\n    break;\r\n  case 0x1f:\r\n  case 0x20:\r\n    if ((bVar10) &&\r\n       (bVar3 = FUN_004066e0(&DAT_004b2c50 + (uint)param_3 * 0x24,8),\r\n       CONCAT31(extraout_var,bVar3) != 0)) {\r\n      local_10 = 0;\r\n    }\r\n    break;\r\n  case 0x21:\r\n  case 0x22:\r\n    if ((bVar10) &&\r\n       (bVar3 = FUN_004066e0(&DAT_004b2c50 + (uint)param_3 * 0x24,0x10),\r\n       CONCAT31(extraout_var_00,bVar3) != 0)) {\r\n      local_10 = 0;\r\n    }\r\n    break;\r\n  case 0x23:\r\n  case 0x24:\r\n    if ((bVar10) &&\r\n       (bVar3 = FUN_004066e0(&DAT_004b2c50 + (uint)param_3 * 0x24,2),\r\n       CONCAT31(extraout_var_01,bVar3) != 0)) {\r\n      local_10 = 0;\r\n    }\r\n    break;\r\n  case 0x25:\r\n    if ((bVar10) &&\r\n       (bVar3 = FUN_004066e0(&DAT_004b2c50 + (uint)param_3 * 0x24,4),\r\n       CONCAT31(extraout_var_02,bVar3) != 0)) {\r\n      local_10 = 0;\r\n    }\r\n    break;\r\n  case 0x27:\r\n  case 0x28:\r\n  case 0x29:\r\n  case 0x2a:\r\n  case 0x2b:\r\n    if (bVar10) {\r\n      iVar5 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)param_3 * 0x24));\r\n      iVar7 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (uint)param_3 * 0x24));\r\n      iVar7 = FUN_0040721b(&DAT_004a1b68 + iVar7 * 0x48,extraout_EDX_01);\r\n      if (iVar5 == iVar7) {\r\n        local_10 = 0;\r\n      }\r\n    }\r\n    break;\r\n  case 0x2c:\r\n  case 0x2d:\r\n    if (bVar10) {\r\n      iVar5 = FUN_00472840((int)(&DAT_004b2c50 + (uint)param_3 * 0x24));\r\n      iVar7 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (uint)param_3 * 0x24));\r\n      iVar7 = FUN_0040724a(&DAT_004a1b68 + iVar7 * 0x48,extraout_EDX_02);\r\n      if (iVar5 == iVar7) {\r\n        local_10 = 0;\r\n      }\r\n    }\r\n    break;\r\n  case 0x2e:\r\n  case 0x2f:\r\n    if ((bVar10) &&\r\n       (cVar1 = FUN_0041e030((int)(&DAT_004b2c50 + (uint)param_3 * 0x24)), cVar1 == '\\0')) {\r\n      local_10 = 0;\r\n    }\r\n    break;\r\n  case 0x31:\r\n  case 0x32:\r\n  case 0x33:\r\n  case 0x34:\r\n  case 0x35:\r\n  case 0x36:\r\n  case 0x37:\r\n  case 0x38:\r\n    if ((bVar10) && (uVar8 = FUN_00420bbd(param_1,(uint)param_3), 3 < (uVar8 & 0xff))) {\r\n      local_10 = 0;\r\n    }\r\n    break;\r\n  case 0x39:\r\n    if (param_2 == param_3) {\r\n      if (param_4 != 0) {\r\n        FUN_0042f699(2);\r\n      }\r\n      local_10 = 0;\r\n    }\r\n    else if (((bVar10) &&\r\n             (bVar4 = FUN_00425af0(&DAT_004b2c50 + (uint)param_3 * 0x24,4),\r\n             CONCAT31(extraout_var_03,bVar4) == 0)) &&\r\n            (bVar4 = FUN_00425af0(&DAT_004b2c50 + (uint)param_3 * 0x24,2),\r\n            CONCAT31(extraout_var_04,bVar4) == 0)) {\r\n      local_10 = 0;\r\n    }\r\n    else if ((bVar10) &&\r\n            (bVar10 = FUN_0043ff54((int)(&DAT_004b2c50 + (uint)param_3 * 0x24)),\r\n            CONCAT31(extraout_var_05,bVar10) != 0)) {\r\n      local_10 = 0;\r\n    }\r\n    break;\r\n  case 0x3d:\r\n    if ((bVar10) && (uVar8 = FUN_00420bbd(0x35,(uint)param_3), 3 < (uVar8 & 0xff))) {\r\n      local_10 = 0;\r\n    }\r\n  }\r\n  return local_10;\r\n}\r\n\r\n"
+  },
+  {
+    "evidence_id": "ev_d2f9da560cd1b8405a77a9ece4cd0a6342c8f2d3fac832161b96e277287f1019",
+    "source_file": "script_coverage/native_misc_magic_20261013.json",
+    "source_sha256": "88d12ee2df33bc3dc86afe95257ecdf7ca535d9bd347a25ab357b4063edab9f7",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "parameters": {
+      "procedure": "0x420BBD"
+    },
+    "pseudocode": "\r\nundefined4 __cdecl FUN_00420bbd(undefined1 param_1,uint param_2)\r\n\r\n{\r\n  undefined3 uVar1;\r\n  int *piVar2;\r\n  undefined3 extraout_var;\r\n  undefined3 extraout_var_00;\r\n  int iVar3;\r\n  undefined3 extraout_var_01;\r\n  undefined3 extraout_var_02;\r\n  undefined3 extraout_var_03;\r\n  undefined3 extraout_var_04;\r\n  undefined1 local_8;\r\n  \r\n  piVar2 = (int *)(&DAT_004b2c50 + (param_2 & 0xff) * 0x24);\r\n  switch(param_1) {\r\n  case 0x17:\r\n  case 0x18:\r\n  case 0x31:\r\n  case 0x32:\r\n    local_8 = FUN_0041dff0((int)piVar2);\r\n    uVar1 = extraout_var;\r\n    break;\r\n  case 0x19:\r\n  case 0x1a:\r\n  case 0x33:\r\n  case 0x34:\r\n    local_8 = FUN_0041e010((int)piVar2);\r\n    uVar1 = extraout_var_00;\r\n    break;\r\n  case 0x1b:\r\n  case 0x1c:\r\n  case 0x35:\r\n  case 0x36:\r\n    iVar3 = FUN_0043ffed(piVar2);\r\n    if (iVar3 == 0) {\r\n      local_8 = FUN_0041df90((int)piVar2);\r\n      uVar1 = extraout_var_02;\r\n    }\r\n    else {\r\n      local_8 = FUN_0041dfd0((int)piVar2);\r\n      uVar1 = extraout_var_01;\r\n    }\r\n    break;\r\n  case 0x1d:\r\n  case 0x1e:\r\n  case 0x37:\r\n  case 0x38:\r\n    local_8 = FUN_0041dfb0((int)piVar2);\r\n    uVar1 = extraout_var_03;\r\n    break;\r\n  default:\r\n    uVar1 = 0;\r\n    local_8 = 3;\r\n    break;\r\n  case 0x30:\r\n    local_8 = FUN_00425b30((int)piVar2);\r\n    uVar1 = extraout_var_04;\r\n  }\r\n  return CONCAT31(uVar1,local_8);\r\n}\r\n\r\n"
+  }
+]

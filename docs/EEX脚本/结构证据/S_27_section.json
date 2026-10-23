@@ -1,0 +1,41 @@
+{
+  "kind": "original-script-bytes",
+  "source": "S_27.eex",
+  "source_bytes": 27501,
+  "source_sha256": "bf1b2d1ab70b09697dd3c6f3033e6cf7fa598dcacff4ae761cd3ea2693fd57e9",
+  "header_hex": "45 45 58 00 01 02 00 00 00 00 16 00 00 00 c7 50 00 00 22 6b 00 00",
+  "scene_index": 2,
+  "section_index": 0,
+  "scene_offset": 27426,
+  "scene_section_count": 1,
+  "section_start": 27428,
+  "section_end_exclusive": 27501,
+  "section_hex": "47 00 02 00 05 00 d5 bd ba f3 b4 a6 d6 c3 00 00 00 36 00 24 00 09 00 ff 00 08 00 2e 00 00 00 1d 00 01 00 05 00 35 00 01 00 d7 02 35 00 00 00 08 00 11 00 37 00 3b 00 00 00 01 00 03 00 08 00 11 00 37 00 39 00 00 00 00 00",
+  "section_sha256": "756f85f42f169cbedc48774bebc0949c01e2a1e0c5231c9ed3683f5f35e2827c",
+  "lengths": [
+    {
+      "field_offset": 27428,
+      "value": 71,
+      "covered_start": 27430,
+      "covered_end_exclusive": 27501
+    },
+    {
+      "field_offset": 27445,
+      "value": 54,
+      "covered_start": 27447,
+      "covered_end_exclusive": 27501
+    },
+    {
+      "field_offset": 27475,
+      "value": 8,
+      "covered_start": 27477,
+      "covered_end_exclusive": 27485
+    },
+    {
+      "field_offset": 27489,
+      "value": 8,
+      "covered_start": 27491,
+      "covered_end_exclusive": 27499
+    }
+  ]
+}

@@ -112,7 +112,7 @@ BITMAPINFOHEADER：40 字节
 
 把 32×32 图片用四种奇偶采样方式缩为 16×16，最佳平均索引吻合率约为
 59%，没有任何一张能完全吻合。这表明 DLL 中的小图是单独缩放、量化或
-人工修整的资源，编辑器不应默认用隔点采样覆盖原小图。
+人工修整的资源，不能按机械隔点采样解释其生成方式。
 
 ## 两套 32×32 图片的差异
 
@@ -126,8 +126,7 @@ BITMAPINFOHEADER：40 字节
 - `Item.e5[75]` 是展开的书卷图案；
 - `Itemicon.dll` 资源 251 是红色封皮书本图案。
 
-因此这两套资源曾被分别更新，不能假定永远完全相同。物品编辑器应同时
-显示并分别写回 Item、DLL 16×16、DLL 32×32 三张图片，并提示差异。
+这两套资源存在独立版本差异；Item、DLL 16×16和DLL 32×32三张图片不总是相同。
 
 ## 新旧引擎差异
 
@@ -135,26 +134,6 @@ BITMAPINFOHEADER：40 字节
 `Item.e5` 并删除 DLL；这只说明新引擎存在另一套资源组织方式，不能用于
 反推本地格式。本地旧 `Ekd5.exe` 的实际装载代码分别读取 `Item.e5`，
 并以资源 ID 100 起、105 组、16×16/32×32 两种尺寸初始化
-`Itemicon.dll`，所以当前工具必须为本地旧引擎保留双资源兼容。
+`Itemicon.dll`，说明该版本同时使用两套资源。
 
 - https://www.xycq.org.cn/forum/viewthread.php?authoruid=0&extra=&page=1&tid=310256
-
-## 已实现工具
-
-- `item_resources.py`
-  - 读取 PE 资源目录；
-  - 解码 8-bit DIB；
-  - 读取 Item.e5；
-  - 执行槽位、尺寸及跨文件一致性校验。
-- `tools/export_item_resources.py`
-  - 导出指定或全部物品的三套图片；
-  - 生成 Item.e5 总览图；
-  - 报告两套 32×32 图片的差异槽位。
-
-示例：
-
-```bash
-./venv/bin/python tools/export_item_resources.py --analyze
-./venv/bin/python tools/export_item_resources.py --item 75
-./venv/bin/python tools/export_item_resources.py --all --contact-sheet
-```

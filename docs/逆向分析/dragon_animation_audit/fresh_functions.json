@@ -1,0 +1,2097 @@
+[
+  {
+    "evidence_id": "ev_1a2fb308a755144926b69277722d64a0ef9f589f7ae0f085f1638db4089f7f80",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x403340"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x403340",
+      "name": "FUN_00403340",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x403340",
+            "end": "0x403358"
+          }
+        ],
+        "total_bytes": 25,
+        "span_bytes": 25,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined __thiscall FUN_00403340(void * this, int param_1)",
+      "locals": [
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nvoid __thiscall FUN_00403340(void *this,int param_1)\r\n\r\n{\r\n  FUN_0042c45f(this,param_1);\r\n  return;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "0x42c45f",
+        "name": "FUN_0042c45f"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_d3fc5f74b6ee7c2a78262ffa0f04cb36ecc7139b14db3dbd62a1b80235bb8953",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x4224a8"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x4224a8",
+      "name": "FUN_004224a8",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x4224a8",
+            "end": "0x422dc7"
+          }
+        ],
+        "total_bytes": 2336,
+        "span_bytes": 2336,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined __fastcall FUN_004224a8(undefined1 * param_1)",
+      "locals": [
+        {
+          "description": "undefined4 local_10 @ Stack[-0x10]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_14 @ Stack[-0x14]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_18 @ Stack[-0x18]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_1c @ Stack[-0x1c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_20 @ Stack[-0x20]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_24 @ Stack[-0x24]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_28 @ Stack[-0x28]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_2c @ Stack[-0x2c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_30 @ Stack[-0x30]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_34 @ Stack[-0x34]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_38 @ Stack[-0x38]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_c @ Stack[-0xc]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_004224a8(undefined1 *param_1)\r\n\r\n{\r\n  byte bVar1;\r\n  undefined1 uVar2;\r\n  bool bVar3;\r\n  char cVar4;\r\n  int iVar5;\r\n  undefined3 extraout_var;\r\n  undefined2 *puVar6;\r\n  undefined3 extraout_var_00;\r\n  int iVar7;\r\n  uint uVar8;\r\n  undefined3 uVar9;\r\n  undefined4 extraout_EDX;\r\n  undefined4 extraout_EDX_00;\r\n  undefined4 extraout_EDX_01;\r\n  undefined8 uVar10;\r\n  undefined4 uVar11;\r\n  byte *local_2c;\r\n  HGLOBAL local_28;\r\n  uint local_24;\r\n  byte *local_20;\r\n  HGLOBAL local_1c;\r\n  uint local_18;\r\n  int local_14;\r\n  int local_10;\r\n  uint local_c;\r\n  uint local_8;\r\n  \r\n  local_8 = (uint)(param_1[0x2ca] == '\\0');\r\n  FUN_00425452((int)param_1);\r\n  bVar1 = FUN_0041c2d0(0x4b3d08);\r\n  if ((bVar1 & 3) < 2) {\r\n    FUN_00406730(0x4b3d08);\r\n    FUN_00406730(0x4b3d08);\r\n  }\r\n  FUN_00453b13(&DAT_004b4250);\r\n  local_c = local_c & 0xffffff00;\r\n  while (param_1[(local_c & 0xff) + 0xd] != -1) {\r\n    param_1[0xc] = param_1[(local_c & 0xff) + 0xd];\r\n    uVar9 = (undefined3)((uint)param_1 >> 8);\r\n    FUN_00454f10(&DAT_004b4250,CONCAT31(uVar9,param_1[0xc]),1);\r\n    switch(param_1[(local_c & 0xff) + 0x255]) {\r\n    case 0:\r\n      if (*(int *)(param_1 + (local_c & 0xff) * 4 + 0x84) == 0) {\r\n        local_18 = CONCAT31(local_18._1_3_,0x2d);\r\n      }\r\n      else {\r\n        local_18 = CONCAT31(local_18._1_3_,0xff);\r\n      }\r\n      break;\r\n    default:\r\n      local_18 = CONCAT31(local_18._1_3_,0xff);\r\n      break;\r\n    case 0x60:\r\n      local_18 = CONCAT31(local_18._1_3_,0x27);\r\n      FUN_00420cb2(0x1b,param_1[(local_c & 0xff) + 0xd]);\r\n      break;\r\n    case 0x61:\r\n      local_18 = CONCAT31(local_18._1_3_,0x28);\r\n      FUN_00420cb2(0x1d,param_1[(local_c & 0xff) + 0xd]);\r\n      break;\r\n    case 0x62:\r\n      local_18 = CONCAT31(local_18._1_3_,0x29);\r\n      FUN_00420cb2(0x17,param_1[(local_c & 0xff) + 0xd]);\r\n      break;\r\n    case 100:\r\n      local_18 = CONCAT31(local_18._1_3_,0x2a);\r\n      FUN_00420cb2(0x19,param_1[(local_c & 0xff) + 0xd]);\r\n      break;\r\n    case 0x6f:\r\n      local_18 = CONCAT31(local_18._1_3_,0x2b);\r\n      FUN_00420cb2(0x17,param_1[(local_c & 0xff) + 0xd]);\r\n      FUN_00420cb2(0x19,param_1[(local_c & 0xff) + 0xd]);\r\n      FUN_00420cb2(0x1b,param_1[(local_c & 0xff) + 0xd]);\r\n      FUN_00420cb2(0x1d,param_1[(local_c & 0xff) + 0xd]);\r\n      break;\r\n    case 0x70:\r\n      uVar8 = local_c & 0xff;\r\n      iVar5 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)(byte)param_1[(local_c & 0xff) + 0xd] * 0x24)\r\n                          );\r\n      if (*(int *)(param_1 + uVar8 * 4 + 0x84) < iVar5) {\r\n        local_18 = CONCAT31(local_18._1_3_,0x31);\r\n        FUN_00420e25(0x21,CONCAT31(uVar9,param_1[(local_c & 0xff) + 0xd]));\r\n      }\r\n      else {\r\n        local_18 = CONCAT31(local_18._1_3_,0xff);\r\n      }\r\n      break;\r\n    case 0x71:\r\n      uVar8 = local_c & 0xff;\r\n      iVar5 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)(byte)param_1[(local_c & 0xff) + 0xd] * 0x24)\r\n                          );\r\n      if (*(int *)(param_1 + uVar8 * 4 + 0x84) < iVar5) {\r\n        local_18 = CONCAT31(local_18._1_3_,0x30);\r\n        FUN_00420e25(0x1f,CONCAT31(uVar9,param_1[(local_c & 0xff) + 0xd]));\r\n      }\r\n      else {\r\n        local_18 = CONCAT31(local_18._1_3_,0xff);\r\n      }\r\n      break;\r\n    case 0x72:\r\n      uVar8 = local_c & 0xff;\r\n      iVar5 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)(byte)param_1[(local_c & 0xff) + 0xd] * 0x24)\r\n                          );\r\n      if (*(int *)(param_1 + uVar8 * 4 + 0x84) < iVar5) {\r\n        local_18 = CONCAT31(local_18._1_3_,0x32);\r\n        FUN_00420e25(0x23,CONCAT31(uVar9,param_1[(local_c & 0xff) + 0xd]));\r\n      }\r\n      else {\r\n        local_18 = CONCAT31(local_18._1_3_,0xff);\r\n      }\r\n      break;\r\n    case 0x74:\r\n      uVar8 = local_c & 0xff;\r\n      iVar5 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)(byte)param_1[(local_c & 0xff) + 0xd] * 0x24)\r\n                          );\r\n      if (*(int *)(param_1 + uVar8 * 4 + 0x84) < iVar5) {\r\n        local_18 = CONCAT31(local_18._1_3_,0x33);\r\n        FUN_00420e25(0x25,CONCAT31(uVar9,param_1[(local_c & 0xff) + 0xd]));\r\n      }\r\n      else {\r\n        local_18 = CONCAT31(local_18._1_3_,0xff);\r\n      }\r\n      break;\r\n    case 0xa0:\r\n      local_18 = CONCAT31(local_18._1_3_,0x22);\r\n      FUN_00420cb2(0x35,param_1[(local_c & 0xff) + 0xd]);\r\n      break;\r\n    case 0xa1:\r\n      local_18 = CONCAT31(local_18._1_3_,0x23);\r\n      FUN_00420cb2(0x37,param_1[(local_c & 0xff) + 0xd]);\r\n      break;\r\n    case 0xa2:\r\n      local_18 = CONCAT31(local_18._1_3_,0x24);\r\n      FUN_00420cb2(0x31,param_1[(local_c & 0xff) + 0xd]);\r\n      break;\r\n    case 0xa4:\r\n      local_18 = CONCAT31(local_18._1_3_,0x25);\r\n      FUN_00420cb2(0x33,param_1[(local_c & 0xff) + 0xd]);\r\n      break;\r\n    case 0xa8:\r\n      local_18 = CONCAT31(local_18._1_3_,0x2e);\r\n      FUN_00420cb2(0x30,param_1[(local_c & 0xff) + 0xd]);\r\n      break;\r\n    case 0xaf:\r\n      local_18 = CONCAT31(local_18._1_3_,0x26);\r\n      FUN_00420cb2(0x31,param_1[(local_c & 0xff) + 0xd]);\r\n      FUN_00420cb2(0x33,param_1[(local_c & 0xff) + 0xd]);\r\n      FUN_00420cb2(0x35,param_1[(local_c & 0xff) + 0xd]);\r\n      FUN_00420cb2(0x37,param_1[(local_c & 0xff) + 0xd]);\r\n      break;\r\n    case 0xb8:\r\n      local_18 = CONCAT31(local_18._1_3_,0x2c);\r\n      FUN_00406690(&DAT_004b2c50 + (uint)(byte)param_1[(local_c & 0xff) + 0xd] * 0x24,6);\r\n      break;\r\n    case 0xbf:\r\n      local_18 = CONCAT31(local_18._1_3_,0x2c);\r\n      FUN_00420e25(0x2e,(uint)(byte)param_1[(local_c & 0xff) + 0xd]);\r\n    }\r\n    if ((local_18 & 0xff) != 0xff) {\r\n      uVar11 = 0x44c00;\r\n      iVar5 = FUN_0047fa40(&DAT_004ae4c8,0,0,4);\r\n      FUN_004014f8(&DAT_004917b0,(uint *)s_MEFF_E5_0048bbf8,\r\n                   CONCAT31((int3)((uint)extraout_EDX >> 8),(undefined1)local_18),iVar5,uVar11);\r\n      uVar2 = FUN_00401e3c(&DAT_004917b0);\r\n      if (CONCAT31(extraout_var,uVar2) != 0) {\r\n        FUN_00401e5c(&DAT_004917b0,(void *)0x0);\r\n      }\r\n      FUN_004016ab(&DAT_004917b0);\r\n      puVar6 = (undefined2 *)\r\n               FUN_00403360((int)(&DAT_004b2c50 + (uint)(byte)param_1[(local_c & 0xff) + 0xd] * 0x24\r\n                                 ));\r\n      uVar10 = FUN_0044fa7e(CONCAT22((short)((uint)puVar6 >> 0x10),*puVar6));\r\n      local_2c = (byte *)uVar10;\r\n      local_20 = local_2c;\r\n      local_28 = (HGLOBAL)((ulonglong)uVar10 >> 0x20);\r\n      local_1c = local_28;\r\n      puVar6 = (undefined2 *)\r\n               FUN_00403360((int)(&DAT_004b2c50 + (uint)(byte)param_1[(local_c & 0xff) + 0xd] * 0x24\r\n                                 ));\r\n      FUN_0044fa1f((undefined2 *)&local_24,CONCAT22((short)((uint)puVar6 >> 0x10),*puVar6));\r\n      FUN_0041e5db();\r\n      FUN_004036f9(local_24 & 0xff,local_24 >> 8 & 0xff);\r\n      FUN_0043eb1f(local_20,local_1c,(uint)(byte)param_1[(local_c & 0xff) + 0xd]);\r\n      FUN_0041e5f6();\r\n    }\r\n    if (*(int *)(param_1 + (local_c & 0xff) * 4 + 0x84) == 0) {\r\n      if ((local_18 & 0xff) != 0xff) {\r\n        FUN_00403340(&DAT_004b1b18,8);\r\n        FUN_0042c4e0();\r\n      }\r\n    }\r\n    else {\r\n      switch(*param_1) {\r\n      case 0x16:\r\n      case 0x2c:\r\n      case 0x2d:\r\n        local_14 = 0;\r\n        local_10 = *(int *)(param_1 + (local_c & 0xff) * 4 + 0x84);\r\n        break;\r\n      default:\r\n        local_14 = *(int *)(param_1 + (local_c & 0xff) * 4 + 0x84);\r\n        local_10 = 0;\r\n        iVar5 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)(byte)param_1[0xc] * 0x24));\r\n        if (iVar5 < local_14) {\r\n          local_14 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)(byte)param_1[0xc] * 0x24));\r\n        }\r\n        break;\r\n      case 0x3e:\r\n        local_14 = *(int *)(param_1 + (local_c & 0xff) * 4 + 0x88);\r\n        local_10 = *(int *)(param_1 + (local_c & 0xff) * 4 + 0x84);\r\n      }\r\n      FUN_00450984(param_1[0xc],param_1[1],local_14,local_10,0,0,\r\n                   *(uint *)(param_1 + (local_c & 0xff) * 4 + 0x2d8),local_8);\r\n      iVar5 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)(byte)param_1[0xc] * 0x24));\r\n      FUN_0043f6cd((int *)(&DAT_004b2c50 + (uint)(byte)param_1[0xc] * 0x24),param_1,iVar5 - local_14\r\n                  );\r\n      iVar5 = FUN_00472840((int)(&DAT_004b2c50 + (uint)(byte)param_1[0xc] * 0x24));\r\n      FUN_0043f70e((int *)(&DAT_004b2c50 + (uint)(byte)param_1[0xc] * 0x24),extraout_EDX_00,\r\n                   iVar5 - local_10);\r\n      if ((0 < local_14) &&\r\n         (iVar5 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)(byte)param_1[0xc] * 0x24)), iVar5 != 0))\r\n      {\r\n        cVar4 = '>';\r\n        iVar5 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (uint)(byte)param_1[0xc] * 0x24));\r\n        iVar5 = FUN_00407a09(&DAT_004a1b68 + iVar5 * 0x48,extraout_EDX_01,cVar4);\r\n        if (iVar5 != 0) {\r\n          bVar3 = FUN_0043ff54((int)(&DAT_004b2c50 + (uint)(byte)param_1[0xc] * 0x24));\r\n          if (CONCAT31(extraout_var_00,bVar3) == 0) {\r\n            FUN_0041dc43(&DAT_00497750,0x57,param_1[0xc],0,1);\r\n          }\r\n          else if (((0 < local_14) &&\r\n                   (iVar5 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)(byte)param_1[0xc] * 0x24)),\r\n                   iVar5 != 0)) && (cVar4 = FUN_0040db3e(&DAT_004b0770,0x57), cVar4 != '\\0')) {\r\n            FUN_0041dc43(&DAT_00497750,0x57,param_1[0xc],0,0);\r\n          }\r\n        }\r\n      }\r\n    }\r\n    iVar5 = *(int *)(param_1 + (local_c & 0xff) * 4 + 0x2d8);\r\n    bVar1 = 1;\r\n    iVar7 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (uint)(byte)param_1[0xc] * 0x24));\r\n    FUN_004082d6(&DAT_004a1b68 + iVar7 * 0x48,bVar1,iVar5);\r\n    uVar8 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (uint)(byte)param_1[0xc] * 0x24));\r\n    FUN_00479a01(uVar8);\r\n    local_c = CONCAT31(local_c._1_3_,(char)local_c + '\\x01');\r\n  }\r\n  return;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "0x4014f8",
+        "name": "FUN_004014f8"
+      },
+      {
+        "address": "0x4016ab",
+        "name": "FUN_004016ab"
+      },
+      {
+        "address": "0x401e3c",
+        "name": "FUN_00401e3c"
+      },
+      {
+        "address": "0x401e5c",
+        "name": "FUN_00401e5c"
+      },
+      {
+        "address": "0x403340",
+        "name": "FUN_00403340"
+      },
+      {
+        "address": "0x403360",
+        "name": "FUN_00403360"
+      },
+      {
+        "address": "0x4036f9",
+        "name": "FUN_004036f9"
+      },
+      {
+        "address": "0x406690",
+        "name": "FUN_00406690"
+      },
+      {
+        "address": "0x406730",
+        "name": "FUN_00406730"
+      },
+      {
+        "address": "0x407a09",
+        "name": "FUN_00407a09"
+      },
+      {
+        "address": "0x4082d6",
+        "name": "FUN_004082d6"
+      },
+      {
+        "address": "0x40db3e",
+        "name": "FUN_0040db3e"
+      },
+      {
+        "address": "0x41c2d0",
+        "name": "FUN_0041c2d0"
+      },
+      {
+        "address": "0x41dc43",
+        "name": "FUN_0041dc43"
+      },
+      {
+        "address": "0x41e5db",
+        "name": "FUN_0041e5db"
+      },
+      {
+        "address": "0x41e5f6",
+        "name": "FUN_0041e5f6"
+      },
+      {
+        "address": "0x420cb2",
+        "name": "FUN_00420cb2"
+      },
+      {
+        "address": "0x420e25",
+        "name": "FUN_00420e25"
+      },
+      {
+        "address": "0x425452",
+        "name": "FUN_00425452"
+      },
+      {
+        "address": "0x42c4e0",
+        "name": "FUN_0042c4e0"
+      },
+      {
+        "address": "0x43eb1f",
+        "name": "FUN_0043eb1f"
+      },
+      {
+        "address": "0x43f6cd",
+        "name": "FUN_0043f6cd"
+      },
+      {
+        "address": "0x43f70e",
+        "name": "FUN_0043f70e"
+      },
+      {
+        "address": "0x43ff54",
+        "name": "FUN_0043ff54"
+      },
+      {
+        "address": "0x44fa1f",
+        "name": "FUN_0044fa1f"
+      },
+      {
+        "address": "0x44fa7e",
+        "name": "FUN_0044fa7e"
+      },
+      {
+        "address": "0x450984",
+        "name": "FUN_00450984"
+      },
+      {
+        "address": "0x453b13",
+        "name": "FUN_00453b13"
+      },
+      {
+        "address": "0x454f10",
+        "name": "FUN_00454f10"
+      },
+      {
+        "address": "0x45f670",
+        "name": "FUN_0045f670"
+      },
+      {
+        "address": "0x472840",
+        "name": "FUN_00472840"
+      },
+      {
+        "address": "0x472c90",
+        "name": "FUN_00472c90"
+      },
+      {
+        "address": "0x479a01",
+        "name": "FUN_00479a01"
+      },
+      {
+        "address": "0x47fa40",
+        "name": "FUN_0047fa40"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_fe0f999128ec0a2f7d3fff6691418dfac7b3eaa9c8f97b1b0b1423ab7147eef0",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x422f0d"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x422f0d",
+      "name": "FUN_00422f0d",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x422f0d",
+            "end": "0x42313d"
+          }
+        ],
+        "total_bytes": 561,
+        "span_bytes": 561,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined __fastcall FUN_00422f0d(byte * param_1)",
+      "locals": [
+        {
+          "description": "undefined4 local_10 @ Stack[-0x10]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_14 @ Stack[-0x14]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_18 @ Stack[-0x18]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_1c @ Stack[-0x1c]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_20 @ Stack[-0x20]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_24 @ Stack[-0x24]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_c @ Stack[-0xc]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nvoid __fastcall FUN_00422f0d(byte *param_1)\r\n\r\n{\r\n  byte bVar1;\r\n  int iVar2;\r\n  uint uVar3;\r\n  int iVar4;\r\n  uint uVar5;\r\n  undefined4 extraout_EDX;\r\n  undefined4 extraout_EDX_00;\r\n  undefined4 extraout_EDX_01;\r\n  undefined4 uVar6;\r\n  undefined4 extraout_EDX_02;\r\n  undefined8 uVar7;\r\n  int local_24;\r\n  byte *local_20;\r\n  byte *local_14;\r\n  byte *local_10;\r\n  uint local_c;\r\n  int local_8;\r\n  \r\n  if (*(int *)(param_1 + 0x4ac) != 0) {\r\n    bVar1 = FUN_00425ad0((int)(&DAT_004af4c0 + (uint)*param_1 * 0x46));\r\n    local_c = (uint)bVar1;\r\n    iVar2 = FUN_00407a09(*(void **)(param_1 + 4),extraout_EDX,'1');\r\n    if (iVar2 != 0) {\r\n      bVar1 = FUN_00407af2(*(void **)(param_1 + 4),extraout_EDX_00,'1');\r\n      local_c = local_c / bVar1;\r\n    }\r\n    uVar5 = local_c;\r\n    uVar3 = FUN_00472840(*(int *)(param_1 + 8));\r\n    local_8 = FUN_0047fa9e(uVar3,uVar5);\r\n    local_14 = (byte *)0x0;\r\n    bVar1 = *param_1;\r\n    uVar6 = CONCAT31((int3)((uint)extraout_EDX_01 >> 8),bVar1);\r\n    if (bVar1 == 0x14) {\r\n      iVar2 = FUN_0040721b(*(void **)(param_1 + 4),uVar6);\r\n      iVar4 = FUN_00472c90(*(int *)(param_1 + 8));\r\n      if (*(int *)(param_1 + 0x84) < iVar2 - iVar4) {\r\n        local_20 = *(byte **)(param_1 + 0x84);\r\n      }\r\n      else {\r\n        iVar2 = FUN_0040721b(*(void **)(param_1 + 4),param_1);\r\n        iVar4 = FUN_00472c90(*(int *)(param_1 + 8));\r\n        local_20 = (byte *)(iVar2 - iVar4);\r\n      }\r\n      local_14 = local_20;\r\n      local_10 = (byte *)-local_c;\r\n    }\r\n    else if (bVar1 == 0x16) {\r\n      uVar7 = FUN_0040724a(*(void **)(param_1 + 4),uVar6);\r\n      if (*(int *)(param_1 + 0x84) < (int)uVar7 - local_8) {\r\n        local_24 = *(int *)(param_1 + 0x84);\r\n      }\r\n      else {\r\n        local_24 = FUN_0040724a(*(void **)(param_1 + 4),(int)((ulonglong)uVar7 >> 0x20));\r\n        local_24 = local_24 - local_8;\r\n      }\r\n      local_8 = local_8 + local_24;\r\n      local_20 = (byte *)(local_24 - local_c);\r\n      local_10 = local_20;\r\n    }\r\n    else {\r\n      local_20 = param_1;\r\n      local_10 = (byte *)-local_c;\r\n    }\r\n    FUN_00454f10(&DAT_004b4250,CONCAT31((int3)((uint)local_20 >> 8),param_1[1]),1);\r\n    FUN_00450984(param_1[1],param_1[0xc],-(int)local_14,-(int)local_10,*(uint *)(param_1 + 0x2d0),\r\n                 *(uint *)(param_1 + 0x2d4),0,1);\r\n    iVar2 = FUN_00472c90(*(int *)(param_1 + 8));\r\n    FUN_0043f6cd(*(int **)(param_1 + 8),extraout_EDX_02,(uint)(local_14 + iVar2));\r\n    FUN_0043f70e(*(int **)(param_1 + 8),local_8,local_8);\r\n    iVar2 = 1;\r\n    bVar1 = FUN_00406650(*(int *)(param_1 + 4));\r\n    FUN_00408950(*(void **)(param_1 + 4),(uint)bVar1 + *(int *)(param_1 + 0x2d0),iVar2);\r\n    FUN_004082d6(*(void **)(param_1 + 4),0,*(int *)(param_1 + 0x2d4));\r\n    uVar5 = FUN_0045f670(*(undefined4 **)(param_1 + 8));\r\n    FUN_00479a01(uVar5);\r\n  }\r\n  return;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "0x406650",
+        "name": "FUN_00406650"
+      },
+      {
+        "address": "0x40721b",
+        "name": "FUN_0040721b"
+      },
+      {
+        "address": "0x40724a",
+        "name": "FUN_0040724a"
+      },
+      {
+        "address": "0x407a09",
+        "name": "FUN_00407a09"
+      },
+      {
+        "address": "0x407af2",
+        "name": "FUN_00407af2"
+      },
+      {
+        "address": "0x4082d6",
+        "name": "FUN_004082d6"
+      },
+      {
+        "address": "0x408950",
+        "name": "FUN_00408950"
+      },
+      {
+        "address": "0x425ad0",
+        "name": "FUN_00425ad0"
+      },
+      {
+        "address": "0x43f6cd",
+        "name": "FUN_0043f6cd"
+      },
+      {
+        "address": "0x43f70e",
+        "name": "FUN_0043f70e"
+      },
+      {
+        "address": "0x450984",
+        "name": "FUN_00450984"
+      },
+      {
+        "address": "0x454f10",
+        "name": "FUN_00454f10"
+      },
+      {
+        "address": "0x45f670",
+        "name": "FUN_0045f670"
+      },
+      {
+        "address": "0x472840",
+        "name": "FUN_00472840"
+      },
+      {
+        "address": "0x472c90",
+        "name": "FUN_00472c90"
+      },
+      {
+        "address": "0x479a01",
+        "name": "FUN_00479a01"
+      },
+      {
+        "address": "0x47fa9e",
+        "name": "FUN_0047fa9e"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_46ad15fff52e875f48b239a54cf69b16de8b2341f8118ba3546c163a0d290ad8",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x42c479"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x42c479",
+      "name": "FUN_0042c479",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x42c479",
+            "end": "0x42c4ab"
+          }
+        ],
+        "total_bytes": 51,
+        "span_bytes": 51,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "int __fastcall FUN_0042c479(uint * param_1)",
+      "locals": [
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_c @ Stack[-0xc]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nint __fastcall FUN_0042c479(uint *param_1)\r\n\r\n{\r\n  uint uVar1;\r\n  undefined4 local_c;\r\n  \r\n  uVar1 = FUN_0047eb97();\r\n  if ((int)uVar1 < (int)*param_1) {\r\n    local_c = FUN_0047eb97();\r\n  }\r\n  else {\r\n    local_c = *param_1;\r\n  }\r\n  return *param_1 - local_c;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "0x47eb97",
+        "name": "FUN_0047eb97"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_fc71e11a0e5070a95109a8a8953d49c4a10723baa6ed06fe005b4f25c30959ba",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x450984"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x450984",
+      "name": "FUN_00450984",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x450984",
+            "end": "0x450ed4"
+          }
+        ],
+        "total_bytes": 1361,
+        "span_bytes": 1361,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined __cdecl FUN_00450984(byte param_1, byte param_2, int param_3, int param_4, uint param_5, uint param_6, uint param_7, int param_8)",
+      "locals": [
+        {
+          "description": "undefined4 local_10 @ Stack[-0x10]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_13 @ Stack[-0x13]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined local_14 @ Stack[-0x14]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_18 @ Stack[-0x18]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined2 local_1c @ Stack[-0x1c]:2",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_20 @ Stack[-0x20]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_24 @ Stack[-0x24]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_28 @ Stack[-0x28]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_2c @ Stack[-0x2c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_30 @ Stack[-0x30]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_34 @ Stack[-0x34]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_38 @ Stack[-0x38]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_c @ Stack[-0xc]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nvoid __cdecl\r\nFUN_00450984(byte param_1,byte param_2,int param_3,int param_4,uint param_5,uint param_6,\r\n            uint param_7,int param_8)\r\n\r\n{\r\n  bool bVar1;\r\n  char cVar2;\r\n  undefined3 extraout_var;\r\n  int iVar3;\r\n  undefined *puVar4;\r\n  undefined2 *puVar5;\r\n  undefined3 extraout_var_00;\r\n  byte *pbVar6;\r\n  char *pcVar7;\r\n  undefined2 extraout_var_01;\r\n  uint uVar8;\r\n  undefined4 uVar9;\r\n  int local_34;\r\n  undefined4 local_28;\r\n  undefined2 local_1c [2];\r\n  uint local_18;\r\n  byte local_14;\r\n  undefined1 local_13;\r\n  int local_10;\r\n  byte local_c;\r\n  undefined3 uStack_b;\r\n  uint local_8;\r\n  \r\n  if ((((param_3 != 0) || (param_4 != 0)) || (param_5 != 0)) || ((param_6 != 0 || (param_7 != 0))))\r\n  {\r\n    bVar1 = FUN_0043ff54((int)(&DAT_004b2c50 + (uint)param_1 * 0x24));\r\n    if (CONCAT31(extraout_var,bVar1) == 0) {\r\n      iVar3 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (uint)param_1 * 0x24));\r\n      puVar4 = &DAT_004a1b68 + iVar3 * 0x48;\r\n      puVar5 = (undefined2 *)FUN_00403360((int)(&DAT_004b2c50 + (uint)param_1 * 0x24));\r\n      local_1c[0] = *puVar5;\r\n      bVar1 = FUN_0043ff54((int)(&DAT_004b2c50 + (uint)param_1 * 0x24));\r\n      FUN_0044fc4b((undefined2 *)&local_14,CONCAT22(extraout_var_01,local_1c[0]),4,\r\n                   (CONCAT31(extraout_var_00,bVar1) != 0) + 2,param_2);\r\n      _local_c = CONCAT31(uStack_b,local_14);\r\n      local_8 = CONCAT31(local_8._1_3_,local_13);\r\n      iVar3 = FUN_00451a4f(0x4b4250);\r\n      iVar3 = iVar3 + (uint)local_14 * 0x30;\r\n      local_18 = ((int)(iVar3 + (iVar3 >> 0x1f & 7U)) >> 3) + 1;\r\n      uVar8 = local_8 & 0xff;\r\n      local_10 = FUN_00451a60(0x4b4250);\r\n      local_10 = uVar8 * 0x30 + local_10;\r\n      FUN_0041e5db();\r\n      FUN_00453c17(&DAT_004b4250,local_c,(byte)local_8,4,2);\r\n      FUN_00453e81(&DAT_004b4250,1);\r\n      FUN_004544d3(&DAT_004b4250,(byte *)local_1c);\r\n      local_28 = 0x1f;\r\n      uVar8 = FUN_0043fc1a((uint)(&DAT_004b2c50 + (uint)param_1 * 0x24));\r\n      cVar2 = (char)uVar8;\r\n      if (cVar2 == '\\x01') {\r\n        local_28 = 0xad;\r\n      }\r\n      else if (cVar2 == '\\x02') {\r\n        local_28 = 0xac;\r\n      }\r\n      else if (cVar2 == '\\x03') {\r\n        local_28 = 0xac;\r\n      }\r\n      FUN_0040ed36(&DAT_00492f38,4);\r\n      FUN_0040ed0a(&DAT_00492f38,1);\r\n      FUN_0040ecbc(&DAT_00492f38,0);\r\n      FUN_0040ec84(&DAT_00492f38,0x12);\r\n      FUN_0040ecf4(&DAT_00492f38,local_28);\r\n      local_10 = local_10 + 8;\r\n      MoveToXY(&DAT_00492f38,local_18,local_10);\r\n      FUN_004430e0((int *)(&DAT_004b2c50 + (uint)param_1 * 0x24));\r\n      FUN_0040faa0();\r\n      FUN_0040ed0a(&DAT_00492f38,0);\r\n      FUN_0040ecf4(&DAT_00492f38,0x1f);\r\n      MoveToXY(&DAT_00492f38,local_18 + 9,local_10);\r\n      FUN_004065d0((int)puVar4);\r\n      FUN_0040faa0();\r\n      MoveToXY(&DAT_00492f38,local_18 + 0xe,local_10);\r\n      FUN_0041df70((int *)(&DAT_004b2c50 + (uint)param_1 * 0x24));\r\n      FUN_0040faa0();\r\n      uVar9 = 4;\r\n      pbVar6 = (byte *)FUN_0047fa40(&DAT_004aeb50,0x180,0,4);\r\n      FUN_00451913((byte *)(local_18 * 8 + 8),(HGLOBAL)(local_10 + 0x20),0x18,0x18,pbVar6,uVar9);\r\n      uVar9 = 4;\r\n      pbVar6 = (byte *)FUN_0047fa40(&DAT_004aeb50,0x3c0,0,4);\r\n      FUN_00451913((byte *)(local_18 * 8 + 8),(HGLOBAL)(local_10 + 0x38),0x18,0x18,pbVar6,uVar9);\r\n      pcVar7 = (char *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n      FUN_0047e251(local_18 * 8 + 0x28,local_10 + 0x20,0x98,0x30,pcVar7);\r\n      uVar8 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)param_1 * 0x24));\r\n      FUN_0045119f(0,local_18 * 8 + 0x28,local_10 + 0x20,puVar4,uVar8);\r\n      uVar8 = FUN_00472840((int)(&DAT_004b2c50 + (uint)param_1 * 0x24));\r\n      FUN_0045119f(1,local_18 * 8 + 0x28,local_10 + 0x38,puVar4,uVar8);\r\n      FUN_0041e5f6();\r\n      if ((param_3 != 0) || (param_4 != 0)) {\r\n        for (local_34 = 4; -1 < local_34; local_34 = local_34 + -1) {\r\n          FUN_00403340(&DAT_004b1b18,1);\r\n          FUN_0042c4e0();\r\n          FUN_0041e5db();\r\n          pbVar6 = (byte *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n          FUN_0047e09b((byte *)(local_18 * 8 + 0x28),(HGLOBAL)(local_10 + 0x20),0x98,0x30,pbVar6);\r\n          iVar3 = FUN_00472c90((int)(&DAT_004b2c50 + (uint)param_1 * 0x24));\r\n          FUN_0045119f(0,local_18 * 8 + 0x28,local_10 + 0x20,puVar4,\r\n                       (iVar3 - param_3) + ((int)(param_3 + (param_3 >> 0x1f & 3U)) >> 2) * local_34\r\n                      );\r\n          iVar3 = FUN_00472840((int)(&DAT_004b2c50 + (uint)param_1 * 0x24));\r\n          FUN_0045119f(1,local_18 * 8 + 0x28,local_10 + 0x38,puVar4,\r\n                       (iVar3 - param_4) + ((int)(param_4 + (param_4 >> 0x1f & 3U)) >> 2) * local_34\r\n                      );\r\n          FUN_0041e5f6();\r\n        }\r\n      }\r\n      FUN_0040ed0a(&DAT_00492f38,0);\r\n      FUN_00403340(&DAT_004b1b18,(-(uint)(param_8 != 0) & 4) + 4);\r\n      FUN_0042c4e0();\r\n      FUN_0045461c(&DAT_004b4250);\r\n      FUN_00453e32(&DAT_004b4250);\r\n    }\r\n    else {\r\n      FUN_00450036(CONCAT31((int3)((uint)param_4 >> 8),param_1),param_2,param_3,param_4,param_5,\r\n                   param_6,param_7,param_8);\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "0x403340",
+        "name": "FUN_00403340"
+      },
+      {
+        "address": "0x403360",
+        "name": "FUN_00403360"
+      },
+      {
+        "address": "0x4065d0",
+        "name": "FUN_004065d0"
+      },
+      {
+        "address": "0x40ebd7",
+        "name": "MoveToXY"
+      },
+      {
+        "address": "0x40ec84",
+        "name": "FUN_0040ec84"
+      },
+      {
+        "address": "0x40ecbc",
+        "name": "FUN_0040ecbc"
+      },
+      {
+        "address": "0x40ecf4",
+        "name": "FUN_0040ecf4"
+      },
+      {
+        "address": "0x40ed0a",
+        "name": "FUN_0040ed0a"
+      },
+      {
+        "address": "0x40ed36",
+        "name": "FUN_0040ed36"
+      },
+      {
+        "address": "0x40faa0",
+        "name": "FUN_0040faa0"
+      },
+      {
+        "address": "0x41df70",
+        "name": "FUN_0041df70"
+      },
+      {
+        "address": "0x41e5db",
+        "name": "FUN_0041e5db"
+      },
+      {
+        "address": "0x41e5f6",
+        "name": "FUN_0041e5f6"
+      },
+      {
+        "address": "0x42c4e0",
+        "name": "FUN_0042c4e0"
+      },
+      {
+        "address": "0x43fc1a",
+        "name": "FUN_0043fc1a"
+      },
+      {
+        "address": "0x43ff54",
+        "name": "FUN_0043ff54"
+      },
+      {
+        "address": "0x4430e0",
+        "name": "FUN_004430e0"
+      },
+      {
+        "address": "0x44fc4b",
+        "name": "FUN_0044fc4b"
+      },
+      {
+        "address": "0x450036",
+        "name": "FUN_00450036"
+      },
+      {
+        "address": "0x45119f",
+        "name": "FUN_0045119f"
+      },
+      {
+        "address": "0x451913",
+        "name": "FUN_00451913"
+      },
+      {
+        "address": "0x451a4f",
+        "name": "FUN_00451a4f"
+      },
+      {
+        "address": "0x451a60",
+        "name": "FUN_00451a60"
+      },
+      {
+        "address": "0x453c17",
+        "name": "FUN_00453c17"
+      },
+      {
+        "address": "0x453e32",
+        "name": "FUN_00453e32"
+      },
+      {
+        "address": "0x453e81",
+        "name": "FUN_00453e81"
+      },
+      {
+        "address": "0x4544d3",
+        "name": "FUN_004544d3"
+      },
+      {
+        "address": "0x45461c",
+        "name": "FUN_0045461c"
+      },
+      {
+        "address": "0x45f670",
+        "name": "FUN_0045f670"
+      },
+      {
+        "address": "0x472840",
+        "name": "FUN_00472840"
+      },
+      {
+        "address": "0x472c90",
+        "name": "FUN_00472c90"
+      },
+      {
+        "address": "0x47e09b",
+        "name": "FUN_0047e09b"
+      },
+      {
+        "address": "0x47e251",
+        "name": "FUN_0047e251"
+      },
+      {
+        "address": "0x47fa40",
+        "name": "FUN_0047fa40"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_9892bc56296693e209ab435e2bf743306d4fa4914c2b295e24c85740023658e1",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x402f7f"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x402f7f",
+      "name": "FUN_00402f7f",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x402f7f",
+            "end": "0x403013"
+          }
+        ],
+        "total_bytes": 149,
+        "span_bytes": 149,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined4 __thiscall FUN_00402f7f(void * this, uint * param_1, undefined4 param_2, undefined4 param_3)",
+      "locals": [
+        {
+          "description": "undefined local_8 @ Stack[-0x8]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_c @ Stack[-0xc]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nundefined4 __thiscall FUN_00402f7f(void *this,uint *param_1,undefined4 param_2,undefined4 param_3)\r\n\r\n{\r\n  int iVar1;\r\n  HANDLE pvVar2;\r\n  undefined4 uVar3;\r\n  DWORD local_8;\r\n  \r\n  FUN_004025ae(this,1);\r\n  *(undefined4 *)((int)this + 0x10) = param_2;\r\n  *(undefined4 *)((int)this + 0x14) = param_3;\r\n  FUN_004192c5((int *)((int)this + 8));\r\n  iVar1 = FUN_00418f5c((void *)((int)this + 8),param_1,0);\r\n  if (iVar1 == 0) {\r\n    uVar3 = 0;\r\n  }\r\n  else {\r\n    FUN_004036a0(this,1);\r\n    pvVar2 = CreateThread((LPSECURITY_ATTRIBUTES)0x0,0,FUN_00402574,this,0,&local_8);\r\n    *(HANDLE *)((int)this + 4) = pvVar2;\r\n    if (*(int *)((int)this + 4) != 0) {\r\n      SetThreadPriority(*(HANDLE *)((int)this + 4),2);\r\n    }\r\n    uVar3 = 1;\r\n  }\r\n  return uVar3;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "EXTERNAL:0x23",
+        "name": "KERNEL32.DLL::SetThreadPriority"
+      },
+      {
+        "address": "EXTERNAL:0x25",
+        "name": "KERNEL32.DLL::CreateThread"
+      },
+      {
+        "address": "0x4025ae",
+        "name": "FUN_004025ae"
+      },
+      {
+        "address": "0x4036a0",
+        "name": "FUN_004036a0"
+      },
+      {
+        "address": "0x418f5c",
+        "name": "FUN_00418f5c"
+      },
+      {
+        "address": "0x4192c5",
+        "name": "FUN_004192c5"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_43fb84f971bc1311075e8b021bc5ab714c2abc76919bcd2d4cc15609646975eb",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x42f433"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x42f433",
+      "name": "FUN_0042f433",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x42f433",
+            "end": "0x42f698"
+          }
+        ],
+        "total_bytes": 614,
+        "span_bytes": 614,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "uint __cdecl FUN_0042f433(byte * param_1)",
+      "locals": [
+        {
+          "description": "undefined4 local_10 @ Stack[-0x10]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_14 @ Stack[-0x14]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_18 @ Stack[-0x18]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_1c @ Stack[-0x1c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_20 @ Stack[-0x20]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_24 @ Stack[-0x24]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_28 @ Stack[-0x28]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_2c @ Stack[-0x2c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_c @ Stack[-0xc]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nuint __cdecl FUN_0042f433(byte *param_1)\r\n\r\n{\r\n  bool bVar1;\r\n  byte bVar2;\r\n  undefined3 extraout_var;\r\n  int iVar3;\r\n  byte *pbVar4;\r\n  uint uVar5;\r\n  int local_2c;\r\n  int local_28;\r\n  int local_24;\r\n  HGLOBAL local_1c;\r\n  uint local_18;\r\n  int local_14;\r\n  int local_10;\r\n  int local_8;\r\n  \r\n  local_18 = FUN_0047fc5a((char *)param_1);\r\n  local_14 = 0x140;\r\n  local_1c = (HGLOBAL)0xa0;\r\n  bVar1 = FUN_0040b922();\r\n  if (CONCAT31(extraout_var,bVar1) != 0) {\r\n    local_14 = FUN_00455e44(0x4b4250);\r\n    local_14 = local_14 / 2;\r\n    iVar3 = FUN_00455e6b(0x4b4250);\r\n    local_1c = (HGLOBAL)(iVar3 / 2 + -0x30);\r\n  }\r\n  if (local_18 % 2 == 0) {\r\n    local_18 = local_18 >> 1;\r\n  }\r\n  else {\r\n    local_18 = (local_18 >> 1) + 1;\r\n  }\r\n  uVar5 = local_18 % 3;\r\n  if (uVar5 == 0) {\r\n    local_8 = 0x18;\r\n    if (local_18 / 3 + 1 < 3) {\r\n      local_24 = 2;\r\n    }\r\n    else {\r\n      local_24 = local_18 / 3 + 1;\r\n    }\r\n    local_10 = local_24;\r\n  }\r\n  else if (uVar5 == 1) {\r\n    local_8 = 0x10;\r\n    if (local_18 / 3 + 1 < 3) {\r\n      local_28 = 2;\r\n    }\r\n    else {\r\n      local_28 = local_18 / 3 + 1;\r\n    }\r\n    local_10 = local_28;\r\n  }\r\n  else {\r\n    if (uVar5 != 2) {\r\n      return local_18 / 3;\r\n    }\r\n    local_8 = 0x20;\r\n    if (local_18 / 3 + 2 < 3) {\r\n      local_2c = 2;\r\n    }\r\n    else {\r\n      local_2c = local_18 / 3 + 2;\r\n    }\r\n    local_10 = local_2c;\r\n  }\r\n  pbVar4 = (byte *)(local_14 - ((uint)(local_10 * 0x30) >> 1));\r\n  FUN_0042b81b(0);\r\n  FUN_0042c557();\r\n  FUN_00426066(0x497fb0);\r\n  SendMessageA(DAT_004b6a68,0x202,0,0);\r\n  FUN_0041e5db();\r\n  FUN_004735bb(&DAT_004b6930,pbVar4,local_1c,local_10 * 0x30,0x30,0);\r\n  FUN_0040ed36(&DAT_00492f38,4);\r\n  FUN_0040ed0a(&DAT_00492f38,0);\r\n  FUN_0040ec84(&DAT_00492f38,0xac);\r\n  FUN_0040ecbc(&DAT_00492f38,0);\r\n  MoveToXY(&DAT_00492f38,(uint)(pbVar4 + local_8) >> 3,(int)local_1c + 0x10);\r\n  FUN_0040fa1a(&DAT_00492f38,param_1);\r\n  FUN_0041e5f6();\r\n  bVar2 = FUN_0041c330(0x4b0770);\r\n  FUN_0042c646((bVar2 + 1) * 10);\r\n  FUN_00473623(0x4b6930);\r\n  uVar5 = FUN_0042c600();\r\n  return uVar5;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "EXTERNAL:0x92",
+        "name": "USER32.DLL::SendMessageA"
+      },
+      {
+        "address": "0x40b922",
+        "name": "FUN_0040b922"
+      },
+      {
+        "address": "0x40ebd7",
+        "name": "MoveToXY"
+      },
+      {
+        "address": "0x40ec84",
+        "name": "FUN_0040ec84"
+      },
+      {
+        "address": "0x40ecbc",
+        "name": "FUN_0040ecbc"
+      },
+      {
+        "address": "0x40ed0a",
+        "name": "FUN_0040ed0a"
+      },
+      {
+        "address": "0x40ed36",
+        "name": "FUN_0040ed36"
+      },
+      {
+        "address": "0x40fa1a",
+        "name": "FUN_0040fa1a"
+      },
+      {
+        "address": "0x41c330",
+        "name": "FUN_0041c330"
+      },
+      {
+        "address": "0x41e5db",
+        "name": "FUN_0041e5db"
+      },
+      {
+        "address": "0x41e5f6",
+        "name": "FUN_0041e5f6"
+      },
+      {
+        "address": "0x426066",
+        "name": "FUN_00426066"
+      },
+      {
+        "address": "0x42b81b",
+        "name": "FUN_0042b81b"
+      },
+      {
+        "address": "0x42c557",
+        "name": "FUN_0042c557"
+      },
+      {
+        "address": "0x42c600",
+        "name": "FUN_0042c600"
+      },
+      {
+        "address": "0x42c646",
+        "name": "FUN_0042c646"
+      },
+      {
+        "address": "0x455e44",
+        "name": "FUN_00455e44"
+      },
+      {
+        "address": "0x455e6b",
+        "name": "FUN_00455e6b"
+      },
+      {
+        "address": "0x4735bb",
+        "name": "FUN_004735bb"
+      },
+      {
+        "address": "0x473623",
+        "name": "FUN_00473623"
+      },
+      {
+        "address": "0x47fc5a",
+        "name": "FUN_0047fc5a"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_78ce49669b3539d0b2ae298c7d565f4c162cd4730de36118c7a1906479946a83",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x403123"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x403123",
+      "name": "FUN_00403123",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x403123",
+            "end": "0x403146"
+          }
+        ],
+        "total_bytes": 36,
+        "span_bytes": 36,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined __stdcall FUN_00403123(void)",
+      "locals": []
+    },
+    "pseudocode": "\r\nvoid FUN_00403123(void)\r\n\r\n{\r\n  int unaff_EBP;\r\n  \r\n  *(undefined4 *)(unaff_EBP + -4) = 0xffffffff;\r\n  FUN_004025ae(*(void **)(unaff_EBP + -0x18),1);\r\n  ExceptionList = *(void **)(unaff_EBP + -0xc);\r\n  return;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "0x4025ae",
+        "name": "FUN_004025ae"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_4149de6a7180f1688e0a1a2d2c4ceb7f4664073b5b34d10e25b2cbe084cb61cd",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x450036"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x450036",
+      "name": "FUN_00450036",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x450036",
+            "end": "0x450983"
+          }
+        ],
+        "total_bytes": 2382,
+        "span_bytes": 2382,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined __cdecl FUN_00450036(uint param_1, byte param_2, int param_3, int param_4, uint param_5, uint param_6, uint param_7, int param_8)",
+      "locals": [
+        {
+          "description": "undefined4 local_10 @ Stack[-0x10]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_14 @ Stack[-0x14]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_18 @ Stack[-0x18]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_1c @ Stack[-0x1c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_20 @ Stack[-0x20]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_24 @ Stack[-0x24]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_28 @ Stack[-0x28]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_2b @ Stack[-0x2b]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined local_2c @ Stack[-0x2c]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_30 @ Stack[-0x30]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_34 @ Stack[-0x34]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined2 local_38 @ Stack[-0x38]:2",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_3c @ Stack[-0x3c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_40 @ Stack[-0x40]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_44 @ Stack[-0x44]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_48 @ Stack[-0x48]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_4c @ Stack[-0x4c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_c @ Stack[-0xc]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nvoid __cdecl\r\nFUN_00450036(uint param_1,byte param_2,int param_3,int param_4,uint param_5,uint param_6,\r\n            uint param_7,int param_8)\r\n\r\n{\r\n  char cVar1;\r\n  byte bVar2;\r\n  int iVar3;\r\n  undefined *this;\r\n  undefined2 *puVar4;\r\n  byte *pbVar5;\r\n  char *pcVar6;\r\n  undefined2 extraout_var;\r\n  uint uVar7;\r\n  undefined4 uVar8;\r\n  undefined2 local_38 [2];\r\n  uint local_34;\r\n  uint local_30;\r\n  byte local_2c;\r\n  undefined1 local_2b;\r\n  int local_28;\r\n  int local_24;\r\n  uint local_20;\r\n  int local_1c;\r\n  byte local_18;\r\n  undefined3 uStack_17;\r\n  uint local_14;\r\n  uint local_10;\r\n  uint local_c;\r\n  int local_8;\r\n  \r\n  iVar3 = FUN_0045f670((undefined4 *)(&DAT_004b2c50 + (param_1 & 0xff) * 0x24));\r\n  this = &DAT_004a1b68 + iVar3 * 0x48;\r\n  puVar4 = (undefined2 *)FUN_00403360((int)(&DAT_004b2c50 + (param_1 & 0xff) * 0x24));\r\n  local_38[0] = *puVar4;\r\n  FUN_0044fc4b((undefined2 *)&local_2c,CONCAT22(extraout_var,local_38[0]),4,3,param_2);\r\n  _local_18 = CONCAT31(uStack_17,local_2c);\r\n  local_c = CONCAT31(local_c._1_3_,local_2b);\r\n  iVar3 = FUN_00451a4f(0x4b4250);\r\n  iVar3 = iVar3 + (uint)local_2c * 0x30;\r\n  local_34 = ((int)(iVar3 + (iVar3 >> 0x1f & 7U)) >> 3) + 1;\r\n  uVar7 = local_c & 0xff;\r\n  local_24 = FUN_00451a60(0x4b4250);\r\n  local_24 = uVar7 * 0x30 + local_24;\r\n  uVar7 = FUN_004065f0(this,0);\r\n  local_20 = (uint)((uVar7 & 0xff) != 0xff);\r\n  uVar7 = FUN_004065f0(this,1);\r\n  local_30 = (uint)((uVar7 & 0xff) != 0xff);\r\n  local_8 = 0;\r\n  local_1c = 0;\r\n  cVar1 = FUN_00406650((int)this);\r\n  if (cVar1 == -1) {\r\n    param_5 = 0;\r\n  }\r\n  else {\r\n    bVar2 = FUN_00406650((int)this);\r\n    if (100 < param_5 + bVar2) {\r\n      bVar2 = FUN_00406650((int)this);\r\n      param_5 = 100 - bVar2;\r\n    }\r\n  }\r\n  if (local_20 == 0) {\r\nLAB_00450191:\r\n    local_8 = 1;\r\n    param_6 = 0;\r\n  }\r\n  else {\r\n    uVar7 = FUN_00409680(this,0);\r\n    if ((uVar7 & 0xff) == 0xff) goto LAB_00450191;\r\n    if (local_20 != 0) {\r\n      uVar7 = FUN_00409680(this,0);\r\n      if (100 < param_6 + (uVar7 & 0xff)) {\r\n        uVar7 = FUN_00409680(this,0);\r\n        param_6 = 100 - (uVar7 & 0xff);\r\n      }\r\n    }\r\n  }\r\n  if (local_30 != 0) {\r\n    uVar7 = FUN_00409680(this,1);\r\n    if ((uVar7 & 0xff) != 0xff) {\r\n      if (local_30 != 0) {\r\n        uVar7 = FUN_00409680(this,1);\r\n        if (100 < param_7 + (uVar7 & 0xff)) {\r\n          uVar7 = FUN_00409680(this,1);\r\n          param_7 = 100 - (uVar7 & 0xff);\r\n        }\r\n      }\r\n      goto LAB_0045023d;\r\n    }\r\n  }\r\n  local_1c = 1;\r\n  param_7 = 0;\r\nLAB_0045023d:\r\n  FUN_0041e5db();\r\n  FUN_00453c17(&DAT_004b4250,local_18,(byte)local_c,4,3);\r\n  FUN_00453e81(&DAT_004b4250,1);\r\n  FUN_004544d3(&DAT_004b4250,(byte *)local_38);\r\n  FUN_0040ed36(&DAT_00492f38,4);\r\n  FUN_0040ed0a(&DAT_00492f38,1);\r\n  FUN_0040ec84(&DAT_00492f38,0x12);\r\n  FUN_0040ecf4(&DAT_00492f38,0x2a);\r\n  local_24 = local_24 + 8;\r\n  MoveToXY(&DAT_00492f38,local_34,local_24);\r\n  FUN_004430e0((int *)(&DAT_004b2c50 + (param_1 & 0xff) * 0x24));\r\n  FUN_0040faa0();\r\n  FUN_0040ed0a(&DAT_00492f38,0);\r\n  FUN_0040ecf4(&DAT_00492f38,0x1f);\r\n  MoveToXY(&DAT_00492f38,local_34 + 9,local_24);\r\n  FUN_004065d0((int)this);\r\n  FUN_0040faa0();\r\n  MoveToXY(&DAT_00492f38,local_34 + 0xe,local_24);\r\n  FUN_0041df70((int *)(&DAT_004b2c50 + (param_1 & 0xff) * 0x24));\r\n  FUN_0040faa0();\r\n  uVar8 = 4;\r\n  pbVar5 = (byte *)FUN_0047fa40(&DAT_004aeb50,0x180,0,4);\r\n  FUN_00451913((byte *)(local_34 * 8 + 8),(HGLOBAL)(local_24 + 0x20),0x18,0x18,pbVar5,uVar8);\r\n  uVar8 = 4;\r\n  pbVar5 = (byte *)FUN_0047fa40(&DAT_004aeb50,0x3c0,0,4);\r\n  FUN_00451913((byte *)(local_34 * 8 + 8),(HGLOBAL)(local_24 + 0x38),0x18,0x18,pbVar5,uVar8);\r\n  uVar8 = 4;\r\n  pbVar5 = (byte *)FUN_0047fa40(&DAT_004aeb50,0x600,0,4);\r\n  FUN_00451913((byte *)(local_34 * 8 + 8),(HGLOBAL)(local_24 + 0x50),0x18,0x18,pbVar5,uVar8);\r\n  if (local_20 != 0) {\r\n    uVar8 = 4;\r\n    pbVar5 = (byte *)FUN_0047fa40(&DAT_004aeb50,0x1a9c0,0,4);\r\n    FUN_00451913((byte *)(local_34 * 8 + 0x10),(HGLOBAL)(local_24 + 0x70),0x10,0x10,pbVar5,uVar8);\r\n  }\r\n  if (local_30 != 0) {\r\n    uVar8 = 4;\r\n    pbVar5 = (byte *)FUN_0047fa40(&DAT_004aeb50,0x1aac0,0,4);\r\n    FUN_00451913((byte *)(local_34 * 8 + 0x68),(HGLOBAL)(local_24 + 0x70),0x10,0x10,pbVar5,uVar8);\r\n  }\r\n  pcVar6 = (char *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n  FUN_0047e251(local_34 * 8 + 0x28,local_24 + 0x20,0x98,0x68,pcVar6);\r\n  uVar7 = FUN_00472c90((int)(&DAT_004b2c50 + (param_1 & 0xff) * 0x24));\r\n  FUN_0045119f(0,local_34 * 8 + 0x28,local_24 + 0x20,this,uVar7);\r\n  uVar7 = FUN_00472840((int)(&DAT_004b2c50 + (param_1 & 0xff) * 0x24));\r\n  FUN_0045119f(1,local_34 * 8 + 0x28,local_24 + 0x38,this,uVar7);\r\n  bVar2 = FUN_00406650((int)this);\r\n  FUN_0045119f(2,local_34 * 8 + 0x28,local_24 + 0x50,this,(uint)bVar2);\r\n  FUN_0040ed0a(&DAT_00492f38,0);\r\n  FUN_0040ecf4(&DAT_00492f38,0x1f);\r\n  if (local_20 != 0) {\r\n    MoveToXY(&DAT_00492f38,local_34 + 5,local_24 + 0x70);\r\n    if (local_8 == 0) {\r\n      FUN_00409680(this,0);\r\n      FUN_0040faa0();\r\n    }\r\n    else {\r\n      FUN_0040faa0();\r\n    }\r\n  }\r\n  if (local_30 != 0) {\r\n    MoveToXY(&DAT_00492f38,local_34 + 0x10,local_24 + 0x70);\r\n    if (local_1c == 0) {\r\n      FUN_00409680(this,1);\r\n      FUN_0040faa0();\r\n    }\r\n    else {\r\n      FUN_0040faa0();\r\n    }\r\n  }\r\n  FUN_0041e5f6();\r\n  if (((param_3 != 0) || (param_4 != 0)) || (param_5 != 0)) {\r\n    for (local_28 = 4; -1 < local_28; local_28 = local_28 + -1) {\r\n      FUN_00403340(&DAT_004b1b18,1);\r\n      FUN_0042c4e0();\r\n      FUN_0041e5db();\r\n      pbVar5 = (byte *)FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n      FUN_0047e09b((byte *)(local_34 * 8 + 0x28),(HGLOBAL)(local_24 + 0x20),0x98,0x48,pbVar5);\r\n      iVar3 = FUN_00472c90((int)(&DAT_004b2c50 + (param_1 & 0xff) * 0x24));\r\n      FUN_0045119f(0,local_34 * 8 + 0x28,local_24 + 0x20,this,\r\n                   (iVar3 - param_3) + ((int)(param_3 + (param_3 >> 0x1f & 3U)) >> 2) * local_28);\r\n      iVar3 = FUN_00472840((int)(&DAT_004b2c50 + (param_1 & 0xff) * 0x24));\r\n      FUN_0045119f(1,local_34 * 8 + 0x28,local_24 + 0x38,this,\r\n                   (iVar3 - param_4) + ((int)(param_4 + (param_4 >> 0x1f & 3U)) >> 2) * local_28);\r\n      bVar2 = FUN_00406650((int)this);\r\n      FUN_0045119f(2,local_34 * 8 + 0x28,local_24 + 0x50,this,\r\n                   (bVar2 + param_5) - (param_5 >> 2) * local_28);\r\n      FUN_0041e5f6();\r\n    }\r\n    FUN_00403340(&DAT_004b1b18,4);\r\n    FUN_0042c4e0();\r\n  }\r\n  FUN_0040ed0a(&DAT_00492f38,0);\r\n  FUN_0040ecf4(&DAT_00492f38,0x1f);\r\n  local_14 = param_6 / 3;\r\n  local_10 = param_7 / 3;\r\n  if ((param_6 != 0) || (param_7 != 0)) {\r\n    for (local_28 = 3; -1 < local_28; local_28 = local_28 + -1) {\r\n      FUN_00403340(&DAT_004b1b18,1);\r\n      FUN_0042c4e0();\r\n      FUN_0041e5db();\r\n      iVar3 = FUN_0047fa40(&DAT_004ae4c8,0x6900,0,4);\r\n      FUN_0047e09b((byte *)(local_34 * 8 + 0x28),(HGLOBAL)(local_24 + 0x68),0x98,0x20,\r\n                   (byte *)(iVar3 + 0x2ac0));\r\n      if (local_20 != 0) {\r\n        MoveToXY(&DAT_00492f38,local_34 + 5,local_24 + 0x70);\r\n        if (local_8 == 0) {\r\n          FUN_00409680(this,0);\r\n          FUN_0040faa0();\r\n        }\r\n        else {\r\n          FUN_0040faa0();\r\n        }\r\n      }\r\n      if (local_30 != 0) {\r\n        MoveToXY(&DAT_00492f38,local_34 + 0x10,local_24 + 0x70);\r\n        if (local_1c == 0) {\r\n          FUN_00409680(this,1);\r\n          FUN_0040faa0();\r\n        }\r\n        else {\r\n          FUN_0040faa0();\r\n        }\r\n      }\r\n      FUN_0041e5f6();\r\n    }\r\n  }\r\n  FUN_0040ed0a(&DAT_00492f38,0);\r\n  FUN_00403340(&DAT_004b1b18,(-(uint)(param_8 != 0) & 4) + 4);\r\n  FUN_0042c4e0();\r\n  FUN_0045461c(&DAT_004b4250);\r\n  FUN_00453e32(&DAT_004b4250);\r\n  return;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "0x403340",
+        "name": "FUN_00403340"
+      },
+      {
+        "address": "0x403360",
+        "name": "FUN_00403360"
+      },
+      {
+        "address": "0x4065d0",
+        "name": "FUN_004065d0"
+      },
+      {
+        "address": "0x4065f0",
+        "name": "FUN_004065f0"
+      },
+      {
+        "address": "0x406650",
+        "name": "FUN_00406650"
+      },
+      {
+        "address": "0x409680",
+        "name": "FUN_00409680"
+      },
+      {
+        "address": "0x40ebd7",
+        "name": "MoveToXY"
+      },
+      {
+        "address": "0x40ec84",
+        "name": "FUN_0040ec84"
+      },
+      {
+        "address": "0x40ecf4",
+        "name": "FUN_0040ecf4"
+      },
+      {
+        "address": "0x40ed0a",
+        "name": "FUN_0040ed0a"
+      },
+      {
+        "address": "0x40ed36",
+        "name": "FUN_0040ed36"
+      },
+      {
+        "address": "0x40faa0",
+        "name": "FUN_0040faa0"
+      },
+      {
+        "address": "0x41df70",
+        "name": "FUN_0041df70"
+      },
+      {
+        "address": "0x41e5db",
+        "name": "FUN_0041e5db"
+      },
+      {
+        "address": "0x41e5f6",
+        "name": "FUN_0041e5f6"
+      },
+      {
+        "address": "0x42c4e0",
+        "name": "FUN_0042c4e0"
+      },
+      {
+        "address": "0x4430e0",
+        "name": "FUN_004430e0"
+      },
+      {
+        "address": "0x44fc4b",
+        "name": "FUN_0044fc4b"
+      },
+      {
+        "address": "0x45119f",
+        "name": "FUN_0045119f"
+      },
+      {
+        "address": "0x451913",
+        "name": "FUN_00451913"
+      },
+      {
+        "address": "0x451a4f",
+        "name": "FUN_00451a4f"
+      },
+      {
+        "address": "0x451a60",
+        "name": "FUN_00451a60"
+      },
+      {
+        "address": "0x453c17",
+        "name": "FUN_00453c17"
+      },
+      {
+        "address": "0x453e32",
+        "name": "FUN_00453e32"
+      },
+      {
+        "address": "0x453e81",
+        "name": "FUN_00453e81"
+      },
+      {
+        "address": "0x4544d3",
+        "name": "FUN_004544d3"
+      },
+      {
+        "address": "0x45461c",
+        "name": "FUN_0045461c"
+      },
+      {
+        "address": "0x45f670",
+        "name": "FUN_0045f670"
+      },
+      {
+        "address": "0x472840",
+        "name": "FUN_00472840"
+      },
+      {
+        "address": "0x472c90",
+        "name": "FUN_00472c90"
+      },
+      {
+        "address": "0x47e09b",
+        "name": "FUN_0047e09b"
+      },
+      {
+        "address": "0x47e251",
+        "name": "FUN_0047e251"
+      },
+      {
+        "address": "0x47fa40",
+        "name": "FUN_0047fa40"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_7c46978dfe0bcbe099d024d9a153d27d65843cf86f004cf306bb19d7e3cf9fb4",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x42c646"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x42c646",
+      "name": "FUN_0042c646",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x42c646",
+            "end": "0x42c732"
+          }
+        ],
+        "total_bytes": 237,
+        "span_bytes": 237,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined __cdecl FUN_0042c646(int param_1)",
+      "locals": [
+        {
+          "description": "undefined4 local_10 @ Stack[-0x10]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_14 @ Stack[-0x14]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_18 @ Stack[-0x18]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_1c @ Stack[-0x1c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_20 @ Stack[-0x20]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_c @ Stack[-0xc]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nvoid __cdecl FUN_0042c646(int param_1)\r\n\r\n{\r\n  bool bVar1;\r\n  int iVar2;\r\n  undefined3 extraout_var;\r\n  tagRECT local_20;\r\n  int local_10;\r\n  int local_c;\r\n  int local_8;\r\n  \r\n  FUN_0042c557();\r\n  FUN_0042c89c();\r\n  local_10 = param_1;\r\n  while( true ) {\r\n    if (local_10 == 0) {\r\n      return;\r\n    }\r\n    FUN_0042c4cb(1);\r\n    iVar2 = FUN_0042c56b();\r\n    if (iVar2 != 0) break;\r\n    FUN_0047eac4();\r\n    local_8 = FUN_00425c26(0x497fb0);\r\n    local_c = FUN_00425c37(0x497fb0);\r\n    GetClientRect(DAT_004b6a68,&local_20);\r\n    if ((((local_20.left < local_8) && (local_8 < local_20.right)) && (local_20.top < local_c)) &&\r\n       (local_c < local_20.bottom)) {\r\n      bVar1 = FUN_0040b922();\r\n      if (((int)((-(uint)(CONCAT31(extraout_var,bVar1) != 0) & 0x10) + 0x28) < local_c) ||\r\n         (local_20.right <= local_8)) {\r\n        FUN_004262a2(&DAT_00497fb0,DAT_004b6a68,0);\r\n      }\r\n      else {\r\n        FUN_004262a2(&DAT_00497fb0,DAT_004b6a68,0xc);\r\n      }\r\n      FUN_004262e3((int *)&DAT_00497fb0);\r\n    }\r\n    FUN_0042c4e0();\r\n    local_10 = local_10 + -1;\r\n  }\r\n  return;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "EXTERNAL:0x90",
+        "name": "USER32.DLL::GetClientRect"
+      },
+      {
+        "address": "0x40b922",
+        "name": "FUN_0040b922"
+      },
+      {
+        "address": "0x425c26",
+        "name": "FUN_00425c26"
+      },
+      {
+        "address": "0x425c37",
+        "name": "FUN_00425c37"
+      },
+      {
+        "address": "0x4262a2",
+        "name": "FUN_004262a2"
+      },
+      {
+        "address": "0x4262e3",
+        "name": "FUN_004262e3"
+      },
+      {
+        "address": "0x42c4cb",
+        "name": "FUN_0042c4cb"
+      },
+      {
+        "address": "0x42c4e0",
+        "name": "FUN_0042c4e0"
+      },
+      {
+        "address": "0x42c557",
+        "name": "FUN_0042c557"
+      },
+      {
+        "address": "0x42c56b",
+        "name": "FUN_0042c56b"
+      },
+      {
+        "address": "0x42c89c",
+        "name": "FUN_0042c89c"
+      },
+      {
+        "address": "0x47eac4",
+        "name": "FUN_0047eac4"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_8706db04e249d9985150bf57f3079d4f387d6ef243b2c35d7eddd01f44723e8b",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x402574"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x402574",
+      "name": "FUN_00402574",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x402574",
+            "end": "0x4025a4"
+          }
+        ],
+        "total_bytes": 49,
+        "span_bytes": 49,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined __stdcall FUN_00402574(DWORD * param_1)",
+      "locals": []
+    },
+    "pseudocode": "\r\nvoid FUN_00402574(DWORD *param_1)\r\n\r\n{\r\n  int iVar1;\r\n  \r\n  iVar1 = FUN_004026ba((int *)param_1);\r\n  if (iVar1 == 0) {\r\n    FUN_004025ae(param_1,0);\r\n  }\r\n  else {\r\n    FUN_004036a0(param_1,2);\r\n  }\r\n                    /* WARNING: Subroutine does not return */\r\n  ExitThread(*param_1);\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "EXTERNAL:0x26",
+        "name": "KERNEL32.DLL::ExitThread"
+      },
+      {
+        "address": "0x4025ae",
+        "name": "FUN_004025ae"
+      },
+      {
+        "address": "0x4026ba",
+        "name": "FUN_004026ba"
+      },
+      {
+        "address": "0x4036a0",
+        "name": "FUN_004036a0"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+      "Ghidra Listing reports a terminal call at 0x40259f to EXTERNAL:0x26 KERNEL32.DLL::ExitThread (external=true, thunk=false, hasNoReturn=true); fallthrough is excluded by Ghidra's flow model. This records Ghidra's FunctionManager flag, not an independent verification that the callee cannot return."
+    ]
+  },
+  {
+    "evidence_id": "ev_f95e4c1c9e29396bf8c8f0f29c414c0f0246b8801dba6c1b324405314ea54eff",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x403262"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x403262",
+      "name": "FUN_00403262",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x403262",
+            "end": "0x4032a7"
+          }
+        ],
+        "total_bytes": 70,
+        "span_bytes": 70,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined4 __fastcall FUN_00403262(int param_1)",
+      "locals": [
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_c @ Stack[-0xc]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nundefined4 __fastcall FUN_00403262(int param_1)\r\n\r\n{\r\n  undefined4 local_c;\r\n  \r\n  if (((*(char *)(param_1 + 0x58) == '\\0') && (*(char *)(param_1 + 0x40) != '\\x02')) ||\r\n     (*(char *)(param_1 + 0x40) == '\\x03')) {\r\n    local_c = 1;\r\n  }\r\n  else {\r\n    local_c = 0;\r\n  }\r\n  return local_c;\r\n}\r\n\r\n",
+    "callees": [],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_f77f61c4d3d41a7bf339ab5694a1b644bba849b76a98cd148d387ba2b34735e3",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x42c4cb"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x42c4cb",
+      "name": "FUN_0042c4cb",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x42c4cb",
+            "end": "0x42c4df"
+          }
+        ],
+        "total_bytes": 21,
+        "span_bytes": 21,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined __cdecl FUN_0042c4cb(int param_1)",
+      "locals": []
+    },
+    "pseudocode": "\r\nvoid __cdecl FUN_0042c4cb(int param_1)\r\n\r\n{\r\n  FUN_00403340(&DAT_004b1b18,param_1 << 1);\r\n  return;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "0x403340",
+        "name": "FUN_00403340"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_4ffc3175dbcf306050e635623d4aa2d4201f2e40aace7d745f9bfd5962db2ae6",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x41c330"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x41c330",
+      "name": "FUN_0041c330",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x41c330",
+            "end": "0x41c340"
+          }
+        ],
+        "total_bytes": 17,
+        "span_bytes": 17,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined1 __fastcall FUN_0041c330(int param_1)",
+      "locals": [
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nundefined1 __fastcall FUN_0041c330(int param_1)\r\n\r\n{\r\n  return *(undefined1 *)(param_1 + 0x10);\r\n}\r\n\r\n",
+    "callees": [],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_d0cb3ae1097e40c964703d13aabfe54a0bff72e33a173387206560164e487701",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x40284f"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x40284f",
+      "name": "FUN_0040284f",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x40284f",
+            "end": "0x4028a5"
+          }
+        ],
+        "total_bytes": 87,
+        "span_bytes": 87,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "DWORD __fastcall FUN_0040284f(int param_1)",
+      "locals": [
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_c @ Stack[-0xc]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nDWORD __fastcall FUN_0040284f(int param_1)\r\n\r\n{\r\n  DWORD local_8;\r\n  \r\n  if (*(int *)(param_1 + 4) == 0) {\r\n    local_8 = 0;\r\n  }\r\n  else {\r\n    local_8 = 0x103;\r\n    while (local_8 == 0x103) {\r\n      FUN_0047eac4();\r\n      Sleep(0x32);\r\n      GetExitCodeThread(*(HANDLE *)(param_1 + 4),&local_8);\r\n    }\r\n    *(undefined4 *)(param_1 + 4) = 0;\r\n  }\r\n  return local_8;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "EXTERNAL:0x27",
+        "name": "KERNEL32.DLL::Sleep"
+      },
+      {
+        "address": "EXTERNAL:0x28",
+        "name": "KERNEL32.DLL::GetExitCodeThread"
+      },
+      {
+        "address": "0x47eac4",
+        "name": "FUN_0047eac4"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_b51737f68e1634e301762a75aeb57f2082e13a3264674637875b1cf2fe405006",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x401000"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x401000",
+      "name": "FUN_00401000",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x401000",
+            "end": "0x4011f1"
+          }
+        ],
+        "total_bytes": 498,
+        "span_bytes": 498,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined4 __thiscall FUN_00401000(void * this, undefined4 * param_1)",
+      "locals": [
+        {
+          "description": "undefined4 local_10 @ Stack[-0x10]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_c @ Stack[-0xc]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nundefined4 __thiscall FUN_00401000(void *this,undefined4 *param_1)\r\n\r\n{\r\n  undefined4 uVar1;\r\n  int iVar2;\r\n  byte bVar3;\r\n  \r\n  if (*(int *)((int)this + 0x294) == 0) {\r\n    FUN_004807f0(this,param_1,0x14);\r\n    *(undefined4 *)((int)this + 0x294) = 0x14;\r\n    for (bVar3 = 0; param_1 = param_1 + 5, bVar3 < *(byte *)this; bVar3 = bVar3 + 1) {\r\n      *(undefined4 **)((int)this + (uint)bVar3 * 4 + 0x14) = param_1;\r\n    }\r\n    *(uint *)((int)this + 0x294) = *(int *)((int)this + 0x294) + (uint)bVar3 * 0x14;\r\n    iVar2 = *(int *)((int)this + 8) * *(int *)((int)this + 0xc);\r\n    for (bVar3 = 0; bVar3 < *(byte *)((int)this + 1); bVar3 = bVar3 + 1) {\r\n      *(undefined4 **)((int)this + (uint)bVar3 * 4 + 0xb4) = param_1;\r\n      param_1 = (undefined4 *)((int)param_1 + iVar2);\r\n    }\r\n    *(uint *)((int)this + 0x294) = *(int *)((int)this + 0x294) + (uint)bVar3 * iVar2;\r\n    for (bVar3 = 0; bVar3 < *(byte *)((int)this + 2); bVar3 = bVar3 + 1) {\r\n      *(undefined4 **)((int)this + (uint)bVar3 * 4 + 0x154) = param_1;\r\n      param_1 = (undefined4 *)((int)param_1 + iVar2);\r\n    }\r\n    *(uint *)((int)this + 0x294) = *(int *)((int)this + 0x294) + (uint)bVar3 * iVar2;\r\n    for (bVar3 = 0; bVar3 < *(byte *)((int)this + 3); bVar3 = bVar3 + 1) {\r\n      *(undefined4 **)((int)this + (uint)bVar3 * 4 + 500) = param_1;\r\n      param_1 = param_1 + 0xc0;\r\n    }\r\n    *(uint *)((int)this + 0x294) = *(int *)((int)this + 0x294) + (uint)bVar3 * 0x300;\r\n    uVar1 = *(undefined4 *)((int)this + 0x294);\r\n  }\r\n  else {\r\n    uVar1 = 0;\r\n  }\r\n  return uVar1;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "0x4807f0",
+        "name": "FUN_004807f0"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  },
+  {
+    "evidence_id": "ev_1988fc0a1bd04d9c5b3f0a6ed4cfa3f8d121813bcfeeead51a32e53a735408d2",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile_digest": "b9d116ea480a02cc8773b19372074a3caf77785cbc080b1ac7133b5110e40b17",
+    "parameters": {
+      "procedure": "0x4026ba"
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "procedure": {
+      "address": "0x4026ba",
+      "name": "FUN_004026ba",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x4026ba",
+            "end": "0x402804"
+          }
+        ],
+        "total_bytes": 331,
+        "span_bytes": 331,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined4 __fastcall FUN_004026ba(int * param_1)",
+      "locals": [
+        {
+          "description": "undefined4 local_10 @ Stack[-0x10]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_14 @ Stack[-0x14]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_18 @ Stack[-0x18]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_1c @ Stack[-0x1c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_20 @ Stack[-0x20]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_24 @ Stack[-0x24]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_28 @ Stack[-0x28]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_2c @ Stack[-0x2c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_30 @ Stack[-0x30]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_34 @ Stack[-0x34]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_38 @ Stack[-0x38]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_3c @ Stack[-0x3c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nundefined4 __fastcall FUN_004026ba(int *param_1)\r\n\r\n{\r\n  bool bVar1;\r\n  undefined3 extraout_var;\r\n  int iVar2;\r\n  undefined4 uVar3;\r\n  void *pvVar4;\r\n  void *local_38;\r\n  void *local_10;\r\n  undefined1 *puStack_c;\r\n  undefined4 local_8;\r\n  \r\n  local_8 = 0xffffffff;\r\n  puStack_c = &LAB_00484f1e;\r\n  local_10 = ExceptionList;\r\n  ExceptionList = &local_10;\r\n  bVar1 = FUN_00402805((int)param_1);\r\n  if (CONCAT31(extraout_var,bVar1) == 0) {\r\n    uVar3 = 0;\r\n  }\r\n  else {\r\n    iVar2 = FUN_004036c0((int)param_1);\r\n    iVar2 = FUN_00402544(param_1,iVar2);\r\n    param_1[0x14] = iVar2;\r\n    if (param_1[3] != 0) {\r\n      if ((void *)param_1[3] != (void *)0x0) {\r\n        FUN_004032f0((void *)param_1[3],1);\r\n      }\r\n      param_1[3] = 0;\r\n    }\r\n    uVar3 = FUN_00480ff0(0);\r\n    pvVar4 = (void *)FUN_00480fe0(0x140);\r\n    local_8 = 0;\r\n    if (pvVar4 == (void *)0x0) {\r\n      local_38 = (void *)0x0;\r\n    }\r\n    else {\r\n      local_38 = FUN_00403470(pvVar4);\r\n    }\r\n    local_8 = 0xffffffff;\r\n    param_1[3] = (int)local_38;\r\n    FUN_00480ff0(uVar3);\r\n    if (param_1[3] != 0) {\r\n      iVar2 = FUN_004028a6(param_1);\r\n      if (iVar2 != 0) {\r\n        ExceptionList = local_10;\r\n        return 1;\r\n      }\r\n      if ((void *)param_1[3] != (void *)0x0) {\r\n        FUN_004032f0((void *)param_1[3],1);\r\n      }\r\n      param_1[3] = 0;\r\n    }\r\n    uVar3 = 1;\r\n  }\r\n  ExceptionList = local_10;\r\n  return uVar3;\r\n}\r\n\r\n",
+    "callees": [
+      {
+        "address": "0x402544",
+        "name": "FUN_00402544"
+      },
+      {
+        "address": "0x402805",
+        "name": "FUN_00402805"
+      },
+      {
+        "address": "0x4028a6",
+        "name": "FUN_004028a6"
+      },
+      {
+        "address": "0x4032f0",
+        "name": "FUN_004032f0"
+      },
+      {
+        "address": "0x403470",
+        "name": "FUN_00403470"
+      },
+      {
+        "address": "0x4036c0",
+        "name": "FUN_004036c0"
+      },
+      {
+        "address": "0x480fe0",
+        "name": "FUN_00480fe0"
+      },
+      {
+        "address": "0x480ff0",
+        "name": "FUN_00480ff0"
+      }
+    ],
+    "limitations": [
+      "Unresolved computed or indirect flows without target addresses are not represented as reference edges.",
+      "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.",
+      "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted."
+    ]
+  }
+]

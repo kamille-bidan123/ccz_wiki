@@ -1,5 +1,5 @@
 site_name: 曹操传旧引擎 Wiki
-site_description: 曹操传旧引擎文件格式、EEX 脚本、编辑器设计与逆向分析资料
+site_description: 曹操传旧引擎原版机制、剧本逻辑、文件格式与证据
 site_url: https://kamille-bidan123.github.io/ccz_wiki/
 repo_url: https://github.com/kamille-bidan123/ccz_wiki
 repo_name: kamille-bidan123/ccz_wiki
@@ -67,24 +67,17 @@ nav:
       - Smlmap 与 Gate: 文件与格式/Smlmap与Gate格式分析.md
   - EEX 脚本:
       - 二进制格式: EEX脚本/EEX二进制格式说明.md
-      - 命令规格与验证: EEX脚本/EEX_COMMAND_SPECS草案.md
-      - DSL 规范: EEX脚本/EEX_DSL规范.md
-      - AST / DSL 设计: EEX脚本/EEX_AST_DSL设计草案.md
-  - 编辑器:
-      - 魏武 MOD 工坊: 编辑器/魏武MOD工坊.md
-      - 全能 MOD 编辑器方案: 编辑器/曹操传全能MOD编辑器方案.md
-      - 实现状态: 编辑器/全能MOD编辑器实现状态.md
-      - 综合修改器界面设计: 编辑器/曹操传综合游戏修改器界面设计.md
-      - 基于 MOD 教程的 UI 设计: 编辑器/曹操传综合游戏修改器UI设计_基于MOD教程.md
+      - 命令结构与语义: EEX脚本/EEX_COMMAND_SPECS草案.md
   - 逆向分析:
+      - 各关敌军实力与等级设置: 逆向分析/各关敌军实力与等级设置.md
+      - 许子将指导完整说明: 逆向分析/许子将指导指令完整说明.md
+      - 许子将指导文字剧本: 逆向分析/许子将指导文字剧本.md
+      - S战场机制与调用链: 逆向分析/S战场机制与调用链.md
+      - 青龙动画演出与计时: 逆向分析/青龙技能动画演出时序静态分析.md
       - 战场 AI 行动与价值: 逆向分析/旧引擎战场AI行动与价值分析.md
       - 战场 AI 逆向分析: 逆向分析/旧引擎战场AI行动与价值分析——逆向分析.md
-  - 审计记录:
+  - 原版证据:
       - R 场景动作: 审计记录/R动作/index.md
       - R 剧本音乐: 审计记录/R音乐/index.md
-  - Godot 实现:
-      - 通用 R 剧情播放器: Godot实现/r_story.md
-      - 颍川之战前 R 剧情: Godot实现/r_prologue.md
-
 exclude_docs: |
   README.md

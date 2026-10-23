@@ -174,29 +174,4 @@ is_display = true : Gate 分块 = 2 * barrier_id - 7
 全部原版脚本的分布与这一结论一致：`skip_presentation=true` 的 337 条
 全部是 `is_display=false` 的批量静默布置；移除路径只出现
 `focus_camera` 的真假差异。`S_28` 的八条 `FFFF` 布尔原始值会被旧引擎
-归一化为假，解析器仍保留其 `*_raw` 字节以便严格回写。
-
-## 已实现代码
-
-- `battle_aux_resources.py`
-  - 验证 Smlmap 尺寸；
-  - 渲染整图逐行布局的 Smlmap；
-  - 验证并渲染 3×3 Gate 图块；
-  - 将 `barrier_id + is_display` 换算为 Gate 分块编号。
-- `tools/export_smlmap_gate.py`
-  - 批量校验；
-  - 导出单张或全部 Smlmap；
-  - 按 Gate 分块编号导出；
-  - 按 EEX 障碍编号和状态导出。
-
-示例：
-
-```bash
-./venv/bin/python tools/export_smlmap_gate.py --analyze
-./venv/bin/python tools/export_smlmap_gate.py --small-map 8
-./venv/bin/python tools/export_smlmap_gate.py \
-  --barrier 7 --displayed --palette-map 8
-```
-
-另外，`eex_schema.py` 中旧的 0x58“区域坐标”定义已修正为与二进制解析器和
-写回器一致的七参数结构。
+归一化为假。

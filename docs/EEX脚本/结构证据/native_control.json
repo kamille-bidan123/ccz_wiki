@@ -1,0 +1,337 @@
+[
+  {
+    "evidence_id": "ev_366343db50e5228e3c88a2ed5e692cfb8db114b8aab78f345103923641855591",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "operation": "analyze_function",
+    "procedure": {
+      "address": "0x4105a8",
+      "name": "FUN_004105a8",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x4105a8",
+            "end": "0x41080d"
+          }
+        ],
+        "total_bytes": 614,
+        "span_bytes": 614,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined4 __thiscall FUN_004105a8(void * this, int param_1)",
+      "locals": [
+        {
+          "description": "undefined4 local_10 @ Stack[-0x10]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined2 local_14 @ Stack[-0x14]:2",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_18 @ Stack[-0x18]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined2 local_1c @ Stack[-0x1c]:2",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_20 @ Stack[-0x20]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_24 @ Stack[-0x24]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_28 @ Stack[-0x28]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_2c @ Stack[-0x2c]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_30 @ Stack[-0x30]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_8 @ Stack[-0x8]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_c @ Stack[-0xc]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ]
+    },
+    "pseudocode": "\r\nundefined4 __thiscall FUN_004105a8(void *this,int param_1)\r\n\r\n{\r\n  bool bVar1;\r\n  bool bVar2;\r\n  bool bVar3;\r\n  undefined2 uVar4;\r\n  int iVar5;\r\n  uint uVar6;\r\n  int local_2c;\r\n  int local_8;\r\n  \r\n  bVar1 = true;\r\n  bVar2 = false;\r\n  bVar3 = false;\r\n  if (*(int *)((int)this + 0x14) <= param_1) {\r\n    *(undefined4 *)((int)this + 0x14) = 0xffffffff;\r\n    goto LAB_004105ee;\r\n  }\r\n  local_8 = 1;\r\nLAB_004106ab:\r\n  if (((local_8 == 6) && (!bVar1)) || (local_8 == 1)) {\r\n    local_2c = 1;\r\n  }\r\n  else {\r\n    local_2c = 0;\r\n  }\r\n  iVar5 = FUN_0041084e(this,local_2c,param_1 + 1);\r\n  switch(iVar5) {\r\n  case 0:\r\n    break;\r\n  case 1:\r\n    return 1;\r\n  case 2:\r\n    return 2;\r\n  case 3:\r\n    return 3;\r\n  case 4:\r\n    return 4;\r\n  case 5:\r\n    return 5;\r\n  default:\r\n    return 1;\r\n  }\r\n  do {\r\n    if (local_8 == 3) {\r\n      if ((bVar2) || ((param_1 == 0 && (iVar5 = FUN_00410990((int)this), iVar5 == 1)))) {\r\n        *(int *)((int)this + 4) = *(int *)((int)this + 4) + 1;\r\n        *(undefined4 *)((int)this + 8) = 0;\r\n        uVar6 = FUN_0040fc87((int)this);\r\n        if ((int)uVar6 <= *(int *)((int)this + 4)) {\r\n          *(undefined4 *)((int)this + 0x28) = 0;\r\n          return 4;\r\n        }\r\n        return 3;\r\n      }\r\n      uVar6 = FUN_0040fc87((int)this);\r\n      if ((int)uVar6 <= *(int *)((int)this + 4)) {\r\n        *(undefined4 *)((int)this + 0x28) = 0;\r\n        return 4;\r\n      }\r\n      if (bVar3) {\r\n        *(undefined4 *)((int)this + 0x28) = 0;\r\n        return 4;\r\n      }\r\n      return 0;\r\n    }\r\nLAB_004105ee:\r\n    if (*(int *)((int)this + 0x34) != 0) {\r\n      FUN_0040fce2((int)this);\r\n    }\r\n    uVar4 = (**(code **)(*(int *)this + 0x10))();\r\n    local_8 = (**(code **)(*(int *)this + 8))();\r\n    switch(local_8) {\r\n    case 0:\r\n      break;\r\n    case 1:\r\n      break;\r\n    case 2:\r\n      *(undefined2 *)((int)this + 0x10) = uVar4;\r\n      *(int *)((int)this + 0x14) = param_1;\r\n      return 2;\r\n    case 3:\r\n      break;\r\n    case 4:\r\n      goto switchD_00410633_caseD_4;\r\n    case 5:\r\n      return 1;\r\n    default:\r\n      return 1;\r\n    case 7:\r\n      bVar2 = true;\r\n      break;\r\n    case 8:\r\n      return 5;\r\n    case 9:\r\n      bVar3 = true;\r\n    }\r\n  } while( true );\r\nswitchD_00410633_caseD_4:\r\n  local_8 = (**(code **)(*(int *)this + 8))();\r\n  if (local_8 == 0) {\r\n    bVar1 = false;\r\n  }\r\n  else if (local_8 == 1) {\r\n    bVar1 = true;\r\n  }\r\n  else if (local_8 == 5) {\r\n    return 1;\r\n  }\r\n  goto LAB_004106ab;\r\n}\r\n\r\n",
+    "assembly": [
+      "0x4105a8: PUSH EBP",
+      "0x4105a9: MOV EBP, ESP",
+      "0x4105ab: SUB ESP, 0x2c",
+      "0x4105ae: MOV dword ptr [EBP + -0x1c], ECX",
+      "0x4105b1: MOV dword ptr [EBP + -0x8], 0x1",
+      "0x4105b8: MOV dword ptr [EBP + -0x14], 0x0",
+      "0x4105bf: MOV dword ptr [EBP + -0xc], 0x0",
+      "0x4105c6: MOV dword ptr [EBP + -0x4], 0x3",
+      "0x4105cd: MOV EAX, dword ptr [EBP + -0x1c]",
+      "0x4105d0: MOV ECX, dword ptr [EAX + 0x14]",
+      "0x4105d3: CMP ECX, dword ptr [EBP + 0x8]",
+      "0x4105d6: JLE 0x004105e4",
+      "0x4105d8: MOV dword ptr [EBP + -0x4], 0x1",
+      "0x4105df: JMP 0x00410803",
+      "0x4105e4: MOV EDX, dword ptr [EBP + -0x1c]",
+      "0x4105e7: MOV dword ptr [EDX + 0x14], 0xffffffff",
+      "0x4105ee: MOV EAX, dword ptr [EBP + -0x1c]",
+      "0x4105f1: CMP dword ptr [EAX + 0x34], 0x0",
+      "0x4105f5: JZ 0x00410603",
+      "0x4105f7: MOV ECX, dword ptr [EBP + -0x1c]",
+      "0x4105fa: CALL 0x0040fce2",
+      "0x4105ff: MOV word ptr [EBP + -0x18], AX",
+      "0x410603: MOV ECX, dword ptr [EBP + -0x1c]",
+      "0x410606: MOV EDX, dword ptr [ECX]",
+      "0x410608: MOV ECX, dword ptr [EBP + -0x1c]",
+      "0x41060b: CALL dword ptr [EDX + 0x10]",
+      "0x41060e: MOV word ptr [EBP + -0x10], AX",
+      "0x410612: MOV EAX, dword ptr [EBP + -0x1c]",
+      "0x410615: MOV EDX, dword ptr [EAX]",
+      "0x410617: MOV ECX, dword ptr [EBP + -0x1c]",
+      "0x41061a: CALL dword ptr [EDX + 0x8]",
+      "0x41061d: MOV dword ptr [EBP + -0x4], EAX",
+      "0x410620: MOV EAX, dword ptr [EBP + -0x4]",
+      "0x410623: MOV dword ptr [EBP + -0x20], EAX",
+      "0x410626: CMP dword ptr [EBP + -0x20], 0x9",
+      "0x41062a: JA 0x00410759",
+      "0x410630: MOV ECX, dword ptr [EBP + -0x20]",
+      "0x410633: JMP dword ptr [ECX*0x4 + 0x41080e]",
+      "0x41063a: JMP 0x00410763",
+      "0x41063f: JMP 0x00410763",
+      "0x410644: MOV EDX, dword ptr [EBP + -0x1c]",
+      "0x410647: MOV AX, word ptr [EBP + -0x10]",
+      "0x41064b: MOV word ptr [EDX + 0x10], AX",
+      "0x41064f: MOV ECX, dword ptr [EBP + -0x1c]",
+      "0x410652: MOV EDX, dword ptr [EBP + 0x8]",
+      "0x410655: MOV dword ptr [ECX + 0x14], EDX",
+      "0x410658: MOV EAX, 0x2",
+      "0x41065d: JMP 0x00410808",
+      "0x410662: JMP 0x00410763",
+      "0x410667: MOV EAX, dword ptr [EBP + -0x1c]",
+      "0x41066a: MOV EDX, dword ptr [EAX]",
+      "0x41066c: MOV ECX, dword ptr [EBP + -0x1c]",
+      "0x41066f: CALL dword ptr [EDX + 0x8]",
+      "0x410672: MOV dword ptr [EBP + -0x4], EAX",
+      "0x410675: MOV EAX, dword ptr [EBP + -0x4]",
+      "0x410678: MOV dword ptr [EBP + -0x24], EAX",
+      "0x41067b: CMP dword ptr [EBP + -0x24], 0x0",
+      "0x41067f: JZ 0x0041068f",
+      "0x410681: CMP dword ptr [EBP + -0x24], 0x1",
+      "0x410685: JZ 0x00410698",
+      "0x410687: CMP dword ptr [EBP + -0x24], 0x5",
+      "0x41068b: JZ 0x004106a1",
+      "0x41068d: JMP 0x004106ab",
+      "0x41068f: MOV dword ptr [EBP + -0x8], 0x0",
+      "0x410696: JMP 0x004106ab",
+      "0x410698: MOV dword ptr [EBP + -0x8], 0x1",
+      "0x41069f: JMP 0x004106ab",
+      "0x4106a1: MOV EAX, 0x1",
+      "0x4106a6: JMP 0x00410808",
+      "0x4106ab: CMP dword ptr [EBP + -0x4], 0x6",
+      "0x4106af: JNZ 0x004106b7",
+      "0x4106b1: CMP dword ptr [EBP + -0x8], 0x0",
+      "0x4106b5: JZ 0x004106c6",
+      "0x4106b7: CMP dword ptr [EBP + -0x4], 0x1",
+      "0x4106bb: JZ 0x004106c6",
+      "0x4106bd: MOV dword ptr [EBP + -0x28], 0x0",
+      "0x4106c4: JMP 0x004106cd",
+      "0x4106c6: MOV dword ptr [EBP + -0x28], 0x1",
+      "0x4106cd: MOV ECX, dword ptr [EBP + 0x8]",
+      "0x4106d0: ADD ECX, 0x1",
+      "0x4106d3: PUSH ECX",
+      "0x4106d4: MOV EDX, dword ptr [EBP + -0x28]",
+      "0x4106d7: PUSH EDX",
+      "0x4106d8: MOV ECX, dword ptr [EBP + -0x1c]",
+      "0x4106db: CALL 0x0041084e",
+      "0x4106e0: MOV dword ptr [EBP + -0x2c], EAX",
+      "0x4106e3: CMP dword ptr [EBP + -0x2c], 0x5",
+      "0x4106e7: JA 0x00410727",
+      "0x4106e9: MOV EAX, dword ptr [EBP + -0x2c]",
+      "0x4106ec: JMP dword ptr [EAX*0x4 + 0x410836]",
+      "0x4106f3: JMP 0x00410731",
+      "0x4106f5: MOV EAX, 0x1",
+      "0x4106fa: JMP 0x00410808",
+      "0x4106ff: MOV EAX, 0x2",
+      "0x410704: JMP 0x00410808",
+      "0x410709: MOV EAX, 0x3",
+      "0x41070e: JMP 0x00410808",
+      "0x410713: MOV EAX, 0x4",
+      "0x410718: JMP 0x00410808",
+      "0x41071d: MOV EAX, 0x5",
+      "0x410722: JMP 0x00410808",
+      "0x410727: MOV EAX, 0x1",
+      "0x41072c: JMP 0x00410808",
+      "0x410731: JMP 0x00410763",
+      "0x410733: MOV dword ptr [EBP + -0x14], 0x1",
+      "0x41073a: JMP 0x00410763",
+      "0x41073c: MOV EAX, 0x1",
+      "0x410741: JMP 0x00410808",
+      "0x410746: MOV EAX, 0x5",
+      "0x41074b: JMP 0x00410808",
+      "0x410750: MOV dword ptr [EBP + -0xc], 0x1",
+      "0x410757: JMP 0x00410763",
+      "0x410759: MOV EAX, 0x1",
+      "0x41075e: JMP 0x00410808",
+      "0x410763: CMP dword ptr [EBP + -0x4], 0x3",
+      "0x410767: JNZ 0x004105ee",
+      "0x41076d: CMP dword ptr [EBP + -0x14], 0x0",
+      "0x410771: JNZ 0x00410786",
+      "0x410773: CMP dword ptr [EBP + 0x8], 0x0",
+      "0x410777: JNZ 0x004107c7",
+      "0x410779: MOV ECX, dword ptr [EBP + -0x1c]",
+      "0x41077c: CALL 0x00410990",
+      "0x410781: CMP EAX, 0x1",
+      "0x410784: JNZ 0x004107c7",
+      "0x410786: MOV ECX, dword ptr [EBP + -0x1c]",
+      "0x410789: MOV EDX, dword ptr [ECX + 0x4]",
+      "0x41078c: ADD EDX, 0x1",
+      "0x41078f: MOV EAX, dword ptr [EBP + -0x1c]",
+      "0x410792: MOV dword ptr [EAX + 0x4], EDX",
+      "0x410795: MOV ECX, dword ptr [EBP + -0x1c]",
+      "0x410798: MOV dword ptr [ECX + 0x8], 0x0",
+      "0x41079f: MOV ECX, dword ptr [EBP + -0x1c]",
+      "0x4107a2: CALL 0x0040fc87",
+      "0x4107a7: MOV EDX, dword ptr [EBP + -0x1c]",
+      "0x4107aa: CMP dword ptr [EDX + 0x4], EAX",
+      "0x4107ad: JL 0x004107c0",
+      "0x4107af: MOV EAX, dword ptr [EBP + -0x1c]",
+      "0x4107b2: MOV dword ptr [EAX + 0x28], 0x0",
+      "0x4107b9: MOV EAX, 0x4",
+      "0x4107be: JMP 0x00410808",
+      "0x4107c0: MOV EAX, 0x3",
+      "0x4107c5: JMP 0x00410808",
+      "0x4107c7: MOV ECX, dword ptr [EBP + -0x1c]",
+      "0x4107ca: CALL 0x0040fc87",
+      "0x4107cf: MOV ECX, dword ptr [EBP + -0x1c]",
+      "0x4107d2: CMP dword ptr [ECX + 0x4], EAX",
+      "0x4107d5: JL 0x004107e8",
+      "0x4107d7: MOV EDX, dword ptr [EBP + -0x1c]",
+      "0x4107da: MOV dword ptr [EDX + 0x28], 0x0",
+      "0x4107e1: MOV EAX, 0x4",
+      "0x4107e6: JMP 0x00410808",
+      "0x4107e8: CMP dword ptr [EBP + -0xc], 0x0",
+      "0x4107ec: JZ 0x004107ff",
+      "0x4107ee: MOV EAX, dword ptr [EBP + -0x1c]",
+      "0x4107f1: MOV dword ptr [EAX + 0x28], 0x0",
+      "0x4107f8: MOV EAX, 0x4",
+      "0x4107fd: JMP 0x00410808",
+      "0x4107ff: XOR EAX, EAX",
+      "0x410801: JMP 0x00410808",
+      "0x410803: JMP 0x004106ab",
+      "0x410808: MOV ESP, EBP",
+      "0x41080a: POP EBP",
+      "0x41080b: RET 0x4"
+    ],
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "References cover the complete Ghidra function-body AddressSet and exact entry. Dossier incoming edges omit sources owned by that function; procedure_references also retains those internal edges.",
+      "The dossier combines Ghidra FunctionManager, Listing, ReferenceManager, BasicBlockModel, and decompiler observations; provider-specific pseudocode and assembly are not cross-provider text invariants.",
+      "Resolved reference metadata identifies computed, indirect, external, call, jump, and data edges; unresolved targetless flows remain unknown, and function classifications distinguish thunks and externals.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+      "The Java bridge serializes one function request per Program and lets each decompilation run until it completes or the caller cancels.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ]
+  },
+  {
+    "evidence_id": "ev_77ccf39cad1fe183fc28d2f522bbfdbb41f2ca3d922422e17fec187549b6c130",
+    "subject": {
+      "name": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe",
+      "digest": {
+        "sha256": "c4228269bdc4d91a9db9a90c4dc9ff9a23df5333d9d0acdee98a51cba0111775"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "C:\\Users\\tsj\\Documents\\ccz\\ccz_origin\\Ekd5.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "operation": "analyze_function",
+    "procedure": {
+      "address": "0x4112df",
+      "name": "FUN_004112df",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x4112df",
+            "end": "0x4112e8"
+          }
+        ],
+        "total_bytes": 10,
+        "span_bytes": 10,
+        "non_contiguous": false,
+        "contains_entry": true
+      },
+      "signature": "undefined4 __stdcall FUN_004112df(void)",
+      "locals": []
+    },
+    "pseudocode": "\r\nundefined4 FUN_004112df(void)\r\n\r\n{\r\n  return 6;\r\n}\r\n\r\n",
+    "assembly": [
+      "0x4112df: PUSH EBP",
+      "0x4112e0: MOV EBP, ESP",
+      "0x4112e2: MOV EAX, 0x6",
+      "0x4112e7: POP EBP",
+      "0x4112e8: RET"
+    ],
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "References cover the complete Ghidra function-body AddressSet and exact entry. Dossier incoming edges omit sources owned by that function; procedure_references also retains those internal edges.",
+      "The dossier combines Ghidra FunctionManager, Listing, ReferenceManager, BasicBlockModel, and decompiler observations; provider-specific pseudocode and assembly are not cross-provider text invariants.",
+      "Resolved reference metadata identifies computed, indirect, external, call, jump, and data edges; unresolved targetless flows remain unknown, and function classifications distinguish thunks and externals.",
+      "Synthetic Ghidra entry-point references without actionable memory sources are omitted.",
+      "The Java bridge serializes one function request per Program and lets each decompilation run until it completes or the caller cancels.",
+      "Windows Ghidra P0 accepts approved native x86 and x86-64 PE applications and DLLs; managed, hostile, sensitive, and mutable-path targets are unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ]
+  }
+]
